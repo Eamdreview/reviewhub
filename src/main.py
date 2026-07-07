@@ -20,7 +20,7 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import collect, config, deliver, report, score, triage, write
+from . import classify, collect, config, deliver, report, score, triage, write
 from .enrich import enrich_all
 from .models import RunReport
 
@@ -61,24 +61,30 @@ def run(dry_run: bool = False) -> Path:
     log.info("After triage: %d survivors", len(candidates))
     _dump("triaged", candidates)
 
-    # [4] SCORE (weighted model + hard floor) and select
+    # [4] SCORE (weighted model → total, ranking within tiers)
     candidates = score.apply(candidates)
-    writeup_pool = candidates[: config.WRITEUP_POOL]
     _dump("scored", candidates)
 
-    # [5] WRITE (quality model on the pool, then keep floor-passing Top N)
-    writeup_pool = write.write_all(writeup_pool, dry_run=dry_run)
-    top = score.qualified(writeup_pool)
-    log.info("Qualified (cleared floor %d): %d", config.BUYING_INTENT_FLOOR, len(top))
+    # [4b] CLASSIFY — Priority Opportunity Engine (Tier 1/2/3 or Ignore)
+    candidates = classify.classify_all(candidates)
+    buckets = classify.group_by_tier(candidates)
+    log.info("Tiers → T1:%d T2:%d T3:%d Ignore:%d",
+             len(buckets[1]), len(buckets[2]), len(buckets[3]), len(buckets[0]))
+    _dump("classified", candidates)
 
+    # [5] WRITE (quality model — briefs for Tier 1-3 only, never for Ignore)
+    write.write_all(buckets[1] + buckets[2] + buckets[3], dry_run=dry_run)
+
+    lead = (buckets[1] or buckets[2] or buckets[3] or [None])[0]
+    headline = (
+        f"{lead.name} — {lead.classification['priority']} "
+        f"({lead.total_score:g}/100)." if lead else ""
+    )
     run_report = RunReport(
         date=date,
         scanned=scanned,
-        qualified=len(top),
-        top_score=top[0].total_score if top else 0.0,
-        headline=(f"{top[0].name} leads today at {top[0].total_score:g}/100."
-                  if top else ""),
-        products=top,
+        headline=headline,
+        tiers=buckets,
         source_status=source_status,
         estimated_fields=["SEO difficulty", "evergreen potential",
                           "launch bonuses", "earning potential"],

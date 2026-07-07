@@ -138,8 +138,15 @@ def _stub_brief(c: Candidate) -> str:
 
 
 def write_all(candidates: list[Candidate], dry_run: bool = False) -> list[Candidate]:
+    """Write a full brief for every non-ignored (Tier 1-3) product.
+
+    Ignored products get no brief — they only appear on the Ignore list with
+    their rejection reasons, so we never spend the quality model on them.
+    """
     use_llm = llm.available() and not dry_run
     for c in candidates:
+        if c.classification.get("tier", 0) == 0:
+            continue
         try:
             body = _llm_brief(c) if use_llm else _stub_brief(c)
         except llm.LLMError:

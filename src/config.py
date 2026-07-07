@@ -41,6 +41,66 @@ CRITERION_LABELS: dict[str, str] = {
 # from the Top 10 no matter how high its total score is.
 BUYING_INTENT_FLOOR: int = 60
 
+# ---------------------------------------------------------------------------
+# Priority Opportunity Engine — tier classification
+# ---------------------------------------------------------------------------
+# All sub-scores are 0-100. "Profitability >= 8/10" maps to profitability >= 80.
+#
+# Review-competition levels are derived from how many reviews already exist
+# (YouTube review count + authority review sites on page 1):
+COMPETITION_LOW_MAX: int = 3      # <= this many existing reviews = "low"
+COMPETITION_MEDIUM_MAX: int = 15  # <= this many = "medium"; above = "high"
+
+# 🚀 Tier 1 — Immediate Review (review TODAY). Must satisfy ALL:
+TIER1 = {
+    "launch_window_days": 7,       # launching within N days, OR
+    "released_within_hours": 48,   # released within last N hours
+    "min_buying_intent": 80,
+    "min_profitability": 80,       # 8/10
+    "min_seo_opportunity": 70,
+    "max_competition_level": "low",
+}
+
+# 🔥 Tier 2 — Strong Opportunity (this week). Must satisfy ALL:
+TIER2 = {
+    "min_buying_intent": 70,
+    "min_profitability": 70,       # 7/10
+    "require_growing_demand": True,  # Trends slope > 0
+    "max_competition_level": "medium",
+}
+
+# 📈 Tier 3 — Evergreen Money Maker (not a new launch, keeps selling):
+TIER3 = {
+    "min_demand": 50,              # stable/good search volume
+    "min_profitability": 60,       # strong funnel: recurring or high commission
+    "min_seo_opportunity": 50,     # useful for long-term SEO
+}
+
+# ❌ Ignore thresholds (any of these → rejected, with a stated reason):
+IGNORE = {
+    "min_buying_intent": BUYING_INTENT_FLOOR,  # low buying intent
+    "min_profitability": 40,                   # weak commissions
+    "min_vendor_trust": 40,                     # poor vendor reputation
+    "min_demand": 35,                           # very low search demand
+    # "too many existing reviews" = competition level "high"
+    # junk/PLR flagged by triage
+}
+
+# Review Priority labels by tier.
+PRIORITY_LABEL = {
+    1: "✅ Review TODAY",
+    2: "🗓️ Review This Week",
+    3: "♻️ Evergreen — schedule when convenient",
+    0: "❌ Ignore",
+}
+
+TIER_LABEL = {
+    1: "🚀 Tier 1 — Immediate Review",
+    2: "🔥 Tier 2 — Strong Opportunity",
+    3: "📈 Tier 3 — Evergreen Money Maker",
+    0: "❌ Ignore List",
+}
+
 # We never pad the report. Show only products that clear the floor, up to this
 # many. If fewer qualify, show fewer.
 MAX_PRODUCTS: int = 10
@@ -64,7 +124,8 @@ INTENT_KEYWORDS: list[str] = [
 # ---------------------------------------------------------------------------
 SOURCES: dict[str, bool] = {
     # Discovery (Collect stage)
-    "producthunt": True,
+    "muncheye": True,        # launch calendar: WarriorPlus/JVZoo pre-launch dates
+    "producthunt": True,     # includes upcoming/ship pages for pre-launch
     "jvzoo": True,
     "warriorplus": True,
     "digistore24": True,

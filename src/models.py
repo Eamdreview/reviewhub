@@ -29,6 +29,12 @@ class Candidate:
     upsells: str = ""                   # funnel/upsell notes if available
     launch_bonuses: str = ""            # usually inferred by LLM, labelled (est.)
 
+    # --- launch timing (drives Tier 1 early-launch detection) ---
+    launch_status: str = "live"         # "upcoming" | "live" | "evergreen"
+    launch_date: str = ""               # ISO date if known (from Muncheye/PH)
+    days_to_launch: int | None = None   # >=0 if upcoming; None if unknown
+    hours_since_release: int | None = None  # if recently released
+
     # --- enrichment (Enrich stage) ---
     # Free-form bag of measured signals: trends_slope, reddit_mentions,
     # reddit_sentiment, youtube_count, youtube_views, cse_top_domains, etc.
@@ -43,6 +49,11 @@ class Candidate:
     total_score: float = 0.0
     passed_floor: bool = False
 
+    # --- classification (Classify stage — Priority Opportunity Engine) ---
+    # {tier: int, priority: str, competition_level: str, can_rank: str,
+    #  ignore_reasons: list[str], competitor: dict, article: dict}
+    classification: dict[str, Any] = field(default_factory=dict)
+
     # --- writeup (Write stage, quality model) ---
     # The rendered report sections keyed by section name.
     brief: dict[str, str] = field(default_factory=dict)
@@ -56,9 +67,8 @@ class RunReport:
     """Top-level result of a daily run, used to build the Markdown."""
     date: str
     scanned: int = 0
-    qualified: int = 0
-    top_score: float = 0.0
     headline: str = ""
-    products: list[Candidate] = field(default_factory=list)
+    # Products grouped by Priority tier: 1, 2, 3, and 0 (Ignore).
+    tiers: dict[int, list[Candidate]] = field(default_factory=dict)
     source_status: dict[str, str] = field(default_factory=dict)   # source -> "ok" | "failed: ..."
     estimated_fields: list[str] = field(default_factory=list)

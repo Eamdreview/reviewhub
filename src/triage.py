@@ -131,8 +131,11 @@ def _llm_judgment(c: Candidate) -> dict:
 
 
 def triage_all(candidates: list[Candidate], dry_run: bool = False) -> list[Candidate]:
-    """Score every candidate and drop LLM-flagged junk."""
-    survivors: list[Candidate] = []
+    """Produce sub-scores + a junk flag for every candidate.
+
+    Nothing is dropped here: junk/spam still needs to appear on the Ignore list
+    with an explanation. The Classify stage routes junk to Ignore.
+    """
     use_llm = llm.available() and not dry_run
 
     for c in candidates:
@@ -143,14 +146,10 @@ def triage_all(candidates: list[Candidate], dry_run: bool = False) -> list[Candi
             judgment = _heuristic_judgment(c)
 
         c.triage = judgment
-        if judgment.get("is_junk"):
-            continue
-
         c.scores = {
             **measured,
             "buying_intent": float(judgment.get("buying_intent", 0)),
             "evergreen": float(judgment.get("evergreen", 0)),
         }
-        survivors.append(c)
 
-    return survivors
+    return candidates
