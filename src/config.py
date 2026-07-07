@@ -179,6 +179,9 @@ WRITEUP_MODEL: str = os.getenv("WRITEUP_MODEL", "anthropic/claude-sonnet-4")
 
 OPENROUTER_BASE_URL: str = "https://openrouter.ai/api/v1"
 
+# Products judged per triage call — batching cuts cost and rate-limiting.
+TRIAGE_BATCH: int = 10
+
 # ---------------------------------------------------------------------------
 # Delivery
 # ---------------------------------------------------------------------------

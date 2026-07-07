@@ -19,15 +19,18 @@ import re
 from . import config, llm
 from .models import Candidate
 
-# --- Prompt for the cheap triage model (used in Phase 4+ when a key exists) ---
+# --- Prompt for the cheap triage model (batched) ---
 _TRIAGE_SYSTEM = (
     "You are a ruthless affiliate-product triage filter for a reviewer of AI, "
     "SaaS, and automation tools targeting US entrepreneurs and marketers. "
-    "Judge only from the data given. Return strict JSON with keys: "
-    "buying_intent (0-100, how strong is real purchase intent), "
-    "evergreen (0-100, durable category vs fad/one-off), "
-    "is_junk (true for low-value PLR dumps, dead products, or spam), "
-    "reason (one short sentence)."
+    "Judge each product ONLY from the data given. "
+    "Return a strict JSON object: {\"results\": [ ... ]} where each element is "
+    "{\"id\": <int matching the input>, "
+    "\"buying_intent\": <0-100, strength of real purchase intent>, "
+    "\"evergreen\": <0-100, durable category vs fad/one-off>, "
+    "\"is_junk\": <true for low-value PLR dumps, dead products, or spam>, "
+    "\"reason\": <one short sentence>}. "
+    "Return exactly one element per input id, no extra text."
 )
 
 
@@ -121,35 +124,58 @@ def _heuristic_judgment(c: Candidate) -> dict:
             "is_junk": is_junk, "reason": "heuristic (no LLM key)"}
 
 
-def _llm_judgment(c: Candidate) -> dict:
-    user = (
-        f"Product: {c.name}\nSource: {c.source}\nCategory: {c.category}\n"
-        f"Price: {c.price}\nCommission: {c.base_commission}\n"
-        f"Description: {c.description}\nSignals: {c.signals}"
-    )
-    return llm.triage(_TRIAGE_SYSTEM, user)
+def _visible_signals(c: Candidate) -> dict:
+    """Signals worth showing the model (drop internal _measured_* flags)."""
+    return {k: v for k, v in c.signals.items() if not k.startswith("_")}
+
+
+def _llm_judgments_batch(batch: list[Candidate]) -> dict[int, dict]:
+    """Judge a batch in one call; returns index -> judgment. Raises on failure."""
+    lines = []
+    for i, c in enumerate(batch):
+        lines.append(
+            f"[id={i}] name={c.name!r} source={c.source} category={c.category!r} "
+            f"price={c.price!r} commission={c.base_commission!r} "
+            f"launch={c.launch_status} desc={c.description!r} "
+            f"signals={_visible_signals(c)}"
+        )
+    user = "Judge these products:\n" + "\n".join(lines)
+    data = llm.triage_batch(_TRIAGE_SYSTEM, user)
+    out: dict[int, dict] = {}
+    for item in data.get("results", []):
+        try:
+            out[int(item["id"])] = item
+        except (KeyError, ValueError, TypeError):
+            continue
+    return out
 
 
 def triage_all(candidates: list[Candidate], dry_run: bool = False) -> list[Candidate]:
     """Produce sub-scores + a junk flag for every candidate.
 
     Nothing is dropped here: junk/spam still needs to appear on the Ignore list
-    with an explanation. The Classify stage routes junk to Ignore.
+    with an explanation. The Classify stage routes junk to Ignore. Triage is
+    batched through the cheap model; any batch failure falls back to the
+    offline heuristic for that batch, so scoring always completes.
     """
     use_llm = llm.available() and not dry_run
 
     for c in candidates:
-        measured = _measured_scores(c)
-        try:
-            judgment = _llm_judgment(c) if use_llm else _heuristic_judgment(c)
-        except llm.LLMError:
-            judgment = _heuristic_judgment(c)
+        c.scores = dict(_measured_scores(c))  # measured sub-scores for all
 
-        c.triage = judgment
-        c.scores = {
-            **measured,
-            "buying_intent": float(judgment.get("buying_intent", 0)),
-            "evergreen": float(judgment.get("evergreen", 0)),
-        }
+    for start in range(0, len(candidates), config.TRIAGE_BATCH):
+        batch = candidates[start:start + config.TRIAGE_BATCH]
+        judgments: dict[int, dict] = {}
+        if use_llm:
+            try:
+                judgments = _llm_judgments_batch(batch)
+            except llm.LLMError:
+                judgments = {}
+
+        for i, c in enumerate(batch):
+            judgment = judgments.get(i) or _heuristic_judgment(c)
+            c.triage = judgment
+            c.scores["buying_intent"] = float(judgment.get("buying_intent", 0))
+            c.scores["evergreen"] = float(judgment.get("evergreen", 0))
 
     return candidates

@@ -102,16 +102,50 @@ def run(dry_run: bool = False) -> Path:
     return path
 
 
+def _llm_test() -> None:
+    """Exercise both models on sample data to confirm the key + routing work."""
+    from . import llm
+    from .collect.fake import collect as fake_collect
+
+    if not llm.available():
+        print("❌ OPENROUTER_API_KEY not set — cannot test.")
+        return
+
+    samples = fake_collect()[:3]
+    print(f"Triage model: {config.TRIAGE_MODEL}\nWriteup model: {config.WRITEUP_MODEL}\n")
+
+    print("→ Triage (batched)…")
+    triage.triage_all(samples, dry_run=False)
+    for c in samples:
+        print(f"  {c.name}: intent={c.scores.get('buying_intent')} "
+              f"evergreen={c.scores.get('evergreen')} junk={c.triage.get('is_junk')} "
+              f"— {c.triage.get('reason', '')[:70]}")
+
+    print("\n→ Writeup (quality model) on the first product…")
+    classify.classify_all(samples)
+    top = samples[0]
+    top.classification.setdefault("tier", 1)
+    write.write_all([top], dry_run=False)
+    print(top.brief.get("body", "(no brief)")[:600])
+    print("\n✅ OpenRouter working.")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Daily Affiliate Research Assistant")
     parser.add_argument("--dry-run", action="store_true",
                         help="Run offline on fake data (no API keys needed)")
     parser.add_argument("--test-email", action="store_true",
                         help="Only send a Gmail SMTP test email")
+    parser.add_argument("--llm-test", action="store_true",
+                        help="Validate OpenRouter: run triage + one writeup on a sample")
     args = parser.parse_args()
 
     if args.test_email:
         print(deliver.send_test_email())
+        return
+
+    if args.llm_test:
+        _llm_test()
         return
 
     path = run(dry_run=args.dry_run)
