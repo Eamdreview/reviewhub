@@ -15,13 +15,17 @@ from typing import Callable
 
 from .. import config
 from ..models import Candidate
-from . import fake
+from . import (digistore24, fake, jvzoo, muncheye, producthunt, warriorplus)
 
-# name -> collector function returning list[Candidate]
+# name -> collector function returning list[Candidate].
+# Ordered by the user's priority: launch calendar first (earliest signal),
+# then Product Hunt, then the marketplaces.
 _REGISTRY: dict[str, Callable[[], list[Candidate]]] = {
-    # Real collectors are registered here as they are implemented (Phase 2).
-    # "producthunt": producthunt.collect,
-    # "jvzoo": jvzoo.collect,
+    "muncheye": muncheye.collect,
+    "producthunt": producthunt.collect,
+    "warriorplus": warriorplus.collect,
+    "jvzoo": jvzoo.collect,
+    "digistore24": digistore24.collect,
 }
 
 

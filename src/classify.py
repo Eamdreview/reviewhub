@@ -173,6 +173,17 @@ def _tier_of(c: Candidate) -> int:
             and s.get("buying_intent", 0) >= config.IGNORE["min_buying_intent"]):
         return 3
 
+    # 👀 Watchlist — hyped/high-interest but misses the profitability bar.
+    w = config.WATCHLIST
+    hype = (int(c.signals.get("reddit_mentions", 0)) >= w["hype_min_reddit_mentions"]
+            or int(c.signals.get("youtube_views", 0)) >= w["hype_min_youtube_views"])
+    if (not c.triage.get("is_junk")
+            and hype
+            and s.get("search_demand", 0) >= w["min_demand"]
+            and s.get("buying_intent", 0) >= w["min_buying_intent"]
+            and s.get("user_sentiment", 0) >= w["min_sentiment"]):
+        return 4
+
     return 0
 
 
@@ -187,14 +198,14 @@ def classify_all(candidates: list[Candidate]) -> list[Candidate]:
             "existing_reviews": _review_count(c),
             "ignore_reasons": _ignore_reasons(c) if tier == 0 else [],
             "competitor": _competitor_alert(c) if tier == 1 else {},
-            "article": _article_opportunity(c) if tier in (1, 2) else {},
+            "article": _article_opportunity(c) if tier in (1, 2, 4) else {},
         }
     return candidates
 
 
 def group_by_tier(candidates: list[Candidate]) -> dict[int, list[Candidate]]:
     """Group classified candidates by tier, each sorted by total score desc."""
-    buckets: dict[int, list[Candidate]] = {1: [], 2: [], 3: [], 0: []}
+    buckets: dict[int, list[Candidate]] = {1: [], 2: [], 3: [], 4: [], 0: []}
     for c in candidates:
         buckets[c.classification.get("tier", 0)].append(c)
     for tier in buckets:

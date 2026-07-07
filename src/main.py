@@ -68,14 +68,16 @@ def run(dry_run: bool = False) -> Path:
     # [4b] CLASSIFY — Priority Opportunity Engine (Tier 1/2/3 or Ignore)
     candidates = classify.classify_all(candidates)
     buckets = classify.group_by_tier(candidates)
-    log.info("Tiers → T1:%d T2:%d T3:%d Ignore:%d",
-             len(buckets[1]), len(buckets[2]), len(buckets[3]), len(buckets[0]))
+    log.info("Tiers → T1:%d T2:%d T3:%d Watch:%d Ignore:%d",
+             len(buckets[1]), len(buckets[2]), len(buckets[3]),
+             len(buckets[4]), len(buckets[0]))
     _dump("classified", candidates)
 
-    # [5] WRITE (quality model — briefs for Tier 1-3 only, never for Ignore)
-    write.write_all(buckets[1] + buckets[2] + buckets[3], dry_run=dry_run)
+    # [5] WRITE (quality model — briefs for Tier 1-3 + Watchlist, not Ignore)
+    actionable = [c for t in config.TIER_ORDER for c in buckets[t]]
+    write.write_all(actionable, dry_run=dry_run)
 
-    lead = (buckets[1] or buckets[2] or buckets[3] or [None])[0]
+    lead = (actionable or [None])[0]
     headline = (
         f"{lead.name} — {lead.classification['priority']} "
         f"({lead.total_score:g}/100)." if lead else ""

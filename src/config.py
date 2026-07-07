@@ -76,6 +76,18 @@ TIER3 = {
     "min_seo_opportunity": 50,     # useful for long-term SEO
 }
 
+# 👀 Watchlist — hyped/high-interest products that MISS the profitability bar
+# for Tier 1/2 but are worth keeping an eye on (strategic content, may become
+# profitable later). Checked after Tier 3, before Ignore.
+WATCHLIST = {
+    "min_demand": 65,              # strong search demand
+    "min_buying_intent": 60,       # real interest (still clears the floor)
+    "min_sentiment": 50,           # good user engagement
+    # "hype" = meaningful Reddit chatter OR high video interest:
+    "hype_min_reddit_mentions": 20,
+    "hype_min_youtube_views": 50000,
+}
+
 # ❌ Ignore thresholds (any of these → rejected, with a stated reason):
 IGNORE = {
     "min_buying_intent": BUYING_INTENT_FLOOR,  # low buying intent
@@ -91,6 +103,7 @@ PRIORITY_LABEL = {
     1: "✅ Review TODAY",
     2: "🗓️ Review This Week",
     3: "♻️ Evergreen — schedule when convenient",
+    4: "👀 Watch — not profitable yet, revisit later",
     0: "❌ Ignore",
 }
 
@@ -98,8 +111,12 @@ TIER_LABEL = {
     1: "🚀 Tier 1 — Immediate Review",
     2: "🔥 Tier 2 — Strong Opportunity",
     3: "📈 Tier 3 — Evergreen Money Maker",
+    4: "👀 Watchlist — High Interest, Not Yet Profitable",
     0: "❌ Ignore List",
 }
+
+# Order tiers appear in the report (Watchlist after Tier 3, before Ignore).
+TIER_ORDER = [1, 2, 3, 4]
 
 # We never pad the report. Show only products that clear the floor, up to this
 # many. If fewer qualify, show fewer.

@@ -127,14 +127,15 @@ def _footer(run: RunReport) -> str:
 
 def build_markdown(run: RunReport) -> str:
     buckets = run.tiers
-    t1, t2, t3, ig = buckets[1], buckets[2], buckets[3], buckets[0]
-    actionable = t1 + t2 + t3
+    t1, t2, t3, t4, ig = buckets[1], buckets[2], buckets[3], buckets[4], buckets[0]
+    actionable = t1 + t2 + t3 + t4
 
     head = (
         f"# {config.REPORT_TITLE} — {run.date}\n\n"
         f"**Scanned:** {run.scanned} · "
         f"🚀 Tier 1: **{len(t1)}** · 🔥 Tier 2: **{len(t2)}** · "
-        f"📈 Tier 3: **{len(t3)}** · ❌ Ignored: **{len(ig)}**\n\n"
+        f"📈 Tier 3: **{len(t3)}** · 👀 Watchlist: **{len(t4)}** · "
+        f"❌ Ignored: **{len(ig)}**\n\n"
     )
     if run.headline:
         head += f"**Where to spend your writing time today:** {run.headline}\n\n"
@@ -147,10 +148,10 @@ def build_markdown(run: RunReport) -> str:
             glance.append(_glance_row(i, c))
         sections = [head, "\n".join(glance), "\n---\n"]
     else:
-        sections = [head, "> No Tier 1–3 opportunities today. Nothing worth your writing time.\n"]
+        sections = [head, "> No actionable opportunities today. Nothing worth your writing time.\n"]
 
     idx = 1
-    for tier in (1, 2, 3):
+    for tier in config.TIER_ORDER:
         block, idx = _tier_section(tier, buckets[tier], idx)
         if block:
             sections.append(block)
