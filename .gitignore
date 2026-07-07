@@ -1,0 +1,13 @@
+# Secrets
+.env
+
+# Intermediate stage data — kept only temporarily for debugging, never committed
+data/
+*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/

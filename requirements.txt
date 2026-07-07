@@ -1,0 +1,8 @@
+# Core
+requests>=2.31
+
+# Enrichment sources (used from Phase 3 onward)
+pytrends>=4.9          # Google Trends (unofficial)
+praw>=7.7              # Reddit API
+beautifulsoup4>=4.12   # marketplace / Trustpilot scraping
+lxml>=5.0              # fast HTML parser for bs4
