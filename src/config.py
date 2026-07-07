@@ -126,6 +126,11 @@ MAX_PRODUCTS: int = 10
 # there is a cushion above MAX_PRODUCTS before final selection.
 WRITEUP_POOL: int = 15
 
+# Enrichment is quota-limited (YouTube search = 100 units/call of 10k/day free;
+# Google CSE = 100 queries/day free). Cap how many collected candidates get
+# fully enriched, keeping collector priority order (Muncheye/Product Hunt first).
+MAX_ENRICH: int = 40
+
 # ---------------------------------------------------------------------------
 # Buying-intent signal keywords
 # ---------------------------------------------------------------------------
