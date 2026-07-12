@@ -80,19 +80,43 @@ def _competitor_alert(c: Candidate) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Article opportunity (deterministic base; LLM enriches in Write stage)
+# Risks & revenue potential (intelligence, deterministic; LLM elaborates)
 # ---------------------------------------------------------------------------
-def _article_opportunity(c: Candidate) -> dict:
-    name = c.name
-    cat = c.category or "AI tools"
-    return {
-        "main_keyword": f"{name.lower()} review",
-        "alt_keyword": f"{name.lower()} pricing",
-        "comparison_ideas": [f"{name} vs top {cat} alternatives",
-                             f"{name} vs [closest competitor]"],
-        "alternative_ideas": [f"Best {cat} in 2026", f"{name} alternatives"],
-        "publishing_order": ["LinkedIn", "Medium", "Website", "Pinterest", "X"],
-    }
+def _risks(c: Candidate) -> list[str]:
+    """Concrete risk flags a reviewer should weigh before committing time."""
+    s, sig = c.scores, c.signals
+    risks: list[str] = []
+    if s.get("vendor_trust", 50) < 40:
+        risks.append("Low vendor trust — refund/quality risk.")
+    if _competition_level(c) == "high":
+        risks.append(f"Saturated — {_review_count(c)} reviews already exist.")
+    if float(sig.get("trends_slope", 0)) < 0:
+        risks.append("Search demand is declining.")
+    if not c.recurring and s.get("profitability", 0) < 55:
+        risks.append("One-time, low commission — limited earning ceiling.")
+    if sig.get("trustpilot_rating") is None and int(sig.get("reddit_mentions", 0)) < 3:
+        risks.append("Thin sentiment data — hard to judge reputation yet.")
+    if c.launch_status == "upcoming":
+        risks.append("Pre-launch — product unproven; verify before publishing.")
+    return risks or ["No major risks flagged."]
+
+
+def _revenue_potential(c: Candidate) -> dict:
+    """Qualitative weekly revenue-potential estimate (est.).
+
+    A lightweight proxy from profitability × demand until the dedicated
+    Revenue Prediction Engine lands. Clearly labelled as an estimate.
+    """
+    profit = float(c.scores.get("profitability", 0))
+    demand = float(c.scores.get("search_demand", 0))
+    score = profit * 0.6 + demand * 0.4
+    if score >= 70:
+        level, note = "High", "strong commission/funnel + solid demand"
+    elif score >= 50:
+        level, note = "Medium", "workable economics; volume-dependent"
+    else:
+        level, note = "Low", "weak commission or thin demand"
+    return {"level": level, "note": note, "score": round(score, 1)}
 
 
 # ---------------------------------------------------------------------------
@@ -197,8 +221,10 @@ def classify_all(candidates: list[Candidate]) -> list[Candidate]:
             "competition_level": _competition_level(c),
             "existing_reviews": _review_count(c),
             "ignore_reasons": _ignore_reasons(c) if tier == 0 else [],
-            "competitor": _competitor_alert(c) if tier == 1 else {},
-            "article": _article_opportunity(c) if tier in (1, 2, 4) else {},
+            # Intelligence attached to every non-ignored product:
+            "competition": _competitor_alert(c) if tier != 0 else {},
+            "risks": _risks(c) if tier != 0 else [],
+            "revenue_potential": _revenue_potential(c) if tier != 0 else {},
         }
     return candidates
 

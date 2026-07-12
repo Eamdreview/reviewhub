@@ -68,7 +68,10 @@ class RunReport:
     date: str
     scanned: int = 0
     headline: str = ""
-    # Products grouped by Priority tier: 1, 2, 3, and 0 (Ignore).
+    # Report-level narrative (LLM-written, grounded in the week's data).
+    executive_summary: str = ""
+    market_overview: str = ""
+    # Products grouped by Priority tier: 1, 2, 3, 4 (Watchlist), 0 (Ignore).
     tiers: dict[int, list[Candidate]] = field(default_factory=dict)
     source_status: dict[str, str] = field(default_factory=dict)   # source -> "ok" | "failed: ..."
     estimated_fields: list[str] = field(default_factory=list)

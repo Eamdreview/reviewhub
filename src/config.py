@@ -186,7 +186,8 @@ TRIAGE_BATCH: int = 10
 # Delivery
 # ---------------------------------------------------------------------------
 TIMEZONE: str = "Africa/Cairo"          # your local timezone (UTC+2)
-REPORT_TITLE: str = "🎯 Daily Affiliate Research"
+# Weekly intelligence report — runs Fridays 07:00 Cairo (05:00 UTC).
+REPORT_TITLE: str = "📊 Weekly Affiliate Intelligence Report"
 SMTP_HOST: str = "smtp.gmail.com"
 SMTP_PORT: int = 587
 
