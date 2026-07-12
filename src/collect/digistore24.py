@@ -16,8 +16,14 @@ from .. import http
 from ..models import Candidate
 from . import util
 
-# Public marketplace, filtered to software/e-business style categories.
-_URL = "https://www.digistore24.com/en/marketplace"
+# The public marketplace URL has moved before; try known variants in order and
+# use the first that responds. Tune this list against the live site if needed.
+_URLS = [
+    "https://www.digistore24.com/en/marketplace/",
+    "https://www.digistore24.com/marketplace/",
+    "https://www.digistore24.com/en/products/",
+    "https://www.digistore24.com/en/marketplace",
+]
 
 
 def _cards(soup: BeautifulSoup) -> list:
@@ -34,7 +40,16 @@ def _cards(soup: BeautifulSoup) -> list:
 
 
 def collect() -> list[Candidate]:
-    resp = http.get(_URL)
+    resp = None
+    last_err: Exception | None = None
+    for url in _URLS:
+        try:
+            resp = http.get(url, max_retries=1)
+            break
+        except Exception as exc:  # noqa: BLE001 - try the next URL variant
+            last_err = exc
+    if resp is None:
+        raise RuntimeError(f"no marketplace URL responded: {last_err}")
     soup = BeautifulSoup(resp.text, "lxml")
 
     out: list[Candidate] = []

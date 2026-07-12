@@ -23,38 +23,61 @@ from . import util
 _URL = "https://muncheye.com/"
 
 
-def _extract_launches(soup: BeautifulSoup) -> list[dict]:
-    """Best-effort extraction of launch rows.
+def _row_of(link) -> object:
+    """Climb a few parents to the enclosing launch row for context/date."""
+    node = link
+    for _ in range(3):
+        parent = node.parent
+        if parent is None:
+            break
+        node = parent
+        text = node.get_text(" ", strip=True)
+        if len(text) > 40:  # a row with real context, not just the link
+            return node
+    return link.parent or link
 
-    Muncheye renders each launch inside a container that holds a date element
-    and an <a> to the product page. We look for anchors under launch sections
-    and pair them with the nearest preceding date text.
+
+def _extract_launches(soup: BeautifulSoup) -> list[dict]:
+    """Best-effort extraction of launch rows, resilient to markup changes.
+
+    Rather than assume specific container classes, scan every product-looking
+    anchor across the page and pair each with a date found in its enclosing
+    row. Product links on Muncheye point at a vendor/product path (two path
+    segments), not at site nav or social links.
     """
     launches: list[dict] = []
-    # Launch entries live in list/row containers; grab anchors that look like
-    # product links (they point to /launches/ or an external JV page).
-    for row in soup.select("div.launch, li.launch, tr, div.row"):
-        link = row.find("a", href=True)
-        if not link:
-            continue
+    seen: set[str] = set()
+    for link in soup.find_all("a", href=True):
+        href = link["href"]
         name = util.clean(link.get_text())
-        if not name or len(name) < 3:
+        if not name or len(name) < 4 or name.lower() in seen:
             continue
-        # Date: look for a time tag or a text node that parses as a date.
+        # Skip obvious non-product links (nav, socials, anchors).
+        low = href.lower()
+        if any(x in low for x in ("facebook", "twitter", "youtube", "mailto:",
+                                  "login", "signup", "register", "/tag/",
+                                  "/page/", "#")):
+            continue
+
+        row = _row_of(link)
+        row_text = row.get_text(" ", strip=True) if hasattr(row, "get_text") else ""
         date_txt = ""
-        time_tag = row.find("time")
+        time_tag = row.find("time") if hasattr(row, "find") else None
         if time_tag:
             date_txt = time_tag.get("datetime") or time_tag.get_text()
-        if not date_txt:
+        if not date_txt and hasattr(row, "stripped_strings"):
             for cand in row.stripped_strings:
                 if util.try_parse_date(cand):
                     date_txt = cand
                     break
+        # Require a date OR a niche hint so we don't ingest random links.
+        if not date_txt and not util.is_niche_relevant(name, row_text):
+            continue
+
+        seen.add(name.lower())
         launches.append({
-            "name": name,
-            "url": link["href"],
-            "date": date_txt,
-            "vendor": util.clean(row.get_text())[:120],
+            "name": name, "url": href, "date": date_txt,
+            "vendor": util.clean(row_text)[:120],
         })
     return launches
 

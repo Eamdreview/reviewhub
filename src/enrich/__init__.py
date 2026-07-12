@@ -39,6 +39,13 @@ def enrich_all(candidates: list[Candidate], dry_run: bool = False,
     # Protect quotas: only enrich the highest-priority slice (collector order).
     targets = candidates[: config.MAX_ENRICH]
 
+    if not targets:
+        # No candidates to enrich — don't imply the enrichment sources failed.
+        for name in _ENRICHERS:
+            if config.SOURCES.get(name, False):
+                status[name] = "skipped (no candidates to enrich)"
+        return candidates
+
     for name, (enricher, flag) in _ENRICHERS.items():
         if not config.SOURCES.get(name, False):
             continue
