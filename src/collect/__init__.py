@@ -16,12 +16,14 @@ from typing import Callable
 from .. import config
 from ..errors import MissingCredentials
 from ..models import Candidate
-from . import (digistore24, fake, jvzoo, muncheye, producthunt, warriorplus)
+from . import (digistore24, fake, hackernews, jvzoo, muncheye, producthunt,
+               warriorplus)
 
 # name -> collector function returning list[Candidate].
-# Ordered by the user's priority: launch calendar first (earliest signal),
-# then Product Hunt, then the marketplaces.
+# Hacker News first: it is keyless and reliable, so the report is never empty.
+# Then the launch calendar, Product Hunt, and the marketplaces.
 _REGISTRY: dict[str, Callable[[], list[Candidate]]] = {
+    "hackernews": hackernews.collect,
     "muncheye": muncheye.collect,
     "producthunt": producthunt.collect,
     "warriorplus": warriorplus.collect,

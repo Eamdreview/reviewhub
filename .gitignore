@@ -1,8 +1,10 @@
 # Secrets
 .env
 
-# Intermediate stage data — kept only temporarily for debugging, never committed
-data/
+# Intermediate stage dumps — never committed. The SQLite databases under
+# data/history/ and data/knowledge/ ARE committed (they must survive across
+# weekly runs); only the stage JSON is ignored.
+data/*.json
 *.json
 
 # Python

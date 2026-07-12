@@ -20,7 +20,9 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import classify, collect, config, deliver, report, score, triage, write
+from . import (advisor, classify, collect, competition, config, deliver,
+               knowledge, launch_calendar, learning, post_launch, report,
+               revenue, revenue_history, score, triage, vendor, write)
 from .enrich import enrich_all
 from .models import RunReport
 
@@ -73,8 +75,11 @@ def run(dry_run: bool = False) -> Path:
              len(buckets[4]), len(buckets[0]))
     _dump("classified", candidates)
 
-    # [5] ANALYZE (quality model — intelligence briefs for Tier 1-3 + Watchlist)
+    # [4c] PREDICT — Revenue Prediction Engine (transparent, per qualified product)
     actionable = [c for t in config.TIER_ORDER for c in buckets[t]]
+    revenue.predict_all(actionable)
+
+    # [5] ANALYZE (quality model — intelligence briefs for Tier 1-3 + Watchlist)
     write.write_all(actionable, dry_run=dry_run)
 
     # [5b] NARRATIVES — Executive Summary + Market Overview (report-level)
@@ -90,6 +95,38 @@ def run(dry_run: bool = False) -> Path:
         estimated_fields=["SEO difficulty", "evergreen potential",
                           "revenue potential", "earning potential"],
     )
+
+    # [5c] INTELLIGENCE MODULES (all additive, all fail-soft) ----------------
+    def _safe(label, fn, default=None):
+        try:
+            return fn()
+        except Exception as exc:  # noqa: BLE001 - a module never breaks the run
+            log.warning("module %s failed: %s", label, exc)
+            return default
+
+    _safe("learning.import_csv", learning.import_csv)
+    # Compare against prior weeks BEFORE recording this run as the new baseline.
+    comp_alerts = _safe("competition", lambda: competition.track(actionable, date), [])
+    pl_alerts = _safe("post_launch", lambda: post_launch.track(actionable, date), [])
+    vprofiles = _safe("vendor.profiles", lambda: vendor.build_profiles(candidates), {})
+    intel = {
+        "competition_alerts": comp_alerts or [],
+        "post_launch_alerts": pl_alerts or [],
+        "vendor_profiles": vprofiles or {},
+        "vendor_of_week": _safe("vendor_of_week",
+                                lambda: vendor.vendor_of_week(actionable, vprofiles or {})),
+        "network_of_week": _safe("network_of_week",
+                                 lambda: vendor.network_of_week(actionable)),
+        "calendar": _safe("calendar", lambda: launch_calendar.build(actionable), {}),
+        "revenue_history": _safe("revenue_history", revenue_history.dashboard, {}),
+        "learning": _safe("learning.insights", learning.insights, {}),
+    }
+    intel["advisor"] = _safe("advisor",
+                             lambda: advisor.recommend(run_report, vprofiles or {}))
+    run_report.intel = intel
+
+    # Record this run into the Knowledge Base (baseline for next week).
+    _safe("knowledge.record_run", lambda: knowledge.record_run(run_report, candidates))
 
     # [6] DELIVER
     markdown = report.build_markdown(run_report)
