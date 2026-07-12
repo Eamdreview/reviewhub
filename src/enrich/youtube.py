@@ -13,6 +13,7 @@ Fail-soft: missing key raises once; per-product errors are swallowed.
 from __future__ import annotations
 
 from .. import config, http
+from ..errors import MissingCredentials
 from ..models import Candidate
 
 _SEARCH = "https://www.googleapis.com/youtube/v3/search"
@@ -22,7 +23,7 @@ _VIDEOS = "https://www.googleapis.com/youtube/v3/videos"
 def enrich(candidates: list[Candidate]) -> None:
     key = config.env("YOUTUBE_API_KEY")
     if not key:
-        raise RuntimeError("YOUTUBE_API_KEY not set")
+        raise MissingCredentials("YOUTUBE_API_KEY not set")
     sess = http.session()
 
     for c in candidates:

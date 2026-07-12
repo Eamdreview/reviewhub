@@ -115,7 +115,12 @@ def _ignore_section(products: list[Candidate]) -> str:
 def _footer(run: RunReport) -> str:
     status_lines = []
     for src, status in run.source_status.items():
-        icon = "✅" if status.startswith("ok") else "⚠️"
+        if status.startswith("ok"):
+            icon = "✅"
+        elif status.startswith("skipped"):
+            icon = "⏭️"
+        else:
+            icon = "⚠️"
         status_lines.append(f"- {icon} {src}: {status}")
     estimated = ", ".join(run.estimated_fields) or "none"
     return (

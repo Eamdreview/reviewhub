@@ -10,6 +10,7 @@ from __future__ import annotations
 from datetime import datetime, timedelta, timezone
 
 from .. import config, http
+from ..errors import MissingCredentials
 from ..models import Candidate
 from . import util
 
@@ -38,7 +39,7 @@ query($after: DateTime!) {
 def collect() -> list[Candidate]:
     token = config.env("PRODUCTHUNT_TOKEN")
     if not token:
-        raise RuntimeError("PRODUCTHUNT_TOKEN not set")
+        raise MissingCredentials("PRODUCTHUNT_TOKEN not set")
 
     after = (datetime.now(timezone.utc) - timedelta(days=3)).isoformat()
     s = http.session()

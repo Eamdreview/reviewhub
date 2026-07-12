@@ -15,6 +15,7 @@ from __future__ import annotations
 from typing import Callable
 
 from .. import config
+from ..errors import MissingCredentials
 from ..models import Candidate
 from . import google_cse, reddit, trends, trustpilot, youtube
 
@@ -46,6 +47,8 @@ def enrich_all(candidates: list[Candidate], dry_run: bool = False,
             measured = sum(1 for c in targets if c.signals.get(flag))
             status[name] = (f"ok: {measured}/{len(targets)} measured"
                             if measured else "ran but 0 measured (data unavailable)")
+        except MissingCredentials as exc:
+            status[name] = f"skipped (no credentials): {exc}"
         except Exception as exc:  # noqa: BLE001 - fail-soft per source
             status[name] = f"failed: {type(exc).__name__}: {exc}"
 

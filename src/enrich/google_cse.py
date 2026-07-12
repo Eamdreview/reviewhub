@@ -16,6 +16,7 @@ from __future__ import annotations
 from urllib.parse import urlparse
 
 from .. import config, http
+from ..errors import MissingCredentials
 from ..models import Candidate
 
 _URL = "https://www.googleapis.com/customsearch/v1"
@@ -25,7 +26,7 @@ def enrich(candidates: list[Candidate]) -> None:
     key = config.env("GOOGLE_CSE_KEY")
     cx = config.env("GOOGLE_CSE_ID")
     if not key or not cx:
-        raise RuntimeError("GOOGLE_CSE_KEY / GOOGLE_CSE_ID not set")
+        raise MissingCredentials("GOOGLE_CSE_KEY / GOOGLE_CSE_ID not set")
     sess = http.session()
 
     for c in candidates:

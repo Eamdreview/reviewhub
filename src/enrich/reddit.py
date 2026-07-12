@@ -12,6 +12,7 @@ Requires REDDIT_CLIENT_ID / REDDIT_SECRET. Fail-soft: missing key raises once
 from __future__ import annotations
 
 from .. import config
+from ..errors import MissingCredentials
 from ..models import Candidate
 
 _MULTI_LIMIT = 25
@@ -24,7 +25,7 @@ def enrich(candidates: list[Candidate]) -> None:
     cid = config.env("REDDIT_CLIENT_ID")
     secret = config.env("REDDIT_SECRET")
     if not cid or not secret:
-        raise RuntimeError("REDDIT_CLIENT_ID / REDDIT_SECRET not set")
+        raise MissingCredentials("REDDIT_CLIENT_ID / REDDIT_SECRET not set")
 
     reddit = praw.Reddit(
         client_id=cid, client_secret=secret,

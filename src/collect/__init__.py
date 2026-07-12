@@ -14,6 +14,7 @@ from __future__ import annotations
 from typing import Callable
 
 from .. import config
+from ..errors import MissingCredentials
 from ..models import Candidate
 from . import (digistore24, fake, jvzoo, muncheye, producthunt, warriorplus)
 
@@ -51,6 +52,8 @@ def collect_all(dry_run: bool = False) -> tuple[list[Candidate], dict[str, str]]
             found = collector()
             candidates.extend(found)
             source_status[name] = f"ok ({len(found)} found)"
+        except MissingCredentials as exc:
+            source_status[name] = f"skipped (no credentials): {exc}"
         except Exception as exc:  # noqa: BLE001 - fail-soft per source
             source_status[name] = f"failed: {type(exc).__name__}: {exc}"
 
