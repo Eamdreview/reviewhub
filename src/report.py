@@ -190,6 +190,171 @@ def _action_plan(run: RunReport) -> str:
     return "\n".join(plan) if plan else "_No actions this week._"
 
 
+def _actionable(run: RunReport) -> list[Candidate]:
+    return [c for t in (1, 2, 3, 4) for c in run.tiers.get(t, [])]
+
+
+# --- Module 9: Executive Dashboard (top of report) --------------------------
+def _executive_dashboard(run: RunReport) -> str:
+    pool = _actionable(run)
+    intel = run.intel
+    if not pool:
+        return "## 🧭 Executive Dashboard\n_No qualifying products this week._"
+
+    def top(metric, fmt, reverse=True):
+        best = sorted(pool, key=metric, reverse=reverse)[0]
+        return f"{best.name} ({fmt(best)})"
+
+    roi = lambda c: (c.prediction or {}).get("roi_per_hour", 0)
+    conf = lambda c: (c.prediction or {}).get("confidence", 0)
+    revhi = lambda c: (c.prediction or {}).get("revenue_range", [0, 0])[1]
+    reviews = lambda c: c.classification.get("competition", {}).get("existing_reviews", 999)
+    slope = lambda c: c.signals.get("trends_slope", -9)
+
+    top_roi = ", ".join(f"{c.name} (${roi(c):g}/hr)" for c in
+                        sorted(pool, key=roi, reverse=True)[:3])
+    vow = intel.get("vendor_of_week")
+    now = intel.get("network_of_week")
+    hidden = run.tiers.get(4, [])
+
+    rows = [
+        ("💸 Top ROI Products", top_roi),
+        ("✅ Highest Confidence", top(conf, lambda c: f"{conf(c)}%")),
+        ("📈 Highest Revenue Prediction", top(revhi, lambda c: f"up to ${revhi(c)} (est.)")),
+        ("🟢 Lowest Competition", top(reviews, lambda c: f"{reviews(c)} reviews", reverse=False)),
+        ("🚀 Fastest Growing Trend", top(slope, lambda c: f"slope {slope(c):+.2f}")),
+        ("💎 Hidden Opportunity", hidden[0].name if hidden else "none this week"),
+        ("🏅 Vendor of the Week",
+         f"{vow['vendor']} (quality {vow['quality_score']}/100, est.)" if vow else "n/a"),
+        ("🌐 Affiliate Network of the Week",
+         f"{now['network']} (avg ROI ${now['avg_roi']:g}/hr, est.)" if now else "n/a"),
+    ]
+    body = "\n".join(f"| {k} | {v} |" for k, v in rows)
+    return ("## 🧭 Executive Dashboard\n"
+            "_Snapshot of the week (all figures Estimated)._\n\n"
+            "| Metric | Leader |\n|--------|--------|\n" + body)
+
+
+# --- Module 4: Launch Calendar ----------------------------------------------
+def _calendar_section(run: RunReport) -> str:
+    cal = run.intel.get("calendar") or {}
+    if not any(cal.get(k) for k in ("this_week", "next_week", "this_month", "post_launch")):
+        return ""
+    def fmt(entries, kind):
+        out = []
+        for e in entries:
+            if kind == "pre":
+                out.append(f"- **{e['name']}** — launches in {e['countdown']}d "
+                           f"({e['date']}) · {e['source']}")
+            else:
+                out.append(f"- **{e['name']}** — released {e['hours_ago']}h ago · {e['source']}")
+        return "\n".join(out) or "_none_"
+    parts = ["## 📅 Launch Calendar"]
+    if cal.get("this_week"):
+        parts.append("**This Week**\n" + fmt(cal["this_week"], "pre"))
+    if cal.get("next_week"):
+        parts.append("**Next Week**\n" + fmt(cal["next_week"], "pre"))
+    if cal.get("this_month"):
+        parts.append("**Later This Month**\n" + fmt(cal["this_month"], "pre"))
+    if cal.get("post_launch"):
+        parts.append("**Just Launched (post-launch opportunities)**\n"
+                     + fmt(cal["post_launch"], "post"))
+    return "\n\n".join(parts)
+
+
+# --- Module 2: Competition Tracker ------------------------------------------
+def _competition_section(run: RunReport) -> str:
+    alerts = run.intel.get("competition_alerts") or []
+    if not alerts:
+        return ("## 🕵️ Competition Tracker\n_Baselines recorded this week — "
+                "week-over-week competition trends appear from next week._")
+    return "## 🕵️ Competition Tracker\n" + "\n".join(f"- {a}" for a in alerts)
+
+
+# --- Module 6: Post-Launch Tracker ------------------------------------------
+def _post_launch_section(run: RunReport) -> str:
+    alerts = run.intel.get("post_launch_alerts") or []
+    if not alerts:
+        return ""
+    return "## 🔄 Post-Launch Tracker\n" + "\n".join(f"- {a}" for a in alerts)
+
+
+# --- Module 3: Vendor Intelligence ------------------------------------------
+def _vendor_section(run: RunReport) -> str:
+    vow = run.intel.get("vendor_of_week")
+    now = run.intel.get("network_of_week")
+    if not vow and not now:
+        return ""
+    parts = ["## 🏅 Vendor Intelligence"]
+    if vow:
+        parts.append(
+            f"**Vendor of the Week: {vow['vendor']}** — quality "
+            f"**{vow['quality_score']}/100** (Estimated). "
+            f"{vow['products_launched']} launch(es) seen, avg commission "
+            f"{vow['avg_commission']}%, {vow['recurring_offers']}% recurring, "
+            f"funnel {vow['avg_funnel_size']}, refund reputation "
+            f"{vow['refund_reputation']}.\n\n_{vow['explanation']}_")
+    if now:
+        parts.append(f"**Affiliate Network of the Week: {now['network']}** — "
+                     f"avg predicted ROI ${now['avg_roi']:g}/hr across "
+                     f"{now['products']} product(s) (Estimated).")
+    return "\n\n".join(parts)
+
+
+# --- Module 5: Revenue History Dashboard ------------------------------------
+def _revenue_history_section(run: RunReport) -> str:
+    rh = run.intel.get("revenue_history") or {}
+    if not rh.get("has_data"):
+        return ("## 💰 Revenue History Dashboard\n_No results logged yet. Log your "
+                "published-review outcomes with `python -m src.learning.cli add ...` "
+                "or `data/history/reviews.csv` to unlock revenue tracking._")
+    growth = rh.get("revenue_growth_pct")
+    growth_s = f"{growth:+.1f}%" if growth is not None else "n/a"
+    best, worst = rh.get("best_month"), rh.get("worst_month")
+    return ("## 💰 Revenue History Dashboard\n"
+            f"- Reviews published: **{rh['reviews_published']}** · Total sales: **{rh['total_sales']}**\n"
+            f"- Current-month revenue: **${rh['current_month_revenue']}** · Growth: **{growth_s}**\n"
+            f"- Avg commission: **${rh.get('avg_commission') or 'n/a'}** · "
+            f"Revenue/hour: **${rh.get('revenue_per_hour') or 'n/a'}**\n"
+            f"- Best month: **{best[0]} (${best[1]})** · Worst month: **{worst[0]} (${worst[1]})**"
+            if best and worst else "")
+
+
+# --- Module 1: Learning Engine insights -------------------------------------
+def _learning_section(run: RunReport) -> str:
+    li = run.intel.get("learning") or {}
+    if not li.get("review_count"):
+        return ("## 🧠 Learning Engine\n_No history yet — the engine starts learning "
+                "once you log real review results (never overwritten)._")
+    if not li.get("enough"):
+        return (f"## 🧠 Learning Engine\n_{li['review_count']} review(s) logged. "
+                f"Insights unlock at {config.LEARNING['min_reviews_for_insight']}._")
+    def top(d):
+        return max(d, key=d.get) if d else "n/a"
+    return ("## 🧠 Learning Engine — what your data says\n"
+            f"- Best category (avg revenue): **{top(li.get('avg_revenue_per_category', {}))}**\n"
+            f"- Best network: **{top(li.get('avg_revenue_per_network', {}))}**\n"
+            f"- Best review type: **{top(li.get('avg_revenue_per_review_type', {}))}**\n"
+            f"- Best publishing day: **{li.get('best_day') or 'n/a'}** · "
+            f"hour: **{li.get('best_hour') if li.get('best_hour') is not None else 'n/a'}**\n"
+            f"- Best traffic source: **{li.get('best_traffic_source') or 'n/a'}**\n"
+            f"- Avg conversion rate: **{li.get('avg_conversion_rate') or 'n/a'}** · "
+            f"Monthly improvement: **{li.get('monthly_improvement_pct') if li.get('monthly_improvement_pct') is not None else 'n/a'}%**\n"
+            "_Based on your logged results._")
+
+
+# --- Module 7: Personal AI Advisor (end of report) --------------------------
+def _advisor_section(run: RunReport) -> str:
+    adv = run.intel.get("advisor")
+    if not adv:
+        return "## 🎯 Personal AI Advisor\n_No qualifying product to recommend this week._"
+    reasons = "\n".join(f"- **{k}:** {v}" for k, v in adv["reasons"].items())
+    return ("## 🎯 Personal AI Advisor\n"
+            "**If you can only write ONE review this week:**\n\n"
+            f"### 👉 {adv['product']}\n\n{adv['summary']}\n\n"
+            f"**Why this one:**\n{reasons}")
+
+
 def _footer(run: RunReport) -> str:
     lines = []
     for src, status in run.source_status.items():
@@ -217,6 +382,7 @@ def build_markdown(run: RunReport) -> str:
 
     parts = [
         f"# {config.REPORT_TITLE}\n### Week of {run.date}\n\n{counts}\n",
+        _executive_dashboard(run),
         _priority_dashboard(run),
         "## 1. Executive Summary\n" + (run.executive_summary or "_n/a_"),
         "## 2. Market Overview\n" + (run.market_overview or "_n/a_"),
@@ -240,5 +406,15 @@ def build_markdown(run: RunReport) -> str:
     parts.append("## 6. Hidden Opportunities\n" + _hidden(run))
     parts.append("## 7. Products to Ignore\n" + _ignore(run))
     parts.append("## 8. Weekly Action Plan\n" + _action_plan(run))
+
+    # Intelligence modules (additive sections)
+    for section in (_calendar_section(run), _competition_section(run),
+                    _post_launch_section(run), _vendor_section(run),
+                    _revenue_history_section(run), _learning_section(run)):
+        if section:
+            parts.append(section)
+
+    # Module 7: the single recommendation, last.
+    parts.append("---\n" + _advisor_section(run))
     parts.append("---\n" + _footer(run))
     return "\n\n".join(parts)

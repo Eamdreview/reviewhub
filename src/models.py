@@ -81,3 +81,7 @@ class RunReport:
     tiers: dict[int, list[Candidate]] = field(default_factory=dict)
     source_status: dict[str, str] = field(default_factory=dict)   # source -> "ok" | "failed: ..."
     estimated_fields: list[str] = field(default_factory=list)
+    # Outputs of the intelligence modules (calendar, competition alerts, vendor
+    # intel, revenue history, learning insights, post-launch alerts, advisor,
+    # executive dashboard). Kept in one bag so modules stay additive.
+    intel: dict[str, Any] = field(default_factory=dict)

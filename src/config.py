@@ -173,6 +173,44 @@ CATEGORY_DEFAULT = {"demand": 1.0, "price": 37}
 # Hours multiplier for content types that take longer (e.g. video reviews).
 CATEGORY_HOURS_MODIFIER = {"video": 1.4}
 
+# ---------------------------------------------------------------------------
+# Persistence (Knowledge Base + Learning Engine). Committed to the repo so the
+# databases survive across weekly runs on ephemeral CI runners.
+# ---------------------------------------------------------------------------
+KNOWLEDGE_DB: str = "data/knowledge/knowledge.db"   # every product/vendor/launch/score/report
+HISTORY_DB: str = "data/history/history.db"         # your real published-review results
+LEARNING_CSV: str = "data/history/reviews.csv"      # optional CSV to import into history.db
+
+# --- Competition Tracker (Module 2) ---
+COMPETITION_TRACKER = {
+    "trend_flat_band": 1,            # +/- this many reviews counts as "flat"
+    "velocity_alert_per_week": 4,    # new reviews/week at/above this -> alert
+    "saturation_review_count": 15,   # reviews considered "saturated"
+}
+
+# --- Vendor Intelligence (Module 3) — Vendor Quality Score weights (sum 1.0) ---
+VENDOR_QUALITY_WEIGHTS = {
+    "trust": 0.35,        # avg vendor trust / trustpilot
+    "commission": 0.20,   # avg commission generosity
+    "recurring": 0.20,    # share of recurring offers
+    "funnel": 0.15,       # avg funnel depth (upsells)
+    "frequency": 0.10,    # launch cadence (active vendor)
+}
+
+# --- Launch Calendar (Module 4) ---
+CALENDAR = {"this_week_days": 7, "next_week_days": 14, "this_month_days": 31}
+
+# --- Post Launch Tracker (Module 6) ---
+POST_LAUNCH = {
+    "demand_decline_slope": -0.15,   # trends slope below this = declining
+    "competition_jump": 3,           # +this many reviews vs last week = increase
+}
+
+# --- Learning Engine (Module 1) — revenue attribution defaults (Estimated) ---
+LEARNING = {
+    "min_reviews_for_insight": 3,    # need at least this many to report an average
+}
+
 # Friendly source names for the report's run-notes footer.
 DISPLAY_NAMES: dict[str, str] = {
     "muncheye": "Muncheye",
