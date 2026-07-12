@@ -100,12 +100,18 @@ def collect() -> list[Candidate]:
         launch_dt = util.try_parse_date(item["date"]) if item["date"] else None
         timing = util.parse_launch_timing(launch_dt)
 
+        # Affiliate-contest signal (JV prizes drive promotion) — best-effort.
+        vendor_text = item["vendor"].lower()
+        contest = any(w in vendor_text for w in
+                      ("contest", "prize", "leaderboard", "jv comp", "in prizes"))
+
         out.append(Candidate(
             name=name,
             source="muncheye",
             url=item["url"] if item["url"].startswith("http") else _URL.rstrip("/") + item["url"],
             category="AI / SaaS launch",
             description=f"Upcoming launch (via Muncheye): {item['vendor']}",
+            signals={"affiliate_contest": contest} if contest else {},
             **timing,
         ))
     return out

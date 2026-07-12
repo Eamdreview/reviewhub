@@ -20,7 +20,7 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import classify, collect, config, deliver, report, score, triage, write
+from . import classify, collect, config, deliver, report, revenue, score, triage, write
 from .enrich import enrich_all
 from .models import RunReport
 
@@ -73,8 +73,11 @@ def run(dry_run: bool = False) -> Path:
              len(buckets[4]), len(buckets[0]))
     _dump("classified", candidates)
 
-    # [5] ANALYZE (quality model — intelligence briefs for Tier 1-3 + Watchlist)
+    # [4c] PREDICT — Revenue Prediction Engine (transparent, per qualified product)
     actionable = [c for t in config.TIER_ORDER for c in buckets[t]]
+    revenue.predict_all(actionable)
+
+    # [5] ANALYZE (quality model — intelligence briefs for Tier 1-3 + Watchlist)
     write.write_all(actionable, dry_run=dry_run)
 
     # [5b] NARRATIVES — Executive Summary + Market Overview (report-level)

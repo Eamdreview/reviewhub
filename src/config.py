@@ -118,6 +118,61 @@ TIER_LABEL = {
 # Order tiers appear in the report (Watchlist after Tier 3, before Ignore).
 TIER_ORDER = [1, 2, 3, 4]
 
+# ---------------------------------------------------------------------------
+# Revenue Prediction Engine — a TRANSPARENT, deterministic model.
+# Nothing here is random. Every coefficient is documented and tunable, and each
+# prediction reports the exact factors and values it used. All outputs are
+# estimates and must be labelled as such in the report.
+# ---------------------------------------------------------------------------
+REVENUE = {
+    # Baseline 30-day buyers an *average* review in this niche can influence
+    # when every factor is neutral. The anchor of the whole model. Deliberately
+    # conservative — tune upward once you have real conversion data.
+    "base_reach": 20,
+
+    # The product of all sales multipliers is clamped to this band so no single
+    # run produces an absurd number — keeps the model bounded and honest.
+    "multiplier_clamp": (0.2, 3.0),
+    "sales_clamp": (2, 200),
+
+    # Effort (hours) to research + write + rank a review, by competition level.
+    "hours_by_competition": {"low": 5.0, "medium": 9.0, "high": 15.0},
+
+    # ROI Score anchor: revenue-per-hour that maps to a 100 ROI Score.
+    "roi_target_per_hour": 150.0,
+
+    # Assumed retention (months) for recurring products, for LTV context only.
+    "recurring_ltv_months": 6,
+
+    # Opportunity window (days to publish before saturation) by (is_launch, comp).
+    "window_days": {
+        ("launch", "low"): 14, ("launch", "medium"): 10, ("launch", "high"): 5,
+        ("evergreen", "low"): 90, ("evergreen", "medium"): 45, ("evergreen", "high"): 14,
+    },
+}
+
+# Historical-similar-products proxy: per-category demand/monetization benchmark
+# and typical price. Substring-matched against a product's category. This is the
+# transparent stand-in for "historical similar products" — documented priors,
+# not a hidden guess. Tune from your own results over time.
+CATEGORY_BENCHMARKS: dict[str, dict] = {
+    # key substring -> {demand: multiplier ~0.5-1.3, price: typical USD}
+    "ai writing":  {"demand": 1.25, "price": 39},
+    "ai video":    {"demand": 1.15, "price": 49},
+    "automation":  {"demand": 1.20, "price": 47},
+    "ai social":   {"demand": 1.10, "price": 37},
+    "seo":         {"demand": 1.15, "price": 47},
+    "email":       {"demand": 1.05, "price": 39},
+    "crm":         {"demand": 1.00, "price": 49},
+    "chatbot":     {"demand": 1.10, "price": 37},
+    "design":      {"demand": 1.05, "price": 35},
+    "plr":         {"demand": 0.50, "price": 12},
+}
+CATEGORY_DEFAULT = {"demand": 1.0, "price": 37}
+
+# Hours multiplier for content types that take longer (e.g. video reviews).
+CATEGORY_HOURS_MODIFIER = {"video": 1.4}
+
 # Friendly source names for the report's run-notes footer.
 DISPLAY_NAMES: dict[str, str] = {
     "muncheye": "Muncheye",

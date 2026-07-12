@@ -51,8 +51,14 @@ class Candidate:
 
     # --- classification (Classify stage — Priority Opportunity Engine) ---
     # {tier: int, priority: str, competition_level: str, can_rank: str,
-    #  ignore_reasons: list[str], competitor: dict, article: dict}
+    #  ignore_reasons: list[str], competition: dict, risks: list, ...}
     classification: dict[str, Any] = field(default_factory=dict)
+
+    # --- revenue prediction (Revenue Prediction Engine) ---
+    # {expected_sales, expected_commission, revenue_range, confidence, roi_score,
+    #  roi_per_hour, hours, window_days, best_publish_date,
+    #  competition_growth_date, factors: [...], explanation: str}
+    prediction: dict[str, Any] = field(default_factory=dict)
 
     # --- writeup (Write stage, quality model) ---
     # The rendered report sections keyed by section name.

@@ -30,6 +30,70 @@ def _all_qualified(run: RunReport) -> list[Candidate]:
     return sorted(out, key=lambda c: c.total_score, reverse=True)
 
 
+def _actionable_by_roi(run: RunReport) -> list[Candidate]:
+    """All non-ignored products, ranked by Expected ROI (revenue/hour)."""
+    out = [c for t in (1, 2, 3, 4) for c in run.tiers.get(t, [])]
+    return sorted(out, key=lambda c: c.prediction.get("roi_per_hour", 0), reverse=True)
+
+
+# --- Priority Dashboard (ranks by Expected ROI) -----------------------------
+def _priority_dashboard(run: RunReport) -> str:
+    ranked = _actionable_by_roi(run)
+    if not ranked:
+        return "## ⭐ Priority Dashboard\n_No qualifying products this week._"
+
+    pick = ranked[0]
+    pp = pick.prediction
+    head = (
+        "## ⭐ Priority Dashboard\n"
+        "_Ranked by **Expected ROI** (estimated 30-day revenue ÷ hours of "
+        "effort) — all figures are estimates._\n\n"
+        f"> 🏆 **Write this one first:** **{pick.name}** — est. "
+        f"${pp['revenue_range'][0]}–${pp['revenue_range'][1]} in 30 days for "
+        f"~{pp['hours']:g}h (ROI ≈ ${pp['roi_per_hour']:g}/hr, "
+        f"confidence {pp['confidence']}%). Best publish by "
+        f"{pp['best_publish_date']}.\n"
+    )
+    lines = [
+        "\n| Rank | Product | Est. Revenue (30d) | ROI $/hr | Hours | Confidence | Window | Best Publish | Action |",
+        "|-----:|---------|--------------------|---------:|------:|-----------:|-------:|--------------|--------|",
+    ]
+    for i, c in enumerate(ranked, 1):
+        p = c.prediction
+        lines.append(
+            f"| {i} | {c.name} | ${p['revenue_range'][0]}–${p['revenue_range'][1]} (est.) | "
+            f"${p['roi_per_hour']:g} | {p['hours']:g} | {p['confidence']}% | "
+            f"{p['window_days']}d | {p['best_publish_date']} | "
+            f"{c.classification.get('priority','')} |")
+    return head + "\n".join(lines)
+
+
+# --- Per-product Revenue Prediction block -----------------------------------
+def _prediction_block(c: Candidate) -> str:
+    p = c.prediction
+    if not p:
+        return ""
+    factors = "\n".join(
+        f"  - {f['factor']}: {f['value']} → ×{f['multiplier']:g}"
+        for f in p.get("factors", []))
+    rec = " · recurring" if p.get("recurring") else ""
+    return (
+        "**💰 Revenue Prediction (est. — not a guarantee)**\n"
+        f"- Expected sales (30d): **{p['expected_sales']}** "
+        f"(range {p['expected_sales_range'][0]}–{p['expected_sales_range'][1]})\n"
+        f"- Expected commission/buyer: **${p['expected_commission']:g}**{rec} "
+        f"({p['commission_note']})\n"
+        f"- Estimated revenue range (30d): **${p['revenue_range'][0]}–${p['revenue_range'][1]}**\n"
+        f"- Confidence: **{p['confidence']}%** · ROI: **${p['roi_per_hour']:g}/hr** "
+        f"(score {p['roi_score']}/100)\n"
+        f"- Hours required: **{p['hours']:g}h** · Opportunity window: **{p['window_days']} days**\n"
+        f"- Best publish date: **{p['best_publish_date']}** · "
+        f"Competition likely grows by: **{p['competition_growth_date']}**\n"
+        f"- Factors used:\n{factors}\n\n"
+        f"  _{p['explanation']}_\n"
+    )
+
+
 # --- 3. Top Opportunities (featured briefs) --------------------------------
 def _opportunity_block(idx: int, c: Candidate) -> str:
     cls = c.classification
@@ -42,7 +106,8 @@ def _opportunity_block(idx: int, c: Candidate) -> str:
         f"### {idx}. {c.name} — {c.total_score:g}/100 · {cls.get('tier_label','').split('—')[0].strip()}{launch}\n"
         f"**Priority:** {cls.get('priority','')} · **Source:** {c.source} · [listing]({c.url})\n\n"
         f"**Score breakdown:** {_breakdown_line(c)}\n\n"
-        f"{c.brief.get('body', '_(no brief)_')}\n"
+        f"{c.brief.get('body', '_(no brief)_')}\n\n"
+        f"{_prediction_block(c)}"
     )
 
 
@@ -152,6 +217,7 @@ def build_markdown(run: RunReport) -> str:
 
     parts = [
         f"# {config.REPORT_TITLE}\n### Week of {run.date}\n\n{counts}\n",
+        _priority_dashboard(run),
         "## 1. Executive Summary\n" + (run.executive_summary or "_n/a_"),
         "## 2. Market Overview\n" + (run.market_overview or "_n/a_"),
     ]
