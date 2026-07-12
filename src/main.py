@@ -44,7 +44,7 @@ def _today() -> str:
 
 def run(dry_run: bool = False) -> Path:
     date = _today()
-    log.info("=== Daily Affiliate Research — %s (dry_run=%s) ===", date, dry_run)
+    log.info("=== Weekly Affiliate Intelligence — %s (dry_run=%s) ===", date, dry_run)
 
     # [1] COLLECT
     candidates, source_status = collect.collect_all(dry_run=dry_run)
@@ -73,23 +73,22 @@ def run(dry_run: bool = False) -> Path:
              len(buckets[4]), len(buckets[0]))
     _dump("classified", candidates)
 
-    # [5] WRITE (quality model — briefs for Tier 1-3 + Watchlist, not Ignore)
+    # [5] ANALYZE (quality model — intelligence briefs for Tier 1-3 + Watchlist)
     actionable = [c for t in config.TIER_ORDER for c in buckets[t]]
     write.write_all(actionable, dry_run=dry_run)
 
-    lead = (actionable or [None])[0]
-    headline = (
-        f"{lead.name} — {lead.classification['priority']} "
-        f"({lead.total_score:g}/100)." if lead else ""
-    )
+    # [5b] NARRATIVES — Executive Summary + Market Overview (report-level)
+    summary, overview = write.narratives(buckets, scanned, dry_run=dry_run)
+
     run_report = RunReport(
         date=date,
         scanned=scanned,
-        headline=headline,
+        executive_summary=summary,
+        market_overview=overview,
         tiers=buckets,
         source_status=source_status,
         estimated_fields=["SEO difficulty", "evergreen potential",
-                          "launch bonuses", "earning potential"],
+                          "revenue potential", "earning potential"],
     )
 
     # [6] DELIVER
@@ -131,7 +130,7 @@ def _llm_test() -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Daily Affiliate Research Assistant")
+    parser = argparse.ArgumentParser(description="Weekly Affiliate Intelligence Report")
     parser.add_argument("--dry-run", action="store_true",
                         help="Run offline on fake data (no API keys needed)")
     parser.add_argument("--test-email", action="store_true",

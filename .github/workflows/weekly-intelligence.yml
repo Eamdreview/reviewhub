@@ -1,9 +1,9 @@
-name: Daily Affiliate Research
+name: Weekly Affiliate Intelligence
 
 on:
   schedule:
-    # 05:00 UTC = 07:00 Africa/Cairo (UTC+2). Runs every morning.
-    - cron: "0 5 * * *"
+    # 05:00 UTC Friday = 07:00 Africa/Cairo (UTC+2). Runs once a week.
+    - cron: "0 5 * * 5"
   workflow_dispatch:        # lets you trigger a run manually from the Actions tab
     inputs:
       dry_run:
@@ -12,7 +12,7 @@ on:
         default: false
 
 permissions:
-  contents: write           # needed to commit the daily report back to the repo
+  contents: write           # needed to commit the weekly report back to the repo
 
 jobs:
   research:
@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run research pipeline
+      - name: Run intelligence pipeline
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
@@ -48,7 +48,7 @@ jobs:
             python -m src.main
           fi
 
-      - name: Commit the daily report
+      - name: Commit the weekly report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -56,6 +56,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new report to commit."
           else
-            git commit -m "Daily affiliate research report ($(date -u +%Y-%m-%d))"
+            git commit -m "Weekly affiliate intelligence report ($(date -u +%Y-%m-%d))"
             git push
           fi

@@ -1,12 +1,12 @@
-# SETUP.md — AI Daily Affiliate Research Assistant
+# SETUP.md — Weekly Affiliate Intelligence Report
 
-This guide walks you through creating every account and API key the assistant
-needs, and storing each one in GitHub Secrets so the daily automation can use
+This guide walks you through creating every account and API key the system
+needs, and storing each one in GitHub Secrets so the weekly automation can use
 them securely.
 
 **You do not need to touch any code.** The system reads every key from GitHub
 Secrets at runtime. Create the keys below, paste them into GitHub, and the
-7:00 AM (Cairo) run will pick them up automatically.
+weekly run (**Fridays 07:00 Cairo**) will pick them up automatically.
 
 ---
 
@@ -255,7 +255,7 @@ JSON with `items` = working.
 
 ## 6. Gmail App Password
 
-**Why it's needed:** This lets the automation send your daily report to your
+**Why it's needed:** This lets the automation send your weekly report to your
 inbox via Gmail's SMTP server. An **App Password** is a special 16-character
 password for programs — safer than using your real password, and it's the only
 way that works with 2-Step Verification on.
@@ -326,7 +326,7 @@ uses exactly these names.
 
 > The system is **fail-soft**: if an optional data source's key is missing, that
 > signal is skipped and noted in the report rather than crashing the run. But
-> the 9 above are all recommended for a complete daily report.
+> the 9 above are all recommended for a complete weekly report.
 
 ---
 
@@ -336,7 +336,7 @@ Once every secret is added, you don't have to wait for 7 AM. You can trigger a
 run manually to confirm the whole chain works:
 
 1. Go to your repo → **Actions** tab.
-2. Select the **Daily Affiliate Research** workflow.
+2. Select the **Weekly Affiliate Intelligence** workflow.
 3. Click **Run workflow → Run workflow**.
 4. Watch the run. On success:
    - A new file appears in `reports/` (e.g. `reports/2026-07-08.md`).

@@ -118,6 +118,21 @@ TIER_LABEL = {
 # Order tiers appear in the report (Watchlist after Tier 3, before Ignore).
 TIER_ORDER = [1, 2, 3, 4]
 
+# Friendly source names for the report's run-notes footer.
+DISPLAY_NAMES: dict[str, str] = {
+    "muncheye": "Muncheye",
+    "producthunt": "Product Hunt",
+    "warriorplus": "WarriorPlus",
+    "jvzoo": "JVZoo",
+    "digistore24": "Digistore24",
+    "google_trends": "Google Trends",
+    "reddit": "Reddit",
+    "youtube": "YouTube",
+    "google_cse": "Google Custom Search",
+    "trustpilot": "Trustpilot",
+    "fake": "Sample data",
+}
+
 # We never pad the report. Show only products that clear the floor, up to this
 # many. If fewer qualify, show fewer.
 MAX_PRODUCTS: int = 10
@@ -186,7 +201,8 @@ TRIAGE_BATCH: int = 10
 # Delivery
 # ---------------------------------------------------------------------------
 TIMEZONE: str = "Africa/Cairo"          # your local timezone (UTC+2)
-REPORT_TITLE: str = "🎯 Daily Affiliate Research"
+# Weekly intelligence report — runs Fridays 07:00 Cairo (05:00 UTC).
+REPORT_TITLE: str = "📊 Weekly Affiliate Intelligence Report"
 SMTP_HOST: str = "smtp.gmail.com"
 SMTP_PORT: int = 587
 

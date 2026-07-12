@@ -1,16 +1,16 @@
-"""Write stage — the quality model turns data into each product's brief.
+"""Analysis stage — the quality model writes INTELLIGENCE, not content.
 
-Produces the full per-product body (every section below the score line). When
-an OpenRouter key is available the high-quality model writes it, grounded
-strictly in the provided data; otherwise a deterministic offline stub composes
-a basic brief from the same data so the pipeline runs without a key.
+Produces each featured product's decision brief (7 sections) and the two
+report-level narratives (Executive Summary, Market Overview). The goal is to
+help decide WHAT to review — never to write the review, articles, titles,
+keywords, or social posts.
 
-Sections (all required):
-  Research:   Product Summary, Why It's Worth Reviewing, Buyer Intent,
-              SEO Opportunity, Competitor Analysis, User Sentiment
-  Money:      Affiliate Opportunity (+ Profitability Score X/10)
-  Strategy:   Review Strategy, Social Media Opportunities, Competitive Advantage
-  Verdict:    Final Recommendation
+Per-product sections:
+  Product Analysis · SEO Opportunity · Competition Analysis ·
+  Affiliate Opportunity · Revenue Potential · Risks · Recommended Action
+
+When no OpenRouter key is present, deterministic offline stubs stand in so the
+pipeline still produces a full report.
 """
 
 from __future__ import annotations
@@ -18,51 +18,27 @@ from __future__ import annotations
 from . import llm
 from .models import Candidate
 
-_WRITEUP_SYSTEM = (
-    "You are an expert affiliate-marketing research analyst writing a daily "
-    "brief for a reviewer of AI/SaaS/automation tools, audience: US "
-    "entrepreneurs, freelancers, agencies, marketers. Their #1 goal is "
-    "maximizing affiliate commissions.\n\n"
+_ANALYST_SYSTEM = (
+    "You are a senior affiliate-marketing intelligence analyst. Your reader "
+    "reviews AI/SaaS/automation tools for US entrepreneurs and marketers and "
+    "wants to decide WHICH products are worth reviewing to maximize affiliate "
+    "commissions. You produce decision intelligence ONLY — never write the "
+    "review, article titles, keywords, or social posts.\n\n"
     "STRICT RULES:\n"
     "1. Use ONLY the data provided. Never invent stats, reviews, or numbers.\n"
     "2. If a signal is missing or estimated, say so and tag it '(est.)'.\n"
-    "3. Fill every section. Keep each 2-4 tight sentences or short bullets.\n"
-    "4. End with a decisive call and a SPECIFIC, actionable angle.\n"
+    "3. Be concise and decisive — 2-4 sentences or tight bullets per section.\n"
 )
 
-_WRITEUP_TEMPLATE = """Write the brief for this product using EXACTLY these Markdown sections and headings:
+_ANALYST_TEMPLATE = """Write an intelligence brief for this product using EXACTLY these Markdown sections:
 
-**Product Summary**
-**Why It's Worth Reviewing**
-**Buyer Intent**
-**SEO Opportunity**
-**Competitor Analysis**
-**User Sentiment**
-
-**💰 Affiliate Opportunity**
-- Upsells / funnel
-- Recurring commissions
-- Launch bonuses (est.)
-- Estimated earning potential (est.)
-- **Profitability Score: {profit_10}/10**
-
-**✍️ Review Strategy**
-- Best SEO title idea
-- Primary keyword
-- Suggested review angle
-- Article type: Review / Comparison / Alternatives / Best Tools
-
-**📣 Social Media Opportunities**
-- LinkedIn article angle
-- Medium article angle
-- Pinterest idea
-- X (Twitter) discussion angle
-
-**🏆 Competitive Advantage**
-- What existing reviewers are missing
-- How my review becomes more valuable
-
-**✅ Final Recommendation**
+**Product Analysis** — what it is, category, positioning, momentum.
+**SEO Opportunity** — how hard is page 1; is there room to rank? (est.)
+**Competition Analysis** — how many reviews exist and where; how saturated.
+**Affiliate Opportunity** — commission, recurring, upsells/funnel quality.
+**Revenue Potential** — {rev_level} (est.): {rev_note}. Justify briefly.
+**Risks** — the concrete risks to weigh.
+**Recommended Action** — one clear decision: Review now / Review this week / Watch / Ignore, plus one sentence why.
 
 --- PRODUCT DATA ---
 Name: {name}
@@ -72,77 +48,59 @@ Price: {price}
 Base commission: {commission}
 Recurring: {recurring}
 Upsells: {upsells}
-URL: {url}
-Description: {description}
-Signals: {signals}
+Launch: {launch_status} {launch_date}
+Priority tier: {tier_label}
 Computed sub-scores (0-100): {scores}
+Competition: {competition}
+Flagged risks: {risks}
+Signals: {signals}
 """
 
 
-def _profit_10(c: Candidate) -> int:
-    return max(1, round(float(c.scores.get("profitability", 0)) / 10))
+def _visible_signals(c: Candidate) -> dict:
+    return {k: v for k, v in c.signals.items() if not k.startswith("_")}
 
 
 def _llm_brief(c: Candidate) -> str:
-    user = _WRITEUP_TEMPLATE.format(
-        profit_10=_profit_10(c), name=c.name, source=c.source,
-        category=c.category, price=c.price, commission=c.base_commission,
-        recurring=c.recurring, upsells=c.upsells, url=c.url,
-        description=c.description, signals=c.signals, scores=c.scores,
+    cls = c.classification
+    rev = cls.get("revenue_potential", {})
+    user = _ANALYST_TEMPLATE.format(
+        rev_level=rev.get("level", "Unknown"), rev_note=rev.get("note", ""),
+        name=c.name, source=c.source, category=c.category, price=c.price,
+        commission=c.base_commission, recurring=c.recurring, upsells=c.upsells,
+        launch_status=c.launch_status, launch_date=c.launch_date,
+        tier_label=cls.get("tier_label", ""), scores=c.scores,
+        competition=cls.get("competition", {}), risks=cls.get("risks", []),
+        signals=_visible_signals(c),
     )
-    return llm.writeup(_WRITEUP_SYSTEM, user)
+    return llm.writeup(_ANALYST_SYSTEM, user)
 
 
 def _stub_brief(c: Candidate) -> str:
-    """Offline brief composed from data (no LLM). Labelled as a stub."""
     s = c.signals
-    yt = s.get("youtube_count", 0)
+    cls = c.classification
+    comp = cls.get("competition", {})
+    rev = cls.get("revenue_potential", {})
+    risks = "\n".join(f"- {r}" for r in cls.get("risks", []))
     domains = ", ".join(s.get("cse_top_domains", [])) or "no page-1 data"
-    return f"""**Product Summary** — {c.name} is a {c.category} product from {c.source} priced at {c.price}. {c.description}
+    return f"""**Product Analysis** — {c.name} ({c.category}, {c.launch_status}) from {c.source} at {c.price or 'n/a'}. {c.description} Buying intent {c.scores.get('buying_intent')}/100.
 
-**Why It's Worth Reviewing** — Strong measured signals: intent {c.scores.get('buying_intent')}, demand {c.scores.get('search_demand')}, profitability {c.scores.get('profitability')}.
+**SEO Opportunity** — SEO score {c.scores.get('seo_opportunity')}/100 (higher = more room). Page-1: {domains}. *(est.)*
 
-**Buyer Intent** — {yt} review video(s) and {s.get('reddit_mentions', 0)} Reddit mention(s) indicate active purchase research.
+**Competition Analysis** — {comp.get('existing_reviews', 0)} existing review(s); competition **{comp.get('competition_level', 'unknown')}**. {comp.get('can_rank', '')}
 
-**SEO Opportunity** — Page-1 currently: {domains}. SEO score {c.scores.get('seo_opportunity')}/100 (higher = more room). *(est.)*
+**Affiliate Opportunity** — Commission {c.base_commission or 'n/a'}; recurring: {'yes' if c.recurring else 'no'}; funnel: {c.upsells or 'n/a'}. Profitability {c.scores.get('profitability')}/100.
 
-**Competitor Analysis** — {yt} existing review video(s); competition proxy from YouTube + search.
+**Revenue Potential** — **{rev.get('level', 'Unknown')}** (est.) — {rev.get('note', '')}.
 
-**User Sentiment** — Reddit sentiment {s.get('reddit_sentiment')}, Trustpilot {s.get('trustpilot_rating') or 'n/a'}.
+**Risks**
+{risks}
 
-**💰 Affiliate Opportunity**
-- Upsells / funnel: {c.upsells or 'n/a'}
-- Recurring commissions: {'yes' if c.recurring else 'no'}
-- Launch bonuses (est.): n/a — no structured data
-- Estimated earning potential (est.): derived from {c.base_commission} + funnel
-- **Profitability Score: {_profit_10(c)}/10**
-
-**✍️ Review Strategy**
-- Best SEO title idea: "{c.name} Review ({2026}): Is It Worth It?"
-- Primary keyword: {c.name.lower()} review
-- Suggested review angle: honest hands-on review for {c.category}
-- Article type: Review
-
-**📣 Social Media Opportunities**
-- LinkedIn: how {c.name} saves time for small teams
-- Medium: deep-dive review with pros/cons
-- Pinterest: "{c.category} tools 2026" pin
-- X: thread on {c.name} vs alternatives
-
-**🏆 Competitive Advantage**
-- What reviewers miss: real ROI / funnel cost breakdown
-- How mine wins: hands-on data + honest pros/cons
-
-**✅ Final Recommendation** — Offline stub brief; a full analysis is written by the quality model once OPENROUTER_API_KEY is set.
-"""
+**Recommended Action** — {cls.get('priority', '')}."""
 
 
 def write_all(candidates: list[Candidate], dry_run: bool = False) -> list[Candidate]:
-    """Write a full brief for every non-ignored (Tier 1-3) product.
-
-    Ignored products get no brief — they only appear on the Ignore list with
-    their rejection reasons, so we never spend the quality model on them.
-    """
+    """Write an intelligence brief for every non-ignored product."""
     use_llm = llm.available() and not dry_run
     for c in candidates:
         if c.classification.get("tier", 0) == 0:
@@ -153,3 +111,59 @@ def write_all(candidates: list[Candidate], dry_run: bool = False) -> list[Candid
             body = _stub_brief(c)
         c.brief = {"body": body}
     return candidates
+
+
+# ---------------------------------------------------------------------------
+# Report-level narratives
+# ---------------------------------------------------------------------------
+_SUMMARY_SYSTEM = (
+    "You are a senior affiliate-marketing intelligence analyst writing the "
+    "opening of a weekly report. Be crisp, factual, and decision-oriented. "
+    "Use ONLY the figures provided; do not invent products or numbers."
+)
+
+
+def _week_facts(run_tiers: dict, scanned: int) -> str:
+    def names(t):
+        return ", ".join(c.name for c in run_tiers.get(t, [])[:8]) or "none"
+    cats: dict[str, int] = {}
+    for t in (1, 2, 3, 4):
+        for c in run_tiers.get(t, []):
+            cats[c.category] = cats.get(c.category, 0) + 1
+    top_cats = ", ".join(f"{k} ({v})" for k, v in
+                         sorted(cats.items(), key=lambda x: -x[1])[:5]) or "n/a"
+    return (
+        f"Scanned this week: {scanned}\n"
+        f"Tier 1 (review now): {names(1)}\n"
+        f"Tier 2 (this week): {names(2)}\n"
+        f"Tier 3 (evergreen): {names(3)}\n"
+        f"Watchlist: {names(4)}\n"
+        f"Ignored: {len(run_tiers.get(0, []))}\n"
+        f"Category spread: {top_cats}"
+    )
+
+
+def narratives(run_tiers: dict, scanned: int, dry_run: bool = False) -> tuple[str, str]:
+    """Return (executive_summary, market_overview)."""
+    facts = _week_facts(run_tiers, scanned)
+    if not (llm.available() and not dry_run):
+        t1, t2 = len(run_tiers.get(1, [])), len(run_tiers.get(2, []))
+        summary = (f"This week scanned {scanned} products: {t1} immediate "
+                   f"opportunities (Tier 1), {t2} strong (Tier 2). See the "
+                   f"ranking and action plan below.")
+        overview = "Market overview (offline stub). " + facts.replace("\n", " · ")
+        return summary, overview
+    try:
+        summary = llm.writeup(
+            _SUMMARY_SYSTEM,
+            "Write a 3-4 sentence Executive Summary for this week's affiliate "
+            "intelligence report, based only on these facts:\n" + facts)
+        overview = llm.writeup(
+            _SUMMARY_SYSTEM,
+            "Write a short Market Overview (4-6 sentences) on the week's themes "
+            "(categories, demand direction, notable launches) from these facts "
+            "only:\n" + facts)
+        return summary, overview
+    except llm.LLMError:
+        return ("Executive summary unavailable (LLM error).",
+                "Market overview unavailable (LLM error).")
