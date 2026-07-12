@@ -128,10 +128,18 @@ def _action_plan(run: RunReport) -> str:
 def _footer(run: RunReport) -> str:
     lines = []
     for src, status in run.source_status.items():
-        icon = "✅" if status.startswith("ok") else "⏭️" if status.startswith("skipped") else "⚠️"
-        lines.append(f"- {icon} {src}: {status}")
+        name = config.DISPLAY_NAMES.get(src, src)
+        if status.startswith("skipped (no credentials)"):
+            icon, text = "⏭️", "Skipped (No API configured)"
+        elif status.startswith("skipped"):
+            icon, text = "⏭️", "Skipped " + status[len("skipped"):].strip()
+        elif status.startswith("ok"):
+            icon, text = "✅", status
+        else:
+            icon, text = "⚠️", status
+        lines.append(f"- {icon} {name}: {text}")
     estimated = ", ".join(run.estimated_fields) or "none"
-    return ("### ⚙️ Run notes\n"
+    return ("### ⚙️ Data Sources\n"
             f"- Estimated (not measured): {estimated}\n" + "\n".join(lines))
 
 

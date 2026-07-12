@@ -118,6 +118,21 @@ TIER_LABEL = {
 # Order tiers appear in the report (Watchlist after Tier 3, before Ignore).
 TIER_ORDER = [1, 2, 3, 4]
 
+# Friendly source names for the report's run-notes footer.
+DISPLAY_NAMES: dict[str, str] = {
+    "muncheye": "Muncheye",
+    "producthunt": "Product Hunt",
+    "warriorplus": "WarriorPlus",
+    "jvzoo": "JVZoo",
+    "digistore24": "Digistore24",
+    "google_trends": "Google Trends",
+    "reddit": "Reddit",
+    "youtube": "YouTube",
+    "google_cse": "Google Custom Search",
+    "trustpilot": "Trustpilot",
+    "fake": "Sample data",
+}
+
 # We never pad the report. Show only products that clear the floor, up to this
 # many. If fewer qualify, show fewer.
 MAX_PRODUCTS: int = 10
