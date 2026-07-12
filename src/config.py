@@ -213,6 +213,7 @@ LEARNING = {
 
 # Friendly source names for the report's run-notes footer.
 DISPLAY_NAMES: dict[str, str] = {
+    "hackernews": "Hacker News",
     "muncheye": "Muncheye",
     "producthunt": "Product Hunt",
     "warriorplus": "WarriorPlus",
@@ -254,6 +255,7 @@ INTENT_KEYWORDS: list[str] = [
 # ---------------------------------------------------------------------------
 SOURCES: dict[str, bool] = {
     # Discovery (Collect stage)
+    "hackernews": True,      # keyless fallback: never-empty feed of new AI/SaaS tools
     "muncheye": True,        # launch calendar: WarriorPlus/JVZoo pre-launch dates
     "producthunt": True,     # includes upcoming/ship pages for pre-launch
     "jvzoo": True,
