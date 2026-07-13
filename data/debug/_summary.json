@@ -10,7 +10,7 @@
     "rejected": 19,
     "affiliate": 23,
     "yield": 55,
-    "secs": 0.77,
+    "secs": 2.49,
     "reliability": 100,
     "target": 5,
     "reason": "GitHub repository only (17)"
@@ -26,7 +26,7 @@
     "rejected": 10,
     "affiliate": 10,
     "yield": 50,
-    "secs": 14.21,
+    "secs": 10.24,
     "reliability": 100,
     "target": 5,
     "reason": "library/framework/non-product repo (6)"
@@ -58,7 +58,7 @@
     "rejected": 0,
     "affiliate": 39,
     "yield": 100,
-    "secs": 0.39,
+    "secs": 0.36,
     "reliability": 100,
     "target": 0,
     "reason": ""
@@ -74,7 +74,7 @@
     "rejected": 1,
     "affiliate": 36,
     "yield": 97,
-    "secs": 2.34,
+    "secs": 2.25,
     "reliability": 100,
     "target": 10,
     "reason": "news/opinion/funding wording (1)"
@@ -90,7 +90,7 @@
     "rejected": 1,
     "affiliate": 265,
     "yield": 100,
-    "secs": 14.63,
+    "secs": 13.55,
     "reliability": 100,
     "target": 10,
     "reason": "news/opinion/funding wording (1)"
@@ -130,16 +130,16 @@
   {
     "source": "JVZoo",
     "http": "200",
-    "status": "EMPTY",
+    "status": "OK",
     "encoding": "none",
     "decoded": "Yes",
-    "found": 0,
-    "qualified": 0,
+    "found": 15,
+    "qualified": 15,
     "rejected": 0,
-    "affiliate": 0,
-    "yield": 0,
-    "secs": 32.77,
-    "reliability": 50,
+    "affiliate": 15,
+    "yield": 100,
+    "secs": 37.13,
+    "reliability": 100,
     "target": 5,
     "reason": ""
   },
