@@ -41,6 +41,7 @@ jobs:
           GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             python -m src.main --dry-run

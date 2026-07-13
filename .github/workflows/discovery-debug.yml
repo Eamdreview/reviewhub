@@ -1,9 +1,17 @@
 name: Discovery Debug
 
-# Manually-triggered harness that runs every discovery collector (no enrichment),
-# saves raw output to data/debug/, and prints a summary table in the logs.
+# Runs every discovery collector (no enrichment), saves raw output to
+# data/debug/, and prints a summary table. Triggered manually OR automatically
+# on any push to main that changes code (so merging a PR regenerates the HTML
+# without needing the Actions UI). Ignores its own data/debug + report commits
+# to avoid loops.
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "data/debug/**"
+      - "reports/**"
 
 permissions:
   contents: write
@@ -27,6 +35,7 @@ jobs:
       - name: Run discovery debug harness
         env:
           PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python -m src.collect.debug_all
 
       - name: Commit raw debug output

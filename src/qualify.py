@@ -51,14 +51,17 @@ def qualify_one(c: Candidate) -> tuple[bool, str, bool]:
     if any(w in blob for w in q["news_words"]):
         return False, "news/opinion/funding wording", False
 
-    # 5. Not a framework / library / dataset.
+    # 5. GitHub-discovery sources: the repo is only a signal — require a real,
+    #    reachable product website and reject non-commercial repos.
+    if src in q.get("github_ok_sources", ()):
+        return _qualify_github(c, q, blob)
+
+    # 6. Not a framework / library / dataset.
     if any(w in blob for w in q["library_words"]):
         return False, "framework/library/dataset", False
 
-    # 6. Not a GitHub-repo-only product (open-source, no affiliate potential),
-    #    unless the source is one where a repo IS the discovered tool.
-    if (q["reject_github_only"] and host in ("github.com", "gitlab.com")
-            and src not in q.get("github_ok_sources", ())):
+    # 7. Not a GitHub-repo-only product (open-source, no affiliate potential).
+    if q["reject_github_only"] and host in ("github.com", "gitlab.com"):
         return False, "GitHub repository only", False
 
     # Qualified. Determine affiliate eligibility.
@@ -67,6 +70,21 @@ def qualify_one(c: Candidate) -> tuple[bool, str, bool]:
     else:
         eligible = host not in q["non_product_hosts"]
     return True, "", eligible
+
+
+def _qualify_github(c: Candidate, q: dict, blob: str) -> tuple[bool, str, bool]:
+    """A GitHub Trending repo qualifies only as a real product with a site."""
+    sig = c.signals
+    text = f"{blob} {' '.join(sig.get('topics', []))}"
+    if sig.get("archived"):
+        return False, "archived repository", False
+    if any(w in text for w in q["github_reject_words"]):
+        return False, "library/framework/non-product repo", False
+    if not sig.get("has_product_site"):
+        return False, "no official product website", False
+    # Reachable official product site + not archived + not a library.
+    # URL was already swapped to the product website by the collector.
+    return True, "", True
 
 
 def qualify_all(candidates: list[Candidate]) -> tuple[list[Candidate], list[Candidate]]:
