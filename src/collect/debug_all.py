@@ -56,18 +56,26 @@ def _top_reason(reasons: dict) -> str:
     return f"{k} ({reasons[k]})"
 
 
-def _capture_html(name: str, module) -> str:
-    """Fetch DEBUG_URL, save raw HTML, return HTTP status."""
+def _capture_html(name: str, module) -> tuple[str, str, str]:
+    """Fetch DEBUG_URL, save raw HTML. Returns (http_status, encoding, decoded).
+
+    encoding = server's Content-Encoding; decoded = "Yes"/"No" whether the saved
+    text is real HTML (not undecoded/garbled compressed bytes).
+    """
     url = getattr(module, "DEBUG_URL", None)
     if not url:
-        return ""
+        return "", "n/a (API)", "n/a"
     try:
         r = http.get(url, max_retries=1)
-        (DEBUG_DIR / f"{name}.html").write_text(r.text[:600000], encoding="utf-8")
-        return str(r.status_code)
+        text = r.text
+        (DEBUG_DIR / f"{name}.html").write_text(text[:600000], encoding="utf-8")
+        enc = r.headers.get("Content-Encoding", "none")
+        # Garbage if full of U+FFFD replacement chars or no markup at the top.
+        garbage = text.count("�") > 50 or "<" not in text[:2000]
+        return str(r.status_code), enc, ("No" if garbage else "Yes")
     except Exception as exc:  # noqa: BLE001
         (DEBUG_DIR / f"{name}.fetch_error.txt").write_text(str(exc), encoding="utf-8")
-        return _status_from_exc(exc)
+        return _status_from_exc(exc), "n/a", "No"
 
 
 def run() -> list[dict]:
@@ -79,6 +87,7 @@ def run() -> list[dict]:
         display = config.DISPLAY_NAMES.get(name, name)
         if not config.SOURCES.get(name, False):
             rows.append({"source": display, "http": "—", "status": "DISABLED",
+                         "encoding": "n/a", "decoded": "n/a",
                          "found": 0, "qualified": 0, "rejected": 0, "affiliate": 0,
                          "yield": 0, "secs": 0.0, "reliability": 0,
                          "target": config.COLLECTOR_TARGETS.get(name, 0),
@@ -86,7 +95,7 @@ def run() -> list[dict]:
             continue
 
         module = _module_of(fn)
-        http_status = _capture_html(name, module)
+        http_status, encoding, decoded = _capture_html(name, module)
         target = config.COLLECTOR_TARGETS.get(name, 0)
 
         try:
@@ -116,12 +125,15 @@ def run() -> list[dict]:
             for c in qualified:
                 first_accepted.append((display, c.name))
             rows.append({"source": display, "http": http_status or "—",
-                         "status": status, "found": found, "qualified": n_qual,
+                         "status": status,
+                         "encoding": encoding, "decoded": ("Yes" if products else decoded),
+                         "found": found, "qualified": n_qual,
                          "rejected": n_rej, "affiliate": n_aff, "yield": yield_pct,
                          "secs": secs, "reliability": reliability, "target": target,
                          "reason": reject_reason})
         except MissingCredentials:
             rows.append({"source": display, "http": "—", "status": "SKIPPED",
+                         "encoding": "n/a", "decoded": "n/a",
                          "found": 0, "qualified": 0, "rejected": 0, "affiliate": 0,
                          "yield": 0, "secs": 0.0, "reliability": 0, "target": target,
                          "reason": "no credentials"})
@@ -130,7 +142,8 @@ def run() -> list[dict]:
                 f"{type(exc).__name__}: {exc}\n\n{traceback.format_exc()}",
                 encoding="utf-8")
             rows.append({"source": display, "http": http_status or _status_from_exc(exc),
-                         "status": "FAIL", "found": 0, "qualified": 0, "rejected": 0,
+                         "status": "FAIL", "encoding": encoding, "decoded": decoded,
+                         "found": 0, "qualified": 0, "rejected": 0,
                          "affiliate": 0, "yield": 0, "secs": 0.0, "reliability": 0,
                          "target": target, "reason": str(exc)[:30]})
 
