@@ -24,7 +24,10 @@ def session() -> requests.Session:
         "User-Agent": _UA,
         "Accept-Language": "en-US,en;q=0.9",
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Encoding": "gzip, deflate, br",
+        # Only advertise encodings requests can decode natively. Advertising
+        # "br" (brotli) without the brotli package returns undecoded garbage,
+        # which silently breaks HTML parsing for brotli-serving sites.
+        "Accept-Encoding": "gzip, deflate",
         "Sec-Fetch-Dest": "document",
         "Sec-Fetch-Mode": "navigate",
         "Sec-Fetch-Site": "none",
