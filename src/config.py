@@ -214,6 +214,11 @@ LEARNING = {
 # Friendly source names for the report's run-notes footer.
 DISPLAY_NAMES: dict[str, str] = {
     "hackernews": "Hacker News",
+    "github_trending": "GitHub Trending",
+    "theresanaiforthat": "There's An AI For That",
+    "futuretools": "FutureTools",
+    "alternativeto": "AlternativeTo",
+    "product_facts": "Product Facts (site extraction)",
     "muncheye": "Muncheye",
     "producthunt": "Product Hunt",
     "warriorplus": "WarriorPlus",
@@ -255,15 +260,18 @@ INTENT_KEYWORDS: list[str] = [
 # ---------------------------------------------------------------------------
 SOURCES: dict[str, bool] = {
     # Discovery (Collect stage)
-    "hackernews": True,      # keyless fallback: never-empty feed of new AI/SaaS tools
-    "muncheye": True,        # launch calendar: WarriorPlus/JVZoo pre-launch dates
-    "producthunt": True,     # includes upcoming/ship pages for pre-launch
+    "hackernews": True,          # keyless: never-empty feed of new AI/SaaS tools
+    "github_trending": True,     # keyless: server-rendered, reliable (Phase A)
+    "theresanaiforthat": True,   # AI directory, best-effort scraper (Phase A)
+    "futuretools": True,         # AI directory, best-effort scraper (Phase A)
+    "alternativeto": True,       # software directory, best-effort scraper (Phase A)
+    "muncheye": True,            # launch calendar: WarriorPlus/JVZoo pre-launch dates
+    "producthunt": True,         # includes upcoming/ship pages for pre-launch
     "jvzoo": True,
     "warriorplus": True,
     "digistore24": True,
-    "appsumo": True,
-    "dealmirror": True,
     # Enrichment (Enrich stage)
+    "product_facts": True,       # LLM-extracted affiliate facts from product sites
     "google_trends": True,
     "reddit": True,
     "youtube": True,

@@ -107,6 +107,7 @@ def _opportunity_block(idx: int, c: Candidate) -> str:
         f"**Priority:** {cls.get('priority','')} · **Source:** {c.source} · [listing]({c.url})\n\n"
         f"**Score breakdown:** {_breakdown_line(c)}\n\n"
         f"{c.brief.get('body', '_(no brief)_')}\n\n"
+        f"{_facts_block(c)}\n"
         f"{_prediction_block(c)}"
     )
 
@@ -188,6 +189,32 @@ def _action_plan(run: RunReport) -> str:
         plan.append("\n**👀 Monitor (revisit next week):**")
         plan += [f"- [ ] {c.name}" for c in t4]
     return "\n".join(plan) if plan else "_No actions this week._"
+
+
+def _facts_block(c: Candidate) -> str:
+    """Compact factual-data block per product (unknowns shown honestly)."""
+    def val(x):
+        return x if (x not in (None, "")) else "unknown"
+    ltd = "Yes" if c.lifetime_deal else ("No" if c.lifetime_deal is False else "unknown")
+    rec = "Yes" if c.recurring else ("No" if c.recurring is False else "unknown")
+    reviews = c.classification.get("competition", {}).get("existing_reviews", "unknown")
+    yt = c.signals.get("youtube_count", "unknown")
+    reddit = c.signals.get("reddit_mentions", "unknown")
+    slope = c.signals.get("trends_slope")
+    trend = f"{slope:+.2f}" if isinstance(slope, (int, float)) else "unknown"
+    src = f" _(source: {c.facts_source})_" if c.facts_source else ""
+    return (
+        "**📋 Factual Data**\n"
+        f"- Website: {val(c.url)} · Vendor: {val(c.signals.get('vendor'))} · "
+        f"Category: {val(c.category)}\n"
+        f"- Price: {val(c.price)} · Lifetime deal: {ltd} · "
+        f"Commission: {val(c.base_commission)} · Recurring: {rec}\n"
+        f"- Affiliate program: {val(c.affiliate_program)} · "
+        f"Network: {val(c.affiliate_network)}\n"
+        f"- Docs: {val(c.documentation_url)} · Launch: {val(c.launch_date) if c.launch_date else c.launch_status}\n"
+        f"- Existing reviews: {reviews} · YouTube reviews: {yt} · "
+        f"Reddit mentions: {reddit} · Google Trends: {trend}{src}\n"
+    )
 
 
 def _actionable(run: RunReport) -> list[Candidate]:

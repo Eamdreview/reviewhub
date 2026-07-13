@@ -16,14 +16,19 @@ from typing import Callable
 from .. import config
 from ..errors import MissingCredentials
 from ..models import Candidate
-from . import (digistore24, fake, hackernews, jvzoo, muncheye, producthunt,
+from . import (alternativeto, digistore24, fake, futuretools, github_trending,
+               hackernews, jvzoo, muncheye, producthunt, theresanaiforthat,
                warriorplus)
 
 # name -> collector function returning list[Candidate].
-# Hacker News first: it is keyless and reliable, so the report is never empty.
-# Then the launch calendar, Product Hunt, and the marketplaces.
+# Keyless/reliable sources first (Hacker News, GitHub Trending) so the report is
+# never empty; then the AI directories, launch calendar, and marketplaces.
 _REGISTRY: dict[str, Callable[[], list[Candidate]]] = {
     "hackernews": hackernews.collect,
+    "github_trending": github_trending.collect,
+    "theresanaiforthat": theresanaiforthat.collect,
+    "futuretools": futuretools.collect,
+    "alternativeto": alternativeto.collect,
     "muncheye": muncheye.collect,
     "producthunt": producthunt.collect,
     "warriorplus": warriorplus.collect,
