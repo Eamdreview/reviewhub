@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "name": "Adn8nn8n is a workflow automation platform for building AI-powered agents and workflows. n8n is built for technical teams who need production-grade infrastructure: connect any LLM provider, build multi-step agents with conditional log... Learn More",
+    "source": "alternativeto",
+    "url": "https://alternativeto.net/outgoing/software/n8n-io/",
+    "category": "Software / SaaS",
+    "description": "Listed on AlternativeTo",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": null,
+    "signals": {},
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  }
+]

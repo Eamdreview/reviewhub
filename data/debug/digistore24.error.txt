@@ -1,7 +1,7 @@
 RuntimeError: no marketplace URL responded: GET failed after 1 attempts: 404 Client Error: Not Found for url: https://www.digistore24-app.com/en/marketplace/
 
 Traceback (most recent call last):
-  File "/home/runner/work/reviewhub/reviewhub/src/collect/debug_all.py", line 94, in run
+  File "/home/runner/work/reviewhub/reviewhub/src/collect/debug_all.py", line 103, in run
     products = fn()
                ^^^^
   File "/home/runner/work/reviewhub/reviewhub/src/collect/digistore24.py", line 56, in collect
