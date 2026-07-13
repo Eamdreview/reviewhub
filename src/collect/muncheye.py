@@ -21,6 +21,8 @@ from ..models import Candidate
 from . import util
 
 _URL = "https://muncheye.com/"
+DEBUG_URL = _URL
+LAST_STATS: dict = {}
 
 
 def _row_of(link) -> object:
@@ -88,12 +90,16 @@ def collect() -> list[Candidate]:
 
     out: list[Candidate] = []
     seen: set[str] = set()
-    for item in _extract_launches(soup):
+    launches = _extract_launches(soup)
+    rejections: dict[str, int] = {}
+    for item in launches:
         name = item["name"]
         key = name.lower()
         if key in seen:
+            rejections["duplicate"] = rejections.get("duplicate", 0) + 1
             continue
         if not util.is_niche_relevant(name, item["vendor"]):
+            rejections["off-niche"] = rejections.get("off-niche", 0) + 1
             continue
         seen.add(key)
 
@@ -114,4 +120,8 @@ def collect() -> list[Candidate]:
             signals={"affiliate_contest": contest} if contest else {},
             **timing,
         ))
+
+    LAST_STATS.clear()
+    LAST_STATS.update({"found": len(launches), "accepted": len(out),
+                       "rejected": len(launches) - len(out), "reasons": rejections})
     return out

@@ -14,6 +14,7 @@ from ..models import Candidate
 from . import util
 
 _URL = "https://www.futuretools.io/"
+DEBUG_URL = _URL
 
 
 def collect() -> list[Candidate]:
