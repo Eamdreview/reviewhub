@@ -219,10 +219,17 @@ LEARNING = {
 QUALIFICATION = {
     # Reject products whose only home is a code repo (open-source, no affiliate)…
     "reject_github_only": True,
-    # …except these sources, where a GitHub repo IS the discovered tool. They
-    # still qualify as reviewable tools (libraries are filtered separately), but
-    # remain affiliate-eligible=False unless they expose a real product site.
+    # …except these sources, where a GitHub repo is a DISCOVERY SIGNAL for a
+    # real product. They qualify only if the repo exposes an official, reachable
+    # product website (see qualify.py); the URL is then swapped to that website.
     "github_ok_sources": ("github_trending",),
+    # Reject GitHub projects that are not a commercial product (name/desc/topics).
+    "github_reject_words": (
+        "library", "framework", "sdk", "boilerplate", "template", "prompt",
+        "prompts", "dataset", "awesome", "cheat sheet", "cheatsheet", "tutorial",
+        "course", "book", "list of", "specification", "binding", "wrapper",
+        "theme", "dotfiles", "roadmap", "interview", "study notes", "examples",
+        "sample code", "starter kit", "playground", "benchmark"),
     # Sources that are inherently affiliate marketplaces -> affiliate-eligible.
     "affiliate_native_sources": ("jvzoo", "warriorplus", "digistore24", "muncheye"),
     # Hosts that mean "no official product website".

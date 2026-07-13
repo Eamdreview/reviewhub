@@ -27,6 +27,7 @@ jobs:
       - name: Run discovery debug harness
         env:
           PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python -m src.collect.debug_all
 
       - name: Commit raw debug output
