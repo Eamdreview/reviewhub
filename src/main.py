@@ -21,8 +21,8 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from . import (advisor, classify, collect, competition, config, deliver,
-               knowledge, launch_calendar, learning, post_launch, report,
-               revenue, revenue_history, score, triage, vendor, write)
+               knowledge, launch_calendar, learning, post_launch, qualify,
+               report, revenue, revenue_history, score, triage, vendor, write)
 from .enrich import enrich_all
 from .models import RunReport
 
@@ -52,6 +52,14 @@ def run(dry_run: bool = False) -> Path:
     candidates, source_status = collect.collect_all(dry_run=dry_run)
     log.info("Collected %d candidates", len(candidates))
     _dump("candidates", candidates)
+
+    # [1b] QUALIFY — minimum-quality gate; only qualified reach enrichment.
+    # (Dry-run sample data is pre-shaped, so skip qualification there.)
+    if not dry_run:
+        candidates, rejected = qualify.qualify_all(candidates)
+        log.info("Qualified %d / rejected %d", len(candidates), len(rejected))
+        _dump("qualified", candidates)
+        _dump("rejected", rejected)
 
     # [2] ENRICH
     candidates = enrich_all(candidates, dry_run=dry_run, source_status=source_status)
