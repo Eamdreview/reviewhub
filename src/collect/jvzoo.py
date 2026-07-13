@@ -18,6 +18,8 @@ from ..models import Candidate
 from . import util
 
 _URL = "https://www.jvzoo.com/"
+DEBUG_URL = _URL
+LAST_STATS: dict = {}
 
 
 def collect() -> list[Candidate]:
@@ -26,12 +28,16 @@ def collect() -> list[Candidate]:
 
     out: list[Candidate] = []
     seen: set[str] = set()
+    rejections: dict[str, int] = {}
     # JVZoo product links commonly route through /b/ (buy) or /c/ (product).
-    for link in soup.select("a[href*='/b/'], a[href*='/c/'], a[href*='/product']"):
+    links = soup.select("a[href*='/b/'], a[href*='/c/'], a[href*='/product']")
+    for link in links:
         name = util.clean(link.get_text())
         if not name or len(name) < 4 or name.lower() in seen:
+            rejections["no/short/duplicate name"] = rejections.get("no/short/duplicate name", 0) + 1
             continue
         if not util.is_niche_relevant(name):
+            rejections["off-niche"] = rejections.get("off-niche", 0) + 1
             continue
         parent = link.find_parent()
         parent_text = util.clean(parent.get_text() if parent else "")
@@ -52,4 +58,8 @@ def collect() -> list[Candidate]:
             recurring="recurring" in parent_text.lower(),
             launch_status="live",
         ))
+
+    LAST_STATS.clear()
+    LAST_STATS.update({"found": len(links), "accepted": len(out),
+                       "rejected": len(links) - len(out), "reasons": rejections})
     return out

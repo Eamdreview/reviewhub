@@ -14,6 +14,7 @@ from ..models import Candidate
 from . import util
 
 _URL = "https://theresanaiforthat.com/new/"
+DEBUG_URL = _URL
 
 
 def collect() -> list[Candidate]:

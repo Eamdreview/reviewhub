@@ -19,6 +19,8 @@ _URLS = [
     "https://github.com/trending?since=daily",
     "https://github.com/trending/python?since=weekly",
 ]
+DEBUG_URL = _URLS[0]
+LAST_STATS: dict = {}
 
 
 def _stars(row) -> int:
@@ -33,6 +35,8 @@ def collect() -> list[Candidate]:
     sess = http.session()
     out: list[Candidate] = []
     seen: set[str] = set()
+    found = 0
+    rejections: dict[str, int] = {}
 
     for url in _URLS:
         try:
@@ -40,18 +44,23 @@ def collect() -> list[Candidate]:
         except Exception:  # noqa: BLE001 - fail-soft per URL
             continue
         soup = BeautifulSoup(resp.text, "lxml")
-        for row in soup.select("article.Box-row"):
+        rows = soup.select("article.Box-row")
+        found += len(rows)
+        for row in rows:
             link = row.find("h2")
             a = link.find("a", href=True) if link else None
             if not a:
+                rejections["no link"] = rejections.get("no link", 0) + 1
                 continue
             repo = a["href"].strip("/")            # "owner/name"
             name = repo.split("/")[-1]
             if not name or repo.lower() in seen:
+                rejections["no/duplicate name"] = rejections.get("no/duplicate name", 0) + 1
                 continue
             desc_el = row.find("p")
             description = util.clean(desc_el.get_text()) if desc_el else ""
             if not util.is_niche_relevant(name, description):
+                rejections["off-niche"] = rejections.get("off-niche", 0) + 1
                 continue
             seen.add(repo.lower())
             out.append(Candidate(
@@ -64,4 +73,8 @@ def collect() -> list[Candidate]:
                 launch_status="live",
                 signals={"github_stars": _stars(row), "vendor": repo.split("/")[0]},
             ))
+
+    LAST_STATS.clear()
+    LAST_STATS.update({"found": found, "accepted": len(out),
+                       "rejected": found - len(out), "reasons": rejections})
     return out
