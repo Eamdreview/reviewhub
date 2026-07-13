@@ -1,17 +1,18 @@
 """Muncheye collector — the WarriorPlus/JVZoo launch calendar.
 
 Muncheye lists upcoming and just-launched products with dates and vendors,
-which is how we detect launches *before* competitors. This is an HTML scraper,
-so it is the most fragile source: selectors here target Muncheye's launch-list
-markup and may need one tuning pass against live HTML (run the debug helper:
-`python -m src.collect.debug muncheye`). It is fully fail-soft.
-
-Muncheye groups launches under headers ("Launching Soon", "Just Launched",
-etc.); each launch row carries a date, a product-name link, and a vendor.
+which is how we detect launches *before* competitors. Selectors are confirmed
+against the raw HTML captured by discovery-debug: every genuine launch is a
+`div.item` row carrying a `div.date` (day + month), a product link inside
+`div.item_info`, and a `span.item_details` with price / commission. Site
+navigation, category pages, Events / Submit / Evergreen index pages and
+external links are NOT `div.item` rows and carry no date, so gating on a real
+launch row + a parseable date excludes them by construction. Fully fail-soft.
 """
 
 from __future__ import annotations
 
+import re
 from datetime import datetime
 
 from bs4 import BeautifulSoup
@@ -24,64 +25,32 @@ _URL = "https://muncheye.com/"
 DEBUG_URL = _URL
 LAST_STATS: dict = {}
 
-
-def _row_of(link) -> object:
-    """Climb a few parents to the enclosing launch row for context/date."""
-    node = link
-    for _ in range(3):
-        parent = node.parent
-        if parent is None:
-            break
-        node = parent
-        text = node.get_text(" ", strip=True)
-        if len(text) > 40:  # a row with real context, not just the link
-            return node
-    return link.parent or link
+_MONTHS = {"jan", "feb", "mar", "apr", "may", "jun",
+           "jul", "aug", "sep", "oct", "nov", "dec"}
 
 
-def _extract_launches(soup: BeautifulSoup) -> list[dict]:
-    """Best-effort extraction of launch rows, resilient to markup changes.
+def _row_date(item) -> datetime | None:
+    """Parse the launch date from a row's .date (day + month) block."""
+    date_el = item.select_one(".date")
+    if date_el is None:
+        return None
+    day = date_el.select_one(".day")
+    month = date_el.select_one(".month")
+    if day and month:
+        raw = f"{util.clean(day.get_text())} {util.clean(month.get_text())}"
+    else:
+        raw = util.clean(date_el.get_text(" "))
+    if not raw or raw.split()[-1][:3].lower() not in _MONTHS:
+        return None
+    return util.try_parse_date(raw)
 
-    Rather than assume specific container classes, scan every product-looking
-    anchor across the page and pair each with a date found in its enclosing
-    row. Product links on Muncheye point at a vendor/product path (two path
-    segments), not at site nav or social links.
-    """
-    launches: list[dict] = []
-    seen: set[str] = set()
-    for link in soup.find_all("a", href=True):
-        href = link["href"]
-        name = util.clean(link.get_text())
-        if not name or len(name) < 4 or name.lower() in seen:
-            continue
-        # Skip obvious non-product links (nav, socials, anchors).
-        low = href.lower()
-        if any(x in low for x in ("facebook", "twitter", "youtube", "mailto:",
-                                  "login", "signup", "register", "/tag/",
-                                  "/page/", "#")):
-            continue
 
-        row = _row_of(link)
-        row_text = row.get_text(" ", strip=True) if hasattr(row, "get_text") else ""
-        date_txt = ""
-        time_tag = row.find("time") if hasattr(row, "find") else None
-        if time_tag:
-            date_txt = time_tag.get("datetime") or time_tag.get_text()
-        if not date_txt and hasattr(row, "stripped_strings"):
-            for cand in row.stripped_strings:
-                if util.try_parse_date(cand):
-                    date_txt = cand
-                    break
-        # Require a date OR a niche hint so we don't ingest random links.
-        if not date_txt and not util.is_niche_relevant(name, row_text):
-            continue
-
-        seen.add(name.lower())
-        launches.append({
-            "name": name, "url": href, "date": date_txt,
-            "vendor": util.clean(row_text)[:120],
-        })
-    return launches
+def _split_vendor(text: str) -> tuple[str, str]:
+    """"Vendor: Product" -> (product, vendor); no colon -> (text, "")."""
+    if ": " in text:
+        vendor, product = text.split(": ", 1)
+        return util.clean(product), util.clean(vendor)
+    return util.clean(text), ""
 
 
 def collect() -> list[Candidate]:
@@ -89,39 +58,79 @@ def collect() -> list[Candidate]:
     soup = BeautifulSoup(resp.text, "lxml")
 
     out: list[Candidate] = []
-    seen: set[str] = set()
-    launches = _extract_launches(soup)
+    seen_slug: set[str] = set()
+    seen_name: set[str] = set()
     rejections: dict[str, int] = {}
-    for item in launches:
-        name = item["name"]
-        key = name.lower()
-        if key in seen:
+    found = 0
+
+    for item in soup.select("div.item"):
+        found += 1
+        link = item.select_one(".item_info a[href]") or item.select_one("a[href]")
+        if link is None:
+            rejections["no product link"] = rejections.get("no product link", 0) + 1
+            continue
+        href = link.get("href", "")
+        slug = href.strip("/").lower()
+        # A launch links to a single-segment slug page on muncheye.com; skip
+        # any nav / section / external link that slips into a row.
+        if (not slug or href.startswith("#") or "/" in slug
+                or slug in ("events", "submit", "submit-launch", "evergreens",
+                            "advertising", "categories", "faq", "rules")):
+            rejections["not a launch page"] = rejections.get("not a launch page", 0) + 1
+            continue
+
+        launch_dt = _row_date(item)
+        if launch_dt is None:
+            rejections["no launch date"] = rejections.get("no launch date", 0) + 1
+            continue
+
+        name, vendor = _split_vendor(util.clean(link.get_text(" ")))
+        if not name or len(name) < 2:
+            rejections["no name"] = rejections.get("no name", 0) + 1
+            continue
+        if slug in seen_slug or name.lower() in seen_name:
             rejections["duplicate"] = rejections.get("duplicate", 0) + 1
             continue
-        if not util.is_niche_relevant(name, item["vendor"]):
-            rejections["off-niche"] = rejections.get("off-niche", 0) + 1
-            continue
-        seen.add(key)
+        seen_slug.add(slug)
+        seen_name.add(name.lower())
 
-        launch_dt = util.try_parse_date(item["date"]) if item["date"] else None
+        details = ""
+        det_el = item.select_one(".item_details")
+        if det_el is not None:
+            details = util.clean(det_el.get_text(" "))
+        commission = ""
+        cm = re.search(r"(\d{1,3})\s*%", details)
+        if cm:
+            commission = f"{cm.group(1)}%"
+        price = ""
+        pm = re.search(r"[$€]?\s?\d+(?:[.,]\d{2})?", details)
+        if pm and pm.group(0).strip():
+            price = pm.group(0).strip()
+
         timing = util.parse_launch_timing(launch_dt)
-
-        # Affiliate-contest signal (JV prizes drive promotion) — best-effort.
-        vendor_text = item["vendor"].lower()
-        contest = any(w in vendor_text for w in
+        row_text = f"{vendor} {details}".lower()
+        contest = any(w in row_text for w in
                       ("contest", "prize", "leaderboard", "jv comp", "in prizes"))
+        signals = {}
+        if vendor:
+            signals["vendor"] = vendor
+        if contest:
+            signals["affiliate_contest"] = True
 
         out.append(Candidate(
             name=name,
             source="muncheye",
-            url=item["url"] if item["url"].startswith("http") else _URL.rstrip("/") + item["url"],
+            url=href if href.startswith("http") else _URL.rstrip("/") + href,
             category="AI / SaaS launch",
-            description=f"Upcoming launch (via Muncheye): {item['vendor']}",
-            signals={"affiliate_contest": contest} if contest else {},
+            description=f"Launch via Muncheye"
+                        + (f" — {vendor}" if vendor else "")
+                        + (f" ({details})" if details else ""),
+            price=price, base_commission=commission,
+            signals=signals,
             **timing,
         ))
 
     LAST_STATS.clear()
-    LAST_STATS.update({"found": len(launches), "accepted": len(out),
-                       "rejected": len(launches) - len(out), "reasons": rejections})
+    LAST_STATS.update({"found": found, "accepted": len(out),
+                       "rejected": found - len(out), "reasons": rejections})
     return out
