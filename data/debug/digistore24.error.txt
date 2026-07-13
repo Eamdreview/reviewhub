@@ -1,9 +1,9 @@
-RuntimeError: no marketplace URL responded: GET failed after 1 attempts: 404 Client Error: Not Found for url: https://www.digistore24.com/en/marketplace
+RuntimeError: no marketplace URL responded: GET failed after 1 attempts: 404 Client Error: Not Found for url: https://www.digistore24-app.com/en/marketplace/
 
 Traceback (most recent call last):
-  File "/home/runner/work/reviewhub/reviewhub/src/collect/debug_all.py", line 41, in run
-    results = fn()
-              ^^^^
-  File "/home/runner/work/reviewhub/reviewhub/src/collect/digistore24.py", line 52, in collect
+  File "/home/runner/work/reviewhub/reviewhub/src/collect/debug_all.py", line 94, in run
+    products = fn()
+               ^^^^
+  File "/home/runner/work/reviewhub/reviewhub/src/collect/digistore24.py", line 56, in collect
     raise RuntimeError(f"no marketplace URL responded: {last_err}")
-RuntimeError: no marketplace URL responded: GET failed after 1 attempts: 404 Client Error: Not Found for url: https://www.digistore24.com/en/marketplace
+RuntimeError: no marketplace URL responded: GET failed after 1 attempts: 404 Client Error: Not Found for url: https://www.digistore24-app.com/en/marketplace/

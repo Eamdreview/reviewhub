@@ -1,90 +1,142 @@
 [
   {
     "source": "Hacker News",
+    "http": "200",
     "status": "OK",
-    "count": 46,
-    "secs": 1.1,
-    "detail": "returned products",
-    "samples": [
-      "Ask HN",
-      "Skillscript",
-      "Mindwalk"
-    ]
+    "found": 44,
+    "qualified": 24,
+    "rejected": 20,
+    "affiliate": 24,
+    "yield": 55,
+    "secs": 0.76,
+    "reliability": 100,
+    "target": 5,
+    "reason": "GitHub repository only (18)"
   },
   {
     "source": "GitHub Trending",
+    "http": "200",
     "status": "OK",
-    "count": 17,
-    "secs": 2.2,
-    "detail": "returned products",
-    "samples": [
-      "Vibe-Trading",
-      "airi",
-      "awesome-llm-apps"
-    ]
+    "found": 21,
+    "qualified": 10,
+    "rejected": 11,
+    "affiliate": 10,
+    "yield": 48,
+    "secs": 10.59,
+    "reliability": 100,
+    "target": 5,
+    "reason": "library/framework/non-product repo (6)"
   },
   {
     "source": "There's An AI For That",
-    "status": "ERROR",
-    "count": 0,
-    "secs": 0.1,
-    "detail": "RuntimeError: GET failed after 1 attempts: 403 Client Error: Forbidden for url: https://theresanaiforthat.com/new/",
-    "samples": []
+    "http": "403",
+    "status": "FAIL",
+    "found": 0,
+    "qualified": 0,
+    "rejected": 0,
+    "affiliate": 0,
+    "yield": 0,
+    "secs": 0.0,
+    "reliability": 0,
+    "target": 0,
+    "reason": "GET failed after 1 attempts: 4"
   },
   {
     "source": "FutureTools",
+    "http": "200",
     "status": "EMPTY",
-    "count": 0,
-    "secs": 0.5,
-    "detail": "reached, 0 parsed",
-    "samples": []
+    "found": 0,
+    "qualified": 0,
+    "rejected": 0,
+    "affiliate": 0,
+    "yield": 0,
+    "secs": 0.76,
+    "reliability": 0,
+    "target": 0,
+    "reason": ""
   },
   {
     "source": "AlternativeTo",
-    "status": "ERROR",
-    "count": 0,
-    "secs": 0.2,
-    "detail": "RuntimeError: GET failed after 1 attempts: 404 Client Error: Not Found for url: https://alternativeto.net/browse/new/",
-    "samples": []
+    "http": "200",
+    "status": "EMPTY",
+    "found": 0,
+    "qualified": 0,
+    "rejected": 0,
+    "affiliate": 0,
+    "yield": 0,
+    "secs": 0.24,
+    "reliability": 50,
+    "target": 10,
+    "reason": ""
   },
   {
     "source": "Muncheye",
+    "http": "200",
     "status": "EMPTY",
-    "count": 0,
-    "secs": 0.3,
-    "detail": "reached, 0 parsed",
-    "samples": []
+    "found": 0,
+    "qualified": 0,
+    "rejected": 0,
+    "affiliate": 0,
+    "yield": 0,
+    "secs": 0.23,
+    "reliability": 50,
+    "target": 10,
+    "reason": ""
   },
   {
     "source": "Product Hunt",
+    "http": "\u2014",
     "status": "SKIPPED",
-    "count": 0,
+    "found": 0,
+    "qualified": 0,
+    "rejected": 0,
+    "affiliate": 0,
+    "yield": 0,
     "secs": 0.0,
-    "detail": "no credentials: PRODUCTHUNT_TOKEN not set",
-    "samples": []
+    "reliability": 0,
+    "target": 10,
+    "reason": "no credentials"
   },
   {
     "source": "WarriorPlus",
-    "status": "ERROR",
-    "count": 0,
-    "secs": 3.4,
-    "detail": "RuntimeError: GET failed after 3 attempts: 403 Client Error: Forbidden for url: https://warriorplus.com/",
-    "samples": []
+    "http": "403",
+    "status": "FAIL",
+    "found": 0,
+    "qualified": 0,
+    "rejected": 0,
+    "affiliate": 0,
+    "yield": 0,
+    "secs": 0.0,
+    "reliability": 0,
+    "target": 0,
+    "reason": "GET failed after 3 attempts: 4"
   },
   {
     "source": "JVZoo",
+    "http": "200",
     "status": "EMPTY",
-    "count": 0,
-    "secs": 0.7,
-    "detail": "reached, 0 parsed",
-    "samples": []
+    "found": 0,
+    "qualified": 0,
+    "rejected": 0,
+    "affiliate": 0,
+    "yield": 0,
+    "secs": 0.65,
+    "reliability": 50,
+    "target": 5,
+    "reason": ""
   },
   {
     "source": "Digistore24",
-    "status": "ERROR",
-    "count": 0,
-    "secs": 0.8,
-    "detail": "RuntimeError: no marketplace URL responded: GET failed after 1 attempts: 404 Client Error: Not Found for url: https://www.digistore24.com/en/marketplace",
-    "samples": []
+    "http": "404",
+    "status": "FAIL",
+    "found": 0,
+    "qualified": 0,
+    "rejected": 0,
+    "affiliate": 0,
+    "yield": 0,
+    "secs": 0.0,
+    "reliability": 0,
+    "target": 5,
+    "reason": "no marketplace URL responded: "
   }
 ]

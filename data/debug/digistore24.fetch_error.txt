@@ -1,0 +1,1 @@
+GET failed after 1 attempts: 404 Client Error: Not Found for url: https://www.digistore24.com/en/marketplace/
