@@ -1,0 +1,1 @@
+GET failed after 1 attempts: HTTPSConnectionPool(host='www.jvzoo.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jvzoo.com', port=443) at 0x7fd3e98b2890>, 'Connection to www.jvzoo.com timed out. (connect timeout=30)'))

@@ -21,7 +21,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 10,
+    "hours_since_release": 14,
     "signals": {
       "hn_points": 5,
       "hn_comments": 1
@@ -56,7 +56,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 13,
+    "hours_since_release": 17,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -91,10 +91,10 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 16,
+    "hours_since_release": 20,
     "signals": {
-      "hn_points": 7,
-      "hn_comments": 2
+      "hn_points": 8,
+      "hn_comments": 3
     },
     "triage": {},
     "scores": {},
@@ -126,10 +126,10 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 23,
+    "hours_since_release": 28,
     "signals": {
-      "hn_points": 16,
-      "hn_comments": 21
+      "hn_points": 17,
+      "hn_comments": 28
     },
     "triage": {},
     "scores": {},
@@ -161,7 +161,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 27,
+    "hours_since_release": 31,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -196,7 +196,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 31,
+    "hours_since_release": 35,
     "signals": {
       "hn_points": 157,
       "hn_comments": 63
@@ -231,7 +231,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 40,
+    "hours_since_release": 44,
     "signals": {
       "hn_points": 6,
       "hn_comments": 2
@@ -266,9 +266,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 41,
+    "hours_since_release": 45,
     "signals": {
-      "hn_points": 41,
+      "hn_points": 43,
       "hn_comments": 7
     },
     "triage": {},
@@ -301,7 +301,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 61,
+    "hours_since_release": 65,
     "signals": {
       "hn_points": 7,
       "hn_comments": 2
@@ -618,8 +618,8 @@
     "days_to_launch": null,
     "hours_since_release": null,
     "signals": {
-      "hn_points": 94,
-      "hn_comments": 39
+      "hn_points": 96,
+      "hn_comments": 40
     },
     "triage": {},
     "scores": {},
@@ -899,7 +899,7 @@
     "hours_since_release": null,
     "signals": {
       "hn_points": 347,
-      "hn_comments": 137
+      "hn_comments": 138
     },
     "triage": {},
     "scores": {},
@@ -935,76 +935,6 @@
     "signals": {
       "hn_points": 33,
       "hn_comments": 20
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "A UML drawing skill for your coding agent docs",
-    "source": "hackernews",
-    "url": "https://github.com/BESSER-PEARL/uml-drawing-skill",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: A UML drawing skill for your coding agent docs",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": false,
-    "reject_reason": "GitHub repository only",
-    "affiliate_eligible": false,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 5,
-      "hn_comments": 0
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Tarit",
-    "source": "hackernews",
-    "url": "https://github.com/instavm/tarit",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: Tarit \u2013 Self-host sandbox cloud and hypervisor for AI agents",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": false,
-    "reject_reason": "GitHub repository only",
-    "affiliate_eligible": false,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 6,
-      "hn_comments": 0
     },
     "triage": {},
     "scores": {},

@@ -1,0 +1,12 @@
+RuntimeError: GET failed after 3 attempts: HTTPSConnectionPool(host='www.jvzoo.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jvzoo.com', port=443) at 0x7fd3e98fcc90>, 'Connection to www.jvzoo.com timed out. (connect timeout=30)'))
+
+Traceback (most recent call last):
+  File "/home/runner/work/reviewhub/reviewhub/src/collect/debug_all.py", line 94, in run
+    products = fn()
+               ^^^^
+  File "/home/runner/work/reviewhub/reviewhub/src/collect/jvzoo.py", line 26, in collect
+    resp = http.get(_URL)
+           ^^^^^^^^^^^^^^
+  File "/home/runner/work/reviewhub/reviewhub/src/http.py", line 55, in get
+    raise RuntimeError(f"GET failed after {max_retries} attempts: {last}")
+RuntimeError: GET failed after 3 attempts: HTTPSConnectionPool(host='www.jvzoo.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jvzoo.com', port=443) at 0x7fd3e98fcc90>, 'Connection to www.jvzoo.com timed out. (connect timeout=30)'))
