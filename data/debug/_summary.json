@@ -1,0 +1,90 @@
+[
+  {
+    "source": "Hacker News",
+    "status": "OK",
+    "count": 46,
+    "secs": 1.1,
+    "detail": "returned products",
+    "samples": [
+      "Ask HN",
+      "Skillscript",
+      "Mindwalk"
+    ]
+  },
+  {
+    "source": "GitHub Trending",
+    "status": "OK",
+    "count": 17,
+    "secs": 2.2,
+    "detail": "returned products",
+    "samples": [
+      "Vibe-Trading",
+      "airi",
+      "awesome-llm-apps"
+    ]
+  },
+  {
+    "source": "There's An AI For That",
+    "status": "ERROR",
+    "count": 0,
+    "secs": 0.1,
+    "detail": "RuntimeError: GET failed after 1 attempts: 403 Client Error: Forbidden for url: https://theresanaiforthat.com/new/",
+    "samples": []
+  },
+  {
+    "source": "FutureTools",
+    "status": "EMPTY",
+    "count": 0,
+    "secs": 0.5,
+    "detail": "reached, 0 parsed",
+    "samples": []
+  },
+  {
+    "source": "AlternativeTo",
+    "status": "ERROR",
+    "count": 0,
+    "secs": 0.2,
+    "detail": "RuntimeError: GET failed after 1 attempts: 404 Client Error: Not Found for url: https://alternativeto.net/browse/new/",
+    "samples": []
+  },
+  {
+    "source": "Muncheye",
+    "status": "EMPTY",
+    "count": 0,
+    "secs": 0.3,
+    "detail": "reached, 0 parsed",
+    "samples": []
+  },
+  {
+    "source": "Product Hunt",
+    "status": "SKIPPED",
+    "count": 0,
+    "secs": 0.0,
+    "detail": "no credentials: PRODUCTHUNT_TOKEN not set",
+    "samples": []
+  },
+  {
+    "source": "WarriorPlus",
+    "status": "ERROR",
+    "count": 0,
+    "secs": 3.4,
+    "detail": "RuntimeError: GET failed after 3 attempts: 403 Client Error: Forbidden for url: https://warriorplus.com/",
+    "samples": []
+  },
+  {
+    "source": "JVZoo",
+    "status": "EMPTY",
+    "count": 0,
+    "secs": 0.7,
+    "detail": "reached, 0 parsed",
+    "samples": []
+  },
+  {
+    "source": "Digistore24",
+    "status": "ERROR",
+    "count": 0,
+    "secs": 0.8,
+    "detail": "RuntimeError: no marketplace URL responded: GET failed after 1 attempts: 404 Client Error: Not Found for url: https://www.digistore24.com/en/marketplace",
+    "samples": []
+  }
+]

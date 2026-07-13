@@ -1,0 +1,12 @@
+RuntimeError: GET failed after 1 attempts: 403 Client Error: Forbidden for url: https://theresanaiforthat.com/new/
+
+Traceback (most recent call last):
+  File "/home/runner/work/reviewhub/reviewhub/src/collect/debug_all.py", line 41, in run
+    results = fn()
+              ^^^^
+  File "/home/runner/work/reviewhub/reviewhub/src/collect/theresanaiforthat.py", line 20, in collect
+    resp = http.get(_URL, max_retries=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/reviewhub/reviewhub/src/http.py", line 52, in get
+    raise RuntimeError(f"GET failed after {max_retries} attempts: {last}")
+RuntimeError: GET failed after 1 attempts: 403 Client Error: Forbidden for url: https://theresanaiforthat.com/new/
