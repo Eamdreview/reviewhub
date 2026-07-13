@@ -320,9 +320,13 @@ SOURCES: dict[str, bool] = {
     "alternativeto": True,       # software directory, best-effort scraper (Phase A)
     "muncheye": True,            # launch calendar: WarriorPlus/JVZoo pre-launch dates
     "producthunt": True,         # includes upcoming/ship pages for pre-launch
-    "jvzoo": True,
-    "warriorplus": True,
-    "digistore24": True,
+    "jvzoo": True,               # public /productlibrary/listings marketplace
+    # Disabled: no public discovery endpoint after verification.
+    #  - digistore24: marketplace requires an affiliate login (returns 403); the
+    #    API needs an authenticated key. No public/indexed product listing exists.
+    #  - warriorplus: Cloudflare-blocked (403). Both are covered by Muncheye.
+    "warriorplus": False,
+    "digistore24": False,
     # Enrichment (Enrich stage)
     "product_facts": True,       # LLM-extracted affiliate facts from product sites
     "google_trends": True,
