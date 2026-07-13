@@ -39,13 +39,36 @@ jobs:
         run: python -m src.collect.debug_all
 
       - name: Commit raw debug output
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f data/debug/          # -f: data/*.json is gitignored for normal runs
           if git diff --staged --quiet; then
             echo "No debug output to commit."
-          else
-            git commit -m "Discovery debug output ($(date -u +%Y-%m-%dT%H:%M))"
-            git push
+            exit 0
           fi
+          git commit -m "Discovery debug output ($(date -u +%Y-%m-%dT%H:%M))"
+          # Sync with origin/main and rebase (linear history, no merge commits),
+          # retrying up to 3 times if another workflow pushes concurrently.
+          for i in 1 2 3; do
+            git fetch origin main || true
+            git rebase origin/main || git rebase -X theirs origin/main || git rebase --abort || true
+            if git push origin HEAD:main; then
+              echo "Pushed on attempt $i."
+              exit 0
+            fi
+            echo "Non-fast-forward push, retrying ($i/3)…"
+            sleep $((i * 3))
+          done
+          echo "push_failed=true" >> "$GITHUB_OUTPUT"
+          echo "Push failed after 3 attempts — uploading data/debug as an artifact so no HTML is lost."
+          exit 1
+
+      - name: Upload captured debug output if push failed
+        if: always() && steps.commit.outputs.push_failed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-debug-output
+          path: data/debug/
+          if-no-files-found: warn
