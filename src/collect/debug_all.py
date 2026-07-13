@@ -20,7 +20,7 @@ import time
 import traceback
 from pathlib import Path
 
-from .. import config, http
+from .. import config, http, qualify
 from ..errors import MissingCredentials
 from . import _REGISTRY
 
@@ -79,44 +79,60 @@ def run() -> list[dict]:
         display = config.DISPLAY_NAMES.get(name, name)
         if not config.SOURCES.get(name, False):
             rows.append({"source": display, "http": "—", "status": "DISABLED",
-                         "found": 0, "accepted": 0, "rejected": 0, "reason": "disabled"})
+                         "found": 0, "qualified": 0, "rejected": 0, "affiliate": 0,
+                         "yield": 0, "secs": 0.0, "reliability": 0,
+                         "target": config.COLLECTOR_TARGETS.get(name, 0),
+                         "reason": "disabled"})
             continue
 
         module = _module_of(fn)
         http_status = _capture_html(name, module)
+        target = config.COLLECTOR_TARGETS.get(name, 0)
 
         try:
+            t0 = time.time()
             products = fn()
-            stats = getattr(module, "LAST_STATS", {}) or {}
-            found = int(stats.get("found", len(products)))
-            accepted = int(stats.get("accepted", len(products)))
-            rejected = int(stats.get("rejected", max(0, found - accepted)))
-            reason = _top_reason(stats.get("reasons", {}))
+            secs = round(time.time() - t0, 2)
+            qualified, _rej = qualify.qualify_all(products)
+            found = len(products)
+            n_qual = len(qualified)
+            n_rej = found - n_qual
+            n_aff = sum(1 for c in qualified if c.affiliate_eligible)
+            yield_pct = round(100 * n_qual / found) if found else 0
+            reject_reason = _top_reason(qualify.stats_by_source(products)
+                                        .get(name, {}).get("reasons", {}))
+            http_ok = 1 if products else (1 if (http_status or "").startswith("2") else 0)
+            reliability = (round(100 * (0.5 * http_ok +
+                                        0.5 * min(1, n_qual / target))) if target
+                           else (100 if products else 0))
+            status = ("OK" if (target and n_qual >= target) else
+                      "WARN" if n_qual > 0 else
+                      "EMPTY" if (http_status or "").startswith("2") else "FAIL")
             if products:
-                status = "OK"
                 http_status = "200"
-            else:
-                status = "EMPTY" if (http_status or "").startswith("2") else "ERROR"
-                reason = reason or ("reached, 0 parsed" if status == "EMPTY" else "fetch failed")
             (DEBUG_DIR / f"{name}.json").write_text(
                 json.dumps([c.to_dict() for c in products], indent=2, default=str),
                 encoding="utf-8")
-            for c in products:
+            for c in qualified:
                 first_accepted.append((display, c.name))
-            rows.append({"source": display, "http": http_status or "—", "status": status,
-                         "found": found, "accepted": accepted, "rejected": rejected,
-                         "reason": reason})
-        except MissingCredentials as exc:
+            rows.append({"source": display, "http": http_status or "—",
+                         "status": status, "found": found, "qualified": n_qual,
+                         "rejected": n_rej, "affiliate": n_aff, "yield": yield_pct,
+                         "secs": secs, "reliability": reliability, "target": target,
+                         "reason": reject_reason})
+        except MissingCredentials:
             rows.append({"source": display, "http": "—", "status": "SKIPPED",
-                         "found": 0, "accepted": 0, "rejected": 0,
-                         "reason": f"no credentials"})
+                         "found": 0, "qualified": 0, "rejected": 0, "affiliate": 0,
+                         "yield": 0, "secs": 0.0, "reliability": 0, "target": target,
+                         "reason": "no credentials"})
         except Exception as exc:  # noqa: BLE001
             (DEBUG_DIR / f"{name}.error.txt").write_text(
                 f"{type(exc).__name__}: {exc}\n\n{traceback.format_exc()}",
                 encoding="utf-8")
             rows.append({"source": display, "http": http_status or _status_from_exc(exc),
-                         "status": "ERROR", "found": 0, "accepted": 0, "rejected": 0,
-                         "reason": f"{type(exc).__name__}: {str(exc)[:40]}"})
+                         "status": "FAIL", "found": 0, "qualified": 0, "rejected": 0,
+                         "affiliate": 0, "yield": 0, "secs": 0.0, "reliability": 0,
+                         "target": target, "reason": str(exc)[:30]})
 
     _print_tables(rows, first_accepted)
     (DEBUG_DIR / "_summary.json").write_text(
@@ -124,26 +140,31 @@ def run() -> list[dict]:
     return rows
 
 
-def _print_tables(rows: list[dict], accepted: list[tuple[str, str]]) -> None:
-    print("\n" + "=" * 92)
-    print("DISCOVERY VALIDATION TABLE  (discovery only — no enrichment)")
-    print("=" * 92)
-    print(f"{'Source':<24} {'HTTP':<7} {'Status':<9} {'Found':>6} {'Accept':>7} "
-          f"{'Reject':>7}  Reason")
-    print("-" * 92)
-    tot_acc = 0
+def _print_tables(rows: list[dict], qualified: list[tuple[str, str]]) -> None:
+    print("\n" + "=" * 110)
+    print("DISCOVERY QUALITY REPORT  (discovery + qualification only — no enrichment)")
+    print("=" * 110)
+    hdr = (f"{'Source':<22} {'HTTP':<6} {'Found':>6} {'Qual':>5} {'Rej':>5} "
+           f"{'Aff':>4} {'Yield':>6} {'Time':>6} {'Rel%':>5} {'Tgt':>4} {'Status':<7} Top reject")
+    print(hdr)
+    print("-" * 110)
+    tot_q = tot_aff = 0
     for r in rows:
-        tot_acc += r["accepted"]
-        print(f"{r['source']:<24} {str(r['http']):<7} {r['status']:<9} "
-              f"{r['found']:>6} {r['accepted']:>7} {r['rejected']:>7}  {r['reason'][:30]}")
-    print("-" * 92)
-    ok = sum(1 for r in rows if r["status"] == "OK")
-    print(f"{ok}/{len(rows)} sources OK · {tot_acc} products accepted total")
+        tot_q += r["qualified"]
+        tot_aff += r["affiliate"]
+        print(f"{r['source']:<22} {str(r['http']):<6} {r['found']:>6} "
+              f"{r['qualified']:>5} {r['rejected']:>5} {r['affiliate']:>4} "
+              f"{str(r['yield'])+'%':>6} {str(r['secs'])+'s':>6} {r['reliability']:>5} "
+              f"{r['target']:>4} {r['status']:<7} {r['reason'][:20]}")
+    print("-" * 110)
+    hit = sum(1 for r in rows if r["status"] == "OK")
+    print(f"{hit}/{len(rows)} collectors hit target · {tot_q} qualified · "
+          f"{tot_aff} affiliate-eligible total  (weekly goal: 30–50)")
 
-    print("\nFirst 10 accepted products:")
-    for i, (src, name) in enumerate(accepted[:10], 1):
+    print("\nFirst 10 qualified products:")
+    for i, (src, name) in enumerate(qualified[:10], 1):
         print(f"  {i:>2}. [{src}] {name}")
-    print("=" * 92)
+    print("=" * 110)
     print(f"Raw HTML + JSON saved under: {DEBUG_DIR}")
 
 

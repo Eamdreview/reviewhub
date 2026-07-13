@@ -211,6 +211,48 @@ LEARNING = {
     "min_reviews_for_insight": 3,    # need at least this many to report an average
 }
 
+# ---------------------------------------------------------------------------
+# Qualification stage (runs immediately after Discovery, before Enrichment).
+# Rejects anything that isn't a real, reviewable SaaS/AI product with potential
+# affiliate value. All rules are config-driven and reason-tagged.
+# ---------------------------------------------------------------------------
+QUALIFICATION = {
+    # Reject products whose only home is a code repo (open-source, no affiliate).
+    "reject_github_only": True,
+    # Sources that are inherently affiliate marketplaces -> affiliate-eligible.
+    "affiliate_native_sources": ("jvzoo", "warriorplus", "digistore24", "muncheye"),
+    # Hosts that mean "no official product website".
+    "non_product_hosts": ("news.ycombinator.com", "github.com", "gitlab.com",
+                          "reddit.com"),
+    # News / social domains -> reject as news.
+    "news_domains": (
+        "reuters.com", "cnbc.com", "forbes.com", "businessinsider.com",
+        "fortune.com", "theregister.com", "gizmodo.com", "howtogeek.com",
+        "fastcompany.com", "nytimes.com", "theverge.com", "wsj.com",
+        "bloomberg.com", "cnn.com", "techcrunch.com", "arstechnica.com",
+        "twitter.com", "x.com", "wikipedia.org"),
+    # Title/description signals of news / opinion / funding / politics.
+    "news_words": (
+        "says", "say ", "claims", "claim ", "report says", "raises", "raised",
+        "funding", "series a", "series b", "acquires", "acquisition", "lawsuit",
+        "sues", "banned", "election", "senate", "congress", "court", "ipo",
+        "layoffs", "shuts down", "opinion", "why i ", "we are living"),
+    # Signals of a framework / library / dataset rather than a usable product.
+    # (Deliberately specific — generic words like "framework" appear in real
+    # product taglines, so they are NOT listed here to avoid false rejects.)
+    "library_words": (
+        " library", "sdk", "boilerplate", "awesome-", "awesome list",
+        "list of", "dataset", "wrapper for", "language binding", "starter template",
+        "cli for developers", "toolkit for developers", "specification"),
+}
+
+# Minimum qualified products each reachable collector should return per week.
+# A collector isn't "done" on zero errors — it must hit its target.
+COLLECTOR_TARGETS = {
+    "hackernews": 5, "github_trending": 5, "producthunt": 10, "muncheye": 10,
+    "jvzoo": 5, "digistore24": 5, "alternativeto": 10,
+}
+
 # Friendly source names for the report's run-notes footer.
 DISPLAY_NAMES: dict[str, str] = {
     "hackernews": "Hacker News",

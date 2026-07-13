@@ -36,6 +36,11 @@ class Candidate:
     documentation_url: str = ""         # official docs link
     facts_source: str = ""              # how the facts were obtained (provenance)
 
+    # --- qualification (Qualification stage, right after Discovery) ---
+    qualified: bool = True              # passed the minimum-quality gate?
+    reject_reason: str = ""             # why it was rejected (if not qualified)
+    affiliate_eligible: bool = False    # could plausibly have an affiliate program?
+
     # --- launch timing (drives Tier 1 early-launch detection) ---
     launch_status: str = "live"         # "upcoming" | "live" | "evergreen"
     launch_date: str = ""               # ISO date if known (from Muncheye/PH)
