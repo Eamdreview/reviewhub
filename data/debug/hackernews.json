@@ -58,8 +58,8 @@
     "days_to_launch": null,
     "hours_since_release": 4,
     "signals": {
-      "hn_points": 44,
-      "hn_comments": 19
+      "hn_points": 46,
+      "hn_comments": 21
     },
     "triage": {},
     "scores": {},
@@ -126,10 +126,10 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 6,
+    "hours_since_release": 7,
     "signals": {
-      "hn_points": 20,
-      "hn_comments": 9
+      "hn_points": 21,
+      "hn_comments": 10
     },
     "triage": {},
     "scores": {},
