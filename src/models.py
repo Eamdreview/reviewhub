@@ -29,6 +29,13 @@ class Candidate:
     upsells: str = ""                   # funnel/upsell notes if available
     launch_bonuses: str = ""            # usually inferred by LLM, labelled (est.)
 
+    # --- factual affiliate data (best-effort; "" / None = unknown) ---
+    affiliate_program: str = ""         # "Yes"/"No"/program name if known
+    affiliate_network: str = ""         # e.g. ShareASale, PartnerStack, direct
+    lifetime_deal: bool | None = None   # LTD offer?
+    documentation_url: str = ""         # official docs link
+    facts_source: str = ""              # how the facts were obtained (provenance)
+
     # --- launch timing (drives Tier 1 early-launch detection) ---
     launch_status: str = "live"         # "upcoming" | "live" | "evergreen"
     launch_date: str = ""               # ISO date if known (from Muncheye/PH)

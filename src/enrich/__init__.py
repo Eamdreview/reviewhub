@@ -17,10 +17,11 @@ from typing import Callable
 from .. import config
 from ..errors import MissingCredentials
 from ..models import Candidate
-from . import google_cse, reddit, trends, trustpilot, youtube
+from . import google_cse, product_facts, reddit, trends, trustpilot, youtube
 
 # config-source-name -> (enricher, per-candidate "measured" flag it sets)
 _ENRICHERS: dict[str, tuple[Callable[[list[Candidate]], None], str]] = {
+    "product_facts": (product_facts.enrich, "_measured_facts"),
     "google_trends": (trends.enrich, "_measured_trends"),
     "reddit": (reddit.enrich, "_measured_reddit"),
     "youtube": (youtube.enrich, "_measured_youtube"),
