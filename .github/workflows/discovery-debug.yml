@@ -1,0 +1,42 @@
+name: Discovery Debug
+
+# Manually-triggered harness that runs every discovery collector (no enrichment),
+# saves raw output to data/debug/, and prints a summary table in the logs.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run discovery debug harness
+        env:
+          PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
+        run: python -m src.collect.debug_all
+
+      - name: Commit raw debug output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f data/debug/          # -f: data/*.json is gitignored for normal runs
+          if git diff --staged --quiet; then
+            echo "No debug output to commit."
+          else
+            git commit -m "Discovery debug output ($(date -u +%Y-%m-%dT%H:%M))"
+            git push
+          fi
