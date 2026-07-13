@@ -21,9 +21,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 1,
+    "hours_since_release": 4,
     "signals": {
-      "hn_points": 8,
+      "hn_points": 9,
       "hn_comments": 1
     },
     "triage": {},
@@ -56,10 +56,80 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 1,
+    "hours_since_release": 4,
     "signals": {
-      "hn_points": 23,
-      "hn_comments": 11
+      "hn_points": 43,
+      "hn_comments": 18
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Finterm.ai Bloomberg terminal for Claude Code",
+    "source": "hackernews",
+    "url": "https://finterm.ai/",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 4,
+    "signals": {
+      "hn_points": 5,
+      "hn_comments": 0
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Jacquard",
+    "source": "hackernews",
+    "url": "https://github.com/jbwinters/jacquard-lang",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: Jacquard, a programming language for AI-written, human-reviewed code",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": false,
+    "reject_reason": "GitHub repository only",
+    "affiliate_eligible": false,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 6,
+    "signals": {
+      "hn_points": 19,
+      "hn_comments": 9
     },
     "triage": {},
     "scores": {},
@@ -91,7 +161,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 17,
+    "hours_since_release": 19,
     "signals": {
       "hn_points": 5,
       "hn_comments": 1
@@ -126,9 +196,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 17,
+    "hours_since_release": 20,
     "signals": {
-      "hn_points": 5,
+      "hn_points": 6,
       "hn_comments": 0
     },
     "triage": {},
@@ -161,7 +231,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 20,
+    "hours_since_release": 22,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -196,7 +266,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 22,
+    "hours_since_release": 25,
     "signals": {
       "hn_points": 8,
       "hn_comments": 3
@@ -231,7 +301,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 30,
+    "hours_since_release": 33,
     "signals": {
       "hn_points": 17,
       "hn_comments": 31
@@ -266,7 +336,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 33,
+    "hours_since_release": 36,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -301,7 +371,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 38,
+    "hours_since_release": 40,
     "signals": {
       "hn_points": 159,
       "hn_comments": 63
@@ -336,7 +406,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 47,
+    "hours_since_release": 49,
     "signals": {
       "hn_points": 6,
       "hn_comments": 2
@@ -371,7 +441,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 48,
+    "hours_since_release": 50,
     "signals": {
       "hn_points": 43,
       "hn_comments": 7
@@ -406,7 +476,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 67,
+    "hours_since_release": 70,
     "signals": {
       "hn_points": 7,
       "hn_comments": 2
@@ -865,111 +935,6 @@
     "signals": {
       "hn_points": 14,
       "hn_comments": 7
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Onboard-CLI",
-    "source": "hackernews",
-    "url": "https://github.com/animesh-94/Onboard-CLI",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: Onboard-CLI, a LLM powered and AST-based tool to visualize codebase",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": false,
-    "reject_reason": "GitHub repository only",
-    "affiliate_eligible": false,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 24,
-      "hn_comments": 14
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Hnwork.app",
-    "source": "hackernews",
-    "url": "https://hnwork.app/",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: Hnwork.app \u2013 UI for Who is hiring posts",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 25,
-      "hn_comments": 5
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Monogram",
-    "source": "hackernews",
-    "url": "https://www.monogram.ai/",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: Monogram, AI app with on the fly generation",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 9,
-      "hn_comments": 3
     },
     "triage": {},
     "scores": {},

@@ -5,12 +5,12 @@
     "status": "OK",
     "encoding": "n/a (API)",
     "decoded": "Yes",
-    "found": 43,
-    "qualified": 24,
+    "found": 42,
+    "qualified": 23,
     "rejected": 19,
-    "affiliate": 24,
-    "yield": 56,
-    "secs": 0.74,
+    "affiliate": 23,
+    "yield": 55,
+    "secs": 0.77,
     "reliability": 100,
     "target": 5,
     "reason": "GitHub repository only (17)"
@@ -26,7 +26,7 @@
     "rejected": 10,
     "affiliate": 10,
     "yield": 50,
-    "secs": 13.94,
+    "secs": 14.21,
     "reliability": 100,
     "target": 5,
     "reason": "library/framework/non-product repo (6)"
@@ -58,7 +58,7 @@
     "rejected": 0,
     "affiliate": 39,
     "yield": 100,
-    "secs": 2.97,
+    "secs": 0.39,
     "reliability": 100,
     "target": 0,
     "reason": ""
@@ -66,18 +66,18 @@
   {
     "source": "AlternativeTo",
     "http": "200",
-    "status": "WARN",
+    "status": "OK",
     "encoding": "gzip",
     "decoded": "Yes",
-    "found": 1,
-    "qualified": 1,
-    "rejected": 0,
-    "affiliate": 1,
-    "yield": 100,
-    "secs": 1.34,
-    "reliability": 55,
+    "found": 37,
+    "qualified": 36,
+    "rejected": 1,
+    "affiliate": 36,
+    "yield": 97,
+    "secs": 2.34,
+    "reliability": 100,
     "target": 10,
-    "reason": ""
+    "reason": "news/opinion/funding wording (1)"
   },
   {
     "source": "Muncheye",
@@ -85,12 +85,12 @@
     "status": "OK",
     "encoding": "gzip",
     "decoded": "Yes",
-    "found": 265,
-    "qualified": 264,
+    "found": 266,
+    "qualified": 265,
     "rejected": 1,
-    "affiliate": 264,
+    "affiliate": 265,
     "yield": 100,
-    "secs": 10.52,
+    "secs": 14.63,
     "reliability": 100,
     "target": 10,
     "reason": "news/opinion/funding wording (1)"
@@ -113,9 +113,9 @@
   },
   {
     "source": "WarriorPlus",
-    "http": "403",
-    "status": "FAIL",
-    "encoding": "n/a (API)",
+    "http": "\u2014",
+    "status": "DISABLED",
+    "encoding": "n/a",
     "decoded": "n/a",
     "found": 0,
     "qualified": 0,
@@ -125,7 +125,7 @@
     "secs": 0.0,
     "reliability": 0,
     "target": 0,
-    "reason": "GET failed after 3 attempts: 4"
+    "reason": "disabled"
   },
   {
     "source": "JVZoo",
@@ -138,17 +138,17 @@
     "rejected": 0,
     "affiliate": 0,
     "yield": 0,
-    "secs": 0.62,
+    "secs": 32.77,
     "reliability": 50,
     "target": 5,
     "reason": ""
   },
   {
     "source": "Digistore24",
-    "http": "404",
-    "status": "FAIL",
+    "http": "\u2014",
+    "status": "DISABLED",
     "encoding": "n/a",
-    "decoded": "No",
+    "decoded": "n/a",
     "found": 0,
     "qualified": 0,
     "rejected": 0,
@@ -157,6 +157,6 @@
     "secs": 0.0,
     "reliability": 0,
     "target": 5,
-    "reason": "no marketplace URL responded: "
+    "reason": "disabled"
   }
 ]

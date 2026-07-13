@@ -24,7 +24,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/Vibe-Trading",
-      "github_stars": 21595,
+      "github_stars": 21681,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -74,7 +74,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/moeru-ai/airi",
-      "github_stars": 41818,
+      "github_stars": 41841,
       "vendor": "moeru-ai",
       "archived": false,
       "topics": [
@@ -125,7 +125,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "github_stars": 119474,
+      "github_stars": 119531,
       "vendor": "Shubhamsaboo",
       "archived": false,
       "topics": [
@@ -169,7 +169,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Nutlope/hallmark",
-      "github_stars": 4990,
+      "github_stars": 5074,
       "vendor": "Nutlope",
       "archived": false,
       "topics": [],
@@ -208,7 +208,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Graphify-Labs/graphify",
-      "github_stars": 84448,
+      "github_stars": 84593,
       "vendor": "Graphify-Labs",
       "archived": false,
       "topics": [
@@ -259,7 +259,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/hasaneyldrm/exercises-dataset",
-      "github_stars": 12502,
+      "github_stars": 12573,
       "vendor": "hasaneyldrm",
       "archived": false,
       "topics": [
@@ -309,7 +309,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/github/spec-kit",
-      "github_stars": 120505,
+      "github_stars": 120560,
       "vendor": "github",
       "archived": false,
       "topics": [
@@ -356,7 +356,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/coreyhaines31/marketingskills",
-      "github_stars": 38425,
+      "github_stars": 38504,
       "vendor": "coreyhaines31",
       "archived": false,
       "topics": [
@@ -399,7 +399,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/bradautomates/claude-video",
-      "github_stars": 8077,
+      "github_stars": 8114,
       "vendor": "bradautomates",
       "archived": false,
       "topics": [],
@@ -438,7 +438,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/usestrix/strix",
-      "github_stars": 41158,
+      "github_stars": 41197,
       "vendor": "usestrix",
       "archived": false,
       "topics": [
@@ -498,7 +498,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/alirezarezvani/claude-skills",
-      "github_stars": 22503,
+      "github_stars": 22510,
       "vendor": "alirezarezvani",
       "archived": false,
       "topics": [
@@ -558,7 +558,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/davila7/claude-code-templates",
-      "github_stars": 29403,
+      "github_stars": 29414,
       "vendor": "davila7",
       "archived": false,
       "topics": [
@@ -602,7 +602,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/anthropics/claude-code",
-      "github_stars": 137708,
+      "github_stars": 137722,
       "vendor": "anthropics",
       "archived": false,
       "topics": [],
@@ -690,7 +690,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/browser-use/video-use",
-      "github_stars": 16819,
+      "github_stars": 16825,
       "vendor": "browser-use",
       "archived": false,
       "topics": [],
@@ -729,7 +729,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/ansible/ansible",
-      "github_stars": 69662,
+      "github_stars": 69663,
       "vendor": "ansible",
       "archived": false,
       "topics": [
@@ -771,7 +771,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/xbtlin/ai-berkshire",
-      "github_stars": 13009,
+      "github_stars": 13013,
       "vendor": "xbtlin",
       "archived": false,
       "topics": [
@@ -831,7 +831,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/home-assistant/core",
-      "github_stars": 89323,
+      "github_stars": 89327,
       "vendor": "home-assistant",
       "archived": false,
       "topics": [
@@ -879,7 +879,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/langflow-ai/langflow",
-      "github_stars": 151823,
+      "github_stars": 151826,
       "vendor": "langflow-ai",
       "archived": false,
       "topics": [
@@ -925,7 +925,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/cheahjs/free-llm-api-resources",
-      "github_stars": 26984,
+      "github_stars": 26985,
       "vendor": "cheahjs",
       "archived": false,
       "topics": [
