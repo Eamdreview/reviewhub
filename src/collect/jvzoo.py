@@ -39,35 +39,36 @@ LAST_STATS: dict = {}
 # Stop once we have comfortably more than the target to limit requests.
 _ENOUGH = 25
 
-# Listing cards link to a product detail / affiliate-info / buy page.
-_PRODUCT_HREF = re.compile(
-    r"/affiliate/affiliateinfonew/|/productlibrary/(?:details|view|product)|/b/|/c/|/product/",
-    re.I)
-# Nav/utility links to ignore even if they slip through the href filter.
-_NAV_WORDS = ("login", "signup", "sign up", "register", "about", "features",
-              "faq", "terms", "privacy", "support", "contact", "home",
-              "category", "next", "previous", "page")
-
-
+# Each listing card links to a product page /productlibrary/review/<id>, whose
+# link text is "<Product name>\n<tagline>" (confirmed from captured HTML).
 def _parse(html: str, out: list[Candidate], seen: set[str],
            rejections: dict[str, int]) -> int:
     soup = BeautifulSoup(html, "lxml")
-    links = [a for a in soup.select("a[href]")
-             if _PRODUCT_HREF.search(a.get("href", ""))]
+    links = soup.select("a[href*='/productlibrary/review/']")
     for link in links:
         href = link["href"]
-        name = util.clean(link.get_text()) or util.clean(link.get("title", ""))
+        # First text line is the product name, the rest is the tagline.
+        parts = [p for p in link.get_text("\n", strip=True).split("\n") if p.strip()]
+        if not parts:
+            rejections["no name"] = rejections.get("no name", 0) + 1
+            continue
+        name = util.clean(parts[0])
+        tagline = util.clean(" ".join(parts[1:]))
         low = name.lower()
-        if not name or len(name) < 4 or low in seen:
+        if not name or len(name) < 2 or low in seen:
             rejections["no/short/duplicate name"] = \
                 rejections.get("no/short/duplicate name", 0) + 1
             continue
-        if any(w == low or w in low for w in _NAV_WORDS):
-            rejections["nav/utility link"] = rejections.get("nav/utility link", 0) + 1
-            continue
-        parent = link.find_parent()
-        ctx = util.clean(parent.get_text(" ", strip=True) if parent else name)
-        if not util.is_niche_relevant(name, ctx):
+        # Card context (climb for price/commission text around the link).
+        card = link
+        for _ in range(5):
+            card = card.parent
+            if card is None:
+                break
+            if "%" in card.get_text() or "$" in card.get_text():
+                break
+        ctx = util.clean(card.get_text(" ", strip=True)) if card else tagline
+        if not util.is_niche_relevant(name, tagline):
             rejections["off-niche"] = rejections.get("off-niche", 0) + 1
             continue
         commission = ""
@@ -83,7 +84,7 @@ def _parse(html: str, out: list[Candidate], seen: set[str],
             name=name, source="jvzoo",
             url=href if href.startswith("http") else _BASE + href,
             category="AI / SaaS / digital",
-            description=ctx[:200] or "Listed on JVZoo marketplace",
+            description=tagline[:200] or "Listed on JVZoo marketplace",
             price=price, base_commission=commission,
             recurring="recurring" in ctx.lower(),
             launch_status="live"))
