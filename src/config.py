@@ -217,8 +217,12 @@ LEARNING = {
 # affiliate value. All rules are config-driven and reason-tagged.
 # ---------------------------------------------------------------------------
 QUALIFICATION = {
-    # Reject products whose only home is a code repo (open-source, no affiliate).
+    # Reject products whose only home is a code repo (open-source, no affiliate)…
     "reject_github_only": True,
+    # …except these sources, where a GitHub repo IS the discovered tool. They
+    # still qualify as reviewable tools (libraries are filtered separately), but
+    # remain affiliate-eligible=False unless they expose a real product site.
+    "github_ok_sources": ("github_trending",),
     # Sources that are inherently affiliate marketplaces -> affiliate-eligible.
     "affiliate_native_sources": ("jvzoo", "warriorplus", "digistore24", "muncheye"),
     # Hosts that mean "no official product website".

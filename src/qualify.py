@@ -55,8 +55,10 @@ def qualify_one(c: Candidate) -> tuple[bool, str, bool]:
     if any(w in blob for w in q["library_words"]):
         return False, "framework/library/dataset", False
 
-    # 6. Not a GitHub-repo-only product (open-source, no affiliate potential).
-    if q["reject_github_only"] and host in ("github.com", "gitlab.com"):
+    # 6. Not a GitHub-repo-only product (open-source, no affiliate potential),
+    #    unless the source is one where a repo IS the discovered tool.
+    if (q["reject_github_only"] and host in ("github.com", "gitlab.com")
+            and src not in q.get("github_ok_sources", ())):
         return False, "GitHub repository only", False
 
     # Qualified. Determine affiliate eligibility.
