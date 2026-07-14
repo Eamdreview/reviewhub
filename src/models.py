@@ -56,6 +56,11 @@ class Candidate:
     # {buying_intent: int, is_junk: bool, evergreen: int, reason: str}
     triage: dict[str, Any] = field(default_factory=dict)
 
+    # --- freshness (Freshness stage, between Triage and Score) ---
+    # {score, confidence, status, launch_date, launch_date_source, age_label,
+    #  age_days, signals: [{name, value, points}], reasons: str}
+    freshness: dict[str, Any] = field(default_factory=dict)
+
     # --- scoring (Score stage) ---
     scores: dict[str, float] = field(default_factory=dict)   # criterion -> 0-100
     total_score: float = 0.0

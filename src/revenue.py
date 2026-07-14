@@ -104,7 +104,9 @@ def _sales_factors(c: Candidate, benchmark: dict) -> list[tuple[str, str, float]
     contest = bool(sig.get("affiliate_contest"))
     n_upsells = _count_upsells(c.upsells)
 
-    comp_mult = {"low": 1.30, "medium": 1.00, "high": 0.60}[comp]
+    # Competition: "unknown" (no reviews AND no fresh signal) is neutral — NOT
+    # the +30% first-mover bonus a confirmed low-competition product earns.
+    comp_mult = {"low": 1.30, "unknown": 1.00, "medium": 1.00, "high": 0.60}[comp]
     if yt == 0:
         yt_mult = 0.95          # unvalidated demand
     elif yt <= 6:
@@ -113,14 +115,13 @@ def _sales_factors(c: Candidate, benchmark: dict) -> list[tuple[str, str, float]
         yt_mult = 1.00
     else:
         yt_mult = 0.85          # saturated
-    if c.launch_status == "upcoming":
-        timing_label, timing_mult = "upcoming launch", 1.25
-    elif c.hours_since_release is not None and c.hours_since_release <= 48:
-        timing_label, timing_mult = "released <48h", 1.15
-    elif c.launch_status == "evergreen":
-        timing_label, timing_mult = "evergreen", 1.00
-    else:
-        timing_label, timing_mult = "live/older", 0.95
+    # Freshness replaces the old age-based "Launch Timing" multiplier: an active,
+    # in-demand product is worth more regardless of when it launched; an unknown
+    # freshness picture is neutral (no bonus, no penalty).
+    fr = c.freshness or {}
+    fstatus = fr.get("status", "unknown")
+    timing_mult = config.FRESHNESS["revenue_multiplier"].get(fstatus, 1.00)
+    timing_label = f"{fstatus} ({fr.get('score', 50):g}/100)"
     funnel_mult = 1.05 if n_upsells >= 2 else (1.02 if n_upsells == 1 else 1.0)
 
     return [
@@ -133,7 +134,7 @@ def _sales_factors(c: Candidate, benchmark: dict) -> list[tuple[str, str, float]
         ("Funnel Quality", f"{n_upsells} upsell(s)", funnel_mult),
         ("Affiliate Contest", "detected" if contest else "none/unknown",
          1.10 if contest else 1.0),
-        ("Launch Timing", timing_label, timing_mult),
+        ("Freshness", timing_label, timing_mult),
         ("Historical/Category", benchmark["matched"] or "default",
          float(benchmark["demand"])),
     ]

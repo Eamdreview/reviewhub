@@ -94,6 +94,47 @@ def _prediction_block(c: Candidate) -> str:
     )
 
 
+# --- Freshness block (per product) ------------------------------------------
+def _freshness_block(c: Candidate) -> str:
+    f = c.freshness or {}
+    if not f:
+        return ""
+    status = f.get("status", "unknown")
+    icon = {"fresh": "🟢", "moderate": "🟡", "stale": "🟠", "unknown": "⚪"}.get(status, "⚪")
+    return (
+        "**🌡️ Freshness & Confidence**\n"
+        f"- Launch date: **{f.get('launch_date', 'Unknown')}**"
+        f"{(' _(' + f['launch_date_source'] + ')_') if f.get('launch_date_source') else ''} · "
+        f"Product age: **{f.get('age_label', 'Unknown')}**\n"
+        f"- Freshness Score: {icon} **{f.get('score', 50):g}/100** ({status}) · "
+        f"Confidence Score: **{f.get('confidence', 0)}%** (share of signals measured)\n"
+        f"- Why this freshness: _{f.get('reasons', 'n/a')}_\n"
+    )
+
+
+# --- "Why this product ranked here" (transparent factor contributions) -------
+def _why_ranked(c: Candidate) -> str:
+    pts = score.breakdown_points(c.scores)
+    ranked = sorted(config.WEIGHTS.items(), key=lambda kv: pts.get(kv[0], 0), reverse=True)
+    rows = "\n".join(
+        f"  - {config.CRITERION_LABELS[k]}: {pts.get(k,0):g}/{w} points"
+        f"{'  ← top driver' if i == 0 else ''}"
+        for i, (k, w) in enumerate(ranked))
+    p = c.prediction or {}
+    comp = c.classification.get("competition_level", "?")
+    return (
+        "**🧮 Why this product ranked here**\n"
+        f"- Opportunity Score **{c.total_score:g}/100** is the weighted sum of:\n{rows}\n"
+        f"- Competition graded **{comp}** → revenue ×"
+        f"{next((f['multiplier'] for f in p.get('factors', []) if f['factor']=='Competition'), 1):g}; "
+        f"Freshness **{c.freshness.get('status','unknown')}** → revenue ×"
+        f"{next((f['multiplier'] for f in p.get('factors', []) if f['factor']=='Freshness'), 1):g}.\n"
+        f"- Ranked by Expected ROI **${p.get('roi_per_hour',0):g}/hr** "
+        f"(est. ${p.get('revenue_range',[0,0])[0]}–${p.get('revenue_range',[0,0])[1]} ÷ "
+        f"{p.get('hours',0):g}h). Product age is NOT a ranking factor — freshness is.\n"
+    )
+
+
 # --- 3. Top Opportunities (featured briefs) --------------------------------
 def _opportunity_block(idx: int, c: Candidate) -> str:
     cls = c.classification
@@ -107,7 +148,9 @@ def _opportunity_block(idx: int, c: Candidate) -> str:
         f"**Priority:** {cls.get('priority','')} · **Source:** {c.source} · [listing]({c.url})\n\n"
         f"**Score breakdown:** {_breakdown_line(c)}\n\n"
         f"{c.brief.get('body', '_(no brief)_')}\n\n"
+        f"{_freshness_block(c)}\n"
         f"{_facts_block(c)}\n"
+        f"{_why_ranked(c)}\n"
         f"{_prediction_block(c)}"
     )
 
@@ -211,7 +254,10 @@ def _facts_block(c: Candidate) -> str:
         f"Commission: {val(c.base_commission)} · Recurring: {rec}\n"
         f"- Affiliate program: {val(c.affiliate_program)} · "
         f"Network: {val(c.affiliate_network)}\n"
-        f"- Docs: {val(c.documentation_url)} · Launch: {val(c.launch_date) if c.launch_date else c.launch_status}\n"
+        f"- Docs: {val(c.documentation_url)} · "
+        f"Launch date: {c.freshness.get('launch_date', 'Unknown')}"
+        f"{(' (' + c.freshness['launch_date_source'] + ')') if c.freshness.get('launch_date_source') else ''} · "
+        f"Age: {c.freshness.get('age_label', 'Unknown')}\n"
         f"- Existing reviews: {reviews} · YouTube reviews: {yt} · "
         f"Reddit mentions: {reddit} · Google Trends: {trend}{src}\n"
     )

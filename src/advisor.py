@@ -26,9 +26,14 @@ def recommend(run: RunReport, vendor_profiles: dict[str, dict]) -> dict | None:
     vendor_key = pick.signals.get("vendor", "") or pick.source
     vprofile = vendor_profiles.get(vendor_key, {})
 
-    timing = ("pre-launch (be first)" if pick.launch_status == "upcoming"
-              else "just launched" if pick.hours_since_release is not None
-              else pick.launch_status)
+    if pick.launch_status == "upcoming":
+        timing = "pre-launch (be first)"
+    elif pick.hours_since_release is not None:
+        timing = "just launched"
+    else:
+        fr = pick.freshness or {}
+        timing = (f"freshness {fr.get('status', 'unknown')} "
+                  f"({fr.get('score', 50):g}/100, {fr.get('confidence', 0)}% measured)")
 
     return {
         "product": pick.name,
@@ -38,7 +43,7 @@ def recommend(run: RunReport, vendor_profiles: dict[str, dict]) -> dict | None:
             "Competition": f"{comp.get('competition_level', 'unknown')} — {comp.get('can_rank', '')}",
             "Buying Intent": f"{pick.scores.get('buying_intent', 0):g}/100",
             "Vendor Quality": f"{vprofile.get('quality_score', 'n/a')}/100 ({vprofile.get('refund_reputation', 'unknown')})",
-            "Launch Timing": f"{timing}; best publish by {p.get('best_publish_date', 'n/a')}",
+            "Freshness / Timing": f"{timing}; best publish by {p.get('best_publish_date', 'n/a')}",
             "Confidence": f"{p.get('confidence', 0)}%",
         },
         "effort": p.get("hours"),
