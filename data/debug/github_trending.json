@@ -1,5 +1,51 @@
 [
   {
+    "name": "destructive_command_guard",
+    "source": "github_trending",
+    "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
+    "category": "ai-agents, cli",
+    "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "https://github.com/Dicklesworthstone/destructive_command_guard#readme",
+    "facts_source": "",
+    "qualified": false,
+    "reject_reason": "no official product website",
+    "affiliate_eligible": false,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": null,
+    "signals": {
+      "github_repo": "https://github.com/Dicklesworthstone/destructive_command_guard",
+      "github_stars": 3961,
+      "vendor": "Dicklesworthstone",
+      "archived": false,
+      "topics": [
+        "ai-agents",
+        "cli",
+        "developer-tools",
+        "git",
+        "rust",
+        "safety"
+      ],
+      "has_product_site": false
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
     "name": "Vibe-Trading",
     "source": "github_trending",
     "url": "https://vibetrading.wiki/",
@@ -24,7 +70,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/Vibe-Trading",
-      "github_stars": 21683,
+      "github_stars": 22219,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -74,7 +120,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/moeru-ai/airi",
-      "github_stars": 41842,
+      "github_stars": 42160,
       "vendor": "moeru-ai",
       "archived": false,
       "topics": [
@@ -125,7 +171,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "github_stars": 119538,
+      "github_stars": 120063,
       "vendor": "Shubhamsaboo",
       "archived": false,
       "topics": [
@@ -169,7 +215,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Nutlope/hallmark",
-      "github_stars": 5081,
+      "github_stars": 5505,
       "vendor": "Nutlope",
       "archived": false,
       "topics": [],
@@ -208,7 +254,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Graphify-Labs/graphify",
-      "github_stars": 84607,
+      "github_stars": 85295,
       "vendor": "Graphify-Labs",
       "archived": false,
       "topics": [
@@ -259,7 +305,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/hasaneyldrm/exercises-dataset",
-      "github_stars": 12579,
+      "github_stars": 12930,
       "vendor": "hasaneyldrm",
       "archived": false,
       "topics": [
@@ -309,7 +355,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/github/spec-kit",
-      "github_stars": 120561,
+      "github_stars": 120877,
       "vendor": "github",
       "archived": false,
       "topics": [
@@ -356,7 +402,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/coreyhaines31/marketingskills",
-      "github_stars": 38510,
+      "github_stars": 38928,
       "vendor": "coreyhaines31",
       "archived": false,
       "topics": [
@@ -399,7 +445,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/bradautomates/claude-video",
-      "github_stars": 8115,
+      "github_stars": 8270,
       "vendor": "bradautomates",
       "archived": false,
       "topics": [],
@@ -438,7 +484,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/usestrix/strix",
-      "github_stars": 41199,
+      "github_stars": 41316,
       "vendor": "usestrix",
       "archived": false,
       "topics": [
@@ -498,7 +544,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/alirezarezvani/claude-skills",
-      "github_stars": 22511,
+      "github_stars": 22538,
       "vendor": "alirezarezvani",
       "archived": false,
       "topics": [
@@ -558,7 +604,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/davila7/claude-code-templates",
-      "github_stars": 29414,
+      "github_stars": 29438,
       "vendor": "davila7",
       "archived": false,
       "topics": [
@@ -602,7 +648,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/anthropics/claude-code",
-      "github_stars": 137724,
+      "github_stars": 137780,
       "vendor": "anthropics",
       "archived": false,
       "topics": [],
@@ -641,7 +687,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/huggingface/speech-to-speech",
-      "github_stars": 6136,
+      "github_stars": 6145,
       "vendor": "huggingface",
       "archived": false,
       "topics": [
@@ -690,7 +736,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/browser-use/video-use",
-      "github_stars": 16826,
+      "github_stars": 16878,
       "vendor": "browser-use",
       "archived": false,
       "topics": [],
@@ -729,7 +775,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/ansible/ansible",
-      "github_stars": 69663,
+      "github_stars": 69669,
       "vendor": "ansible",
       "archived": false,
       "topics": [
@@ -771,7 +817,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/xbtlin/ai-berkshire",
-      "github_stars": 13013,
+      "github_stars": 13068,
       "vendor": "xbtlin",
       "archived": false,
       "topics": [
@@ -831,7 +877,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/home-assistant/core",
-      "github_stars": 89327,
+      "github_stars": 89340,
       "vendor": "home-assistant",
       "archived": false,
       "topics": [
@@ -879,7 +925,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/langflow-ai/langflow",
-      "github_stars": 151826,
+      "github_stars": 151853,
       "vendor": "langflow-ai",
       "archived": false,
       "topics": [
@@ -925,7 +971,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/cheahjs/free-llm-api-resources",
-      "github_stars": 26986,
+      "github_stars": 27006,
       "vendor": "cheahjs",
       "archived": false,
       "topics": [

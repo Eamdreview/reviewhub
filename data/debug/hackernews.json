@@ -1,5 +1,75 @@
 [
   {
+    "name": "Sx 2.0",
+    "source": "hackernews",
+    "url": "https://sleuth-io.github.io/sx/2026/07/10/your-dropbox-is-now-a-skill-server.html",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: Sx 2.0 \u2013 Share AI skills with your team through a Dropbox folder",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 8,
+    "signals": {
+      "hn_points": 34,
+      "hn_comments": 29
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "ContextVault",
+    "source": "hackernews",
+    "url": "https://www.contextvault.dev/",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: ContextVault \u2013 Shared memory layer for your AI and your team",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 8,
+    "signals": {
+      "hn_points": 9,
+      "hn_comments": 2
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
     "name": "kassette",
     "source": "hackernews",
     "url": "https://github.com/lostinpatterns/kassette",
@@ -21,7 +91,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 4,
+    "hours_since_release": 13,
     "signals": {
       "hn_points": 9,
       "hn_comments": 1
@@ -56,10 +126,10 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 4,
+    "hours_since_release": 13,
     "signals": {
-      "hn_points": 46,
-      "hn_comments": 21
+      "hn_points": 68,
+      "hn_comments": 27
     },
     "triage": {},
     "scores": {},
@@ -91,7 +161,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 5,
+    "hours_since_release": 14,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -126,10 +196,10 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 7,
+    "hours_since_release": 16,
     "signals": {
-      "hn_points": 21,
-      "hn_comments": 10
+      "hn_points": 84,
+      "hn_comments": 44
     },
     "triage": {},
     "scores": {},
@@ -161,7 +231,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 20,
+    "hours_since_release": 29,
     "signals": {
       "hn_points": 5,
       "hn_comments": 1
@@ -196,9 +266,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 20,
+    "hours_since_release": 29,
     "signals": {
-      "hn_points": 6,
+      "hn_points": 7,
       "hn_comments": 0
     },
     "triage": {},
@@ -231,7 +301,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 22,
+    "hours_since_release": 31,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -266,7 +336,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 25,
+    "hours_since_release": 34,
     "signals": {
       "hn_points": 8,
       "hn_comments": 3
@@ -301,10 +371,10 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 33,
+    "hours_since_release": 42,
     "signals": {
-      "hn_points": 17,
-      "hn_comments": 31
+      "hn_points": 18,
+      "hn_comments": 32
     },
     "triage": {},
     "scores": {},
@@ -336,7 +406,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 36,
+    "hours_since_release": 45,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -371,9 +441,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 41,
+    "hours_since_release": 50,
     "signals": {
-      "hn_points": 159,
+      "hn_points": 161,
       "hn_comments": 63
     },
     "triage": {},
@@ -406,7 +476,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 50,
+    "hours_since_release": 59,
     "signals": {
       "hn_points": 6,
       "hn_comments": 2
@@ -441,7 +511,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 50,
+    "hours_since_release": 59,
     "signals": {
       "hn_points": 43,
       "hn_comments": 7
@@ -476,7 +546,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 70,
+    "hours_since_release": null,
     "signals": {
       "hn_points": 7,
       "hn_comments": 2
@@ -900,41 +970,6 @@
     "signals": {
       "hn_points": 98,
       "hn_comments": 61
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "OpenScreenShot",
-    "source": "hackernews",
-    "url": "https://openscreenshot.app",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: OpenScreenShot: open-source full-page screenshot and annotation tool",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 14,
-      "hn_comments": 7
     },
     "triage": {},
     "scores": {},

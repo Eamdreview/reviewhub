@@ -384,11 +384,11 @@
     "brief": {}
   },
   {
-    "name": "Farfalle",
+    "name": "Meta Llama",
     "source": "alternativeto",
-    "url": "https://alternativeto.net/software/farfalle/about/",
+    "url": "https://alternativeto.net/software/llama-ai/about/",
     "category": "Software / SaaS",
-    "description": "Open-source AI powered answer engine.",
+    "description": "As part of Meta\u2019s commitment to open science, today we are publicly releasing Llama (Large Language Model Meta AI), a state-of-the-art foundational large language model designed to help researchers advance their work in this subfield of AI.",
     "price": "",
     "base_commission": "",
     "recurring": null,
@@ -416,11 +416,11 @@
     "brief": {}
   },
   {
-    "name": "Meta Llama",
+    "name": "Farfalle",
     "source": "alternativeto",
-    "url": "https://alternativeto.net/software/llama-ai/about/",
+    "url": "https://alternativeto.net/software/farfalle/about/",
     "category": "Software / SaaS",
-    "description": "As part of Meta\u2019s commitment to open science, today we are publicly releasing Llama (Large Language Model Meta AI), a state-of-the-art foundational large language model designed to help researchers advance their work in this subfield of AI.",
+    "description": "Open-source AI powered answer engine.",
     "price": "",
     "base_commission": "",
     "recurring": null,

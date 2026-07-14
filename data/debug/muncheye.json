@@ -1,39 +1,5 @@
 [
   {
-    "name": "Cast AI",
-    "source": "muncheye",
-    "url": "https://muncheye.com/july-launch-2",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Todd Gross ($24+ at 50%)",
-    "price": "$24",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-13",
-    "days_to_launch": null,
-    "hours_since_release": 23,
-    "signals": {
-      "vendor": "Todd Gross"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
     "name": "Traffic Genie",
     "source": "muncheye",
     "url": "https://muncheye.com/trafficgenie",
@@ -52,10 +18,10 @@
     "qualified": true,
     "reject_reason": "",
     "affiliate_eligible": true,
-    "launch_status": "upcoming",
+    "launch_status": "live",
     "launch_date": "2026-07-14",
-    "days_to_launch": 0,
-    "hours_since_release": null,
+    "days_to_launch": null,
+    "hours_since_release": 8,
     "signals": {
       "vendor": "Mo Latif"
     },
@@ -88,7 +54,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-17",
-    "days_to_launch": 3,
+    "days_to_launch": 2,
     "hours_since_release": null,
     "signals": {
       "vendor": "DPAPA"
@@ -122,7 +88,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-21",
-    "days_to_launch": 7,
+    "days_to_launch": 6,
     "hours_since_release": null,
     "signals": {
       "vendor": "Karthik Ramani"
@@ -156,7 +122,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-24",
-    "days_to_launch": 10,
+    "days_to_launch": 9,
     "hours_since_release": null,
     "signals": {
       "vendor": "Cyril Gupta"
@@ -190,7 +156,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-28",
-    "days_to_launch": 14,
+    "days_to_launch": 13,
     "hours_since_release": null,
     "signals": {
       "vendor": "Abhi Dwivedi"
@@ -224,7 +190,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-30",
-    "days_to_launch": 16,
+    "days_to_launch": 15,
     "hours_since_release": null,
     "signals": {
       "vendor": "Vivek Gour"
@@ -258,7 +224,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-31",
-    "days_to_launch": 17,
+    "days_to_launch": 16,
     "hours_since_release": null,
     "signals": {
       "vendor": "IM Wealth Builders et al."
@@ -292,7 +258,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-04",
-    "days_to_launch": 21,
+    "days_to_launch": 20,
     "hours_since_release": null,
     "signals": {
       "vendor": "Jono Armstrong & Richard Fairbairn"
@@ -326,7 +292,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-04",
-    "days_to_launch": 21,
+    "days_to_launch": 20,
     "hours_since_release": null,
     "signals": {
       "vendor": "Todd Gross"
@@ -360,7 +326,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-06",
-    "days_to_launch": 23,
+    "days_to_launch": 22,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rohit Shah"
@@ -394,7 +360,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-07",
-    "days_to_launch": 24,
+    "days_to_launch": 23,
     "hours_since_release": null,
     "signals": {
       "vendor": "IM Wealth Builders"
@@ -428,7 +394,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-11",
-    "days_to_launch": 28,
+    "days_to_launch": 27,
     "hours_since_release": null,
     "signals": {
       "vendor": "Neil Napier"
@@ -462,7 +428,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-12",
-    "days_to_launch": 29,
+    "days_to_launch": 28,
     "hours_since_release": null,
     "signals": {
       "vendor": "Vivek Gour"
@@ -496,7 +462,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-13",
-    "days_to_launch": 30,
+    "days_to_launch": 29,
     "hours_since_release": null,
     "signals": {
       "vendor": "Firas Alameh"
@@ -530,7 +496,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-18",
-    "days_to_launch": 35,
+    "days_to_launch": 34,
     "hours_since_release": null,
     "signals": {
       "vendor": "Brett Ingram and Mo Latif"
@@ -564,7 +530,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-18",
-    "days_to_launch": 35,
+    "days_to_launch": 34,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ben Murray"
@@ -598,7 +564,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-25",
-    "days_to_launch": 42,
+    "days_to_launch": 41,
     "hours_since_release": null,
     "signals": {
       "vendor": "Abhi Dwivedi"
@@ -632,7 +598,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-28",
-    "days_to_launch": 45,
+    "days_to_launch": 44,
     "hours_since_release": null,
     "signals": {
       "vendor": "Cyril Gupta"
@@ -666,10 +632,44 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-31",
-    "days_to_launch": 48,
+    "days_to_launch": 47,
     "hours_since_release": null,
     "signals": {
       "vendor": "Adrian Isfan et al"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "AI Trading Engine",
+    "source": "muncheye",
+    "url": "https://muncheye.com/sean-donahoe-ai-income-engine-2",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Sean Donahoe ($47 - ($497 Bundle) at 50%)",
+    "price": "$47",
+    "base_commission": "50%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "upcoming",
+    "launch_date": "2026-09-01",
+    "days_to_launch": 48,
+    "hours_since_release": null,
+    "signals": {
+      "vendor": "Sean Donahoe"
     },
     "triage": {},
     "scores": {},
@@ -700,7 +700,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-03",
-    "days_to_launch": 51,
+    "days_to_launch": 50,
     "hours_since_release": null,
     "signals": {
       "vendor": "Neil Napier"
@@ -734,7 +734,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-04",
-    "days_to_launch": 52,
+    "days_to_launch": 51,
     "hours_since_release": null,
     "signals": {
       "vendor": "IM Wealth Builders et al"
@@ -768,7 +768,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-05",
-    "days_to_launch": 53,
+    "days_to_launch": 52,
     "hours_since_release": null,
     "signals": {
       "vendor": "Tim Verdouw et al"
@@ -802,7 +802,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-10",
-    "days_to_launch": 58,
+    "days_to_launch": 57,
     "hours_since_release": null,
     "signals": {
       "vendor": "Joshua Zamora"
@@ -836,7 +836,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-15",
-    "days_to_launch": 63,
+    "days_to_launch": 62,
     "hours_since_release": null,
     "signals": {
       "vendor": "Andrew and Chris Fox"
@@ -870,7 +870,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-23",
-    "days_to_launch": 71,
+    "days_to_launch": 70,
     "hours_since_release": null,
     "signals": {
       "vendor": "Karthik Ramani"
@@ -904,7 +904,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-25",
-    "days_to_launch": 73,
+    "days_to_launch": 72,
     "hours_since_release": null,
     "signals": {
       "vendor": "Cyril Gupta"
@@ -938,7 +938,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-29",
-    "days_to_launch": 77,
+    "days_to_launch": 76,
     "hours_since_release": null,
     "signals": {
       "vendor": "Abhi Dwivedi"
@@ -972,7 +972,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-01",
-    "days_to_launch": 79,
+    "days_to_launch": 78,
     "hours_since_release": null,
     "signals": {
       "vendor": "Adrian Isfan et al"
@@ -1006,7 +1006,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-06",
-    "days_to_launch": 84,
+    "days_to_launch": 83,
     "hours_since_release": null,
     "signals": {
       "vendor": "Neil Napier"
@@ -1040,7 +1040,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-09",
-    "days_to_launch": 87,
+    "days_to_launch": 86,
     "hours_since_release": null,
     "signals": {
       "vendor": "Tim Verdouw et al"
@@ -1074,7 +1074,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-13",
-    "days_to_launch": 91,
+    "days_to_launch": 90,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ben Murray"
@@ -1108,7 +1108,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-21",
-    "days_to_launch": 99,
+    "days_to_launch": 98,
     "hours_since_release": null,
     "signals": {
       "vendor": "Karthik Ramani et al"
@@ -1142,7 +1142,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-23",
-    "days_to_launch": 101,
+    "days_to_launch": 100,
     "hours_since_release": null,
     "signals": {
       "vendor": "Cyril Gupta"
@@ -1176,7 +1176,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-27",
-    "days_to_launch": 105,
+    "days_to_launch": 104,
     "hours_since_release": null,
     "signals": {
       "vendor": "Abhi Dwivedi"
@@ -1210,7 +1210,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-30",
-    "days_to_launch": 108,
+    "days_to_launch": 107,
     "hours_since_release": null,
     "signals": {
       "vendor": "IM Wealth Builders et al"
@@ -1244,7 +1244,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-03",
-    "days_to_launch": 112,
+    "days_to_launch": 111,
     "hours_since_release": null,
     "signals": {
       "vendor": "Neil Napier"
@@ -1278,7 +1278,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-09",
-    "days_to_launch": 118,
+    "days_to_launch": 117,
     "hours_since_release": null,
     "signals": {
       "vendor": "Tim Verdouw et al"
@@ -1312,10 +1312,44 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-10",
-    "days_to_launch": 119,
+    "days_to_launch": 118,
     "hours_since_release": null,
     "signals": {
       "vendor": "Adrian Isfan et al"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "AI Agency Engine",
+    "source": "muncheye",
+    "url": "https://muncheye.com/sean-donahoe-ai-income-engine",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Sean Donahoe ($47 - ($497 Bundle) at 50%)",
+    "price": "$47",
+    "base_commission": "50%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "upcoming",
+    "launch_date": "2026-11-10",
+    "days_to_launch": 118,
+    "hours_since_release": null,
+    "signals": {
+      "vendor": "Sean Donahoe"
     },
     "triage": {},
     "scores": {},
@@ -1346,7 +1380,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-12",
-    "days_to_launch": 121,
+    "days_to_launch": 120,
     "hours_since_release": null,
     "signals": {
       "vendor": "Joshua Zamora"
@@ -1380,7 +1414,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-18",
-    "days_to_launch": 127,
+    "days_to_launch": 126,
     "hours_since_release": null,
     "signals": {
       "vendor": "Karthik Ramani"
@@ -1414,10 +1448,44 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-24",
-    "days_to_launch": 133,
+    "days_to_launch": 132,
     "hours_since_release": null,
     "signals": {
       "vendor": "Abhi Dwivedi"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "The 2026 Engine Vault",
+    "source": "muncheye",
+    "url": "https://muncheye.com/sean-donahoe-ai-trading-engine",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Sean Donahoe ($97 at 50%)",
+    "price": "$97",
+    "base_commission": "50%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "upcoming",
+    "launch_date": "2026-11-26",
+    "days_to_launch": 134,
+    "hours_since_release": null,
+    "signals": {
+      "vendor": "Sean Donahoe"
     },
     "triage": {},
     "scores": {},
@@ -1448,7 +1516,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-27",
-    "days_to_launch": 136,
+    "days_to_launch": 135,
     "hours_since_release": null,
     "signals": {
       "vendor": "Cyril Gupta"
@@ -1482,7 +1550,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-03",
-    "days_to_launch": 142,
+    "days_to_launch": 141,
     "hours_since_release": null,
     "signals": {
       "vendor": "Neil Napier"
@@ -1516,7 +1584,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-10",
-    "days_to_launch": 149,
+    "days_to_launch": 148,
     "hours_since_release": null,
     "signals": {
       "vendor": "Joshua Zamora"
@@ -1550,7 +1618,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-21",
-    "days_to_launch": 160,
+    "days_to_launch": 159,
     "hours_since_release": null,
     "signals": {
       "vendor": "Cyril Gupta"
@@ -1584,7 +1652,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-23",
-    "days_to_launch": 162,
+    "days_to_launch": 161,
     "hours_since_release": null,
     "signals": {
       "vendor": "Karthik Ramani et al"
@@ -1618,7 +1686,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-26",
-    "days_to_launch": 165,
+    "days_to_launch": 164,
     "hours_since_release": null,
     "signals": {
       "vendor": "IM Wealth Builders et al"
@@ -1652,7 +1720,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-29",
-    "days_to_launch": 168,
+    "days_to_launch": 167,
     "hours_since_release": null,
     "signals": {
       "vendor": "Abhi Dwivedi"
@@ -1687,7 +1755,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-20",
     "days_to_launch": null,
-    "hours_since_release": 4199,
+    "hours_since_release": 4208,
     "signals": {
       "vendor": "Karthik Ramani"
     },
@@ -1721,7 +1789,7 @@
     "launch_status": "live",
     "launch_date": "2026-02-17",
     "days_to_launch": null,
-    "hours_since_release": 3527,
+    "hours_since_release": 3536,
     "signals": {
       "vendor": "Karthik Ramani et al"
     },
@@ -1755,7 +1823,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-24",
     "days_to_launch": null,
-    "hours_since_release": 2687,
+    "hours_since_release": 2696,
     "signals": {
       "vendor": "Karthik Ramani"
     },
@@ -1789,791 +1857,9 @@
     "launch_status": "live",
     "launch_date": "2026-04-17",
     "days_to_launch": null,
-    "hours_since_release": 2111,
+    "hours_since_release": 2120,
     "signals": {
       "vendor": "dpapa"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Puzz Labs AI",
-    "source": "muncheye",
-    "url": "https://muncheye.com/puzzlelabs-ai",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Peter Onwe ($16.5 at 50%)",
-    "price": "$16",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-12",
-    "days_to_launch": null,
-    "hours_since_release": 47,
-    "signals": {
-      "vendor": "Peter Onwe"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "PLR Organic Traffic Machine",
-    "source": "muncheye",
-    "url": "https://muncheye.com/jason-oickle-the-organic-traffic-machine-plr-lead-magnet-package",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Jason Oickle ($1 at 100%)",
-    "price": "$1",
-    "base_commission": "100%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-12",
-    "days_to_launch": null,
-    "hours_since_release": 47,
-    "signals": {
-      "vendor": "Jason Oickle"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Page Mint Color V2",
-    "source": "muncheye",
-    "url": "https://muncheye.com/pagemint-color-v2",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Nhan Scope ($1.99 at 50%)",
-    "price": "$1.99",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-12",
-    "days_to_launch": null,
-    "hours_since_release": 47,
-    "signals": {
-      "vendor": "Nhan Scope"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "(PLR) Astrology & Zodiac Video Pack\u2026",
-    "source": "muncheye",
-    "url": "https://muncheye.com/plr-astrology-zodiac-video-pack-celestial-path-collection",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 JD Brooks (17 at 50%)",
-    "price": "17",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-12",
-    "days_to_launch": null,
-    "hours_since_release": 47,
-    "signals": {
-      "vendor": "JD Brooks"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Nomad AI",
-    "source": "muncheye",
-    "url": "https://muncheye.com/art-flair-nomadai",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Art Flair (17 at 50%)",
-    "price": "17",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-11",
-    "days_to_launch": null,
-    "hours_since_release": 71,
-    "signals": {
-      "vendor": "Art Flair"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Codex Course Machine",
-    "source": "muncheye",
-    "url": "https://muncheye.com/codex-course-machine",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Mohith Mohan ($7 at 100%)",
-    "price": "$7",
-    "base_commission": "100%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-11",
-    "days_to_launch": null,
-    "hours_since_release": 71,
-    "signals": {
-      "vendor": "Mohith Mohan"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Recipe Reel Empire",
-    "source": "muncheye",
-    "url": "https://muncheye.com/arifianto-rahardi-recipereel-empire",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Arifianto Rahardi ($14 at 55%)",
-    "price": "$14",
-    "base_commission": "55%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-11",
-    "days_to_launch": null,
-    "hours_since_release": 71,
-    "signals": {
-      "vendor": "Arifianto Rahardi"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Best Blog Widgets and Plugins",
-    "source": "muncheye",
-    "url": "https://muncheye.com/new-product-lounch-9",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Indrajit ($ 47 at 50%)",
-    "price": "$ 47",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-11",
-    "days_to_launch": null,
-    "hours_since_release": 71,
-    "signals": {
-      "vendor": "Indrajit"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Funnel AJT - AI Busine\u2026",
-    "source": "muncheye",
-    "url": "https://muncheye.com/funnel-ajt-ai-email-and-business-automation-with-multi-project-crm",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Amit Gupta (Funnel AJT) ($14 at 50%)",
-    "price": "$14",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-11",
-    "days_to_launch": null,
-    "hours_since_release": 71,
-    "signals": {
-      "vendor": "Amit Gupta (Funnel AJT)"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Kids Coloring PLR Starter Kit\u2122",
-    "source": "muncheye",
-    "url": "https://muncheye.com/kids-coloring-plr-starter-kit",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Aaron Zeller (9.95 at 50%)",
-    "price": "9.95",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-11",
-    "days_to_launch": null,
-    "hours_since_release": 71,
-    "signals": {
-      "vendor": "Aaron Zeller"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Start Affiliate Marketing like a Pro",
-    "source": "muncheye",
-    "url": "https://muncheye.com/start-affiliate-marketing-like-a-pro",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Vaibhav Patel (17 at 50%)",
-    "price": "17",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-10",
-    "days_to_launch": null,
-    "hours_since_release": 95,
-    "signals": {
-      "vendor": "Vaibhav Patel"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "[U-PLR] AI Side Hustle Videos",
-    "source": "muncheye",
-    "url": "https://muncheye.com/ai-side-hustle-videos-w-unrestricted-plr",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Vivek Sharma (5 at 65%)",
-    "price": "5",
-    "base_commission": "65%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-10",
-    "days_to_launch": null,
-    "hours_since_release": 95,
-    "signals": {
-      "vendor": "Vivek Sharma"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "AI Prompt Profit",
-    "source": "muncheye",
-    "url": "https://muncheye.com/john-annavi-ai-prompt-profit",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 John Annavi ($13 at 60%)",
-    "price": "$13",
-    "base_commission": "60%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-10",
-    "days_to_launch": null,
-    "hours_since_release": 95,
-    "signals": {
-      "vendor": "John Annavi"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Claw Agents AI",
-    "source": "muncheye",
-    "url": "https://muncheye.com/clawagentsai-july10-2026",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Yogesh Agarwal ($27 at 50%)",
-    "price": "$27",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-10",
-    "days_to_launch": null,
-    "hours_since_release": 95,
-    "signals": {
-      "vendor": "Yogesh Agarwal"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "[PLR Firesale] Long-Term Food Se\u2026",
-    "source": "muncheye",
-    "url": "https://muncheye.com/plr-experts-plr-firesale-reinvention-masterplan",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 PLR Experts ($19-$197 at 70%)",
-    "price": "$19",
-    "base_commission": "70%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-10",
-    "days_to_launch": null,
-    "hours_since_release": 95,
-    "signals": {
-      "vendor": "PLR Experts"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "AI Ads Agency Builder",
-    "source": "muncheye",
-    "url": "https://muncheye.com/ai-ads-agency-builder-justin-opay",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Justin Opay (17 at 50%)",
-    "price": "17",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-10",
-    "days_to_launch": null,
-    "hours_since_release": 95,
-    "signals": {
-      "vendor": "Justin Opay"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "[PLR] Fitness Foundations",
-    "source": "muncheye",
-    "url": "https://muncheye.com/doctor-loy-plr-premium-medical-content-by-doctor-loy-proactive-health-2",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Doctor Loy ($17 at 100%)",
-    "price": "$17",
-    "base_commission": "100%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-10",
-    "days_to_launch": null,
-    "hours_since_release": 95,
-    "signals": {
-      "vendor": "Doctor Loy"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Cookie Dollars 2026",
-    "source": "muncheye",
-    "url": "https://muncheye.com/tom-e-and-marc-gray-cookie-dollars",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Tom E et al (17.97 at 50%)",
-    "price": "17.97",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-10",
-    "days_to_launch": null,
-    "hours_since_release": 95,
-    "signals": {
-      "vendor": "Tom E et al"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "AI Business Assistant Blueprint",
-    "source": "muncheye",
-    "url": "https://muncheye.com/paul-strachan-ai-business-assistant-blueprint",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Paul Strachan ($7 at 100%)",
-    "price": "$7",
-    "base_commission": "100%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-10",
-    "days_to_launch": null,
-    "hours_since_release": 95,
-    "signals": {
-      "vendor": "Paul Strachan"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "KuroNazo",
-    "source": "muncheye",
-    "url": "https://muncheye.com/kuro-nazo-dark-mystery-whodunit-amazon-kdp-software-2001-k-in-prizes",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Ike Paz ($19 at 50%)",
-    "price": "$19",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-10",
-    "days_to_launch": null,
-    "hours_since_release": 95,
-    "signals": {
-      "vendor": "Ike Paz"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Single Tasking Superpowers",
-    "source": "muncheye",
-    "url": "https://muncheye.com/single-tasking-superpowers",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Positive Shift (10.98 at 50%)",
-    "price": "10.98",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-10",
-    "days_to_launch": null,
-    "hours_since_release": 95,
-    "signals": {
-      "vendor": "Positive Shift"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Preloaded Adaptive GPT Hub (and More\u2026",
-    "source": "muncheye",
-    "url": "https://muncheye.com/the-bonus-bot-builder-2",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Dennis (9.95 at 60%)",
-    "price": "9.95",
-    "base_commission": "60%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-10",
-    "days_to_launch": null,
-    "hours_since_release": 95,
-    "signals": {
-      "vendor": "Dennis"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Product To Profit",
-    "source": "muncheye",
-    "url": "https://muncheye.com/product-to-profit-2",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Aurea Platinum (14 at 50%)",
-    "price": "14",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "2026-07-10",
-    "days_to_launch": null,
-    "hours_since_release": 95,
-    "signals": {
-      "vendor": "Aurea Platinum"
     },
     "triage": {},
     "scores": {},
@@ -2605,9 +1891,43 @@
     "launch_status": "live",
     "launch_date": "2026-07-13",
     "days_to_launch": null,
-    "hours_since_release": 23,
+    "hours_since_release": 32,
     "signals": {
       "vendor": "ClicksBotz"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Cast AI",
+    "source": "muncheye",
+    "url": "https://muncheye.com/july-launch-2",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Todd Gross ($24+ at 50%)",
+    "price": "$24",
+    "base_commission": "50%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "2026-07-13",
+    "days_to_launch": null,
+    "hours_since_release": 32,
+    "signals": {
+      "vendor": "Todd Gross"
     },
     "triage": {},
     "scores": {},
@@ -2639,7 +1959,7 @@
     "launch_status": "live",
     "launch_date": "2026-07-13",
     "days_to_launch": null,
-    "hours_since_release": 23,
+    "hours_since_release": 32,
     "signals": {
       "vendor": "PLR Experts"
     },
@@ -2673,7 +1993,7 @@
     "launch_status": "live",
     "launch_date": "2026-07-13",
     "days_to_launch": null,
-    "hours_since_release": 23,
+    "hours_since_release": 32,
     "signals": {
       "vendor": "Dawn Vu"
     },
@@ -2707,7 +2027,7 @@
     "launch_status": "live",
     "launch_date": "2026-07-13",
     "days_to_launch": null,
-    "hours_since_release": 23,
+    "hours_since_release": 32,
     "signals": {
       "vendor": "Dave Everett"
     },
@@ -2741,7 +2061,7 @@
     "launch_status": "live",
     "launch_date": "2026-07-13",
     "days_to_launch": null,
-    "hours_since_release": 23,
+    "hours_since_release": 32,
     "signals": {
       "vendor": "INDRAJIT"
     },
@@ -2775,9 +2095,349 @@
     "launch_status": "live",
     "launch_date": "2026-07-13",
     "days_to_launch": null,
-    "hours_since_release": 23,
+    "hours_since_release": 32,
     "signals": {
       "vendor": "brewerent"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Puzz Labs AI",
+    "source": "muncheye",
+    "url": "https://muncheye.com/puzzlelabs-ai",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Peter Onwe ($16.5 at 50%)",
+    "price": "$16",
+    "base_commission": "50%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "2026-07-12",
+    "days_to_launch": null,
+    "hours_since_release": 56,
+    "signals": {
+      "vendor": "Peter Onwe"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "PLR Organic Traffic Machine",
+    "source": "muncheye",
+    "url": "https://muncheye.com/jason-oickle-the-organic-traffic-machine-plr-lead-magnet-package",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Jason Oickle ($1 at 100%)",
+    "price": "$1",
+    "base_commission": "100%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "2026-07-12",
+    "days_to_launch": null,
+    "hours_since_release": 56,
+    "signals": {
+      "vendor": "Jason Oickle"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Page Mint Color V2",
+    "source": "muncheye",
+    "url": "https://muncheye.com/pagemint-color-v2",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Nhan Scope ($1.99 at 50%)",
+    "price": "$1.99",
+    "base_commission": "50%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "2026-07-12",
+    "days_to_launch": null,
+    "hours_since_release": 56,
+    "signals": {
+      "vendor": "Nhan Scope"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "(PLR) Astrology & Zodiac Video Pack\u2026",
+    "source": "muncheye",
+    "url": "https://muncheye.com/plr-astrology-zodiac-video-pack-celestial-path-collection",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 JD Brooks (17 at 50%)",
+    "price": "17",
+    "base_commission": "50%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "2026-07-12",
+    "days_to_launch": null,
+    "hours_since_release": 56,
+    "signals": {
+      "vendor": "JD Brooks"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Nomad AI",
+    "source": "muncheye",
+    "url": "https://muncheye.com/art-flair-nomadai",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Art Flair (17 at 50%)",
+    "price": "17",
+    "base_commission": "50%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "2026-07-11",
+    "days_to_launch": null,
+    "hours_since_release": 80,
+    "signals": {
+      "vendor": "Art Flair"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Codex Course Machine",
+    "source": "muncheye",
+    "url": "https://muncheye.com/codex-course-machine",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Mohith Mohan ($7 at 100%)",
+    "price": "$7",
+    "base_commission": "100%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "2026-07-11",
+    "days_to_launch": null,
+    "hours_since_release": 80,
+    "signals": {
+      "vendor": "Mohith Mohan"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Recipe Reel Empire",
+    "source": "muncheye",
+    "url": "https://muncheye.com/arifianto-rahardi-recipereel-empire",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Arifianto Rahardi ($14 at 55%)",
+    "price": "$14",
+    "base_commission": "55%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "2026-07-11",
+    "days_to_launch": null,
+    "hours_since_release": 80,
+    "signals": {
+      "vendor": "Arifianto Rahardi"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Best Blog Widgets and Plugins",
+    "source": "muncheye",
+    "url": "https://muncheye.com/new-product-lounch-9",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Indrajit ($ 47 at 50%)",
+    "price": "$ 47",
+    "base_commission": "50%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "2026-07-11",
+    "days_to_launch": null,
+    "hours_since_release": 80,
+    "signals": {
+      "vendor": "Indrajit"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Funnel AJT - AI Busine\u2026",
+    "source": "muncheye",
+    "url": "https://muncheye.com/funnel-ajt-ai-email-and-business-automation-with-multi-project-crm",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Amit Gupta (Funnel AJT) ($14 at 50%)",
+    "price": "$14",
+    "base_commission": "50%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "2026-07-11",
+    "days_to_launch": null,
+    "hours_since_release": 80,
+    "signals": {
+      "vendor": "Amit Gupta (Funnel AJT)"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Kids Coloring PLR Starter Kit\u2122",
+    "source": "muncheye",
+    "url": "https://muncheye.com/kids-coloring-plr-starter-kit",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Aaron Zeller (9.95 at 50%)",
+    "price": "9.95",
+    "base_commission": "50%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "2026-07-11",
+    "days_to_launch": null,
+    "hours_since_release": 80,
+    "signals": {
+      "vendor": "Aaron Zeller"
     },
     "triage": {},
     "scores": {},
@@ -2806,10 +2466,10 @@
     "qualified": true,
     "reject_reason": "",
     "affiliate_eligible": true,
-    "launch_status": "upcoming",
+    "launch_status": "live",
     "launch_date": "2026-07-14",
-    "days_to_launch": 0,
-    "hours_since_release": null,
+    "days_to_launch": null,
+    "hours_since_release": 8,
     "signals": {
       "vendor": "Sam Arief"
     },
@@ -2840,10 +2500,10 @@
     "qualified": true,
     "reject_reason": "",
     "affiliate_eligible": true,
-    "launch_status": "upcoming",
+    "launch_status": "live",
     "launch_date": "2026-07-14",
-    "days_to_launch": 0,
-    "hours_since_release": null,
+    "days_to_launch": null,
+    "hours_since_release": 8,
     "signals": {
       "vendor": "Jeff-AIWP"
     },
@@ -2860,7 +2520,7 @@
     "source": "muncheye",
     "url": "https://muncheye.com/aimailer",
     "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Amit Gaikwad | Anirudh Baavra ($19 at 50%)",
+    "description": "Launch via Muncheye \u2014 Amit Gaikwad et al ($19 at 50%)",
     "price": "$19",
     "base_commission": "50%",
     "recurring": null,
@@ -2874,12 +2534,12 @@
     "qualified": true,
     "reject_reason": "",
     "affiliate_eligible": true,
-    "launch_status": "upcoming",
+    "launch_status": "live",
     "launch_date": "2026-07-14",
-    "days_to_launch": 0,
-    "hours_since_release": null,
+    "days_to_launch": null,
+    "hours_since_release": 8,
     "signals": {
-      "vendor": "Amit Gaikwad | Anirudh Baavra"
+      "vendor": "Amit Gaikwad et al"
     },
     "triage": {},
     "scores": {},
@@ -2894,7 +2554,7 @@
     "source": "muncheye",
     "url": "https://muncheye.com/bonus-gap-analyzer-ai-re-launch",
     "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 ePlanetJ (27 at 40%)",
+    "description": "Launch via Muncheye \u2014 EPlanetJ (27 at 40%)",
     "price": "27",
     "base_commission": "40%",
     "recurring": null,
@@ -2908,12 +2568,12 @@
     "qualified": true,
     "reject_reason": "",
     "affiliate_eligible": true,
-    "launch_status": "upcoming",
+    "launch_status": "live",
     "launch_date": "2026-07-14",
-    "days_to_launch": 0,
-    "hours_since_release": null,
+    "days_to_launch": null,
+    "hours_since_release": 8,
     "signals": {
-      "vendor": "ePlanetJ"
+      "vendor": "EPlanetJ"
     },
     "triage": {},
     "scores": {},
@@ -2942,46 +2602,12 @@
     "qualified": true,
     "reject_reason": "",
     "affiliate_eligible": true,
-    "launch_status": "upcoming",
+    "launch_status": "live",
     "launch_date": "2026-07-14",
-    "days_to_launch": 0,
-    "hours_since_release": null,
+    "days_to_launch": null,
+    "hours_since_release": 8,
     "signals": {
       "vendor": "Cindy Donovan"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Email Masterclass",
-    "source": "muncheye",
-    "url": "https://muncheye.com/new-product-lounch-12",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Sagarbablu ($27 at 50%)",
-    "price": "$27",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "upcoming",
-    "launch_date": "2026-07-14",
-    "days_to_launch": 0,
-    "hours_since_release": null,
-    "signals": {
-      "vendor": "Sagarbablu"
     },
     "triage": {},
     "scores": {},
@@ -3010,46 +2636,12 @@
     "qualified": true,
     "reject_reason": "",
     "affiliate_eligible": true,
-    "launch_status": "upcoming",
+    "launch_status": "live",
     "launch_date": "2026-07-14",
-    "days_to_launch": 0,
-    "hours_since_release": null,
+    "days_to_launch": null,
+    "hours_since_release": 8,
     "signals": {
       "vendor": "DT Software"
-    },
-    "triage": {},
-    "scores": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "60 Minute Traffic Master",
-    "source": "muncheye",
-    "url": "https://muncheye.com/new-product-lounch-13",
-    "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Indrajit ($17 at 50%)",
-    "price": "$17",
-    "base_commission": "50%",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "upcoming",
-    "launch_date": "2026-07-14",
-    "days_to_launch": 0,
-    "hours_since_release": null,
-    "signals": {
-      "vendor": "Indrajit"
     },
     "triage": {},
     "scores": {},
@@ -3078,10 +2670,10 @@
     "qualified": true,
     "reject_reason": "",
     "affiliate_eligible": true,
-    "launch_status": "upcoming",
+    "launch_status": "live",
     "launch_date": "2026-07-14",
-    "days_to_launch": 0,
-    "hours_since_release": null,
+    "days_to_launch": null,
+    "hours_since_release": 8,
     "signals": {
       "vendor": "DTsoftware"
     },
@@ -3112,10 +2704,10 @@
     "qualified": true,
     "reject_reason": "",
     "affiliate_eligible": true,
-    "launch_status": "upcoming",
+    "launch_status": "live",
     "launch_date": "2026-07-14",
-    "days_to_launch": 0,
-    "hours_since_release": null,
+    "days_to_launch": null,
+    "hours_since_release": 8,
     "signals": {
       "vendor": "Artemis Trades"
     },
@@ -3148,7 +2740,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-15",
-    "days_to_launch": 1,
+    "days_to_launch": 0,
     "hours_since_release": null,
     "signals": {
       "vendor": "Dawud Islam"
@@ -3182,7 +2774,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-15",
-    "days_to_launch": 1,
+    "days_to_launch": 0,
     "hours_since_release": null,
     "signals": {
       "vendor": "Venkatesh et al"
@@ -3216,7 +2808,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-15",
-    "days_to_launch": 1,
+    "days_to_launch": 0,
     "hours_since_release": null,
     "signals": {
       "vendor": "Jason Oickle"
@@ -3250,7 +2842,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-15",
-    "days_to_launch": 1,
+    "days_to_launch": 0,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ibrahim Tijani"
@@ -3284,7 +2876,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-15",
-    "days_to_launch": 1,
+    "days_to_launch": 0,
     "hours_since_release": null,
     "signals": {
       "vendor": "INDRAJIT"
@@ -3318,7 +2910,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-15",
-    "days_to_launch": 1,
+    "days_to_launch": 0,
     "hours_since_release": null,
     "signals": {
       "vendor": "Tech Warriors"
@@ -3352,10 +2944,44 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-15",
-    "days_to_launch": 1,
+    "days_to_launch": 0,
     "hours_since_release": null,
     "signals": {
       "vendor": "Cephas Tope"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Start Affiliate Marketing like a Pro",
+    "source": "muncheye",
+    "url": "https://muncheye.com/start-affiliate-marketing-like-a-pro",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Vaibhav Patel ($17 at 50%)",
+    "price": "$17",
+    "base_commission": "50%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "upcoming",
+    "launch_date": "2026-07-16",
+    "days_to_launch": 1,
+    "hours_since_release": null,
+    "signals": {
+      "vendor": "Vaibhav Patel"
     },
     "triage": {},
     "scores": {},
@@ -3386,7 +3012,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-16",
-    "days_to_launch": 2,
+    "days_to_launch": 1,
     "hours_since_release": null,
     "signals": {
       "vendor": "Vijay Pratap Singh"
@@ -3404,7 +3030,7 @@
     "source": "muncheye",
     "url": "https://muncheye.com/dr-amit-pareek-snap-apps-ai",
     "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 Dr. Amit et al ($37 at 50%)",
+    "description": "Launch via Muncheye \u2014 Dr. Amit & Atul Pareek ($37 at 50%)",
     "price": "$37",
     "base_commission": "50%",
     "recurring": null,
@@ -3420,10 +3046,10 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-16",
-    "days_to_launch": 2,
+    "days_to_launch": 1,
     "hours_since_release": null,
     "signals": {
-      "vendor": "Dr. Amit et al"
+      "vendor": "Dr. Amit & Atul Pareek"
     },
     "triage": {},
     "scores": {},
@@ -3454,7 +3080,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-16",
-    "days_to_launch": 2,
+    "days_to_launch": 1,
     "hours_since_release": null,
     "signals": {
       "vendor": "Chris Derenberger"
@@ -3488,7 +3114,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-16",
-    "days_to_launch": 2,
+    "days_to_launch": 1,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ivana Bosnjak"
@@ -3522,7 +3148,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-16",
-    "days_to_launch": 2,
+    "days_to_launch": 1,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pintu Bachhar"
@@ -3556,7 +3182,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-16",
-    "days_to_launch": 2,
+    "days_to_launch": 1,
     "hours_since_release": null,
     "signals": {
       "vendor": "Thanh Daisy"
@@ -3590,7 +3216,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-16",
-    "days_to_launch": 2,
+    "days_to_launch": 1,
     "hours_since_release": null,
     "signals": {
       "vendor": "Lee Cole"
@@ -3624,7 +3250,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-16",
-    "days_to_launch": 2,
+    "days_to_launch": 1,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kayode Steve"
@@ -3658,7 +3284,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-17",
-    "days_to_launch": 3,
+    "days_to_launch": 2,
     "hours_since_release": null,
     "signals": {
       "vendor": "Victory et al"
@@ -3692,7 +3318,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-17",
-    "days_to_launch": 3,
+    "days_to_launch": 2,
     "hours_since_release": null,
     "signals": {
       "vendor": "Tek Cloud LLC"
@@ -3726,7 +3352,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-17",
-    "days_to_launch": 3,
+    "days_to_launch": 2,
     "hours_since_release": null,
     "signals": {
       "vendor": "AJ Fahim"
@@ -3760,7 +3386,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-17",
-    "days_to_launch": 3,
+    "days_to_launch": 2,
     "hours_since_release": null,
     "signals": {
       "vendor": "Johnman456"
@@ -3794,7 +3420,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-17",
-    "days_to_launch": 3,
+    "days_to_launch": 2,
     "hours_since_release": null,
     "signals": {
       "vendor": "Alex_Carter"
@@ -3808,11 +3434,11 @@
     "brief": {}
   },
   {
-    "name": "AI BookAge\u2026",
+    "name": "AI BookAgents",
     "source": "muncheye",
     "url": "https://muncheye.com/aibookagents",
     "category": "AI / SaaS launch",
-    "description": "Launch via Muncheye \u2014 IMReviewSquad & LogicBeam (37 at 50%)",
+    "description": "Launch via Muncheye \u2014 Logic Beam et al (37 at 50%)",
     "price": "37",
     "base_commission": "50%",
     "recurring": null,
@@ -3828,10 +3454,10 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-18",
-    "days_to_launch": 4,
+    "days_to_launch": 3,
     "hours_since_release": null,
     "signals": {
-      "vendor": "IMReviewSquad & LogicBeam"
+      "vendor": "Logic Beam et al"
     },
     "triage": {},
     "scores": {},
@@ -3862,7 +3488,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-18",
-    "days_to_launch": 4,
+    "days_to_launch": 3,
     "hours_since_release": null,
     "signals": {
       "vendor": "Prady N"
@@ -3896,7 +3522,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-18",
-    "days_to_launch": 4,
+    "days_to_launch": 3,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pallab Ghosal"
@@ -3910,7 +3536,7 @@
     "brief": {}
   },
   {
-    "name": "Healtrics - AI-powered health assista\u2026",
+    "name": "Healtrics - AI-Powered Health Assist\u2026",
     "source": "muncheye",
     "url": "https://muncheye.com/healtrics-ai-powered-health-assistant",
     "category": "AI / SaaS launch",
@@ -3930,7 +3556,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-18",
-    "days_to_launch": 4,
+    "days_to_launch": 3,
     "hours_since_release": null,
     "signals": {
       "vendor": "Albinolabs"
@@ -3964,7 +3590,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-18",
-    "days_to_launch": 4,
+    "days_to_launch": 3,
     "hours_since_release": null,
     "signals": {
       "vendor": "Nhan Scope"
@@ -3998,7 +3624,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-18",
-    "days_to_launch": 4,
+    "days_to_launch": 3,
     "hours_since_release": null,
     "signals": {
       "vendor": "Himanshu Mehta"
@@ -4032,7 +3658,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-18",
-    "days_to_launch": 4,
+    "days_to_launch": 3,
     "hours_since_release": null,
     "signals": {
       "vendor": "Armel Bigirimana"
@@ -4066,7 +3692,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-19",
-    "days_to_launch": 5,
+    "days_to_launch": 4,
     "hours_since_release": null,
     "signals": {
       "vendor": "Jason Oickle"
@@ -4100,7 +3726,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-19",
-    "days_to_launch": 5,
+    "days_to_launch": 4,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kundan Choudhary"
@@ -4134,7 +3760,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-19",
-    "days_to_launch": 5,
+    "days_to_launch": 4,
     "hours_since_release": null,
     "signals": {
       "vendor": "Luan et al"
@@ -4168,7 +3794,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-19",
-    "days_to_launch": 5,
+    "days_to_launch": 4,
     "hours_since_release": null,
     "signals": {
       "vendor": "Nuno Godinho"
@@ -4202,7 +3828,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-20",
-    "days_to_launch": 6,
+    "days_to_launch": 5,
     "hours_since_release": null,
     "signals": {
       "vendor": "Andrew Darius"
@@ -4236,7 +3862,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-20",
-    "days_to_launch": 6,
+    "days_to_launch": 5,
     "hours_since_release": null,
     "signals": {
       "vendor": "Akshat Gupta"
@@ -4270,7 +3896,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-20",
-    "days_to_launch": 6,
+    "days_to_launch": 5,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -4304,7 +3930,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-20",
-    "days_to_launch": 6,
+    "days_to_launch": 5,
     "hours_since_release": null,
     "signals": {
       "vendor": "Misan Morrison et al"
@@ -4338,7 +3964,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-20",
-    "days_to_launch": 6,
+    "days_to_launch": 5,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rudy Papsik"
@@ -4372,7 +3998,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-21",
-    "days_to_launch": 7,
+    "days_to_launch": 6,
     "hours_since_release": null,
     "signals": {
       "vendor": "Mike & Radu"
@@ -4406,7 +4032,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-21",
-    "days_to_launch": 7,
+    "days_to_launch": 6,
     "hours_since_release": null,
     "signals": {
       "vendor": "John Annavi"
@@ -4440,7 +4066,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-21",
-    "days_to_launch": 7,
+    "days_to_launch": 6,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godswill Okoyomon"
@@ -4474,7 +4100,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-21",
-    "days_to_launch": 7,
+    "days_to_launch": 6,
     "hours_since_release": null,
     "signals": {
       "vendor": "Andreas Quintana"
@@ -4508,7 +4134,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-21",
-    "days_to_launch": 7,
+    "days_to_launch": 6,
     "hours_since_release": null,
     "signals": {
       "vendor": "DigitalSarah"
@@ -4542,7 +4168,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-22",
-    "days_to_launch": 8,
+    "days_to_launch": 7,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seun Ogundele"
@@ -4576,7 +4202,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-22",
-    "days_to_launch": 8,
+    "days_to_launch": 7,
     "hours_since_release": null,
     "signals": {
       "vendor": "Yu Shaun et al"
@@ -4610,7 +4236,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-22",
-    "days_to_launch": 8,
+    "days_to_launch": 7,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pankaj Malav | Deepanker Rajora"
@@ -4644,7 +4270,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-22",
-    "days_to_launch": 8,
+    "days_to_launch": 7,
     "hours_since_release": null,
     "signals": {
       "vendor": "Robin Palmer"
@@ -4678,7 +4304,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-22",
-    "days_to_launch": 8,
+    "days_to_launch": 7,
     "hours_since_release": null,
     "signals": {
       "vendor": "Simon Newcombe"
@@ -4712,7 +4338,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-23",
-    "days_to_launch": 9,
+    "days_to_launch": 8,
     "hours_since_release": null,
     "signals": {
       "vendor": "Daniel Adetunji"
@@ -4746,7 +4372,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-23",
-    "days_to_launch": 9,
+    "days_to_launch": 8,
     "hours_since_release": null,
     "signals": {
       "vendor": "Daniele Melandri"
@@ -4780,7 +4406,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-23",
-    "days_to_launch": 9,
+    "days_to_launch": 8,
     "hours_since_release": null,
     "signals": {
       "vendor": "Raheel Awan"
@@ -4814,7 +4440,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-23",
-    "days_to_launch": 9,
+    "days_to_launch": 8,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kelechi Mmonu"
@@ -4848,7 +4474,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-23",
-    "days_to_launch": 9,
+    "days_to_launch": 8,
     "hours_since_release": null,
     "signals": {
       "vendor": "Yogesh kashyap"
@@ -4882,7 +4508,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-23",
-    "days_to_launch": 9,
+    "days_to_launch": 8,
     "hours_since_release": null,
     "signals": {
       "vendor": "Jamie Lewis"
@@ -4916,7 +4542,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-23",
-    "days_to_launch": 9,
+    "days_to_launch": 8,
     "hours_since_release": null,
     "signals": {
       "vendor": "Firelaunchers"
@@ -4950,7 +4576,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-23",
-    "days_to_launch": 9,
+    "days_to_launch": 8,
     "hours_since_release": null,
     "signals": {
       "vendor": "Jason Oickle"
@@ -4984,7 +4610,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-24",
-    "days_to_launch": 10,
+    "days_to_launch": 9,
     "hours_since_release": null,
     "signals": {
       "vendor": "Yogesh Agarwal"
@@ -5018,7 +4644,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-24",
-    "days_to_launch": 10,
+    "days_to_launch": 9,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pranshu Gupta"
@@ -5052,7 +4678,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-24",
-    "days_to_launch": 10,
+    "days_to_launch": 9,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -5086,7 +4712,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-25",
-    "days_to_launch": 11,
+    "days_to_launch": 10,
     "hours_since_release": null,
     "signals": {
       "vendor": "Laxman Singh"
@@ -5120,7 +4746,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-25",
-    "days_to_launch": 11,
+    "days_to_launch": 10,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ibrahim Tijani"
@@ -5154,7 +4780,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-26",
-    "days_to_launch": 12,
+    "days_to_launch": 11,
     "hours_since_release": null,
     "signals": {
       "vendor": "Abhijit Saha"
@@ -5188,7 +4814,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-26",
-    "days_to_launch": 12,
+    "days_to_launch": 11,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ganesh Saha"
@@ -5222,7 +4848,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-26",
-    "days_to_launch": 12,
+    "days_to_launch": 11,
     "hours_since_release": null,
     "signals": {
       "vendor": "James Renouf"
@@ -5256,7 +4882,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-26",
-    "days_to_launch": 12,
+    "days_to_launch": 11,
     "hours_since_release": null,
     "signals": {
       "vendor": "Loveneet Rajora et al"
@@ -5290,7 +4916,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-27",
-    "days_to_launch": 13,
+    "days_to_launch": 12,
     "hours_since_release": null,
     "signals": {
       "vendor": "Peter Onwe"
@@ -5324,7 +4950,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-27",
-    "days_to_launch": 13,
+    "days_to_launch": 12,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -5358,7 +4984,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-28",
-    "days_to_launch": 14,
+    "days_to_launch": 13,
     "hours_since_release": null,
     "signals": {
       "vendor": "Amit Gaikwad"
@@ -5392,7 +5018,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-28",
-    "days_to_launch": 14,
+    "days_to_launch": 13,
     "hours_since_release": null,
     "signals": {
       "vendor": "Dave Nicholson"
@@ -5426,7 +5052,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-29",
-    "days_to_launch": 15,
+    "days_to_launch": 14,
     "hours_since_release": null,
     "signals": {
       "vendor": "Yogesh Choudhary"
@@ -5460,7 +5086,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-29",
-    "days_to_launch": 15,
+    "days_to_launch": 14,
     "hours_since_release": null,
     "signals": {
       "vendor": "Justin Opay"
@@ -5494,7 +5120,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-29",
-    "days_to_launch": 15,
+    "days_to_launch": 14,
     "hours_since_release": null,
     "signals": {
       "vendor": "Aidan Corkery"
@@ -5528,7 +5154,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-30",
-    "days_to_launch": 16,
+    "days_to_launch": 15,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -5562,7 +5188,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-30",
-    "days_to_launch": 16,
+    "days_to_launch": 15,
     "hours_since_release": null,
     "signals": {
       "vendor": "Larry Kearney"
@@ -5596,7 +5222,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-30",
-    "days_to_launch": 16,
+    "days_to_launch": 15,
     "hours_since_release": null,
     "signals": {
       "vendor": "Vijay Pratap Singh"
@@ -5630,7 +5256,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-31",
-    "days_to_launch": 17,
+    "days_to_launch": 16,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ram Rawat"
@@ -5664,7 +5290,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-31",
-    "days_to_launch": 17,
+    "days_to_launch": 16,
     "hours_since_release": null,
     "signals": {
       "vendor": "Andreas Quintana"
@@ -5698,7 +5324,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-31",
-    "days_to_launch": 17,
+    "days_to_launch": 16,
     "hours_since_release": null,
     "signals": {
       "vendor": "Firelaunchers"
@@ -5732,7 +5358,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-31",
-    "days_to_launch": 17,
+    "days_to_launch": 16,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -5766,7 +5392,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-31",
-    "days_to_launch": 17,
+    "days_to_launch": 16,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rick NG"
@@ -5800,7 +5426,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-31",
-    "days_to_launch": 17,
+    "days_to_launch": 16,
     "hours_since_release": null,
     "signals": {
       "vendor": "Raheel Awan"
@@ -5834,7 +5460,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-31",
-    "days_to_launch": 17,
+    "days_to_launch": 16,
     "hours_since_release": null,
     "signals": {
       "vendor": "Raheel Awan"
@@ -5868,7 +5494,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-31",
-    "days_to_launch": 17,
+    "days_to_launch": 16,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pankaj Malav | Deepanker Rajora"
@@ -5902,7 +5528,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-01",
-    "days_to_launch": 18,
+    "days_to_launch": 17,
     "hours_since_release": null,
     "signals": {
       "vendor": "Victory Akpos et al"
@@ -5936,7 +5562,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-01",
-    "days_to_launch": 18,
+    "days_to_launch": 17,
     "hours_since_release": null,
     "signals": {
       "vendor": "ART FLAIR"
@@ -5970,7 +5596,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-02",
-    "days_to_launch": 19,
+    "days_to_launch": 18,
     "hours_since_release": null,
     "signals": {
       "vendor": "Venkatesh et al"
@@ -6004,7 +5630,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-02",
-    "days_to_launch": 19,
+    "days_to_launch": 18,
     "hours_since_release": null,
     "signals": {
       "vendor": "Loveneet Rajora et al"
@@ -6038,7 +5664,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-02",
-    "days_to_launch": 19,
+    "days_to_launch": 18,
     "hours_since_release": null,
     "signals": {
       "vendor": "Jer Callora"
@@ -6072,7 +5698,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-03",
-    "days_to_launch": 20,
+    "days_to_launch": 19,
     "hours_since_release": null,
     "signals": {
       "vendor": "Harshal Jadhav"
@@ -6106,7 +5732,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-03",
-    "days_to_launch": 20,
+    "days_to_launch": 19,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kundan Choudhary"
@@ -6140,7 +5766,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-03",
-    "days_to_launch": 20,
+    "days_to_launch": 19,
     "hours_since_release": null,
     "signals": {
       "vendor": "TekCloudLLC"
@@ -6174,7 +5800,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-03",
-    "days_to_launch": 20,
+    "days_to_launch": 19,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -6208,7 +5834,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-04",
-    "days_to_launch": 21,
+    "days_to_launch": 20,
     "hours_since_release": null,
     "signals": {
       "vendor": "Sani Zakari"
@@ -6242,7 +5868,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-04",
-    "days_to_launch": 21,
+    "days_to_launch": 20,
     "hours_since_release": null,
     "signals": {
       "vendor": "Anjani Kumar"
@@ -6276,7 +5902,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-04",
-    "days_to_launch": 21,
+    "days_to_launch": 20,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -6310,7 +5936,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-04",
-    "days_to_launch": 21,
+    "days_to_launch": 20,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -6344,7 +5970,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-04",
-    "days_to_launch": 21,
+    "days_to_launch": 20,
     "hours_since_release": null,
     "signals": {
       "vendor": "Uddhab"
@@ -6378,10 +6004,44 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-04",
-    "days_to_launch": 21,
+    "days_to_launch": 20,
     "hours_since_release": null,
     "signals": {
       "vendor": "Chris Ramirez"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Parenting Pages Goldmi\u2026",
+    "source": "muncheye",
+    "url": "https://muncheye.com/parenting-pages-goldmine-printables-short-books-in-an-afternoon-succeed-with-content",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Succeed With Content (19.99/37 at 50%)",
+    "price": "19.99",
+    "base_commission": "50%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "upcoming",
+    "launch_date": "2026-08-04",
+    "days_to_launch": 20,
+    "hours_since_release": null,
+    "signals": {
+      "vendor": "Succeed With Content"
     },
     "triage": {},
     "scores": {},
@@ -6412,7 +6072,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-05",
-    "days_to_launch": 22,
+    "days_to_launch": 21,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pranshu Gupta"
@@ -6446,7 +6106,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-05",
-    "days_to_launch": 22,
+    "days_to_launch": 21,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -6480,7 +6140,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-06",
-    "days_to_launch": 23,
+    "days_to_launch": 22,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seyi Adeleke"
@@ -6514,7 +6174,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-06",
-    "days_to_launch": 23,
+    "days_to_launch": 22,
     "hours_since_release": null,
     "signals": {
       "vendor": "Dr. Amit & Atul Pareek"
@@ -6548,7 +6208,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-07",
-    "days_to_launch": 24,
+    "days_to_launch": 23,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seun Ogundele"
@@ -6582,7 +6242,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-07",
-    "days_to_launch": 24,
+    "days_to_launch": 23,
     "hours_since_release": null,
     "signals": {
       "vendor": "Yu Shaun et al"
@@ -6616,7 +6276,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-07",
-    "days_to_launch": 24,
+    "days_to_launch": 23,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -6650,7 +6310,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-09",
-    "days_to_launch": 26,
+    "days_to_launch": 25,
     "hours_since_release": null,
     "signals": {
       "vendor": "Laxman Singh"
@@ -6684,7 +6344,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-10",
-    "days_to_launch": 27,
+    "days_to_launch": 26,
     "hours_since_release": null,
     "signals": {
       "vendor": "Yogesh Agarwal"
@@ -6718,7 +6378,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-10",
-    "days_to_launch": 27,
+    "days_to_launch": 26,
     "hours_since_release": null,
     "signals": {
       "vendor": "David Williams"
@@ -6752,7 +6412,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-10",
-    "days_to_launch": 27,
+    "days_to_launch": 26,
     "hours_since_release": null,
     "signals": {
       "vendor": "Firelaunchers"
@@ -6786,7 +6446,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-10",
-    "days_to_launch": 27,
+    "days_to_launch": 26,
     "hours_since_release": null,
     "signals": {
       "vendor": "Tom E et al"
@@ -6820,7 +6480,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-10",
-    "days_to_launch": 27,
+    "days_to_launch": 26,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -6854,7 +6514,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-11",
-    "days_to_launch": 28,
+    "days_to_launch": 27,
     "hours_since_release": null,
     "signals": {
       "vendor": "Arpit Jain"
@@ -6888,7 +6548,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-11",
-    "days_to_launch": 28,
+    "days_to_launch": 27,
     "hours_since_release": null,
     "signals": {
       "vendor": "Venkatesh et al"
@@ -6922,7 +6582,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-12",
-    "days_to_launch": 29,
+    "days_to_launch": 28,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rudy Rudra"
@@ -6956,7 +6616,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-12",
-    "days_to_launch": 29,
+    "days_to_launch": 28,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rudy Rudra"
@@ -6990,7 +6650,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-12",
-    "days_to_launch": 29,
+    "days_to_launch": 28,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rudy Rudra"
@@ -7024,7 +6684,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-12",
-    "days_to_launch": 29,
+    "days_to_launch": 28,
     "hours_since_release": null,
     "signals": {
       "vendor": "Sajan Varughese"
@@ -7058,7 +6718,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-12",
-    "days_to_launch": 29,
+    "days_to_launch": 28,
     "hours_since_release": null,
     "signals": {
       "vendor": "Larry Kearney"
@@ -7092,7 +6752,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-12",
-    "days_to_launch": 29,
+    "days_to_launch": 28,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rudy Rudra"
@@ -7126,7 +6786,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-12",
-    "days_to_launch": 29,
+    "days_to_launch": 28,
     "hours_since_release": null,
     "signals": {
       "vendor": "John Tari"
@@ -7160,7 +6820,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-12",
-    "days_to_launch": 29,
+    "days_to_launch": 28,
     "hours_since_release": null,
     "signals": {
       "vendor": "Loveneet Rajora et al"
@@ -7194,7 +6854,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-12",
-    "days_to_launch": 29,
+    "days_to_launch": 28,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -7228,7 +6888,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-13",
-    "days_to_launch": 30,
+    "days_to_launch": 29,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -7262,7 +6922,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-14",
-    "days_to_launch": 31,
+    "days_to_launch": 30,
     "hours_since_release": null,
     "signals": {
       "vendor": "Matt Garrett et al"
@@ -7296,7 +6956,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-14",
-    "days_to_launch": 31,
+    "days_to_launch": 30,
     "hours_since_release": null,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
@@ -7330,7 +6990,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-14",
-    "days_to_launch": 31,
+    "days_to_launch": 30,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pankaj Malav | Deepanker Rajora"
@@ -7364,7 +7024,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-14",
-    "days_to_launch": 31,
+    "days_to_launch": 30,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -7398,7 +7058,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-15",
-    "days_to_launch": 32,
+    "days_to_launch": 31,
     "hours_since_release": null,
     "signals": {
       "vendor": "LogicBeam Softwares"
@@ -7432,7 +7092,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-15",
-    "days_to_launch": 32,
+    "days_to_launch": 31,
     "hours_since_release": null,
     "signals": {
       "vendor": "ClicksBotz"
@@ -7466,7 +7126,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-15",
-    "days_to_launch": 32,
+    "days_to_launch": 31,
     "hours_since_release": null,
     "signals": {
       "vendor": "Alan Vandergrift"
@@ -7500,7 +7160,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-15",
-    "days_to_launch": 32,
+    "days_to_launch": 31,
     "hours_since_release": null,
     "signals": {
       "vendor": "Justin Opay"
@@ -7534,7 +7194,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-16",
-    "days_to_launch": 33,
+    "days_to_launch": 32,
     "hours_since_release": null,
     "signals": {
       "vendor": "Vijay Pratap Singh"
@@ -7568,7 +7228,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-16",
-    "days_to_launch": 33,
+    "days_to_launch": 32,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kurt Tasche"
@@ -7602,7 +7262,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-17",
-    "days_to_launch": 34,
+    "days_to_launch": 33,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kundan Choudhary"
@@ -7636,7 +7296,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-17",
-    "days_to_launch": 34,
+    "days_to_launch": 33,
     "hours_since_release": null,
     "signals": {
       "vendor": "TekCloudLLC"
@@ -7670,7 +7330,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-17",
-    "days_to_launch": 34,
+    "days_to_launch": 33,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -7704,7 +7364,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-18",
-    "days_to_launch": 35,
+    "days_to_launch": 34,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kundan Choudhary"
@@ -7738,7 +7398,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-18",
-    "days_to_launch": 35,
+    "days_to_launch": 34,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pallab Ghosal"
@@ -7772,7 +7432,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-19",
-    "days_to_launch": 36,
+    "days_to_launch": 35,
     "hours_since_release": null,
     "signals": {
       "vendor": "Karthik et al"
@@ -7806,7 +7466,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-19",
-    "days_to_launch": 36,
+    "days_to_launch": 35,
     "hours_since_release": null,
     "signals": {
       "vendor": "Mike & Radu"
@@ -7840,7 +7500,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-19",
-    "days_to_launch": 36,
+    "days_to_launch": 35,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -7874,7 +7534,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-20",
-    "days_to_launch": 37,
+    "days_to_launch": 36,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ram Rawat"
@@ -7908,7 +7568,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-20",
-    "days_to_launch": 37,
+    "days_to_launch": 36,
     "hours_since_release": null,
     "signals": {
       "vendor": "Uddhab"
@@ -7942,7 +7602,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-21",
-    "days_to_launch": 38,
+    "days_to_launch": 37,
     "hours_since_release": null,
     "signals": {
       "vendor": "Steve Tari"
@@ -7976,7 +7636,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-21",
-    "days_to_launch": 38,
+    "days_to_launch": 37,
     "hours_since_release": null,
     "signals": {
       "vendor": "Yogesh Kashyap"
@@ -8010,7 +7670,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-21",
-    "days_to_launch": 38,
+    "days_to_launch": 37,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -8044,7 +7704,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-22",
-    "days_to_launch": 39,
+    "days_to_launch": 38,
     "hours_since_release": null,
     "signals": {
       "vendor": "Daniel Adetunji"
@@ -8078,7 +7738,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-23",
-    "days_to_launch": 40,
+    "days_to_launch": 39,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pranshu Gupta"
@@ -8112,7 +7772,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-24",
-    "days_to_launch": 41,
+    "days_to_launch": 40,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -8146,7 +7806,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-25",
-    "days_to_launch": 42,
+    "days_to_launch": 41,
     "hours_since_release": null,
     "signals": {
       "vendor": "Abhijit Saha"
@@ -8180,7 +7840,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-25",
-    "days_to_launch": 42,
+    "days_to_launch": 41,
     "hours_since_release": null,
     "signals": {
       "vendor": "Firelaunchers"
@@ -8214,7 +7874,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-26",
-    "days_to_launch": 43,
+    "days_to_launch": 42,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seun Ogundele"
@@ -8248,7 +7908,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-26",
-    "days_to_launch": 43,
+    "days_to_launch": 42,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -8282,7 +7942,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-26",
-    "days_to_launch": 43,
+    "days_to_launch": 42,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ben Fletcher"
@@ -8316,7 +7976,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-27",
-    "days_to_launch": 44,
+    "days_to_launch": 43,
     "hours_since_release": null,
     "signals": {
       "vendor": "Firelaunchers"
@@ -8350,7 +8010,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-28",
-    "days_to_launch": 45,
+    "days_to_launch": 44,
     "hours_since_release": null,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
@@ -8384,7 +8044,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-28",
-    "days_to_launch": 45,
+    "days_to_launch": 44,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -8418,7 +8078,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-29",
-    "days_to_launch": 46,
+    "days_to_launch": 45,
     "hours_since_release": null,
     "signals": {
       "vendor": "ART FLAIR"
@@ -8452,7 +8112,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-30",
-    "days_to_launch": 47,
+    "days_to_launch": 46,
     "hours_since_release": null,
     "signals": {
       "vendor": "Vijay Pratap Singh"
@@ -8486,7 +8146,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-31",
-    "days_to_launch": 48,
+    "days_to_launch": 47,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rick NG"
@@ -8520,7 +8180,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-31",
-    "days_to_launch": 48,
+    "days_to_launch": 47,
     "hours_since_release": null,
     "signals": {
       "vendor": "Justin Opay"
@@ -8554,7 +8214,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-31",
-    "days_to_launch": 48,
+    "days_to_launch": 47,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -8588,7 +8248,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-01",
-    "days_to_launch": 49,
+    "days_to_launch": 48,
     "hours_since_release": null,
     "signals": {
       "vendor": "Craig Crawford et al"
@@ -8622,7 +8282,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-01",
-    "days_to_launch": 49,
+    "days_to_launch": 48,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -8656,7 +8316,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-01",
-    "days_to_launch": 49,
+    "days_to_launch": 48,
     "hours_since_release": null,
     "signals": {
       "vendor": "Venkatesh et al"
@@ -8690,7 +8350,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-02",
-    "days_to_launch": 50,
+    "days_to_launch": 49,
     "hours_since_release": null,
     "signals": {
       "vendor": "John Tari"
@@ -8724,7 +8384,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-02",
-    "days_to_launch": 50,
+    "days_to_launch": 49,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -8758,7 +8418,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-03",
-    "days_to_launch": 51,
+    "days_to_launch": 50,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kundan Choudhary"
@@ -8792,7 +8452,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-04",
-    "days_to_launch": 52,
+    "days_to_launch": 51,
     "hours_since_release": null,
     "signals": {
       "vendor": "Anjani Kumar"
@@ -8826,7 +8486,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-04",
-    "days_to_launch": 52,
+    "days_to_launch": 51,
     "hours_since_release": null,
     "signals": {
       "vendor": "Uddhab"
@@ -8860,7 +8520,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-04",
-    "days_to_launch": 52,
+    "days_to_launch": 51,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -8894,7 +8554,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-05",
-    "days_to_launch": 53,
+    "days_to_launch": 52,
     "hours_since_release": null,
     "signals": {
       "vendor": "David Williams et al"
@@ -8928,7 +8588,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-07",
-    "days_to_launch": 55,
+    "days_to_launch": 54,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seun Ogundele"
@@ -8962,7 +8622,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-07",
-    "days_to_launch": 55,
+    "days_to_launch": 54,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pankaj Malav | Deepanker Rajora"
@@ -8996,7 +8656,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-07",
-    "days_to_launch": 55,
+    "days_to_launch": 54,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -9030,10 +8690,44 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-09",
-    "days_to_launch": 57,
+    "days_to_launch": 56,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
+    },
+    "triage": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "AI Affiliate Review Page Builder",
+    "source": "muncheye",
+    "url": "https://muncheye.com/larry-kearney-ai-affiliate-review-page-builder",
+    "category": "AI / SaaS launch",
+    "description": "Launch via Muncheye \u2014 Larry Kearney (19.95 at 50%)",
+    "price": "19.95",
+    "base_commission": "50%",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "upcoming",
+    "launch_date": "2026-09-09",
+    "days_to_launch": 56,
+    "hours_since_release": null,
+    "signals": {
+      "vendor": "Larry Kearney"
     },
     "triage": {},
     "scores": {},
@@ -9064,7 +8758,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-10",
-    "days_to_launch": 58,
+    "days_to_launch": 57,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rudy Rudra"
@@ -9098,7 +8792,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-11",
-    "days_to_launch": 59,
+    "days_to_launch": 58,
     "hours_since_release": null,
     "signals": {
       "vendor": "Justin Opay"
@@ -9132,7 +8826,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-11",
-    "days_to_launch": 59,
+    "days_to_launch": 58,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -9166,7 +8860,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-14",
-    "days_to_launch": 62,
+    "days_to_launch": 61,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -9200,7 +8894,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-14",
-    "days_to_launch": 62,
+    "days_to_launch": 61,
     "hours_since_release": null,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
@@ -9234,7 +8928,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-14",
-    "days_to_launch": 62,
+    "days_to_launch": 61,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -9268,7 +8962,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-15",
-    "days_to_launch": 63,
+    "days_to_launch": 62,
     "hours_since_release": null,
     "signals": {
       "vendor": "Dr. Amit & Atul Pareek"
@@ -9302,7 +8996,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-15",
-    "days_to_launch": 63,
+    "days_to_launch": 62,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -9336,7 +9030,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-15",
-    "days_to_launch": 63,
+    "days_to_launch": 62,
     "hours_since_release": null,
     "signals": {
       "vendor": "Venkatesh et al"
@@ -9370,7 +9064,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-15",
-    "days_to_launch": 63,
+    "days_to_launch": 62,
     "hours_since_release": null,
     "signals": {
       "vendor": "Richard Mark Fairbairn"
@@ -9404,7 +9098,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-16",
-    "days_to_launch": 64,
+    "days_to_launch": 63,
     "hours_since_release": null,
     "signals": {
       "vendor": "Vijay Pratap Singh"
@@ -9438,7 +9132,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-16",
-    "days_to_launch": 64,
+    "days_to_launch": 63,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -9472,7 +9166,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-17",
-    "days_to_launch": 65,
+    "days_to_launch": 64,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kundan Choudhary"
@@ -9506,7 +9200,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-17",
-    "days_to_launch": 65,
+    "days_to_launch": 64,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ram Rawat"
@@ -9540,7 +9234,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-18",
-    "days_to_launch": 66,
+    "days_to_launch": 65,
     "hours_since_release": null,
     "signals": {
       "vendor": "ClicksBotz"
@@ -9574,7 +9268,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-18",
-    "days_to_launch": 66,
+    "days_to_launch": 65,
     "hours_since_release": null,
     "signals": {
       "vendor": "Uddhab"
@@ -9608,7 +9302,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-18",
-    "days_to_launch": 66,
+    "days_to_launch": 65,
     "hours_since_release": null,
     "signals": {
       "vendor": "LogicBeam Softwares"
@@ -9642,7 +9336,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-18",
-    "days_to_launch": 66,
+    "days_to_launch": 65,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -9676,7 +9370,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-19",
-    "days_to_launch": 67,
+    "days_to_launch": 66,
     "hours_since_release": null,
     "signals": {
       "vendor": "ART FLAIR"
@@ -9710,7 +9404,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-20",
-    "days_to_launch": 68,
+    "days_to_launch": 67,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rick NG"
@@ -9744,7 +9438,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-21",
-    "days_to_launch": 69,
+    "days_to_launch": 68,
     "hours_since_release": null,
     "signals": {
       "vendor": "Mike + Radu"
@@ -9778,7 +9472,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-21",
-    "days_to_launch": 69,
+    "days_to_launch": 68,
     "hours_since_release": null,
     "signals": {
       "vendor": "Firelaunchers"
@@ -9812,7 +9506,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-21",
-    "days_to_launch": 69,
+    "days_to_launch": 68,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -9846,7 +9540,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-22",
-    "days_to_launch": 70,
+    "days_to_launch": 69,
     "hours_since_release": null,
     "signals": {
       "vendor": "Daniel Adetunji"
@@ -9880,7 +9574,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-23",
-    "days_to_launch": 71,
+    "days_to_launch": 70,
     "hours_since_release": null,
     "signals": {
       "vendor": "Abhijit Saha"
@@ -9914,7 +9608,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-23",
-    "days_to_launch": 71,
+    "days_to_launch": 70,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -9948,7 +9642,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-25",
-    "days_to_launch": 73,
+    "days_to_launch": 72,
     "hours_since_release": null,
     "signals": {
       "vendor": "Matt Garrett"
@@ -9982,7 +9676,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-25",
-    "days_to_launch": 73,
+    "days_to_launch": 72,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seun Ogundele"
@@ -10016,7 +9710,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-25",
-    "days_to_launch": 73,
+    "days_to_launch": 72,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pranshu Gupta"
@@ -10050,7 +9744,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-25",
-    "days_to_launch": 73,
+    "days_to_launch": 72,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -10084,7 +9778,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-26",
-    "days_to_launch": 74,
+    "days_to_launch": 73,
     "hours_since_release": null,
     "signals": {
       "vendor": "Yogesh Agarwal"
@@ -10118,7 +9812,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-26",
-    "days_to_launch": 74,
+    "days_to_launch": 73,
     "hours_since_release": null,
     "signals": {
       "vendor": "Justin Opay"
@@ -10152,7 +9846,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-27",
-    "days_to_launch": 75,
+    "days_to_launch": 74,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pallab Ghosal"
@@ -10186,7 +9880,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-28",
-    "days_to_launch": 76,
+    "days_to_launch": 75,
     "hours_since_release": null,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
@@ -10220,7 +9914,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-28",
-    "days_to_launch": 76,
+    "days_to_launch": 75,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -10254,7 +9948,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-30",
-    "days_to_launch": 78,
+    "days_to_launch": 77,
     "hours_since_release": null,
     "signals": {
       "vendor": "Vijay Pratap Singh"
@@ -10288,7 +9982,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-09-30",
-    "days_to_launch": 78,
+    "days_to_launch": 77,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -10322,7 +10016,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-01",
-    "days_to_launch": 79,
+    "days_to_launch": 78,
     "hours_since_release": null,
     "signals": {
       "vendor": "John Tari"
@@ -10356,7 +10050,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-01",
-    "days_to_launch": 79,
+    "days_to_launch": 78,
     "hours_since_release": null,
     "signals": {
       "vendor": "Venkatesh et al"
@@ -10390,7 +10084,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-02",
-    "days_to_launch": 80,
+    "days_to_launch": 79,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -10424,7 +10118,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-02",
-    "days_to_launch": 80,
+    "days_to_launch": 79,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -10458,7 +10152,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-02",
-    "days_to_launch": 80,
+    "days_to_launch": 79,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -10492,7 +10186,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-02",
-    "days_to_launch": 80,
+    "days_to_launch": 79,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -10526,7 +10220,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-02",
-    "days_to_launch": 80,
+    "days_to_launch": 79,
     "hours_since_release": null,
     "signals": {
       "vendor": "Uddhab"
@@ -10560,7 +10254,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-02",
-    "days_to_launch": 80,
+    "days_to_launch": 79,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -10594,7 +10288,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-03",
-    "days_to_launch": 81,
+    "days_to_launch": 80,
     "hours_since_release": null,
     "signals": {
       "vendor": "Anjani Kumar"
@@ -10628,7 +10322,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-03",
-    "days_to_launch": 81,
+    "days_to_launch": 80,
     "hours_since_release": null,
     "signals": {
       "vendor": "Yogesh Kashyap"
@@ -10662,7 +10356,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-05",
-    "days_to_launch": 83,
+    "days_to_launch": 82,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kundan Choudhary"
@@ -10696,7 +10390,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-05",
-    "days_to_launch": 83,
+    "days_to_launch": 82,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -10730,7 +10424,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-06",
-    "days_to_launch": 84,
+    "days_to_launch": 83,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seyi Adeleke"
@@ -10764,7 +10458,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-07",
-    "days_to_launch": 85,
+    "days_to_launch": 84,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pankaj Malav | Deepanker Rajora"
@@ -10798,7 +10492,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-07",
-    "days_to_launch": 85,
+    "days_to_launch": 84,
     "hours_since_release": null,
     "signals": {
       "vendor": "Justin Opay"
@@ -10832,7 +10526,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-07",
-    "days_to_launch": 85,
+    "days_to_launch": 84,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -10866,7 +10560,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-09",
-    "days_to_launch": 87,
+    "days_to_launch": 86,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -10900,7 +10594,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-10",
-    "days_to_launch": 88,
+    "days_to_launch": 87,
     "hours_since_release": null,
     "signals": {
       "vendor": "ART FLAIR"
@@ -10934,7 +10628,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-12",
-    "days_to_launch": 90,
+    "days_to_launch": 89,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -10968,7 +10662,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-13",
-    "days_to_launch": 91,
+    "days_to_launch": 90,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rudy Rudra"
@@ -11002,7 +10696,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-14",
-    "days_to_launch": 92,
+    "days_to_launch": 91,
     "hours_since_release": null,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
@@ -11036,7 +10730,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-14",
-    "days_to_launch": 92,
+    "days_to_launch": 91,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -11070,7 +10764,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-15",
-    "days_to_launch": 93,
+    "days_to_launch": 92,
     "hours_since_release": null,
     "signals": {
       "vendor": "Venkatesh et al"
@@ -11104,7 +10798,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-16",
-    "days_to_launch": 94,
+    "days_to_launch": 93,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kundan Choudhary"
@@ -11138,7 +10832,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-16",
-    "days_to_launch": 94,
+    "days_to_launch": 93,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -11172,7 +10866,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-17",
-    "days_to_launch": 95,
+    "days_to_launch": 94,
     "hours_since_release": null,
     "signals": {
       "vendor": "Vijay Pratap Singh"
@@ -11206,7 +10900,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-18",
-    "days_to_launch": 96,
+    "days_to_launch": 95,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pallab Ghosal"
@@ -11240,7 +10934,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-18",
-    "days_to_launch": 96,
+    "days_to_launch": 95,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ram Rawat"
@@ -11274,7 +10968,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-19",
-    "days_to_launch": 97,
+    "days_to_launch": 96,
     "hours_since_release": null,
     "signals": {
       "vendor": "Mike + Radu"
@@ -11308,7 +11002,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-19",
-    "days_to_launch": 97,
+    "days_to_launch": 96,
     "hours_since_release": null,
     "signals": {
       "vendor": "LogicBeam Softwares"
@@ -11342,7 +11036,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-19",
-    "days_to_launch": 97,
+    "days_to_launch": 96,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -11376,7 +11070,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-20",
-    "days_to_launch": 98,
+    "days_to_launch": 97,
     "hours_since_release": null,
     "signals": {
       "vendor": "ClicksBotz"
@@ -11410,7 +11104,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-21",
-    "days_to_launch": 99,
+    "days_to_launch": 98,
     "hours_since_release": null,
     "signals": {
       "vendor": "Uddhab"
@@ -11444,7 +11138,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-21",
-    "days_to_launch": 99,
+    "days_to_launch": 98,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -11478,7 +11172,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-22",
-    "days_to_launch": 100,
+    "days_to_launch": 99,
     "hours_since_release": null,
     "signals": {
       "vendor": "Daniel Adetunji"
@@ -11512,7 +11206,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-22",
-    "days_to_launch": 100,
+    "days_to_launch": 99,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ken Bluttman"
@@ -11546,7 +11240,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-23",
-    "days_to_launch": 101,
+    "days_to_launch": 100,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -11580,7 +11274,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-25",
-    "days_to_launch": 103,
+    "days_to_launch": 102,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rick Ng"
@@ -11614,7 +11308,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-26",
-    "days_to_launch": 104,
+    "days_to_launch": 103,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seun Ogundele"
@@ -11648,7 +11342,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-26",
-    "days_to_launch": 104,
+    "days_to_launch": 103,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -11682,7 +11376,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-27",
-    "days_to_launch": 105,
+    "days_to_launch": 104,
     "hours_since_release": null,
     "signals": {
       "vendor": "Abhijit Saha"
@@ -11716,7 +11410,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-28",
-    "days_to_launch": 106,
+    "days_to_launch": 105,
     "hours_since_release": null,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
@@ -11750,7 +11444,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-28",
-    "days_to_launch": 106,
+    "days_to_launch": 105,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -11784,7 +11478,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-30",
-    "days_to_launch": 108,
+    "days_to_launch": 107,
     "hours_since_release": null,
     "signals": {
       "vendor": "Vijay Pratap Singh"
@@ -11818,7 +11512,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-10-30",
-    "days_to_launch": 108,
+    "days_to_launch": 107,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -11852,7 +11546,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-01",
-    "days_to_launch": 110,
+    "days_to_launch": 109,
     "hours_since_release": null,
     "signals": {
       "vendor": "Venkatesh et al"
@@ -11886,7 +11580,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-02",
-    "days_to_launch": 111,
+    "days_to_launch": 110,
     "hours_since_release": null,
     "signals": {
       "vendor": "Uddhab"
@@ -11920,7 +11614,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-02",
-    "days_to_launch": 111,
+    "days_to_launch": 110,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -11954,7 +11648,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-03",
-    "days_to_launch": 112,
+    "days_to_launch": 111,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kundan Choudhary"
@@ -11988,7 +11682,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-03",
-    "days_to_launch": 112,
+    "days_to_launch": 111,
     "hours_since_release": null,
     "signals": {
       "vendor": "ART FLAIR"
@@ -12022,7 +11716,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-04",
-    "days_to_launch": 113,
+    "days_to_launch": 112,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seyi Adeleke"
@@ -12056,7 +11750,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-04",
-    "days_to_launch": 113,
+    "days_to_launch": 112,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pankaj Malav | Deepanker Rajora"
@@ -12090,7 +11784,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-04",
-    "days_to_launch": 113,
+    "days_to_launch": 112,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -12124,7 +11818,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-05",
-    "days_to_launch": 114,
+    "days_to_launch": 113,
     "hours_since_release": null,
     "signals": {
       "vendor": "Anjani Kumar"
@@ -12158,7 +11852,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-06",
-    "days_to_launch": 115,
+    "days_to_launch": 114,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rudy Rudra"
@@ -12192,7 +11886,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-06",
-    "days_to_launch": 115,
+    "days_to_launch": 114,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -12226,7 +11920,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-07",
-    "days_to_launch": 116,
+    "days_to_launch": 115,
     "hours_since_release": null,
     "signals": {
       "vendor": "Yogesh Agarwal"
@@ -12260,7 +11954,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-09",
-    "days_to_launch": 118,
+    "days_to_launch": 117,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -12294,7 +11988,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-10",
-    "days_to_launch": 119,
+    "days_to_launch": 118,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seun Ogundele"
@@ -12328,7 +12022,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-11",
-    "days_to_launch": 120,
+    "days_to_launch": 119,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -12362,7 +12056,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-12",
-    "days_to_launch": 121,
+    "days_to_launch": 120,
     "hours_since_release": null,
     "signals": {
       "vendor": "Clicks Botz"
@@ -12396,7 +12090,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-12",
-    "days_to_launch": 121,
+    "days_to_launch": 120,
     "hours_since_release": null,
     "signals": {
       "vendor": "DigiMarCon Rocky Mountains"
@@ -12430,7 +12124,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-13",
-    "days_to_launch": 122,
+    "days_to_launch": 121,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -12464,7 +12158,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-13",
-    "days_to_launch": 122,
+    "days_to_launch": 121,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -12498,7 +12192,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-14",
-    "days_to_launch": 123,
+    "days_to_launch": 122,
     "hours_since_release": null,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
@@ -12532,7 +12226,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-15",
-    "days_to_launch": 124,
+    "days_to_launch": 123,
     "hours_since_release": null,
     "signals": {
       "vendor": "Venkatesh et al"
@@ -12566,7 +12260,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-16",
-    "days_to_launch": 125,
+    "days_to_launch": 124,
     "hours_since_release": null,
     "signals": {
       "vendor": "Vijay Pratap Singh"
@@ -12600,7 +12294,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-16",
-    "days_to_launch": 125,
+    "days_to_launch": 124,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -12634,7 +12328,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-17",
-    "days_to_launch": 126,
+    "days_to_launch": 125,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kundan Choudhary"
@@ -12668,7 +12362,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-18",
-    "days_to_launch": 127,
+    "days_to_launch": 126,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pallab Ghosal"
@@ -12702,7 +12396,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-18",
-    "days_to_launch": 127,
+    "days_to_launch": 126,
     "hours_since_release": null,
     "signals": {
       "vendor": "James"
@@ -12736,7 +12430,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-18",
-    "days_to_launch": 127,
+    "days_to_launch": 126,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -12770,7 +12464,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-19",
-    "days_to_launch": 128,
+    "days_to_launch": 127,
     "hours_since_release": null,
     "signals": {
       "vendor": "Mike & Radu"
@@ -12804,7 +12498,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-20",
-    "days_to_launch": 129,
+    "days_to_launch": 128,
     "hours_since_release": null,
     "signals": {
       "vendor": "Matt Garrett"
@@ -12838,7 +12532,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-20",
-    "days_to_launch": 129,
+    "days_to_launch": 128,
     "hours_since_release": null,
     "signals": {
       "vendor": "LogicBeam Softwares"
@@ -12872,7 +12566,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-20",
-    "days_to_launch": 129,
+    "days_to_launch": 128,
     "hours_since_release": null,
     "signals": {
       "vendor": "Uddhab Pramanik"
@@ -12906,7 +12600,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-20",
-    "days_to_launch": 129,
+    "days_to_launch": 128,
     "hours_since_release": null,
     "signals": {
       "vendor": "PLR Experts"
@@ -12940,7 +12634,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-21",
-    "days_to_launch": 130,
+    "days_to_launch": 129,
     "hours_since_release": null,
     "signals": {
       "vendor": "Yogesh Agarwal"
@@ -12974,7 +12668,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-21",
-    "days_to_launch": 130,
+    "days_to_launch": 129,
     "hours_since_release": null,
     "signals": {
       "vendor": "ART FLAIR"
@@ -13008,7 +12702,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-22",
-    "days_to_launch": 131,
+    "days_to_launch": 130,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rick NG"
@@ -13042,7 +12736,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-23",
-    "days_to_launch": 132,
+    "days_to_launch": 131,
     "hours_since_release": null,
     "signals": {
       "vendor": "Daniel Adetunji"
@@ -13076,7 +12770,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-25",
-    "days_to_launch": 134,
+    "days_to_launch": 133,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -13110,7 +12804,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-26",
-    "days_to_launch": 135,
+    "days_to_launch": 134,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seun Ogundele"
@@ -13144,7 +12838,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-26",
-    "days_to_launch": 135,
+    "days_to_launch": 134,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -13178,7 +12872,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-26",
-    "days_to_launch": 135,
+    "days_to_launch": 134,
     "hours_since_release": null,
     "signals": {
       "vendor": "Larry Kearney"
@@ -13212,7 +12906,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-27",
-    "days_to_launch": 136,
+    "days_to_launch": 135,
     "hours_since_release": null,
     "signals": {
       "vendor": "Abhijit Saha"
@@ -13246,7 +12940,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-28",
-    "days_to_launch": 137,
+    "days_to_launch": 136,
     "hours_since_release": null,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
@@ -13280,7 +12974,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-28",
-    "days_to_launch": 137,
+    "days_to_launch": 136,
     "hours_since_release": null,
     "signals": {
       "vendor": "Mason"
@@ -13314,7 +13008,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-11-30",
-    "days_to_launch": 139,
+    "days_to_launch": 138,
     "hours_since_release": null,
     "signals": {
       "vendor": "Vijay Pratap Singh"
@@ -13348,7 +13042,7 @@
     "affiliate_eligible": false,
     "launch_status": "upcoming",
     "launch_date": "2026-11-30",
-    "days_to_launch": 139,
+    "days_to_launch": 138,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ram Rawat"
@@ -13382,7 +13076,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-01",
-    "days_to_launch": 140,
+    "days_to_launch": 139,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seyi Adeleke"
@@ -13416,7 +13110,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-02",
-    "days_to_launch": 141,
+    "days_to_launch": 140,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -13450,7 +13144,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-03",
-    "days_to_launch": 142,
+    "days_to_launch": 141,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ali Blackwell"
@@ -13484,7 +13178,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-03",
-    "days_to_launch": 142,
+    "days_to_launch": 141,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kundan Choudhary"
@@ -13518,7 +13212,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-04",
-    "days_to_launch": 143,
+    "days_to_launch": 142,
     "hours_since_release": null,
     "signals": {
       "vendor": "Anjani Kumar"
@@ -13552,7 +13246,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-04",
-    "days_to_launch": 143,
+    "days_to_launch": 142,
     "hours_since_release": null,
     "signals": {
       "vendor": "John Tari"
@@ -13586,7 +13280,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-04",
-    "days_to_launch": 143,
+    "days_to_launch": 142,
     "hours_since_release": null,
     "signals": {
       "vendor": "Uddhab"
@@ -13620,7 +13314,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-05",
-    "days_to_launch": 144,
+    "days_to_launch": 143,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seun Ogundele"
@@ -13654,7 +13348,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-06",
-    "days_to_launch": 145,
+    "days_to_launch": 144,
     "hours_since_release": null,
     "signals": {
       "vendor": "Venkatesh et al"
@@ -13688,7 +13382,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-07",
-    "days_to_launch": 146,
+    "days_to_launch": 145,
     "hours_since_release": null,
     "signals": {
       "vendor": "Yogesh Agarwal"
@@ -13722,7 +13416,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-08",
-    "days_to_launch": 147,
+    "days_to_launch": 146,
     "hours_since_release": null,
     "signals": {
       "vendor": "Clicks Botz"
@@ -13756,7 +13450,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-09",
-    "days_to_launch": 148,
+    "days_to_launch": 147,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -13790,7 +13484,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-09",
-    "days_to_launch": 148,
+    "days_to_launch": 147,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rudy Rudra"
@@ -13824,7 +13518,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-10",
-    "days_to_launch": 149,
+    "days_to_launch": 148,
     "hours_since_release": null,
     "signals": {
       "vendor": "Rick NG"
@@ -13858,7 +13552,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-12",
-    "days_to_launch": 151,
+    "days_to_launch": 150,
     "hours_since_release": null,
     "signals": {
       "vendor": "ART FLAIR"
@@ -13892,7 +13586,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-13",
-    "days_to_launch": 152,
+    "days_to_launch": 151,
     "hours_since_release": null,
     "signals": {
       "vendor": "LogicBeam Softwares"
@@ -13926,7 +13620,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-14",
-    "days_to_launch": 153,
+    "days_to_launch": 152,
     "hours_since_release": null,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
@@ -13960,7 +13654,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-15",
-    "days_to_launch": 154,
+    "days_to_launch": 153,
     "hours_since_release": null,
     "signals": {
       "vendor": "Mike + Radu"
@@ -13994,7 +13688,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-16",
-    "days_to_launch": 155,
+    "days_to_launch": 154,
     "hours_since_release": null,
     "signals": {
       "vendor": "Vijay Pratap Singh"
@@ -14028,7 +13722,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-16",
-    "days_to_launch": 155,
+    "days_to_launch": 154,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pankaj Malav | Deepanker Rajora"
@@ -14062,7 +13756,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-17",
-    "days_to_launch": 156,
+    "days_to_launch": 155,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ifiok Nkem"
@@ -14096,7 +13790,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-17",
-    "days_to_launch": 156,
+    "days_to_launch": 155,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kundan Choudhary"
@@ -14130,7 +13824,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-18",
-    "days_to_launch": 157,
+    "days_to_launch": 156,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seyi Adeleke"
@@ -14164,7 +13858,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-18",
-    "days_to_launch": 157,
+    "days_to_launch": 156,
     "hours_since_release": null,
     "signals": {
       "vendor": "Kundan Choudhary"
@@ -14198,7 +13892,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-18",
-    "days_to_launch": 157,
+    "days_to_launch": 156,
     "hours_since_release": null,
     "signals": {
       "vendor": "Ram Rawat"
@@ -14232,7 +13926,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-19",
-    "days_to_launch": 158,
+    "days_to_launch": 157,
     "hours_since_release": null,
     "signals": {
       "vendor": "Abhijit Saha"
@@ -14266,7 +13960,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-20",
-    "days_to_launch": 159,
+    "days_to_launch": 158,
     "hours_since_release": null,
     "signals": {
       "vendor": "Seun Ogundele"
@@ -14300,7 +13994,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-21",
-    "days_to_launch": 160,
+    "days_to_launch": 159,
     "hours_since_release": null,
     "signals": {
       "vendor": "Daniel Adetunji"
@@ -14334,7 +14028,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-22",
-    "days_to_launch": 161,
+    "days_to_launch": 160,
     "hours_since_release": null,
     "signals": {
       "vendor": "Yogesh Agarwal"
@@ -14368,7 +14062,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-23",
-    "days_to_launch": 162,
+    "days_to_launch": 161,
     "hours_since_release": null,
     "signals": {
       "vendor": "Godfrey Elabor"
@@ -14402,7 +14096,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-29",
-    "days_to_launch": 168,
+    "days_to_launch": 167,
     "hours_since_release": null,
     "signals": {
       "vendor": "Vijay Pratap Singh"
@@ -14436,7 +14130,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-12-31",
-    "days_to_launch": 170,
+    "days_to_launch": 169,
     "hours_since_release": null,
     "signals": {
       "vendor": "Tony Earp"
@@ -14471,7 +14165,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-02",
     "days_to_launch": null,
-    "hours_since_release": 4631,
+    "hours_since_release": 4640,
     "signals": {
       "vendor": "Venkatesh et al"
     },
@@ -14505,7 +14199,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-03",
     "days_to_launch": null,
-    "hours_since_release": 4607,
+    "hours_since_release": 4616,
     "signals": {
       "vendor": "Art Flair"
     },
@@ -14539,7 +14233,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-05",
     "days_to_launch": null,
-    "hours_since_release": 4559,
+    "hours_since_release": 4568,
     "signals": {
       "vendor": "Anjani Kumar"
     },
@@ -14573,7 +14267,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-06",
     "days_to_launch": null,
-    "hours_since_release": 4535,
+    "hours_since_release": 4544,
     "signals": {
       "vendor": "Glynn Kosky"
     },
@@ -14607,7 +14301,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-06",
     "days_to_launch": null,
-    "hours_since_release": 4535,
+    "hours_since_release": 4544,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
@@ -14641,7 +14335,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-07",
     "days_to_launch": null,
-    "hours_since_release": 4511,
+    "hours_since_release": 4520,
     "signals": {
       "vendor": "Uddhab"
     },
@@ -14675,7 +14369,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-09",
     "days_to_launch": null,
-    "hours_since_release": 4463,
+    "hours_since_release": 4472,
     "signals": {
       "vendor": "Seun Ogundele"
     },
@@ -14709,7 +14403,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-12",
     "days_to_launch": null,
-    "hours_since_release": 4391,
+    "hours_since_release": 4400,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
@@ -14743,7 +14437,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-14",
     "days_to_launch": null,
-    "hours_since_release": 4343,
+    "hours_since_release": 4352,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
@@ -14777,7 +14471,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-15",
     "days_to_launch": null,
-    "hours_since_release": 4319,
+    "hours_since_release": 4328,
     "signals": {
       "vendor": "Rick NG"
     },
@@ -14811,7 +14505,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-16",
     "days_to_launch": null,
-    "hours_since_release": 4295,
+    "hours_since_release": 4304,
     "signals": {
       "vendor": "Vijay Pratap Singh"
     },
@@ -14845,7 +14539,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-17",
     "days_to_launch": null,
-    "hours_since_release": 4271,
+    "hours_since_release": 4280,
     "signals": {
       "vendor": "Abhijit Saha"
     },
@@ -14879,7 +14573,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-21",
     "days_to_launch": null,
-    "hours_since_release": 4175,
+    "hours_since_release": 4184,
     "signals": {
       "vendor": "Pallab Ghosal"
     },
@@ -14913,7 +14607,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-23",
     "days_to_launch": null,
-    "hours_since_release": 4127,
+    "hours_since_release": 4136,
     "signals": {
       "vendor": "Art Flair"
     },
@@ -14947,7 +14641,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-28",
     "days_to_launch": null,
-    "hours_since_release": 4007,
+    "hours_since_release": 4016,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
@@ -14981,7 +14675,7 @@
     "launch_status": "live",
     "launch_date": "2026-02-01",
     "days_to_launch": null,
-    "hours_since_release": 3911,
+    "hours_since_release": 3920,
     "signals": {
       "vendor": "Glynn Kosky"
     },
@@ -15015,7 +14709,7 @@
     "launch_status": "live",
     "launch_date": "2026-02-02",
     "days_to_launch": null,
-    "hours_since_release": 3887,
+    "hours_since_release": 3896,
     "signals": {
       "vendor": "Glynn Kosky"
     },
@@ -15049,7 +14743,7 @@
     "launch_status": "live",
     "launch_date": "2026-02-02",
     "days_to_launch": null,
-    "hours_since_release": 3887,
+    "hours_since_release": 3896,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
@@ -15083,7 +14777,7 @@
     "launch_status": "live",
     "launch_date": "2026-02-10",
     "days_to_launch": null,
-    "hours_since_release": 3695,
+    "hours_since_release": 3704,
     "signals": {
       "vendor": "Uddhab"
     },
@@ -15117,7 +14811,7 @@
     "launch_status": "live",
     "launch_date": "2026-02-13",
     "days_to_launch": null,
-    "hours_since_release": 3623,
+    "hours_since_release": 3632,
     "signals": {
       "vendor": "Art Flair"
     },
@@ -15151,7 +14845,7 @@
     "launch_status": "live",
     "launch_date": "2026-02-14",
     "days_to_launch": null,
-    "hours_since_release": 3599,
+    "hours_since_release": 3608,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
@@ -15185,7 +14879,7 @@
     "launch_status": "live",
     "launch_date": "2026-02-18",
     "days_to_launch": null,
-    "hours_since_release": 3503,
+    "hours_since_release": 3512,
     "signals": {
       "vendor": "Pallab Ghosal"
     },
@@ -15219,7 +14913,7 @@
     "launch_status": "live",
     "launch_date": "2026-02-19",
     "days_to_launch": null,
-    "hours_since_release": 3479,
+    "hours_since_release": 3488,
     "signals": {
       "vendor": "Rick NG"
     },
@@ -15253,7 +14947,7 @@
     "launch_status": "live",
     "launch_date": "2026-02-28",
     "days_to_launch": null,
-    "hours_since_release": 3263,
+    "hours_since_release": 3272,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
@@ -15287,7 +14981,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-02",
     "days_to_launch": null,
-    "hours_since_release": 3215,
+    "hours_since_release": 3224,
     "signals": {
       "vendor": "Anjani Kumar"
     },
@@ -15321,7 +15015,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-02",
     "days_to_launch": null,
-    "hours_since_release": 3215,
+    "hours_since_release": 3224,
     "signals": {
       "vendor": "Matt Garrett"
     },
@@ -15355,7 +15049,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-02",
     "days_to_launch": null,
-    "hours_since_release": 3215,
+    "hours_since_release": 3224,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
@@ -15389,7 +15083,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-06",
     "days_to_launch": null,
-    "hours_since_release": 3119,
+    "hours_since_release": 3128,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
@@ -15423,7 +15117,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-06",
     "days_to_launch": null,
-    "hours_since_release": 3119,
+    "hours_since_release": 3128,
     "signals": {
       "vendor": "Art Flair"
     },
@@ -15457,7 +15151,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-09",
     "days_to_launch": null,
-    "hours_since_release": 3047,
+    "hours_since_release": 3056,
     "signals": {
       "vendor": "Yogesh Agarwal"
     },
@@ -15491,7 +15185,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-09",
     "days_to_launch": null,
-    "hours_since_release": 3047,
+    "hours_since_release": 3056,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
@@ -15525,7 +15219,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-09",
     "days_to_launch": null,
-    "hours_since_release": 3047,
+    "hours_since_release": 3056,
     "signals": {
       "vendor": "OJ James"
     },
@@ -15559,7 +15253,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-10",
     "days_to_launch": null,
-    "hours_since_release": 3023,
+    "hours_since_release": 3032,
     "signals": {
       "vendor": "Uddhab"
     },
@@ -15593,7 +15287,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-14",
     "days_to_launch": null,
-    "hours_since_release": 2927,
+    "hours_since_release": 2936,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
@@ -15627,7 +15321,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-18",
     "days_to_launch": null,
-    "hours_since_release": 2831,
+    "hours_since_release": 2840,
     "signals": {
       "vendor": "Pallab Ghosal"
     },
@@ -15661,7 +15355,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-25",
     "days_to_launch": null,
-    "hours_since_release": 2663,
+    "hours_since_release": 2672,
     "signals": {
       "vendor": "Uddhab"
     },
@@ -15695,7 +15389,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-26",
     "days_to_launch": null,
-    "hours_since_release": 2639,
+    "hours_since_release": 2648,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
@@ -15729,7 +15423,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-27",
     "days_to_launch": null,
-    "hours_since_release": 2615,
+    "hours_since_release": 2624,
     "signals": {
       "vendor": "Art Flair"
     },
@@ -15763,7 +15457,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-28",
     "days_to_launch": null,
-    "hours_since_release": 2591,
+    "hours_since_release": 2600,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
@@ -15797,7 +15491,7 @@
     "launch_status": "live",
     "launch_date": "2026-03-31",
     "days_to_launch": null,
-    "hours_since_release": 2519,
+    "hours_since_release": 2528,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
@@ -15831,7 +15525,7 @@
     "launch_status": "live",
     "launch_date": "2026-04-08",
     "days_to_launch": null,
-    "hours_since_release": 2327,
+    "hours_since_release": 2336,
     "signals": {
       "vendor": "Seun Ogundele"
     },
@@ -15865,7 +15559,7 @@
     "launch_status": "live",
     "launch_date": "2026-04-17",
     "days_to_launch": null,
-    "hours_since_release": 2111,
+    "hours_since_release": 2120,
     "signals": {
       "vendor": "Art Flair"
     },
@@ -15899,7 +15593,7 @@
     "launch_status": "live",
     "launch_date": "2026-04-24",
     "days_to_launch": null,
-    "hours_since_release": 1943,
+    "hours_since_release": 1952,
     "signals": {
       "vendor": "Pallab Ghosal"
     },
@@ -15933,7 +15627,7 @@
     "launch_status": "live",
     "launch_date": "2026-05-08",
     "days_to_launch": null,
-    "hours_since_release": 1607,
+    "hours_since_release": 1616,
     "signals": {
       "vendor": "Art Flair"
     },
@@ -15967,7 +15661,7 @@
     "launch_status": "live",
     "launch_date": "2026-05-29",
     "days_to_launch": null,
-    "hours_since_release": 1103,
+    "hours_since_release": 1112,
     "signals": {
       "vendor": "Art Flair"
     },
@@ -16001,7 +15695,7 @@
     "launch_status": "live",
     "launch_date": "2026-06-04",
     "days_to_launch": null,
-    "hours_since_release": 959,
+    "hours_since_release": 968,
     "signals": {
       "vendor": "Seun Ogundele"
     },
@@ -16035,7 +15729,7 @@
     "launch_status": "live",
     "launch_date": "2026-06-18",
     "days_to_launch": null,
-    "hours_since_release": 623,
+    "hours_since_release": 632,
     "signals": {
       "vendor": "Pallab Ghosal"
     },
@@ -16069,7 +15763,7 @@
     "launch_status": "live",
     "launch_date": "2026-06-19",
     "days_to_launch": null,
-    "hours_since_release": 599,
+    "hours_since_release": 608,
     "signals": {
       "vendor": "ART FLAIR"
     },
@@ -16103,7 +15797,7 @@
     "launch_status": "live",
     "launch_date": "2026-07-01",
     "days_to_launch": null,
-    "hours_since_release": 311,
+    "hours_since_release": 320,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
@@ -16136,7 +15830,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-21",
-    "days_to_launch": 7,
+    "days_to_launch": 6,
     "hours_since_release": null,
     "signals": {
       "vendor": "Pallab Ghosal"
@@ -16171,7 +15865,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-26",
     "days_to_launch": null,
-    "hours_since_release": 4055,
+    "hours_since_release": 4064,
     "signals": {
       "vendor": "Venkata Ramana"
     },
@@ -16205,7 +15899,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-31",
     "days_to_launch": null,
-    "hours_since_release": 3935,
+    "hours_since_release": 3944,
     "signals": {
       "vendor": "Venkata Ramana"
     },
@@ -16239,7 +15933,7 @@
     "launch_status": "live",
     "launch_date": "2026-02-02",
     "days_to_launch": null,
-    "hours_since_release": 3887,
+    "hours_since_release": 3896,
     "signals": {
       "vendor": "Kim Brown"
     },
@@ -16273,7 +15967,7 @@
     "launch_status": "live",
     "launch_date": "2026-01-02",
     "days_to_launch": null,
-    "hours_since_release": 4631,
+    "hours_since_release": 4640,
     "signals": {
       "vendor": "Kim Brown"
     },
@@ -16306,7 +16000,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-14",
-    "days_to_launch": 31,
+    "days_to_launch": 30,
     "hours_since_release": null,
     "signals": {
       "vendor": "Radu Hahaianu et al"
@@ -16340,7 +16034,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-08-14",
-    "days_to_launch": 31,
+    "days_to_launch": 30,
     "hours_since_release": null,
     "signals": {
       "vendor": "Venkatesh Kumar et al"
@@ -16375,7 +16069,7 @@
     "launch_status": "live",
     "launch_date": "2026-05-22",
     "days_to_launch": null,
-    "hours_since_release": 1271,
+    "hours_since_release": 1280,
     "signals": {
       "vendor": "Incomeup"
     },
@@ -16409,7 +16103,7 @@
     "launch_status": "live",
     "launch_date": "2026-05-29",
     "days_to_launch": null,
-    "hours_since_release": 1103,
+    "hours_since_release": 1112,
     "signals": {
       "vendor": "Incomeup"
     },
@@ -16443,7 +16137,7 @@
     "launch_status": "live",
     "launch_date": "2026-06-06",
     "days_to_launch": null,
-    "hours_since_release": 911,
+    "hours_since_release": 920,
     "signals": {
       "vendor": "Incomeup"
     },
@@ -16476,7 +16170,7 @@
     "affiliate_eligible": true,
     "launch_status": "upcoming",
     "launch_date": "2026-07-25",
-    "days_to_launch": 11,
+    "days_to_launch": 10,
     "hours_since_release": null,
     "signals": {
       "vendor": "Incomeup"
