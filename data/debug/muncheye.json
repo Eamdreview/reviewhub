@@ -21,11 +21,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-14",
     "days_to_launch": null,
-    "hours_since_release": 8,
+    "hours_since_release": 10,
     "signals": {
       "vendor": "Mo Latif"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -60,6 +61,7 @@
       "vendor": "DPAPA"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -94,6 +96,7 @@
       "vendor": "Karthik Ramani"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -128,6 +131,7 @@
       "vendor": "Cyril Gupta"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -162,6 +166,7 @@
       "vendor": "Abhi Dwivedi"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -196,6 +201,7 @@
       "vendor": "Vivek Gour"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -230,6 +236,7 @@
       "vendor": "IM Wealth Builders et al."
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -264,6 +271,7 @@
       "vendor": "Jono Armstrong & Richard Fairbairn"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -298,6 +306,7 @@
       "vendor": "Todd Gross"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -332,6 +341,7 @@
       "vendor": "Rohit Shah"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -366,6 +376,7 @@
       "vendor": "IM Wealth Builders"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -400,6 +411,7 @@
       "vendor": "Neil Napier"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -434,6 +446,7 @@
       "vendor": "Vivek Gour"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -468,6 +481,7 @@
       "vendor": "Firas Alameh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -502,6 +516,7 @@
       "vendor": "Brett Ingram and Mo Latif"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -536,6 +551,7 @@
       "vendor": "Ben Murray"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -570,6 +586,7 @@
       "vendor": "Abhi Dwivedi"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -604,6 +621,7 @@
       "vendor": "Cyril Gupta"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -638,6 +656,7 @@
       "vendor": "Adrian Isfan et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -672,6 +691,7 @@
       "vendor": "Sean Donahoe"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -706,6 +726,7 @@
       "vendor": "Neil Napier"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -740,6 +761,7 @@
       "vendor": "IM Wealth Builders et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -774,6 +796,7 @@
       "vendor": "Tim Verdouw et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -808,6 +831,7 @@
       "vendor": "Joshua Zamora"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -842,6 +866,7 @@
       "vendor": "Andrew and Chris Fox"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -876,6 +901,7 @@
       "vendor": "Karthik Ramani"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -910,6 +936,7 @@
       "vendor": "Cyril Gupta"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -944,6 +971,7 @@
       "vendor": "Abhi Dwivedi"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -978,6 +1006,7 @@
       "vendor": "Adrian Isfan et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1012,6 +1041,7 @@
       "vendor": "Neil Napier"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1046,6 +1076,7 @@
       "vendor": "Tim Verdouw et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1080,6 +1111,7 @@
       "vendor": "Ben Murray"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1114,6 +1146,7 @@
       "vendor": "Karthik Ramani et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1148,6 +1181,7 @@
       "vendor": "Cyril Gupta"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1182,6 +1216,7 @@
       "vendor": "Abhi Dwivedi"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1216,6 +1251,7 @@
       "vendor": "IM Wealth Builders et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1250,6 +1286,7 @@
       "vendor": "Neil Napier"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1284,6 +1321,7 @@
       "vendor": "Tim Verdouw et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1318,6 +1356,7 @@
       "vendor": "Adrian Isfan et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1352,6 +1391,7 @@
       "vendor": "Sean Donahoe"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1386,6 +1426,7 @@
       "vendor": "Joshua Zamora"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1420,6 +1461,7 @@
       "vendor": "Karthik Ramani"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1454,6 +1496,7 @@
       "vendor": "Abhi Dwivedi"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1488,6 +1531,7 @@
       "vendor": "Sean Donahoe"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1522,6 +1566,7 @@
       "vendor": "Cyril Gupta"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1556,6 +1601,7 @@
       "vendor": "Neil Napier"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1590,6 +1636,7 @@
       "vendor": "Joshua Zamora"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1624,6 +1671,7 @@
       "vendor": "Cyril Gupta"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1658,6 +1706,7 @@
       "vendor": "Karthik Ramani et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1692,6 +1741,7 @@
       "vendor": "IM Wealth Builders et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1726,6 +1776,7 @@
       "vendor": "Abhi Dwivedi"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1755,11 +1806,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-20",
     "days_to_launch": null,
-    "hours_since_release": 4208,
+    "hours_since_release": 4210,
     "signals": {
       "vendor": "Karthik Ramani"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1789,11 +1841,12 @@
     "launch_status": "live",
     "launch_date": "2026-02-17",
     "days_to_launch": null,
-    "hours_since_release": 3536,
+    "hours_since_release": 3538,
     "signals": {
       "vendor": "Karthik Ramani et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1823,11 +1876,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-24",
     "days_to_launch": null,
-    "hours_since_release": 2696,
+    "hours_since_release": 2698,
     "signals": {
       "vendor": "Karthik Ramani"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1857,11 +1911,12 @@
     "launch_status": "live",
     "launch_date": "2026-04-17",
     "days_to_launch": null,
-    "hours_since_release": 2120,
+    "hours_since_release": 2122,
     "signals": {
       "vendor": "dpapa"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1891,11 +1946,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-13",
     "days_to_launch": null,
-    "hours_since_release": 32,
+    "hours_since_release": 34,
     "signals": {
       "vendor": "ClicksBotz"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1925,11 +1981,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-13",
     "days_to_launch": null,
-    "hours_since_release": 32,
+    "hours_since_release": 34,
     "signals": {
       "vendor": "Todd Gross"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1959,11 +2016,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-13",
     "days_to_launch": null,
-    "hours_since_release": 32,
+    "hours_since_release": 34,
     "signals": {
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1993,11 +2051,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-13",
     "days_to_launch": null,
-    "hours_since_release": 32,
+    "hours_since_release": 34,
     "signals": {
       "vendor": "Dawn Vu"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2027,11 +2086,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-13",
     "days_to_launch": null,
-    "hours_since_release": 32,
+    "hours_since_release": 34,
     "signals": {
       "vendor": "Dave Everett"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2061,11 +2121,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-13",
     "days_to_launch": null,
-    "hours_since_release": 32,
+    "hours_since_release": 34,
     "signals": {
       "vendor": "INDRAJIT"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2095,11 +2156,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-13",
     "days_to_launch": null,
-    "hours_since_release": 32,
+    "hours_since_release": 34,
     "signals": {
       "vendor": "brewerent"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2129,11 +2191,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-12",
     "days_to_launch": null,
-    "hours_since_release": 56,
+    "hours_since_release": 58,
     "signals": {
       "vendor": "Peter Onwe"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2163,11 +2226,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-12",
     "days_to_launch": null,
-    "hours_since_release": 56,
+    "hours_since_release": 58,
     "signals": {
       "vendor": "Jason Oickle"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2197,11 +2261,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-12",
     "days_to_launch": null,
-    "hours_since_release": 56,
+    "hours_since_release": 58,
     "signals": {
       "vendor": "Nhan Scope"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2231,11 +2296,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-12",
     "days_to_launch": null,
-    "hours_since_release": 56,
+    "hours_since_release": 58,
     "signals": {
       "vendor": "JD Brooks"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2265,11 +2331,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-11",
     "days_to_launch": null,
-    "hours_since_release": 80,
+    "hours_since_release": 82,
     "signals": {
       "vendor": "Art Flair"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2299,11 +2366,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-11",
     "days_to_launch": null,
-    "hours_since_release": 80,
+    "hours_since_release": 82,
     "signals": {
       "vendor": "Mohith Mohan"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2333,11 +2401,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-11",
     "days_to_launch": null,
-    "hours_since_release": 80,
+    "hours_since_release": 82,
     "signals": {
       "vendor": "Arifianto Rahardi"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2367,11 +2436,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-11",
     "days_to_launch": null,
-    "hours_since_release": 80,
+    "hours_since_release": 82,
     "signals": {
       "vendor": "Indrajit"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2401,11 +2471,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-11",
     "days_to_launch": null,
-    "hours_since_release": 80,
+    "hours_since_release": 82,
     "signals": {
       "vendor": "Amit Gupta (Funnel AJT)"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2435,11 +2506,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-11",
     "days_to_launch": null,
-    "hours_since_release": 80,
+    "hours_since_release": 82,
     "signals": {
       "vendor": "Aaron Zeller"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2469,11 +2541,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-14",
     "days_to_launch": null,
-    "hours_since_release": 8,
+    "hours_since_release": 10,
     "signals": {
       "vendor": "Sam Arief"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2503,11 +2576,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-14",
     "days_to_launch": null,
-    "hours_since_release": 8,
+    "hours_since_release": 10,
     "signals": {
       "vendor": "Jeff-AIWP"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2537,11 +2611,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-14",
     "days_to_launch": null,
-    "hours_since_release": 8,
+    "hours_since_release": 10,
     "signals": {
       "vendor": "Amit Gaikwad et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2571,11 +2646,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-14",
     "days_to_launch": null,
-    "hours_since_release": 8,
+    "hours_since_release": 10,
     "signals": {
       "vendor": "EPlanetJ"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2605,11 +2681,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-14",
     "days_to_launch": null,
-    "hours_since_release": 8,
+    "hours_since_release": 10,
     "signals": {
       "vendor": "Cindy Donovan"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2639,11 +2716,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-14",
     "days_to_launch": null,
-    "hours_since_release": 8,
+    "hours_since_release": 10,
     "signals": {
       "vendor": "DT Software"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2673,11 +2751,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-14",
     "days_to_launch": null,
-    "hours_since_release": 8,
+    "hours_since_release": 10,
     "signals": {
       "vendor": "DTsoftware"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2707,11 +2786,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-14",
     "days_to_launch": null,
-    "hours_since_release": 8,
+    "hours_since_release": 10,
     "signals": {
       "vendor": "Artemis Trades"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2746,6 +2826,7 @@
       "vendor": "Dawud Islam"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2780,6 +2861,7 @@
       "vendor": "Venkatesh et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2814,6 +2896,7 @@
       "vendor": "Jason Oickle"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2848,6 +2931,7 @@
       "vendor": "Ibrahim Tijani"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2882,6 +2966,7 @@
       "vendor": "INDRAJIT"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2916,6 +3001,7 @@
       "vendor": "Tech Warriors"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2950,6 +3036,7 @@
       "vendor": "Cephas Tope"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -2984,6 +3071,7 @@
       "vendor": "Vaibhav Patel"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3018,6 +3106,7 @@
       "vendor": "Vijay Pratap Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3052,6 +3141,7 @@
       "vendor": "Dr. Amit & Atul Pareek"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3086,6 +3176,7 @@
       "vendor": "Chris Derenberger"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3120,6 +3211,7 @@
       "vendor": "Ivana Bosnjak"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3154,6 +3246,7 @@
       "vendor": "Pintu Bachhar"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3188,6 +3281,7 @@
       "vendor": "Thanh Daisy"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3222,6 +3316,7 @@
       "vendor": "Lee Cole"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3256,6 +3351,7 @@
       "vendor": "Kayode Steve"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3290,6 +3386,7 @@
       "vendor": "Victory et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3324,6 +3421,7 @@
       "vendor": "Tek Cloud LLC"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3358,6 +3456,7 @@
       "vendor": "AJ Fahim"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3392,6 +3491,7 @@
       "vendor": "Johnman456"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3426,6 +3526,7 @@
       "vendor": "Alex_Carter"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3460,6 +3561,7 @@
       "vendor": "Logic Beam et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3494,6 +3596,7 @@
       "vendor": "Prady N"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3528,6 +3631,7 @@
       "vendor": "Pallab Ghosal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3562,6 +3666,7 @@
       "vendor": "Albinolabs"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3596,6 +3701,7 @@
       "vendor": "Nhan Scope"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3630,6 +3736,7 @@
       "vendor": "Himanshu Mehta"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3664,6 +3771,7 @@
       "vendor": "Armel Bigirimana"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3698,6 +3806,7 @@
       "vendor": "Jason Oickle"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3732,6 +3841,7 @@
       "vendor": "Kundan Choudhary"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3766,6 +3876,7 @@
       "vendor": "Luan et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3800,6 +3911,7 @@
       "vendor": "Nuno Godinho"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3834,6 +3946,7 @@
       "vendor": "Andrew Darius"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3868,6 +3981,7 @@
       "vendor": "Akshat Gupta"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3902,6 +4016,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3936,6 +4051,7 @@
       "vendor": "Misan Morrison et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -3970,6 +4086,7 @@
       "vendor": "Rudy Papsik"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4004,6 +4121,7 @@
       "vendor": "Mike & Radu"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4038,6 +4156,7 @@
       "vendor": "John Annavi"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4072,6 +4191,7 @@
       "vendor": "Godswill Okoyomon"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4106,6 +4226,7 @@
       "vendor": "Andreas Quintana"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4140,6 +4261,7 @@
       "vendor": "DigitalSarah"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4174,6 +4296,7 @@
       "vendor": "Seun Ogundele"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4208,6 +4331,7 @@
       "vendor": "Yu Shaun et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4242,6 +4366,7 @@
       "vendor": "Pankaj Malav | Deepanker Rajora"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4276,6 +4401,7 @@
       "vendor": "Robin Palmer"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4310,6 +4436,7 @@
       "vendor": "Simon Newcombe"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4344,6 +4471,7 @@
       "vendor": "Daniel Adetunji"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4378,6 +4506,7 @@
       "vendor": "Daniele Melandri"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4412,6 +4541,7 @@
       "vendor": "Raheel Awan"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4446,6 +4576,7 @@
       "vendor": "Kelechi Mmonu"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4480,6 +4611,7 @@
       "vendor": "Yogesh kashyap"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4514,6 +4646,7 @@
       "vendor": "Jamie Lewis"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4548,6 +4681,7 @@
       "vendor": "Firelaunchers"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4582,6 +4716,7 @@
       "vendor": "Jason Oickle"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4616,6 +4751,7 @@
       "vendor": "Yogesh Agarwal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4650,6 +4786,7 @@
       "vendor": "Pranshu Gupta"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4684,6 +4821,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4718,6 +4856,7 @@
       "vendor": "Laxman Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4752,6 +4891,7 @@
       "vendor": "Ibrahim Tijani"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4786,6 +4926,7 @@
       "vendor": "Abhijit Saha"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4820,6 +4961,7 @@
       "vendor": "Ganesh Saha"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4854,6 +4996,7 @@
       "vendor": "James Renouf"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4888,6 +5031,7 @@
       "vendor": "Loveneet Rajora et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4922,6 +5066,7 @@
       "vendor": "Peter Onwe"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4956,6 +5101,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -4990,6 +5136,7 @@
       "vendor": "Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5024,6 +5171,7 @@
       "vendor": "Dave Nicholson"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5058,6 +5206,7 @@
       "vendor": "Yogesh Choudhary"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5092,6 +5241,7 @@
       "vendor": "Justin Opay"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5126,6 +5276,7 @@
       "vendor": "Aidan Corkery"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5160,6 +5311,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5194,6 +5346,7 @@
       "vendor": "Larry Kearney"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5228,6 +5381,7 @@
       "vendor": "Vijay Pratap Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5262,6 +5416,7 @@
       "vendor": "Ram Rawat"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5296,6 +5451,7 @@
       "vendor": "Andreas Quintana"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5330,6 +5486,7 @@
       "vendor": "Firelaunchers"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5364,6 +5521,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5398,6 +5556,7 @@
       "vendor": "Rick NG"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5432,6 +5591,7 @@
       "vendor": "Raheel Awan"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5466,6 +5626,7 @@
       "vendor": "Raheel Awan"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5500,6 +5661,7 @@
       "vendor": "Pankaj Malav | Deepanker Rajora"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5534,6 +5696,7 @@
       "vendor": "Victory Akpos et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5568,6 +5731,7 @@
       "vendor": "ART FLAIR"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5602,6 +5766,7 @@
       "vendor": "Venkatesh et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5636,6 +5801,7 @@
       "vendor": "Loveneet Rajora et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5670,6 +5836,7 @@
       "vendor": "Jer Callora"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5704,6 +5871,7 @@
       "vendor": "Harshal Jadhav"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5738,6 +5906,7 @@
       "vendor": "Kundan Choudhary"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5772,6 +5941,7 @@
       "vendor": "TekCloudLLC"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5806,6 +5976,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5840,6 +6011,7 @@
       "vendor": "Sani Zakari"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5874,6 +6046,7 @@
       "vendor": "Anjani Kumar"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5908,6 +6081,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5942,6 +6116,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -5976,6 +6151,7 @@
       "vendor": "Uddhab"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6010,6 +6186,7 @@
       "vendor": "Chris Ramirez"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6044,6 +6221,7 @@
       "vendor": "Succeed With Content"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6078,6 +6256,7 @@
       "vendor": "Pranshu Gupta"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6112,6 +6291,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6146,6 +6326,7 @@
       "vendor": "Seyi Adeleke"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6180,6 +6361,7 @@
       "vendor": "Dr. Amit & Atul Pareek"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6214,6 +6396,7 @@
       "vendor": "Seun Ogundele"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6248,6 +6431,7 @@
       "vendor": "Yu Shaun et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6282,6 +6466,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6316,6 +6501,7 @@
       "vendor": "Laxman Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6350,6 +6536,7 @@
       "vendor": "Yogesh Agarwal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6384,6 +6571,7 @@
       "vendor": "David Williams"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6418,6 +6606,7 @@
       "vendor": "Firelaunchers"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6452,6 +6641,7 @@
       "vendor": "Tom E et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6486,6 +6676,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6520,6 +6711,7 @@
       "vendor": "Arpit Jain"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6554,6 +6746,7 @@
       "vendor": "Venkatesh et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6588,6 +6781,7 @@
       "vendor": "Rudy Rudra"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6622,6 +6816,7 @@
       "vendor": "Rudy Rudra"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6656,6 +6851,7 @@
       "vendor": "Rudy Rudra"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6690,6 +6886,7 @@
       "vendor": "Sajan Varughese"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6724,6 +6921,7 @@
       "vendor": "Larry Kearney"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6758,6 +6956,7 @@
       "vendor": "Rudy Rudra"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6792,6 +6991,7 @@
       "vendor": "John Tari"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6826,6 +7026,7 @@
       "vendor": "Loveneet Rajora et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6860,6 +7061,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6894,6 +7096,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6928,6 +7131,7 @@
       "vendor": "Matt Garrett et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6962,6 +7166,7 @@
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -6996,6 +7201,7 @@
       "vendor": "Pankaj Malav | Deepanker Rajora"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7030,6 +7236,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7064,6 +7271,7 @@
       "vendor": "LogicBeam Softwares"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7098,6 +7306,7 @@
       "vendor": "ClicksBotz"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7132,6 +7341,7 @@
       "vendor": "Alan Vandergrift"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7166,6 +7376,7 @@
       "vendor": "Justin Opay"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7200,6 +7411,7 @@
       "vendor": "Vijay Pratap Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7234,6 +7446,7 @@
       "vendor": "Kurt Tasche"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7268,6 +7481,7 @@
       "vendor": "Kundan Choudhary"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7302,6 +7516,7 @@
       "vendor": "TekCloudLLC"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7336,6 +7551,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7370,6 +7586,7 @@
       "vendor": "Kundan Choudhary"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7404,6 +7621,7 @@
       "vendor": "Pallab Ghosal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7438,6 +7656,7 @@
       "vendor": "Karthik et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7472,6 +7691,7 @@
       "vendor": "Mike & Radu"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7506,6 +7726,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7540,6 +7761,7 @@
       "vendor": "Ram Rawat"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7574,6 +7796,7 @@
       "vendor": "Uddhab"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7608,6 +7831,7 @@
       "vendor": "Steve Tari"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7642,6 +7866,7 @@
       "vendor": "Yogesh Kashyap"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7676,6 +7901,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7710,6 +7936,7 @@
       "vendor": "Daniel Adetunji"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7744,6 +7971,7 @@
       "vendor": "Pranshu Gupta"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7778,6 +8006,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7812,6 +8041,7 @@
       "vendor": "Abhijit Saha"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7846,6 +8076,7 @@
       "vendor": "Firelaunchers"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7880,6 +8111,7 @@
       "vendor": "Seun Ogundele"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7914,6 +8146,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7948,6 +8181,7 @@
       "vendor": "Ben Fletcher"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -7982,6 +8216,7 @@
       "vendor": "Firelaunchers"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8016,6 +8251,7 @@
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8050,6 +8286,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8084,6 +8321,7 @@
       "vendor": "ART FLAIR"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8118,6 +8356,7 @@
       "vendor": "Vijay Pratap Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8152,6 +8391,7 @@
       "vendor": "Rick NG"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8186,6 +8426,7 @@
       "vendor": "Justin Opay"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8220,6 +8461,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8254,6 +8496,7 @@
       "vendor": "Craig Crawford et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8288,6 +8531,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8322,6 +8566,7 @@
       "vendor": "Venkatesh et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8356,6 +8601,7 @@
       "vendor": "John Tari"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8390,6 +8636,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8424,6 +8671,7 @@
       "vendor": "Kundan Choudhary"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8458,6 +8706,7 @@
       "vendor": "Anjani Kumar"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8492,6 +8741,7 @@
       "vendor": "Uddhab"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8526,6 +8776,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8560,6 +8811,7 @@
       "vendor": "David Williams et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8594,6 +8846,7 @@
       "vendor": "Seun Ogundele"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8628,6 +8881,7 @@
       "vendor": "Pankaj Malav | Deepanker Rajora"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8662,6 +8916,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8696,6 +8951,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8730,6 +8986,7 @@
       "vendor": "Larry Kearney"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8764,6 +9021,7 @@
       "vendor": "Rudy Rudra"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8798,6 +9056,7 @@
       "vendor": "Justin Opay"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8832,6 +9091,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8866,6 +9126,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8900,6 +9161,7 @@
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8934,6 +9196,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -8968,6 +9231,7 @@
       "vendor": "Dr. Amit & Atul Pareek"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9002,6 +9266,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9036,6 +9301,7 @@
       "vendor": "Venkatesh et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9070,6 +9336,7 @@
       "vendor": "Richard Mark Fairbairn"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9104,6 +9371,7 @@
       "vendor": "Vijay Pratap Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9138,6 +9406,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9172,6 +9441,7 @@
       "vendor": "Kundan Choudhary"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9206,6 +9476,7 @@
       "vendor": "Ram Rawat"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9240,6 +9511,7 @@
       "vendor": "ClicksBotz"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9274,6 +9546,7 @@
       "vendor": "Uddhab"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9308,6 +9581,7 @@
       "vendor": "LogicBeam Softwares"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9342,6 +9616,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9376,6 +9651,7 @@
       "vendor": "ART FLAIR"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9410,6 +9686,7 @@
       "vendor": "Rick NG"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9444,6 +9721,7 @@
       "vendor": "Mike + Radu"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9478,6 +9756,7 @@
       "vendor": "Firelaunchers"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9512,6 +9791,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9546,6 +9826,7 @@
       "vendor": "Daniel Adetunji"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9580,6 +9861,7 @@
       "vendor": "Abhijit Saha"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9614,6 +9896,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9648,6 +9931,7 @@
       "vendor": "Matt Garrett"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9682,6 +9966,7 @@
       "vendor": "Seun Ogundele"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9716,6 +10001,7 @@
       "vendor": "Pranshu Gupta"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9750,6 +10036,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9784,6 +10071,7 @@
       "vendor": "Yogesh Agarwal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9818,6 +10106,7 @@
       "vendor": "Justin Opay"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9852,6 +10141,7 @@
       "vendor": "Pallab Ghosal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9886,6 +10176,7 @@
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9920,6 +10211,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9954,6 +10246,7 @@
       "vendor": "Vijay Pratap Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -9988,6 +10281,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10022,6 +10316,7 @@
       "vendor": "John Tari"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10056,6 +10351,7 @@
       "vendor": "Venkatesh et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10090,6 +10386,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10124,6 +10421,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10158,6 +10456,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10192,6 +10491,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10226,6 +10526,7 @@
       "vendor": "Uddhab"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10260,6 +10561,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10294,6 +10596,7 @@
       "vendor": "Anjani Kumar"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10328,6 +10631,7 @@
       "vendor": "Yogesh Kashyap"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10362,6 +10666,7 @@
       "vendor": "Kundan Choudhary"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10396,6 +10701,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10430,6 +10736,7 @@
       "vendor": "Seyi Adeleke"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10464,6 +10771,7 @@
       "vendor": "Pankaj Malav | Deepanker Rajora"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10498,6 +10806,7 @@
       "vendor": "Justin Opay"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10532,6 +10841,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10566,6 +10876,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10600,6 +10911,7 @@
       "vendor": "ART FLAIR"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10634,6 +10946,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10668,6 +10981,7 @@
       "vendor": "Rudy Rudra"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10702,6 +11016,7 @@
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10736,6 +11051,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10770,6 +11086,7 @@
       "vendor": "Venkatesh et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10804,6 +11121,7 @@
       "vendor": "Kundan Choudhary"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10838,6 +11156,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10872,6 +11191,7 @@
       "vendor": "Vijay Pratap Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10906,6 +11226,7 @@
       "vendor": "Pallab Ghosal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10940,6 +11261,7 @@
       "vendor": "Ram Rawat"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -10974,6 +11296,7 @@
       "vendor": "Mike + Radu"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11008,6 +11331,7 @@
       "vendor": "LogicBeam Softwares"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11042,6 +11366,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11076,6 +11401,7 @@
       "vendor": "ClicksBotz"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11110,6 +11436,7 @@
       "vendor": "Uddhab"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11144,6 +11471,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11178,6 +11506,7 @@
       "vendor": "Daniel Adetunji"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11212,6 +11541,7 @@
       "vendor": "Ken Bluttman"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11246,6 +11576,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11280,6 +11611,7 @@
       "vendor": "Rick Ng"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11314,6 +11646,7 @@
       "vendor": "Seun Ogundele"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11348,6 +11681,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11382,6 +11716,7 @@
       "vendor": "Abhijit Saha"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11416,6 +11751,7 @@
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11450,6 +11786,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11484,6 +11821,7 @@
       "vendor": "Vijay Pratap Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11518,6 +11856,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11552,6 +11891,7 @@
       "vendor": "Venkatesh et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11586,6 +11926,7 @@
       "vendor": "Uddhab"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11620,6 +11961,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11654,6 +11996,7 @@
       "vendor": "Kundan Choudhary"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11688,6 +12031,7 @@
       "vendor": "ART FLAIR"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11722,6 +12066,7 @@
       "vendor": "Seyi Adeleke"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11756,6 +12101,7 @@
       "vendor": "Pankaj Malav | Deepanker Rajora"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11790,6 +12136,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11824,6 +12171,7 @@
       "vendor": "Anjani Kumar"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11858,6 +12206,7 @@
       "vendor": "Rudy Rudra"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11892,6 +12241,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11926,6 +12276,7 @@
       "vendor": "Yogesh Agarwal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11960,6 +12311,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -11994,6 +12346,7 @@
       "vendor": "Seun Ogundele"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12028,6 +12381,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12062,6 +12416,7 @@
       "vendor": "Clicks Botz"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12096,6 +12451,7 @@
       "vendor": "DigiMarCon Rocky Mountains"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12130,6 +12486,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12164,6 +12521,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12198,6 +12556,7 @@
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12232,6 +12591,7 @@
       "vendor": "Venkatesh et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12266,6 +12626,7 @@
       "vendor": "Vijay Pratap Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12300,6 +12661,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12334,6 +12696,7 @@
       "vendor": "Kundan Choudhary"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12368,6 +12731,7 @@
       "vendor": "Pallab Ghosal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12402,6 +12766,7 @@
       "vendor": "James"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12436,6 +12801,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12470,6 +12836,7 @@
       "vendor": "Mike & Radu"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12504,6 +12871,7 @@
       "vendor": "Matt Garrett"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12538,6 +12906,7 @@
       "vendor": "LogicBeam Softwares"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12572,6 +12941,7 @@
       "vendor": "Uddhab Pramanik"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12606,6 +12976,7 @@
       "vendor": "PLR Experts"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12640,6 +13011,7 @@
       "vendor": "Yogesh Agarwal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12674,6 +13046,7 @@
       "vendor": "ART FLAIR"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12708,6 +13081,7 @@
       "vendor": "Rick NG"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12742,6 +13116,7 @@
       "vendor": "Daniel Adetunji"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12776,6 +13151,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12810,6 +13186,7 @@
       "vendor": "Seun Ogundele"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12844,6 +13221,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12878,6 +13256,7 @@
       "vendor": "Larry Kearney"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12912,6 +13291,7 @@
       "vendor": "Abhijit Saha"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12946,6 +13326,7 @@
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -12980,6 +13361,7 @@
       "vendor": "Mason"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13014,6 +13396,7 @@
       "vendor": "Vijay Pratap Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13048,6 +13431,7 @@
       "vendor": "Ram Rawat"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13082,6 +13466,7 @@
       "vendor": "Seyi Adeleke"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13116,6 +13501,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13150,6 +13536,7 @@
       "vendor": "Ali Blackwell"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13184,6 +13571,7 @@
       "vendor": "Kundan Choudhary"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13218,6 +13606,7 @@
       "vendor": "Anjani Kumar"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13252,6 +13641,7 @@
       "vendor": "John Tari"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13286,6 +13676,7 @@
       "vendor": "Uddhab"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13320,6 +13711,7 @@
       "vendor": "Seun Ogundele"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13354,6 +13746,7 @@
       "vendor": "Venkatesh et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13388,6 +13781,7 @@
       "vendor": "Yogesh Agarwal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13422,6 +13816,7 @@
       "vendor": "Clicks Botz"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13456,6 +13851,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13490,6 +13886,7 @@
       "vendor": "Rudy Rudra"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13524,6 +13921,7 @@
       "vendor": "Rick NG"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13558,6 +13956,7 @@
       "vendor": "ART FLAIR"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13592,6 +13991,7 @@
       "vendor": "LogicBeam Softwares"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13626,6 +14026,7 @@
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13660,6 +14061,7 @@
       "vendor": "Mike + Radu"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13694,6 +14096,7 @@
       "vendor": "Vijay Pratap Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13728,6 +14131,7 @@
       "vendor": "Pankaj Malav | Deepanker Rajora"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13762,6 +14166,7 @@
       "vendor": "Ifiok Nkem"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13796,6 +14201,7 @@
       "vendor": "Kundan Choudhary"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13830,6 +14236,7 @@
       "vendor": "Seyi Adeleke"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13864,6 +14271,7 @@
       "vendor": "Kundan Choudhary"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13898,6 +14306,7 @@
       "vendor": "Ram Rawat"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13932,6 +14341,7 @@
       "vendor": "Abhijit Saha"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -13966,6 +14376,7 @@
       "vendor": "Seun Ogundele"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14000,6 +14411,7 @@
       "vendor": "Daniel Adetunji"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14034,6 +14446,7 @@
       "vendor": "Yogesh Agarwal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14068,6 +14481,7 @@
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14102,6 +14516,7 @@
       "vendor": "Vijay Pratap Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14136,6 +14551,7 @@
       "vendor": "Tony Earp"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14165,11 +14581,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-02",
     "days_to_launch": null,
-    "hours_since_release": 4640,
+    "hours_since_release": 4642,
     "signals": {
       "vendor": "Venkatesh et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14199,11 +14616,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-03",
     "days_to_launch": null,
-    "hours_since_release": 4616,
+    "hours_since_release": 4618,
     "signals": {
       "vendor": "Art Flair"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14233,11 +14651,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-05",
     "days_to_launch": null,
-    "hours_since_release": 4568,
+    "hours_since_release": 4570,
     "signals": {
       "vendor": "Anjani Kumar"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14267,11 +14686,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-06",
     "days_to_launch": null,
-    "hours_since_release": 4544,
+    "hours_since_release": 4546,
     "signals": {
       "vendor": "Glynn Kosky"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14301,11 +14721,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-06",
     "days_to_launch": null,
-    "hours_since_release": 4544,
+    "hours_since_release": 4546,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14335,11 +14756,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-07",
     "days_to_launch": null,
-    "hours_since_release": 4520,
+    "hours_since_release": 4522,
     "signals": {
       "vendor": "Uddhab"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14369,11 +14791,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-09",
     "days_to_launch": null,
-    "hours_since_release": 4472,
+    "hours_since_release": 4474,
     "signals": {
       "vendor": "Seun Ogundele"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14403,11 +14826,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-12",
     "days_to_launch": null,
-    "hours_since_release": 4400,
+    "hours_since_release": 4402,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14437,11 +14861,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-14",
     "days_to_launch": null,
-    "hours_since_release": 4352,
+    "hours_since_release": 4354,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14471,11 +14896,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-15",
     "days_to_launch": null,
-    "hours_since_release": 4328,
+    "hours_since_release": 4330,
     "signals": {
       "vendor": "Rick NG"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14505,11 +14931,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-16",
     "days_to_launch": null,
-    "hours_since_release": 4304,
+    "hours_since_release": 4306,
     "signals": {
       "vendor": "Vijay Pratap Singh"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14539,11 +14966,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-17",
     "days_to_launch": null,
-    "hours_since_release": 4280,
+    "hours_since_release": 4282,
     "signals": {
       "vendor": "Abhijit Saha"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14573,11 +15001,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-21",
     "days_to_launch": null,
-    "hours_since_release": 4184,
+    "hours_since_release": 4186,
     "signals": {
       "vendor": "Pallab Ghosal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14607,11 +15036,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-23",
     "days_to_launch": null,
-    "hours_since_release": 4136,
+    "hours_since_release": 4138,
     "signals": {
       "vendor": "Art Flair"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14641,11 +15071,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-28",
     "days_to_launch": null,
-    "hours_since_release": 4016,
+    "hours_since_release": 4018,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14675,11 +15106,12 @@
     "launch_status": "live",
     "launch_date": "2026-02-01",
     "days_to_launch": null,
-    "hours_since_release": 3920,
+    "hours_since_release": 3922,
     "signals": {
       "vendor": "Glynn Kosky"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14709,11 +15141,12 @@
     "launch_status": "live",
     "launch_date": "2026-02-02",
     "days_to_launch": null,
-    "hours_since_release": 3896,
+    "hours_since_release": 3898,
     "signals": {
       "vendor": "Glynn Kosky"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14743,11 +15176,12 @@
     "launch_status": "live",
     "launch_date": "2026-02-02",
     "days_to_launch": null,
-    "hours_since_release": 3896,
+    "hours_since_release": 3898,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14777,11 +15211,12 @@
     "launch_status": "live",
     "launch_date": "2026-02-10",
     "days_to_launch": null,
-    "hours_since_release": 3704,
+    "hours_since_release": 3706,
     "signals": {
       "vendor": "Uddhab"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14811,11 +15246,12 @@
     "launch_status": "live",
     "launch_date": "2026-02-13",
     "days_to_launch": null,
-    "hours_since_release": 3632,
+    "hours_since_release": 3634,
     "signals": {
       "vendor": "Art Flair"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14845,11 +15281,12 @@
     "launch_status": "live",
     "launch_date": "2026-02-14",
     "days_to_launch": null,
-    "hours_since_release": 3608,
+    "hours_since_release": 3610,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14879,11 +15316,12 @@
     "launch_status": "live",
     "launch_date": "2026-02-18",
     "days_to_launch": null,
-    "hours_since_release": 3512,
+    "hours_since_release": 3514,
     "signals": {
       "vendor": "Pallab Ghosal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14913,11 +15351,12 @@
     "launch_status": "live",
     "launch_date": "2026-02-19",
     "days_to_launch": null,
-    "hours_since_release": 3488,
+    "hours_since_release": 3490,
     "signals": {
       "vendor": "Rick NG"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14947,11 +15386,12 @@
     "launch_status": "live",
     "launch_date": "2026-02-28",
     "days_to_launch": null,
-    "hours_since_release": 3272,
+    "hours_since_release": 3274,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -14981,11 +15421,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-02",
     "days_to_launch": null,
-    "hours_since_release": 3224,
+    "hours_since_release": 3226,
     "signals": {
       "vendor": "Anjani Kumar"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15015,11 +15456,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-02",
     "days_to_launch": null,
-    "hours_since_release": 3224,
+    "hours_since_release": 3226,
     "signals": {
       "vendor": "Matt Garrett"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15049,11 +15491,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-02",
     "days_to_launch": null,
-    "hours_since_release": 3224,
+    "hours_since_release": 3226,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15083,11 +15526,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-06",
     "days_to_launch": null,
-    "hours_since_release": 3128,
+    "hours_since_release": 3130,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15117,11 +15561,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-06",
     "days_to_launch": null,
-    "hours_since_release": 3128,
+    "hours_since_release": 3130,
     "signals": {
       "vendor": "Art Flair"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15151,11 +15596,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-09",
     "days_to_launch": null,
-    "hours_since_release": 3056,
+    "hours_since_release": 3058,
     "signals": {
       "vendor": "Yogesh Agarwal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15185,11 +15631,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-09",
     "days_to_launch": null,
-    "hours_since_release": 3056,
+    "hours_since_release": 3058,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15219,11 +15666,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-09",
     "days_to_launch": null,
-    "hours_since_release": 3056,
+    "hours_since_release": 3058,
     "signals": {
       "vendor": "OJ James"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15253,11 +15701,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-10",
     "days_to_launch": null,
-    "hours_since_release": 3032,
+    "hours_since_release": 3034,
     "signals": {
       "vendor": "Uddhab"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15287,11 +15736,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-14",
     "days_to_launch": null,
-    "hours_since_release": 2936,
+    "hours_since_release": 2938,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15321,11 +15771,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-18",
     "days_to_launch": null,
-    "hours_since_release": 2840,
+    "hours_since_release": 2842,
     "signals": {
       "vendor": "Pallab Ghosal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15355,11 +15806,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-25",
     "days_to_launch": null,
-    "hours_since_release": 2672,
+    "hours_since_release": 2674,
     "signals": {
       "vendor": "Uddhab"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15389,11 +15841,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-26",
     "days_to_launch": null,
-    "hours_since_release": 2648,
+    "hours_since_release": 2650,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15423,11 +15876,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-27",
     "days_to_launch": null,
-    "hours_since_release": 2624,
+    "hours_since_release": 2626,
     "signals": {
       "vendor": "Art Flair"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15457,11 +15911,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-28",
     "days_to_launch": null,
-    "hours_since_release": 2600,
+    "hours_since_release": 2602,
     "signals": {
       "vendor": "Anirudh Baavra | Amit Gaikwad"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15491,11 +15946,12 @@
     "launch_status": "live",
     "launch_date": "2026-03-31",
     "days_to_launch": null,
-    "hours_since_release": 2528,
+    "hours_since_release": 2530,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15525,11 +15981,12 @@
     "launch_status": "live",
     "launch_date": "2026-04-08",
     "days_to_launch": null,
-    "hours_since_release": 2336,
+    "hours_since_release": 2338,
     "signals": {
       "vendor": "Seun Ogundele"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15559,11 +16016,12 @@
     "launch_status": "live",
     "launch_date": "2026-04-17",
     "days_to_launch": null,
-    "hours_since_release": 2120,
+    "hours_since_release": 2122,
     "signals": {
       "vendor": "Art Flair"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15593,11 +16051,12 @@
     "launch_status": "live",
     "launch_date": "2026-04-24",
     "days_to_launch": null,
-    "hours_since_release": 1952,
+    "hours_since_release": 1954,
     "signals": {
       "vendor": "Pallab Ghosal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15627,11 +16086,12 @@
     "launch_status": "live",
     "launch_date": "2026-05-08",
     "days_to_launch": null,
-    "hours_since_release": 1616,
+    "hours_since_release": 1618,
     "signals": {
       "vendor": "Art Flair"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15661,11 +16121,12 @@
     "launch_status": "live",
     "launch_date": "2026-05-29",
     "days_to_launch": null,
-    "hours_since_release": 1112,
+    "hours_since_release": 1114,
     "signals": {
       "vendor": "Art Flair"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15695,11 +16156,12 @@
     "launch_status": "live",
     "launch_date": "2026-06-04",
     "days_to_launch": null,
-    "hours_since_release": 968,
+    "hours_since_release": 970,
     "signals": {
       "vendor": "Seun Ogundele"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15729,11 +16191,12 @@
     "launch_status": "live",
     "launch_date": "2026-06-18",
     "days_to_launch": null,
-    "hours_since_release": 632,
+    "hours_since_release": 634,
     "signals": {
       "vendor": "Pallab Ghosal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15763,11 +16226,12 @@
     "launch_status": "live",
     "launch_date": "2026-06-19",
     "days_to_launch": null,
-    "hours_since_release": 608,
+    "hours_since_release": 610,
     "signals": {
       "vendor": "ART FLAIR"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15797,11 +16261,12 @@
     "launch_status": "live",
     "launch_date": "2026-07-01",
     "days_to_launch": null,
-    "hours_since_release": 320,
+    "hours_since_release": 322,
     "signals": {
       "vendor": "Godfrey Elabor"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15836,6 +16301,7 @@
       "vendor": "Pallab Ghosal"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15865,11 +16331,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-26",
     "days_to_launch": null,
-    "hours_since_release": 4064,
+    "hours_since_release": 4066,
     "signals": {
       "vendor": "Venkata Ramana"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15899,11 +16366,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-31",
     "days_to_launch": null,
-    "hours_since_release": 3944,
+    "hours_since_release": 3946,
     "signals": {
       "vendor": "Venkata Ramana"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15933,11 +16401,12 @@
     "launch_status": "live",
     "launch_date": "2026-02-02",
     "days_to_launch": null,
-    "hours_since_release": 3896,
+    "hours_since_release": 3898,
     "signals": {
       "vendor": "Kim Brown"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -15967,11 +16436,12 @@
     "launch_status": "live",
     "launch_date": "2026-01-02",
     "days_to_launch": null,
-    "hours_since_release": 4640,
+    "hours_since_release": 4642,
     "signals": {
       "vendor": "Kim Brown"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -16006,6 +16476,7 @@
       "vendor": "Radu Hahaianu et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -16040,6 +16511,7 @@
       "vendor": "Venkatesh Kumar et al"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -16069,11 +16541,12 @@
     "launch_status": "live",
     "launch_date": "2026-05-22",
     "days_to_launch": null,
-    "hours_since_release": 1280,
+    "hours_since_release": 1282,
     "signals": {
       "vendor": "Incomeup"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -16103,11 +16576,12 @@
     "launch_status": "live",
     "launch_date": "2026-05-29",
     "days_to_launch": null,
-    "hours_since_release": 1112,
+    "hours_since_release": 1114,
     "signals": {
       "vendor": "Incomeup"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -16137,11 +16611,12 @@
     "launch_status": "live",
     "launch_date": "2026-06-06",
     "days_to_launch": null,
-    "hours_since_release": 920,
+    "hours_since_release": 922,
     "signals": {
       "vendor": "Incomeup"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -16176,6 +16651,7 @@
       "vendor": "Incomeup"
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,

@@ -1,5 +1,41 @@
 [
   {
+    "name": "Benchmark your eng team's AI agent maturity in 5 minutes",
+    "source": "hackernews",
+    "url": "https://agent-benchmarks.com/software-factory/",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: Benchmark your eng team's AI agent maturity in 5 minutes",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 3,
+    "signals": {
+      "hn_points": 6,
+      "hn_comments": 4
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
     "name": "Sx 2.0",
     "source": "hackernews",
     "url": "https://sleuth-io.github.io/sx/2026/07/10/your-dropbox-is-now-a-skill-server.html",
@@ -21,12 +57,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 8,
+    "hours_since_release": 10,
     "signals": {
-      "hn_points": 34,
-      "hn_comments": 29
+      "hn_points": 37,
+      "hn_comments": 31
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -56,12 +93,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 8,
+    "hours_since_release": 10,
     "signals": {
       "hn_points": 9,
       "hn_comments": 2
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -91,12 +129,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 13,
+    "hours_since_release": 15,
     "signals": {
       "hn_points": 9,
       "hn_comments": 1
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -126,12 +165,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 13,
+    "hours_since_release": 16,
     "signals": {
-      "hn_points": 68,
+      "hn_points": 70,
       "hn_comments": 27
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -161,12 +201,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 14,
+    "hours_since_release": 16,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -196,12 +237,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 16,
+    "hours_since_release": 18,
     "signals": {
-      "hn_points": 84,
-      "hn_comments": 44
+      "hn_points": 88,
+      "hn_comments": 47
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -231,12 +273,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 29,
+    "hours_since_release": 31,
     "signals": {
       "hn_points": 5,
       "hn_comments": 1
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -266,12 +309,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 29,
+    "hours_since_release": 31,
     "signals": {
       "hn_points": 7,
       "hn_comments": 0
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -301,12 +345,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 31,
+    "hours_since_release": 34,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -336,12 +381,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 34,
+    "hours_since_release": 37,
     "signals": {
       "hn_points": 8,
       "hn_comments": 3
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -371,12 +417,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 42,
+    "hours_since_release": 44,
     "signals": {
       "hn_points": 18,
       "hn_comments": 32
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -406,12 +453,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 45,
+    "hours_since_release": 48,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -441,12 +489,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 50,
+    "hours_since_release": 52,
     "signals": {
       "hn_points": 161,
       "hn_comments": 63
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -476,12 +525,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 59,
+    "hours_since_release": 61,
     "signals": {
       "hn_points": 6,
       "hn_comments": 2
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -511,12 +561,13 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 59,
+    "hours_since_release": 62,
     "signals": {
       "hn_points": 43,
       "hn_comments": 7
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -552,6 +603,7 @@
       "hn_comments": 2
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -587,6 +639,7 @@
       "hn_comments": 1
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -622,6 +675,7 @@
       "hn_comments": 2
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -657,6 +711,7 @@
       "hn_comments": 10
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -692,6 +747,7 @@
       "hn_comments": 0
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -727,6 +783,7 @@
       "hn_comments": 60
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -762,6 +819,7 @@
       "hn_comments": 4
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -797,6 +855,7 @@
       "hn_comments": 8
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -832,6 +891,7 @@
       "hn_comments": 0
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -867,6 +927,7 @@
       "hn_comments": 40
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -902,6 +963,7 @@
       "hn_comments": 0
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -937,6 +999,7 @@
       "hn_comments": 0
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -972,6 +1035,7 @@
       "hn_comments": 61
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1007,6 +1071,7 @@
       "hn_comments": 0
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1042,6 +1107,7 @@
       "hn_comments": 2
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1077,6 +1143,7 @@
       "hn_comments": 0
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1112,6 +1179,7 @@
       "hn_comments": 4
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1147,6 +1215,7 @@
       "hn_comments": 4
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1182,6 +1251,7 @@
       "hn_comments": 1
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1217,6 +1287,7 @@
       "hn_comments": 1
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1252,6 +1323,7 @@
       "hn_comments": 0
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1287,6 +1359,7 @@
       "hn_comments": 3
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1322,6 +1395,7 @@
       "hn_comments": 1
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1357,6 +1431,7 @@
       "hn_comments": 97
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1392,6 +1467,7 @@
       "hn_comments": 2
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1427,6 +1503,7 @@
       "hn_comments": 1
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1462,6 +1539,7 @@
       "hn_comments": 1
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
@@ -1497,6 +1575,7 @@
       "hn_comments": 1
     },
     "triage": {},
+    "freshness": {},
     "scores": {},
     "total_score": 0.0,
     "passed_floor": false,
