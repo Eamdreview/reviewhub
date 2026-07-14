@@ -21,8 +21,9 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from . import (advisor, classify, collect, competition, config, deliver,
-               knowledge, launch_calendar, learning, post_launch, qualify,
-               report, revenue, revenue_history, score, triage, vendor, write)
+               freshness, knowledge, launch_calendar, learning, post_launch,
+               qualify, report, revenue, revenue_history, score, triage,
+               vendor, write)
 from .enrich import enrich_all
 from .models import RunReport
 
@@ -70,6 +71,12 @@ def run(dry_run: bool = False) -> Path:
     candidates = triage.triage_all(candidates, dry_run=dry_run)
     log.info("After triage: %d survivors", len(candidates))
     _dump("triaged", candidates)
+
+    # [3b] FRESHNESS — "best to review TODAY?" from multiple live signals
+    # (not age). Runs before scoring so it's a weighted criterion, and before
+    # classification so competition grading can use its demand signal.
+    candidates = freshness.apply(candidates)
+    _dump("freshness", candidates)
 
     # [4] SCORE (weighted model → total, ranking within tiers)
     candidates = score.apply(candidates)

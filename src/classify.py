@@ -40,7 +40,20 @@ def _review_count(c: Candidate) -> int:
 
 
 def _competition_level(c: Candidate) -> str:
+    """Grade review competition.
+
+    Crucially, ZERO reviews found does NOT automatically mean "low competition".
+    For a product with no reviews AND no fresh demand signal, we genuinely don't
+    know — it might be a stale product nobody covers anymore. That case is
+    "unknown" (no bonus, no penalty), not a first-mover bonus. Only 0 reviews
+    *with* a corroborating fresh signal (rising trend, recent launch, Reddit/
+    YouTube attention) counts as confirmed low competition.
+    """
     n = _review_count(c)
+    if n == 0:
+        if c.freshness.get("has_demand_signal"):
+            return "low"                 # confirmed: real interest, no reviews yet
+        return "unknown"                 # no reviews, no fresh signal → unknown
     if n <= config.COMPETITION_LOW_MAX:
         return "low"
     if n <= config.COMPETITION_MEDIUM_MAX:
@@ -48,7 +61,10 @@ def _competition_level(c: Candidate) -> str:
     return "high"
 
 
-_LEVEL_RANK = {"low": 0, "medium": 1, "high": 2}
+# "unknown" ranks alongside medium for tier gating: it must NOT satisfy a
+# "max_competition_level: low" gate (no first-mover claim) and must NOT trip the
+# "high = saturated" ignore rule.
+_LEVEL_RANK = {"low": 0, "unknown": 1, "medium": 1, "high": 2}
 
 
 def _competitor_alert(c: Candidate) -> dict:
@@ -67,6 +83,8 @@ def _competitor_alert(c: Candidate) -> dict:
         can_rank = "Yes — strong early-rank window; publish fast."
     elif level == "medium" and seo >= 60:
         can_rank = "Possible — needs deeper, faster content than rivals."
+    elif level == "unknown":
+        can_rank = "Unknown — no reviews found and no fresh signal; validate demand first."
     else:
         can_rank = "Hard — page 1 is already saturated."
 

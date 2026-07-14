@@ -15,31 +15,67 @@ import os
 # Weights must sum to 100. Each criterion is scored 0-100, then contributes
 # (score / 100) * weight points to the final 0-100 total.
 WEIGHTS: dict[str, int] = {
-    "buying_intent": 30,
-    "seo_opportunity": 20,
-    "profitability": 15,   # replaces raw commission %: base + upsells + recurring + funnel + earning potential
-    "launch_momentum": 15,
+    "buying_intent": 25,
+    "seo_opportunity": 15,
+    "profitability": 13,   # affiliate/revenue strength: base + upsells + recurring + funnel
+    "freshness": 12,       # is this an active, currently-relevant opportunity TODAY (NOT age)
+    "launch_momentum": 12, # trend/attention momentum
     "search_demand": 10,
     "user_sentiment": 5,
+    "evergreen": 5,        # durable category vs fad — old but durable is GOOD, never penalised
     "vendor_trust": 3,
-    "evergreen": 2,
 }
+# NOTE: product *age* is deliberately NOT a weighted criterion. Age feeds the
+# Freshness score as one signal among many, and never decides the ranking on
+# its own — an old product with strong live signals still ranks highly.
 
 # Human-readable labels for the report's score breakdown line.
 CRITERION_LABELS: dict[str, str] = {
     "buying_intent": "Intent",
     "seo_opportunity": "SEO",
     "profitability": "Profit",
+    "freshness": "Freshness",
     "launch_momentum": "Momentum",
     "search_demand": "Demand",
     "user_sentiment": "Sentiment",
-    "vendor_trust": "Trust",
     "evergreen": "Evergreen",
+    "vendor_trust": "Trust",
 }
 
 # Hard floor: a product whose buying-intent score is below this is excluded
 # from the Top 10 no matter how high its total score is.
 BUYING_INTENT_FLOOR: int = 60
+
+# ---------------------------------------------------------------------------
+# Freshness Score (0-100) — "is this an active, currently-relevant opportunity
+# to review TODAY?" Computed from MULTIPLE live signals, never launch date
+# alone. Only the signals actually measured contribute; a missing launch date
+# is treated as UNKNOWN (neither new nor old) and simply does not count.
+# ---------------------------------------------------------------------------
+FRESHNESS = {
+    # Per-signal weights (relative; only measured signals are combined). The
+    # freshness score is the weighted mean of whichever signals are present.
+    "signal_weights": {
+        "launch_recency": 18,     # from launch date/age IF known (gentle, never 0)
+        "trend_momentum": 20,     # Google Trends slope
+        "youtube_activity": 15,   # recent YouTube review activity
+        "reddit_activity": 10,    # Reddit chatter
+        "search_interest": 10,    # search demand / SERP presence
+        "website_active": 10,     # pricing/affiliate pages resolve (product live)
+        "still_selling": 9,       # price present + reachable listing
+        "affiliate_active": 8,    # affiliate program / commission still offered
+    },
+    # Launch-recency mapping: recent is fresher, but OLD IS NOT BAD — it floors
+    # at 45 (neutral), never 0. Age never drags a product below neutral.
+    "recency_days": [(90, 90), (365, 72), (730, 58), (1460, 50)],
+    "recency_floor": 45,
+    # Freshness status thresholds (only meaningful when confidence > 0).
+    "fresh_at": 60,
+    "stale_below": 45,
+    # Revenue multiplier by freshness status (unknown = neutral, no bonus/penalty).
+    "revenue_multiplier": {"fresh": 1.10, "moderate": 1.00,
+                           "stale": 0.90, "unknown": 1.00},
+}
 
 # ---------------------------------------------------------------------------
 # Priority Opportunity Engine — tier classification
@@ -136,7 +172,9 @@ REVENUE = {
     "sales_clamp": (2, 200),
 
     # Effort (hours) to research + write + rank a review, by competition level.
-    "hours_by_competition": {"low": 5.0, "medium": 9.0, "high": 15.0},
+    # "unknown" competition is treated as medium effort (neutral) — never the
+    # low-effort discount that a confirmed low-competition product earns.
+    "hours_by_competition": {"low": 5.0, "unknown": 9.0, "medium": 9.0, "high": 15.0},
 
     # ROI Score anchor: revenue-per-hour that maps to a 100 ROI Score.
     "roi_target_per_hour": 150.0,
@@ -146,8 +184,8 @@ REVENUE = {
 
     # Opportunity window (days to publish before saturation) by (is_launch, comp).
     "window_days": {
-        ("launch", "low"): 14, ("launch", "medium"): 10, ("launch", "high"): 5,
-        ("evergreen", "low"): 90, ("evergreen", "medium"): 45, ("evergreen", "high"): 14,
+        ("launch", "low"): 14, ("launch", "unknown"): 10, ("launch", "medium"): 10, ("launch", "high"): 5,
+        ("evergreen", "low"): 90, ("evergreen", "unknown"): 45, ("evergreen", "medium"): 45, ("evergreen", "high"): 14,
     },
 }
 

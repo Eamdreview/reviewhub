@@ -12,6 +12,7 @@ short fetches per product, and only fields still missing are filled in.
 
 from __future__ import annotations
 
+import re
 from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup
@@ -30,8 +31,10 @@ _SYSTEM = (
     "commission (string like \"30%\" or \"unknown\"), recurring (true/false/"
     "\"unknown\"), price (string or \"unknown\"), lifetime_deal (true/false/"
     "\"unknown\"), documentation_url (url or \"unknown\"), vendor (company name "
-    "or \"unknown\"). Use \"unknown\" whenever the text does not clearly state "
-    "it. Never guess or invent."
+    "or \"unknown\"), launch_year (the year the product first launched or the "
+    "site's earliest copyright/© year if stated, e.g. \"2023\", or "
+    "\"unknown\"). Use \"unknown\" whenever the text does not clearly state it. "
+    "Never guess or invent."
 )
 
 
@@ -95,6 +98,14 @@ def enrich(candidates: list[Candidate]) -> None:
             c.documentation_url = str(data["documentation_url"])
         if _known(data.get("vendor")) and not c.signals.get("vendor"):
             c.signals["vendor"] = str(data["vendor"])
+        # Launch date: only fill if the collector didn't already provide one.
+        # A bare year (e.g. "2023") becomes YYYY-01-01 so downstream age logic
+        # can parse it; the report labels it as an approximate site/launch date.
+        if not c.launch_date and _known(data.get("launch_year")):
+            ym = re.search(r"(19|20)\d{2}", str(data["launch_year"]))
+            if ym:
+                c.launch_date = f"{ym.group(0)}-01-01"
+                c.signals["launch_date_approx"] = True
 
         c.facts_source = "website (LLM-extracted)"
         c.signals["_measured_facts"] = True
