@@ -10,6 +10,13 @@ on:
         description: "Run offline on fake data (no keys needed)"
         type: boolean
         default: false
+  push:
+    # On-demand run without the Actions UI: commit a marker file under
+    # .github/triggers/weekly-* and the pipeline runs once for that push.
+    # Scoped to that path so ordinary code pushes never trigger a paid run.
+    branches: [main]
+    paths:
+      - ".github/triggers/weekly-*"
 
 permissions:
   contents: write           # needed to commit the weekly report back to the repo
@@ -56,7 +63,19 @@ jobs:
           git add reports/ data/history data/knowledge 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No new report to commit."
-          else
-            git commit -m "Weekly affiliate intelligence report ($(date -u +%Y-%m-%d))"
-            git push
+            exit 0
           fi
+          git commit -m "Weekly affiliate intelligence report ($(date -u +%Y-%m-%d))"
+          # Sync + rebase + retry: the discovery-debug workflow can push to main
+          # on the same event, so a bare push may hit a non-fast-forward.
+          for i in 1 2 3; do
+            git fetch origin main || true
+            git rebase origin/main || git rebase -X ours origin/main || git rebase --abort || true
+            if git push origin HEAD:main; then
+              echo "Pushed report on attempt $i."
+              exit 0
+            fi
+            echo "Non-fast-forward, retrying ($i/3)…"; sleep $((i * 3))
+          done
+          echo "Failed to push the report after 3 attempts." >&2
+          exit 1
