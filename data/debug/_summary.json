@@ -10,7 +10,7 @@
     "rejected": 19,
     "affiliate": 25,
     "yield": 57,
-    "secs": 0.68,
+    "secs": 0.97,
     "reliability": 100,
     "target": 5,
     "reason": "GitHub repository only (17)"
@@ -26,7 +26,7 @@
     "rejected": 11,
     "affiliate": 10,
     "yield": 48,
-    "secs": 10.94,
+    "secs": 12.97,
     "reliability": 100,
     "target": 5,
     "reason": "library/framework/non-product repo (6)"
@@ -58,7 +58,7 @@
     "rejected": 0,
     "affiliate": 39,
     "yield": 100,
-    "secs": 1.85,
+    "secs": 0.62,
     "reliability": 100,
     "target": 0,
     "reason": ""
@@ -74,7 +74,7 @@
     "rejected": 1,
     "affiliate": 36,
     "yield": 97,
-    "secs": 1.08,
+    "secs": 0.85,
     "reliability": 100,
     "target": 10,
     "reason": "news/opinion/funding wording (1)"
@@ -90,7 +90,7 @@
     "rejected": 1,
     "affiliate": 475,
     "yield": 100,
-    "secs": 0.56,
+    "secs": 0.44,
     "reliability": 100,
     "target": 10,
     "reason": "news/opinion/funding wording (1)"
@@ -138,7 +138,7 @@
     "rejected": 0,
     "affiliate": 15,
     "yield": 100,
-    "secs": 26.65,
+    "secs": 29.02,
     "reliability": 100,
     "target": 5,
     "reason": ""
