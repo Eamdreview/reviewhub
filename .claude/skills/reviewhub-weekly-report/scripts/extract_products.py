@@ -137,6 +137,32 @@ def parse(md: str) -> list[dict]:
     return out
 
 
+def parse_sources(md: str) -> dict:
+    """Report-level '⚙️ Data Sources' health — which networks were reachable.
+
+    Returns {source_name: {"status": "ok|failed|skipped", "detail": str}}.
+    Use this to sanity-check per-product affiliate fields (e.g. a JVZoo product
+    is only trustworthy if 'JVZoo: ok' in the footer).
+    """
+    out: dict[str, dict] = {}
+    m = re.search(r"### ⚙️ Data Sources\n(.*)$", md, re.S)
+    if not m:
+        return out
+    for line in m.group(1).splitlines():
+        lm = re.match(r"-\s*[^\w]*\s*(.+?):\s*(.+)$", line)
+        if not lm:
+            continue
+        name, detail = lm.group(1).strip(), lm.group(2).strip()
+        if name.lower().startswith("estimated"):
+            continue
+        low = detail.lower()
+        status = ("ok" if low.startswith("ok") else
+                  "skipped" if low.startswith("skip") else
+                  "failed" if ("fail" in low or "error" in low) else "other")
+        out[name] = {"status": status, "detail": detail}
+    return out
+
+
 def _table(rows: list[dict]) -> str:
     h = f"{'#':<3}{'Product':<28}{'Score':<6}{'Fresh':<18}{'Launch':<12}{'Comp':<9}{'ROI/hr':<8}{'Affil':<8}"
     lines = [h, "-" * len(h)]
@@ -156,6 +182,9 @@ def main() -> None:
         print(__doc__)
         sys.exit(1)
     md = Path(sys.argv[1]).read_text(encoding="utf-8")
+    if "--sources" in sys.argv:
+        print(json.dumps(parse_sources(md), indent=2))
+        return
     rows = parse(md)
     if "--table" in sys.argv:
         print(_table(rows))
