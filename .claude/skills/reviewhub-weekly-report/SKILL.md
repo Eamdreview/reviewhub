@@ -40,6 +40,31 @@ Read both reference files before producing output:
   traffic/affiliate opportunity estimation, article-length guide, deadlines,
   confidence formula, and the READY / NEEDS MORE RESEARCH test.
 
+## Pipeline role & handoff (ReviewHub Skills Architecture)
+
+This skill is the **entry point**: it SELECTS and RANKS opportunities and hands
+work downstream. Its own verification and SEO output are **prioritisation-depth
+previews** — enough to decide what's worth pursuing. The **authoritative deep
+work is owned by dedicated skills**, so responsibilities never duplicate:
+
+```
+reviewhub-weekly-report   (select & rank — you are here)
+        ↓ per accepted product
+reviewhub-product-research (deep verification dossier)
+        ↓
+reviewhub-seo-research     (full SEO package)
+        ↓
+reviewhub-review-generator (review package)
+        ↓
+reviewhub-quality-audit    (pre-publish audit)
+        ↓
+reviewhub-publish-strategy (distribution plan)
+```
+
+When the user wants a full dossier, full SEO package, review, audit, or publish
+plan for a specific product, invoke that specialist skill — do not reproduce it
+here.
+
 ## Workflow
 
 ### Step 1 — Load the report (deterministic)
@@ -61,9 +86,11 @@ revenue_range, prediction_confidence, hours, window_days, best_publish_date.
 Sanity-check internal consistency (e.g. ROI vs revenue÷hours; freshness status
 vs launch_date; competition grade vs existing_reviews).
 
-### Step 3 — Verify, never trust (per `references/verification-and-mistakes.md`)
-Independently verify, recording the evidence source and a per-field status of
-`verified` / `conflicts` / `Verification Required`:
+### Step 3 — Verify, never trust (first-pass gate)
+A prioritisation-level check only — enough to accept/flag a product. The
+**authoritative dossier is `reviewhub-product-research`**; hand accepted products
+to it for full verification. Per `references/verification-and-mistakes.md`,
+record per-field status `verified` / `conflicts` / `Verification Required`:
 - **Launch date** — open the listing; look for copyright/©, "since", changelog,
   press/launch coverage. Cross-check against report.
 - **Affiliate program** — confirm it exists, is **active**, and open to new
@@ -108,8 +135,10 @@ deadline**. Estimation methods are in `references/seo-and-scoring.md`; every
 estimate is labelled (est.) and any input that's unknown is `Verification
 Required`.
 
-### Step 8 — SEO Research Brief (every accepted product)
-Produce all of: **Primary keyword** · **Secondary keywords** · **Long-tail
+### Step 8 — SEO seed brief (preview; full package → `reviewhub-seo-research`)
+A keyword seed sufficient to size the opportunity; the **full SEO package is
+owned by `reviewhub-seo-research`**. Produce a preview of: **Primary keyword** ·
+**Secondary keywords** · **Long-tail
 keywords** · **Search intent** · **Competitor count** · **Questions people
 ask** · **Suggested title** · **Suggested meta description** · **Suggested H1**
 · **Suggested URL slug**. Competitor count and "questions people ask" must come
@@ -146,3 +175,26 @@ Readiness (Step 9), and Confidence (Step 10) together as one analyst card.
 
 Write like a senior analyst: decisive, evidence-first, honest about uncertainty.
 When the report is wrong, say so plainly and show the correction.
+
+## Architecture reference (uniform skill contract)
+
+- **Trigger conditions** — user asks to analyze/triage/curate the weekly report,
+  pick what to review, or produce the weekly shortlists (see the `description`).
+- **Inputs** — the newest `reports/*.md` (or a named date); no other input needed.
+- **Outputs** — the six shortlists (Top 10, Top 5 Urgent, Top 5 Evergreen,
+  Ignore, Verification-Required, Blocking-missing-data) plus per-product Action
+  Plan, readiness, and confidence; hands accepted products to the downstream
+  skills.
+- **Dependencies** — `scripts/extract_products.py`, the two `references/` files,
+  and (for verification/SEO depth) the downstream specialist skills. No project
+  code is modified.
+- **Examples** — "analyze this week's report", "what should I review first?",
+  "give me the urgent + evergreen shortlists".
+- **Limitations** — selection/ranking + prioritisation-depth previews only; deep
+  dossiers/SEO/reviews/audits/publishing belong to the specialist skills.
+- **Verification rules** — never guess; unknown ⇒ `Verification Required`;
+  always verify launch dates; never reject on age alone (details in Step 3 and
+  `references/verification-and-mistakes.md`).
+- **Error handling** — no report found ⇒ say so and stop; a field is `null` ⇒
+  treat as `Verification Required`, never 0/assumed; tool unavailable for a check
+  ⇒ mark that check `Verification Required` rather than trusting the report.
