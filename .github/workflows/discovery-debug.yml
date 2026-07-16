@@ -38,6 +38,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python -m src.collect.debug_all
 
+      # Diagnostic only — a source being down must NOT fail the workflow, so
+      # continue-on-error. Uses the same enrichment secrets Actions already has.
+      # Output table is written under data/debug/ so the next step commits it
+      # alongside the discovery summary.
+      - name: Enrichment source health check
+        continue-on-error: true
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GOOGLE_CSE_KEY: ${{ secrets.GOOGLE_CSE_KEY }}
+          GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
+        run: |
+          mkdir -p data/debug
+          python -m src.enrich.debug_enrich | tee data/debug/enrich_health.txt
+
       - name: Commit raw debug output
         id: commit
         run: |
