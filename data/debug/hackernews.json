@@ -1,5 +1,116 @@
 [
   {
+    "name": "Sentinel",
+    "source": "hackernews",
+    "url": "https://blog.simbastack.com/announcing-sentinel/",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: Sentinel \u2013 open-source QA agent that reads your code before it clicks",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 1,
+    "signals": {
+      "hn_points": 5,
+      "hn_comments": 0
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "AI Law Tracker",
+    "source": "hackernews",
+    "url": "https://ai-law-tracker.com",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: AI Law Tracker \u2013 one audited API for US, EU and global AI law",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 3,
+    "signals": {
+      "hn_points": 20,
+      "hn_comments": 11
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Local Search Agent",
+    "source": "hackernews",
+    "url": "https://github.com/wiss84/local-search-agent",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: Local Search Agent \u2013 RAG replacement, no embeddings, free tier",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": false,
+    "reject_reason": "GitHub repository only",
+    "affiliate_eligible": false,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 5,
+    "signals": {
+      "hn_points": 5,
+      "hn_comments": 0
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
     "name": "Forall",
     "source": "hackernews",
     "url": "https://github.com/astrio-labs/forall",
@@ -21,7 +132,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 7,
+    "hours_since_release": 14,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -58,9 +169,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 8,
+    "hours_since_release": 15,
     "signals": {
-      "hn_points": 5,
+      "hn_points": 6,
       "hn_comments": 0
     },
     "triage": {},
@@ -95,7 +206,44 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 14,
+    "hours_since_release": 22,
+    "signals": {
+      "hn_points": 6,
+      "hn_comments": 1
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Summa",
+    "source": "hackernews",
+    "url": "https://summa.josephruocco.net",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: Summa, a tool that annotates over whatever you're reading",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 23,
     "signals": {
       "hn_points": 5,
       "hn_comments": 1
@@ -132,7 +280,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 16,
+    "hours_since_release": 23,
     "signals": {
       "hn_points": 21,
       "hn_comments": 4
@@ -169,7 +317,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 16,
+    "hours_since_release": 24,
     "signals": {
       "hn_points": 5,
       "hn_comments": 8
@@ -206,10 +354,47 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 19,
+    "hours_since_release": 27,
     "signals": {
-      "hn_points": 23,
+      "hn_points": 24,
       "hn_comments": 9
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "OpenMarkdown",
+    "source": "hackernews",
+    "url": "https://openmarkdown.dev/",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: OpenMarkdown \u2013 A Markdown editor you and your agent co-edit",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 27,
+    "signals": {
+      "hn_points": 5,
+      "hn_comments": 0
     },
     "triage": {},
     "freshness": {},
@@ -243,7 +428,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 19,
+    "hours_since_release": 27,
     "signals": {
       "hn_points": 16,
       "hn_comments": 6
@@ -280,9 +465,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 20,
+    "hours_since_release": 28,
     "signals": {
-      "hn_points": 8,
+      "hn_points": 9,
       "hn_comments": 0
     },
     "triage": {},
@@ -317,7 +502,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 21,
+    "hours_since_release": 28,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -354,7 +539,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 21,
+    "hours_since_release": 28,
     "signals": {
       "hn_points": 6,
       "hn_comments": 2
@@ -391,10 +576,10 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 30,
+    "hours_since_release": 38,
     "signals": {
       "hn_points": 6,
-      "hn_comments": 8
+      "hn_comments": 9
     },
     "triage": {},
     "freshness": {},
@@ -428,7 +613,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 42,
+    "hours_since_release": 49,
     "signals": {
       "hn_points": 8,
       "hn_comments": 1
@@ -465,7 +650,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 42,
+    "hours_since_release": 50,
     "signals": {
       "hn_points": 14,
       "hn_comments": 6
@@ -502,7 +687,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 42,
+    "hours_since_release": 50,
     "signals": {
       "hn_points": 31,
       "hn_comments": 12
@@ -539,7 +724,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 44,
+    "hours_since_release": 52,
     "signals": {
       "hn_points": 106,
       "hn_comments": 47
@@ -576,7 +761,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 50,
+    "hours_since_release": 58,
     "signals": {
       "hn_points": 14,
       "hn_comments": 8
@@ -613,9 +798,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 57,
+    "hours_since_release": 65,
     "signals": {
-      "hn_points": 43,
+      "hn_points": 44,
       "hn_comments": 33
     },
     "triage": {},
@@ -650,7 +835,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 58,
+    "hours_since_release": 65,
     "signals": {
       "hn_points": 11,
       "hn_comments": 11
@@ -687,7 +872,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 62,
+    "hours_since_release": 70,
     "signals": {
       "hn_points": 9,
       "hn_comments": 1
@@ -724,7 +909,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 63,
+    "hours_since_release": 70,
     "signals": {
       "hn_points": 71,
       "hn_comments": 27
@@ -761,7 +946,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 63,
+    "hours_since_release": 71,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -798,7 +983,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 63,
+    "hours_since_release": 71,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -835,7 +1020,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 65,
+    "hours_since_release": null,
     "signals": {
       "hn_points": 102,
       "hn_comments": 58
@@ -851,11 +1036,11 @@
     "brief": {}
   },
   {
-    "name": "Self-hosted voice AI agent for Asterisk/FreePBX",
+    "name": "Traceforce (YC S26)",
     "source": "hackernews",
-    "url": "https://github.com/hkjarral/AVA-AI-Voice-Agent-for-Asterisk",
+    "url": "https://news.ycombinator.com/item?id=48937020",
     "category": "AI / SaaS tool",
-    "description": "Show HN: Self-hosted voice AI agent for Asterisk/FreePBX",
+    "description": "Launch HN: Traceforce (YC S26) \u2013 Secure AI apps, one device at a time",
     "price": "",
     "base_commission": "",
     "recurring": null,
@@ -867,88 +1052,14 @@
     "documentation_url": "",
     "facts_source": "",
     "qualified": false,
-    "reject_reason": "GitHub repository only",
+    "reject_reason": "no official website (discussion link only)",
     "affiliate_eligible": false,
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": null,
+    "hours_since_release": 0,
     "signals": {
-      "hn_points": 30,
-      "hn_comments": 11
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Web App Uses RTL-SDR to Align HDTV Antenna",
-    "source": "hackernews",
-    "url": "https://tunerscope.com/",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: Web App Uses RTL-SDR to Align HDTV Antenna",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 26,
-      "hn_comments": 3
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Let your coding agent iterate by seeing the browser",
-    "source": "hackernews",
-    "url": "https://github.com/puffinsoft/peek-cli",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: Let your coding agent iterate by seeing the browser",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": false,
-    "reject_reason": "GitHub repository only",
-    "affiliate_eligible": false,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 6,
+      "hn_points": 2,
       "hn_comments": 0
     },
     "triage": {},
@@ -983,7 +1094,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 36,
+    "hours_since_release": 44,
     "signals": {
       "hn_points": 4,
       "hn_comments": 2
@@ -1020,7 +1131,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 41,
+    "hours_since_release": 48,
     "signals": {
       "hn_points": 84,
       "hn_comments": 48
@@ -1468,43 +1579,6 @@
     "signals": {
       "hn_points": 5,
       "hn_comments": 2
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Infer0",
-    "source": "hackernews",
-    "url": "https://infer0.com/",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: Infer0 \u2013 do AI apps need subscriptions?",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 6,
-      "hn_comments": 1
     },
     "triage": {},
     "freshness": {},
