@@ -24,7 +24,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Nutlope/hallmark",
-      "github_stars": 7450,
+      "github_stars": 9801,
       "vendor": "Nutlope",
       "archived": false,
       "topics": [],
@@ -33,6 +33,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -64,7 +65,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/moeru-ai/airi",
-      "github_stars": 42385,
+      "github_stars": 42709,
       "vendor": "moeru-ai",
       "archived": false,
       "topics": [
@@ -85,6 +86,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -116,7 +118,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Dicklesworthstone/destructive_command_guard",
-      "github_stars": 4640,
+      "github_stars": 4930,
       "vendor": "Dicklesworthstone",
       "archived": false,
       "topics": [
@@ -132,6 +134,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -163,7 +166,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/Vibe-Trading",
-      "github_stars": 23495,
+      "github_stars": 24050,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -183,6 +186,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -214,7 +218,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/openinterpreter/openinterpreter",
-      "github_stars": 65259,
+      "github_stars": 65722,
       "vendor": "openinterpreter",
       "archived": false,
       "topics": [
@@ -230,6 +234,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -261,7 +266,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/DeepTutor",
-      "github_stars": 26117,
+      "github_stars": 26581,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -280,6 +285,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -311,7 +317,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HenryNdubuaku/maths-cs-ai-compendium",
-      "github_stars": 5739,
+      "github_stars": 6138,
       "vendor": "HenryNdubuaku",
       "archived": false,
       "topics": [
@@ -340,6 +346,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -371,7 +378,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "github_stars": 121682,
+      "github_stars": 122305,
       "vendor": "Shubhamsaboo",
       "archived": false,
       "topics": [
@@ -385,6 +392,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -416,7 +424,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/coreyhaines31/marketingskills",
-      "github_stars": 39521,
+      "github_stars": 40039,
       "vendor": "coreyhaines31",
       "archived": false,
       "topics": [
@@ -429,6 +437,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -460,7 +469,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/hasaneyldrm/exercises-dataset",
-      "github_stars": 14160,
+      "github_stars": 14642,
       "vendor": "hasaneyldrm",
       "archived": false,
       "topics": [
@@ -480,6 +489,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -511,7 +521,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/davila7/claude-code-templates",
-      "github_stars": 29540,
+      "github_stars": 29589,
       "vendor": "davila7",
       "archived": false,
       "topics": [
@@ -525,6 +535,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -556,7 +567,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/bradautomates/claude-video",
-      "github_stars": 8613,
+      "github_stars": 8695,
       "vendor": "bradautomates",
       "archived": false,
       "topics": [],
@@ -565,6 +576,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -596,7 +608,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/huggingface/speech-to-speech",
-      "github_stars": 6169,
+      "github_stars": 6185,
       "vendor": "huggingface",
       "archived": false,
       "topics": [
@@ -615,6 +627,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -646,7 +659,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/usestrix/strix",
-      "github_stars": 41772,
+      "github_stars": 41983,
       "vendor": "usestrix",
       "archived": false,
       "topics": [
@@ -676,6 +689,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -707,7 +721,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/alirezarezvani/claude-skills",
-      "github_stars": 22631,
+      "github_stars": 22687,
       "vendor": "alirezarezvani",
       "archived": false,
       "topics": [
@@ -737,6 +751,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -768,7 +783,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/ansible/ansible",
-      "github_stars": 69687,
+      "github_stars": 69699,
       "vendor": "ansible",
       "archived": false,
       "topics": [
@@ -780,6 +795,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -811,7 +827,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/home-assistant/core",
-      "github_stars": 89398,
+      "github_stars": 89426,
       "vendor": "home-assistant",
       "archived": false,
       "topics": [
@@ -829,6 +845,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -860,7 +877,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/ATH-MaaS/Pixelle-Video",
-      "github_stars": 25553,
+      "github_stars": 25594,
       "vendor": "ATH-MaaS",
       "archived": false,
       "topics": [
@@ -875,6 +892,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -906,7 +924,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Graphify-Labs/graphify",
-      "github_stars": 87467,
+      "github_stars": 88187,
       "vendor": "Graphify-Labs",
       "archived": false,
       "topics": [
@@ -927,6 +945,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -958,7 +977,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/debpalash/OmniVoice-Studio",
-      "github_stars": 8468,
+      "github_stars": 8498,
       "vendor": "debpalash",
       "archived": false,
       "topics": [
@@ -985,6 +1004,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -1016,7 +1036,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/virattt/ai-hedge-fund",
-      "github_stars": 62111,
+      "github_stars": 62159,
       "vendor": "virattt",
       "archived": false,
       "topics": [],
@@ -1025,6 +1045,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -1056,7 +1077,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/anthropics/claude-code",
-      "github_stars": 137958,
+      "github_stars": 138048,
       "vendor": "anthropics",
       "archived": false,
       "topics": [],
@@ -1065,6 +1086,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
@@ -1096,7 +1118,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/kangarooking/cangjie-skill",
-      "github_stars": 3072,
+      "github_stars": 3196,
       "vendor": "kangarooking",
       "archived": false,
       "topics": [
@@ -1114,6 +1136,7 @@
     "triage": {},
     "freshness": {},
     "scores": {},
+    "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
     "classification": {},
