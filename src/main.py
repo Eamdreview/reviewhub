@@ -21,9 +21,9 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from . import (advisor, classify, collect, competition, config, deliver,
-               freshness, knowledge, launch_calendar, learning, post_launch,
-               qualify, report, revenue, revenue_history, score, triage,
-               vendor, write)
+               diagnostics, freshness, knowledge, launch_calendar, learning,
+               post_launch, qualify, report, revenue, revenue_history, score,
+               triage, vendor, write)
 from .enrich import enrich_all
 from .models import RunReport
 
@@ -51,14 +51,17 @@ def run(dry_run: bool = False) -> Path:
 
     # [1] COLLECT
     candidates, source_status = collect.collect_all(dry_run=dry_run)
-    log.info("Collected %d candidates", len(candidates))
+    collected = len(candidates)                 # for the diagnostics funnel
+    n_qualify_rejected = 0
+    log.info("Collected %d candidates", collected)
     _dump("candidates", candidates)
 
     # [1b] QUALIFY — minimum-quality gate; only qualified reach enrichment.
     # (Dry-run sample data is pre-shaped, so skip qualification there.)
     if not dry_run:
         candidates, rejected = qualify.qualify_all(candidates)
-        log.info("Qualified %d / rejected %d", len(candidates), len(rejected))
+        n_qualify_rejected = len(rejected)
+        log.info("Qualified %d / rejected %d", len(candidates), n_qualify_rejected)
         _dump("qualified", candidates)
         _dump("rejected", rejected)
 
@@ -89,6 +92,16 @@ def run(dry_run: bool = False) -> Path:
              len(buckets[1]), len(buckets[2]), len(buckets[3]),
              len(buckets[4]), len(buckets[0]))
     _dump("classified", candidates)
+
+    # [4b-diag] DIAGNOSIS-ONLY funnel + near-miss (changes no thresholds).
+    n_triage_junk = sum(1 for c in candidates if c.triage.get("is_junk"))
+    diag = diagnostics.diagnose(collected, n_qualify_rejected, n_triage_junk, candidates)
+    DATA_DIR.mkdir(exist_ok=True)
+    (DATA_DIR / "funnel.json").write_text(
+        json.dumps({"funnel": diag["funnel"], "gates": diag["gates"],
+                    "near_miss": diag["near_miss"]}, indent=2, default=str),
+        encoding="utf-8")
+    log.info("Funnel diagnosis:\n%s", diag["text"])
 
     # [4c] PREDICT — Revenue Prediction Engine (transparent, per qualified product)
     actionable = [c for t in config.TIER_ORDER for c in buckets[t]]

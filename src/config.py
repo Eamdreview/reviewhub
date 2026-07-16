@@ -46,6 +46,16 @@ CRITERION_LABELS: dict[str, str] = {
 # from the Top 10 no matter how high its total score is.
 BUYING_INTENT_FLOOR: int = 60
 
+# Reliability knobs (diagnosis-driven; do NOT alter WEIGHTS/floor/tier cutoffs).
+# When an enrichment source fails or returns no data, its criterion scores this
+# NEUTRAL value rather than 0 — a failed API call must lower CONFIDENCE, never
+# the score. Unmeasured criteria are flagged so the report can annotate them.
+UNMEASURED_NEUTRAL: int = 50
+# Near-miss safety net: a candidate whose buying-intent is within this many
+# points below the floor is routed to the Watchlist ("near-miss, verify
+# manually") instead of being silently ignored.
+NEAR_MISS_TOLERANCE: int = 5
+
 # ---------------------------------------------------------------------------
 # Freshness Score (0-100) — "is this an active, currently-relevant opportunity
 # to review TODAY?" Computed from MULTIPLE live signals, never launch date

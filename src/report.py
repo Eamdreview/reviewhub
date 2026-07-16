@@ -14,14 +14,51 @@ generator. Sections:
 
 from __future__ import annotations
 
-from . import config, score
+from . import config, diagnostics, score
 from .models import Candidate, RunReport
 
 
 def _breakdown_line(c: Candidate) -> str:
     pts = score.breakdown_points(c.scores)
-    return " · ".join(f"{config.CRITERION_LABELS[k]} {pts[k]:g}/{w}"
-                      for k, w in config.WEIGHTS.items())
+    parts, any_unmeasured = [], False
+    for k, w in config.WEIGHTS.items():
+        measured = c.measured.get(k, True)
+        star = "" if measured else "*"
+        any_unmeasured = any_unmeasured or not measured
+        parts.append(f"{config.CRITERION_LABELS[k]} {pts[k]:g}/{w}{star}")
+    line = " · ".join(parts)
+    if any_unmeasured:
+        line += ("\n_\\* unmeasured — neutral default used because the source "
+                 "returned no data; this lowers confidence, not the score._")
+    return line
+
+
+def _sanity_warning(run: RunReport) -> str:
+    """If no Tier 1/2 this week, surface the top-3 near-misses + what blocked each."""
+    t = run.tiers
+    if len(t.get(1, [])) + len(t.get(2, [])) > 0:
+        return ""
+    ignored = sorted(t.get(0, []), key=lambda c: c.total_score, reverse=True)[:3]
+    if not ignored:
+        return ""
+    lines = [
+        "> ### ⚠️ Sanity check — ZERO Tier 1 / Tier 2 this week",
+        ">",
+        "> No immediate-review products cleared the bar. Closest misses and the "
+        "single criterion blocking each (verify manually):",
+        ">",
+    ]
+    for c in ignored:
+        k = diagnostics.primary_killer(diagnostics._row(c))
+        lines.append(
+            f"> - **{c.name}** — score {c.total_score:g}; blocked by "
+            f"**{k['criterion']}** = {k['score']} (needs ≥ {k['threshold']})")
+    lines += [
+        ">",
+        "> If several are blocked by the same criterion, that criterion — or a "
+        "failed enrichment source behind it — is the lever, not product quality.",
+    ]
+    return "\n".join(lines)
 
 
 def _all_qualified(run: RunReport) -> list[Candidate]:
@@ -194,11 +231,18 @@ def _hidden(run: RunReport) -> str:
     for c in watch:
         rev = c.classification.get("revenue_potential", {}).get("level", "—")
         comp = c.classification.get("competition", {}).get("competition_level", "—")
-        lines.append(
-            f"- **{c.name}** ({c.category}) — high interest, not yet fully "
-            f"profitable. Demand {c.scores.get('search_demand'):g}/100, "
-            f"competition {comp}, revenue potential {rev} (est.). "
-            f"Worth monitoring for a better entry point.")
+        if c.classification.get("near_miss"):
+            lines.append(
+                f"- **{c.name}** ({c.category}) — 🔍 **near-miss, verify manually**. "
+                f"{c.classification.get('near_miss_reason','')} "
+                f"Buying intent {c.scores.get('buying_intent'):g}/100, "
+                f"competition {comp}, revenue potential {rev} (est.).")
+        else:
+            lines.append(
+                f"- **{c.name}** ({c.category}) — high interest, not yet fully "
+                f"profitable. Demand {c.scores.get('search_demand'):g}/100, "
+                f"competition {comp}, revenue potential {rev} (est.). "
+                f"Worth monitoring for a better entry point.")
     return "\n".join(lines)
 
 
@@ -455,6 +499,11 @@ def build_markdown(run: RunReport) -> str:
 
     parts = [
         f"# {config.REPORT_TITLE}\n### Week of {run.date}\n\n{counts}\n",
+    ]
+    warning = _sanity_warning(run)
+    if warning:
+        parts.append(warning)
+    parts += [
         _executive_dashboard(run),
         _priority_dashboard(run),
         "## 1. Executive Summary\n" + (run.executive_summary or "_n/a_"),

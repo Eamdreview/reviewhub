@@ -63,6 +63,9 @@ class Candidate:
 
     # --- scoring (Score stage) ---
     scores: dict[str, float] = field(default_factory=dict)   # criterion -> 0-100
+    # criterion -> was it actually measured? False = neutral default (unmeasured),
+    # which lowers confidence in the report, not the score.
+    measured: dict[str, bool] = field(default_factory=dict)
     total_score: float = 0.0
     passed_floor: bool = False
 

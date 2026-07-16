@@ -86,11 +86,26 @@ def _rows() -> list[dict]:
         return [dict(r) for r in conn.execute("SELECT * FROM reviews").fetchall()]
 
 
+def _num(v):
+    """Parse a numeric field safely. None/"" and unparseable values -> None.
+
+    CSV-imported rows store empty numeric cells as "" (not None), which would
+    crash float()/int(); this normalises them so aggregation can skip them.
+    """
+    if v is None or v == "":
+        return None
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
+
 def _avg_by(rows, key, val="revenue"):
     groups = defaultdict(list)
     for r in rows:
-        if r.get(key) and r.get(val) is not None:
-            groups[r[key]].append(float(r[val]))
+        num = _num(r.get(val))
+        if r.get(key) and num is not None:
+            groups[r[key]].append(num)
     return {k: round(sum(v) / len(v), 2) for k, v in groups.items()}
 
 
@@ -105,21 +120,23 @@ def insights() -> dict:
     out["avg_revenue_per_category"] = _avg_by(rows, "category")
     out["avg_revenue_per_network"] = _avg_by(rows, "network")
     out["avg_revenue_per_review_type"] = _avg_by(rows, "review_type")
-    convs = [float(r["conversion_rate"]) for r in rows if r.get("conversion_rate") is not None]
+    convs = [c for c in (_num(r.get("conversion_rate")) for r in rows) if c is not None]
     out["avg_conversion_rate"] = round(sum(convs) / len(convs), 3) if convs else None
 
     # Best publishing day / hour / traffic source by average revenue.
     by_day = defaultdict(list)
     by_hour = defaultdict(list)
     for r in rows:
-        if r.get("publish_date") and r.get("revenue") is not None:
+        rev = _num(r.get("revenue"))
+        if r.get("publish_date") and rev is not None:
             try:
                 d = datetime.fromisoformat(r["publish_date"])
-                by_day[d.strftime("%A")].append(float(r["revenue"]))
+                by_day[d.strftime("%A")].append(rev)
             except ValueError:
                 pass
-        if r.get("publish_hour") is not None and r.get("revenue") is not None:
-            by_hour[int(r["publish_hour"])].append(float(r["revenue"]))
+        hour = _num(r.get("publish_hour"))
+        if hour is not None and rev is not None:
+            by_hour[int(hour)].append(rev)
     out["best_day"] = max(((k, sum(v) / len(v)) for k, v in by_day.items()),
                           key=lambda x: x[1], default=(None, 0))[0]
     out["best_hour"] = max(((k, sum(v) / len(v)) for k, v in by_hour.items()),
@@ -130,8 +147,9 @@ def insights() -> dict:
     # Monthly improvement: revenue by YYYY-MM, latest vs previous.
     by_month = defaultdict(float)
     for r in rows:
-        if r.get("publish_date") and r.get("revenue") is not None:
-            by_month[r["publish_date"][:7]] += float(r["revenue"])
+        rev = _num(r.get("revenue"))
+        if r.get("publish_date") and rev is not None:
+            by_month[r["publish_date"][:7]] += rev
     months = sorted(by_month)
     if len(months) >= 2:
         prev, last = by_month[months[-2]], by_month[months[-1]]

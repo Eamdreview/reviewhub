@@ -229,15 +229,34 @@ def _tier_of(c: Candidate) -> int:
     return 0
 
 
+def _near_miss(c: Candidate) -> str:
+    """If a would-be-ignored candidate is within NEAR_MISS_TOLERANCE of the
+    buying-intent floor (and not junk), return a reason so it can be surfaced to
+    the Watchlist for manual verification instead of being silently dropped."""
+    if c.triage.get("is_junk"):
+        return ""
+    bi = float(c.scores.get("buying_intent", 0))
+    floor = config.BUYING_INTENT_FLOOR
+    if floor - config.NEAR_MISS_TOLERANCE <= bi < floor:
+        return (f"Near-miss: buying intent {bi:g} is within "
+                f"{config.NEAR_MISS_TOLERANCE} of the floor ({floor}) — verify manually.")
+    return ""
+
+
 def classify_all(candidates: list[Candidate]) -> list[Candidate]:
     for c in candidates:
         tier = _tier_of(c)
+        near_miss = _near_miss(c) if tier == 0 else ""
+        if near_miss:
+            tier = 4                       # surface to Watchlist, don't hide
         c.classification = {
             "tier": tier,
             "tier_label": config.TIER_LABEL[tier],
             "priority": config.PRIORITY_LABEL[tier],
             "competition_level": _competition_level(c),
             "existing_reviews": _review_count(c),
+            "near_miss": bool(near_miss),
+            "near_miss_reason": near_miss,
             "ignore_reasons": _ignore_reasons(c) if tier == 0 else [],
             # Intelligence attached to every non-ignored product:
             "competition": _competitor_alert(c) if tier != 0 else {},
