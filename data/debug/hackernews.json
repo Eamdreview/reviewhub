@@ -1,5 +1,42 @@
 [
   {
+    "name": "Open-source AI app builder you can embed into your own SaaS",
+    "source": "hackernews",
+    "url": "https://github.com/totalumlabs/ai-app-builder-open",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: Open-source AI app builder you can embed into your own SaaS",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": false,
+    "reject_reason": "GitHub repository only",
+    "affiliate_eligible": false,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 5,
+    "signals": {
+      "hn_points": 5,
+      "hn_comments": 0
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
     "name": "Sentinel",
     "source": "hackernews",
     "url": "https://blog.simbastack.com/announcing-sentinel/",
@@ -21,10 +58,10 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 1,
+    "hours_since_release": 5,
     "signals": {
-      "hn_points": 5,
-      "hn_comments": 0
+      "hn_points": 13,
+      "hn_comments": 3
     },
     "triage": {},
     "freshness": {},
@@ -58,9 +95,46 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 3,
+    "hours_since_release": 7,
     "signals": {
       "hn_points": 20,
+      "hn_comments": 12
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "I Built an Accent Changer App",
+    "source": "hackernews",
+    "url": "https://accentchanger.com/",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: I Built an Accent Changer App",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 9,
+    "signals": {
+      "hn_points": 5,
       "hn_comments": 11
     },
     "triage": {},
@@ -95,7 +169,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 5,
+    "hours_since_release": 9,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -132,7 +206,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 14,
+    "hours_since_release": 18,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -169,7 +243,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 15,
+    "hours_since_release": 19,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -206,7 +280,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 22,
+    "hours_since_release": 26,
     "signals": {
       "hn_points": 6,
       "hn_comments": 1
@@ -243,7 +317,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 23,
+    "hours_since_release": 28,
     "signals": {
       "hn_points": 5,
       "hn_comments": 1
@@ -280,7 +354,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 23,
+    "hours_since_release": 28,
     "signals": {
       "hn_points": 21,
       "hn_comments": 4
@@ -317,9 +391,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 24,
+    "hours_since_release": 28,
     "signals": {
-      "hn_points": 5,
+      "hn_points": 6,
       "hn_comments": 8
     },
     "triage": {},
@@ -354,7 +428,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 27,
+    "hours_since_release": 31,
     "signals": {
       "hn_points": 24,
       "hn_comments": 9
@@ -391,7 +465,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 27,
+    "hours_since_release": 31,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -428,7 +502,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 27,
+    "hours_since_release": 31,
     "signals": {
       "hn_points": 16,
       "hn_comments": 6
@@ -465,7 +539,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 28,
+    "hours_since_release": 32,
     "signals": {
       "hn_points": 9,
       "hn_comments": 0
@@ -502,7 +576,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 28,
+    "hours_since_release": 33,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -539,9 +613,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 28,
+    "hours_since_release": 33,
     "signals": {
-      "hn_points": 6,
+      "hn_points": 7,
       "hn_comments": 2
     },
     "triage": {},
@@ -576,7 +650,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 38,
+    "hours_since_release": 42,
     "signals": {
       "hn_points": 6,
       "hn_comments": 9
@@ -613,7 +687,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 49,
+    "hours_since_release": 54,
     "signals": {
       "hn_points": 8,
       "hn_comments": 1
@@ -650,7 +724,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 50,
+    "hours_since_release": 54,
     "signals": {
       "hn_points": 14,
       "hn_comments": 6
@@ -687,7 +761,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 50,
+    "hours_since_release": 54,
     "signals": {
       "hn_points": 31,
       "hn_comments": 12
@@ -724,10 +798,10 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 52,
+    "hours_since_release": 56,
     "signals": {
       "hn_points": 106,
-      "hn_comments": 47
+      "hn_comments": 48
     },
     "triage": {},
     "freshness": {},
@@ -761,7 +835,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 58,
+    "hours_since_release": 62,
     "signals": {
       "hn_points": 14,
       "hn_comments": 8
@@ -798,7 +872,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 65,
+    "hours_since_release": 69,
     "signals": {
       "hn_points": 44,
       "hn_comments": 33
@@ -835,7 +909,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 65,
+    "hours_since_release": 69,
     "signals": {
       "hn_points": 11,
       "hn_comments": 11
@@ -872,158 +946,10 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 70,
+    "hours_since_release": null,
     "signals": {
       "hn_points": 9,
       "hn_comments": 1
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "BillAI Bass",
-    "source": "hackernews",
-    "url": "https://github.com/morganwilliscloud/billai-bass",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: BillAI Bass, an AI-Powered Big Mouth Billy Bass Using Strands Agents",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": false,
-    "reject_reason": "GitHub repository only",
-    "affiliate_eligible": false,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": 70,
-    "signals": {
-      "hn_points": 71,
-      "hn_comments": 27
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Finterm.ai Bloomberg terminal for Claude Code",
-    "source": "hackernews",
-    "url": "https://finterm.ai/",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": 71,
-    "signals": {
-      "hn_points": 6,
-      "hn_comments": 0
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Connect a voice agent to your phone as a Bluetooth headset with a ESP32",
-    "source": "hackernews",
-    "url": "https://github.com/michaellee8/esp32-bluetooth-voice-agent",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: Connect a voice agent to your phone as a Bluetooth headset with a ESP32",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": false,
-    "reject_reason": "GitHub repository only",
-    "affiliate_eligible": false,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": 71,
-    "signals": {
-      "hn_points": 5,
-      "hn_comments": 0
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Jacquard",
-    "source": "hackernews",
-    "url": "https://github.com/jbwinters/jacquard-lang",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: Jacquard, a programming language for AI-written, human-reviewed code",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": false,
-    "reject_reason": "GitHub repository only",
-    "affiliate_eligible": false,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 102,
-      "hn_comments": 58
     },
     "triage": {},
     "freshness": {},
@@ -1040,7 +966,7 @@
     "source": "hackernews",
     "url": "https://news.ycombinator.com/item?id=48937020",
     "category": "AI / SaaS tool",
-    "description": "Launch HN: Traceforce (YC S26) \u2013 Secure AI apps, one device at a time",
+    "description": "Launch HN: Traceforce (YC S26) \u2013 Company-wide security monitoring for AI apps",
     "price": "",
     "base_commission": "",
     "recurring": null,
@@ -1057,10 +983,10 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 0,
+    "hours_since_release": 4,
     "signals": {
-      "hn_points": 2,
-      "hn_comments": 0
+      "hn_points": 20,
+      "hn_comments": 9
     },
     "triage": {},
     "freshness": {},
@@ -1094,7 +1020,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 44,
+    "hours_since_release": 48,
     "signals": {
       "hn_points": 4,
       "hn_comments": 2
@@ -1131,9 +1057,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 48,
+    "hours_since_release": 53,
     "signals": {
-      "hn_points": 84,
+      "hn_points": 85,
       "hn_comments": 48
     },
     "triage": {},

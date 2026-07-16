@@ -5,11 +5,14 @@ Samples: ChatGPT, Jasper AI, Systeme.io, ClickFunnels, Notion
 ============================================================================================
 Source         Outcome          Measured  Time   Sample                      Detail
 --------------------------------------------------------------------------------------------
-google_trends  EMPTY (silent)   0/5       2.17s                              ran without error but returned no data
-youtube        OK (real data)   5/5       2.09s  10                          5/5 candidates measured
-google_cse     EMPTY (silent)   0/5       15.45s                             ran without error but returned no data
+google_trends  OK (real data)   5/5       2.87s  -0.067                      5/5 candidates measured
+youtube        OK (real data)   5/5       2.05s  10                          5/5 candidates measured
+google_cse     EMPTY (silent)   0/5       15.69s                             ran without error but returned no data
 --------------------------------------------------------------------------------------------
-1/3 returning real data · SILENTLY EMPTY: google_trends, google_cse
+2/3 returning real data · SILENTLY EMPTY: google_cse
 ============================================================================================
 Note: EMPTY (silent) is the dangerous case — the source ran but fed the
 scorer nothing; those criteria fall back to the neutral default.
+
+google_cse raw-probe (diagnostic; key redacted):
+   HTTP 403 — {   "error": {     "code": 403,     "message": "This project does not have the access to Custom Search JSON API.",     "errors": [       {         "message": "This project does not have the access to Custom Search JSON API.",         "domain": "global",         "reason": "forbidden"       }     ],     "status": "PERMISSION_DENIED"   } } 

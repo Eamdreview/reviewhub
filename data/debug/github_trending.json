@@ -24,7 +24,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/apache/ossie",
-      "github_stars": 809,
+      "github_stars": 863,
       "vendor": "apache",
       "archived": false,
       "topics": [
@@ -68,7 +68,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Nutlope/hallmark",
-      "github_stars": 10459,
+      "github_stars": 10708,
       "vendor": "Nutlope",
       "archived": false,
       "topics": [],
@@ -109,7 +109,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/PostHog/posthog",
-      "github_stars": 35717,
+      "github_stars": 35789,
       "vendor": "PostHog",
       "archived": false,
       "topics": [
@@ -146,7 +146,7 @@
     "source": "github_trending",
     "url": "http://openinterpreter.com/",
     "category": "acp, coding-agent",
-    "description": "A coding agent for low-cost models",
+    "description": "A Codex-compatible coding agent for open models like Kimi K3",
     "price": "",
     "base_commission": "",
     "recurring": null,
@@ -166,7 +166,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/openinterpreter/openinterpreter",
-      "github_stars": 65880,
+      "github_stars": 65937,
       "vendor": "openinterpreter",
       "archived": false,
       "topics": [
@@ -214,7 +214,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/hasaneyldrm/exercises-dataset",
-      "github_stars": 14845,
+      "github_stars": 14961,
       "vendor": "hasaneyldrm",
       "archived": false,
       "topics": [
@@ -266,7 +266,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "github_stars": 122622,
+      "github_stars": 122766,
       "vendor": "Shubhamsaboo",
       "archived": false,
       "topics": [
@@ -312,7 +312,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/lobehub/lobehub",
-      "github_stars": 80027,
+      "github_stars": 80102,
       "vendor": "lobehub",
       "archived": false,
       "topics": [
@@ -372,7 +372,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/DeepTutor",
-      "github_stars": 26752,
+      "github_stars": 26809,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -423,7 +423,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/github/copilot-sdk",
-      "github_stars": 9579,
+      "github_stars": 9622,
       "vendor": "github",
       "archived": false,
       "topics": [],
@@ -464,7 +464,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Graphify-Labs/graphify",
-      "github_stars": 88648,
+      "github_stars": 88875,
       "vendor": "Graphify-Labs",
       "archived": false,
       "topics": [
@@ -517,7 +517,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/Vibe-Trading",
-      "github_stars": 24250,
+      "github_stars": 24240,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -569,7 +569,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/davila7/claude-code-templates",
-      "github_stars": 29620,
+      "github_stars": 29582,
       "vendor": "davila7",
       "archived": false,
       "topics": [
@@ -615,7 +615,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/kangarooking/cangjie-skill",
-      "github_stars": 3259,
+      "github_stars": 3277,
       "vendor": "kangarooking",
       "archived": false,
       "topics": [
@@ -665,7 +665,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/huggingface/speech-to-speech",
-      "github_stars": 6189,
+      "github_stars": 6136,
       "vendor": "huggingface",
       "archived": false,
       "topics": [
@@ -716,7 +716,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/virattt/ai-hedge-fund",
-      "github_stars": 62173,
+      "github_stars": 62179,
       "vendor": "virattt",
       "archived": false,
       "topics": [],
@@ -757,7 +757,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/PrefectHQ/prefect",
-      "github_stars": 23404,
+      "github_stars": 23408,
       "vendor": "PrefectHQ",
       "archived": false,
       "topics": [
@@ -813,7 +813,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/ansible/ansible",
-      "github_stars": 69693,
+      "github_stars": 69609,
       "vendor": "ansible",
       "archived": false,
       "topics": [
@@ -857,7 +857,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/ATH-MaaS/Pixelle-Video",
-      "github_stars": 25612,
+      "github_stars": 25615,
       "vendor": "ATH-MaaS",
       "archived": false,
       "topics": [
@@ -904,7 +904,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/home-assistant/core",
-      "github_stars": 89440,
+      "github_stars": 89276,
       "vendor": "home-assistant",
       "archived": false,
       "topics": [
@@ -954,7 +954,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/bradautomates/claude-video",
-      "github_stars": 8759,
+      "github_stars": 8794,
       "vendor": "bradautomates",
       "archived": false,
       "topics": [],
@@ -995,7 +995,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
-      "github_stars": 17277,
+      "github_stars": 17278,
       "vendor": "muratcankoylan",
       "archived": false,
       "topics": [],
