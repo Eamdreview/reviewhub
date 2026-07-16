@@ -69,9 +69,32 @@ def _check(name, enricher, flag, sample_key) -> dict:
             "sample": str(sample)[:26], "detail": detail[:50], "secs": round(time.time() - t0, 2)}
 
 
+def _cse_probe() -> str:
+    """One raw Custom Search call to surface the REAL HTTP status + error body
+    that google_cse.enrich swallows. Diagnostic only; the API key is never
+    printed (only Google's response body, which does not echo it)."""
+    import requests
+    key, cx = config.env("GOOGLE_CSE_KEY"), config.env("GOOGLE_CSE_ID")
+    if not key or not cx:
+        return "GOOGLE_CSE_KEY / GOOGLE_CSE_ID not set"
+    try:
+        r = requests.get("https://www.googleapis.com/customsearch/v1",
+                         params={"key": key, "cx": cx, "q": "ChatGPT review", "num": 10},
+                         timeout=30)
+        return f"HTTP {r.status_code} — {r.text[:400].replace(chr(10), ' ')}"
+    except Exception as exc:  # noqa: BLE001
+        return f"probe error: {type(exc).__name__}: {exc}"
+
+
 def run() -> list[dict]:
     rows = [_check(*s) for s in _SOURCES]
     _print_table(rows)
+    # When google_cse didn't return real data, print the raw HTTP status/body so
+    # the exact cause (403 bad key / 429 quota / 400 bad cx) is visible.
+    cse = next((r for r in rows if r["source"] == "google_cse"), None)
+    if cse and not cse["outcome"].startswith("OK"):
+        print("\ngoogle_cse raw-probe (diagnostic; key redacted):")
+        print("   " + _cse_probe())
     return rows
 
 
