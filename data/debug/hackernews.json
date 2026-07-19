@@ -32,6 +32,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -69,6 +70,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -106,6 +108,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -132,7 +135,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 28,
+    "hours_since_release": 29,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -143,6 +146,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -180,6 +184,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -217,6 +222,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -254,6 +260,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -280,7 +287,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 64,
+    "hours_since_release": 65,
     "signals": {
       "hn_points": 7,
       "hn_comments": 0
@@ -291,6 +298,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -328,6 +336,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -365,6 +374,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -402,6 +412,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -439,6 +450,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -476,6 +488,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -513,6 +526,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -550,6 +564,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -587,6 +602,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -624,6 +640,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -661,6 +678,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -698,6 +716,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -735,6 +754,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -772,6 +792,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -809,6 +830,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -846,6 +868,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -883,6 +906,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -920,6 +944,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -957,6 +982,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -994,6 +1020,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1020,7 +1047,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 22,
+    "hours_since_release": 23,
     "signals": {
       "hn_points": 2,
       "hn_comments": 0
@@ -1031,6 +1058,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1068,6 +1096,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1105,6 +1134,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1142,6 +1172,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1179,6 +1210,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1216,6 +1248,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1253,6 +1286,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1290,6 +1324,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1327,6 +1362,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1364,6 +1400,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1401,6 +1438,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1438,6 +1476,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1475,6 +1514,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}

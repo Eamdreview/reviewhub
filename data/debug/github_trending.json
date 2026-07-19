@@ -24,7 +24,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/tirth8205/code-review-graph",
-      "github_stars": 20882,
+      "github_stars": 20887,
       "vendor": "tirth8205",
       "archived": false,
       "topics": [
@@ -49,6 +49,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -78,7 +79,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "github_stars": 39520,
+      "github_stars": 39521,
       "vendor": "rohitg00",
       "archived": false,
       "topics": [
@@ -111,6 +112,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -140,7 +142,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/jamiepine/voicebox",
-      "github_stars": 43162,
+      "github_stars": 43164,
       "vendor": "jamiepine",
       "archived": false,
       "topics": [
@@ -161,6 +163,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -190,7 +193,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/KnockOutEZ/wigolo",
-      "github_stars": 1678,
+      "github_stars": 1680,
       "vendor": "KnockOutEZ",
       "archived": false,
       "topics": [
@@ -223,6 +226,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -252,7 +256,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/github/copilot-sdk",
-      "github_stars": 9913,
+      "github_stars": 9914,
       "vendor": "github",
       "archived": false,
       "topics": [],
@@ -264,6 +268,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -293,7 +298,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/PostHog/posthog",
-      "github_stars": 36854,
+      "github_stars": 36856,
       "vendor": "PostHog",
       "archived": false,
       "topics": [
@@ -321,6 +326,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -380,6 +386,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -409,7 +416,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/1jehuang/jcode",
-      "github_stars": 8766,
+      "github_stars": 8767,
       "vendor": "1jehuang",
       "archived": false,
       "topics": [
@@ -434,6 +441,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -494,6 +502,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -523,7 +532,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/MoonshotAI/kimi-cli",
-      "github_stars": 9785,
+      "github_stars": 9786,
       "vendor": "MoonshotAI",
       "archived": false,
       "topics": [],
@@ -535,6 +544,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -564,7 +574,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/lyogavin/airllm",
-      "github_stars": 23565,
+      "github_stars": 23567,
       "vendor": "lyogavin",
       "archived": false,
       "topics": [
@@ -590,6 +600,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -619,7 +630,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Canner/WrenAI",
-      "github_stars": 16111,
+      "github_stars": 16115,
       "vendor": "Canner",
       "archived": false,
       "topics": [
@@ -649,6 +660,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -678,7 +690,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "github_stars": 124426,
+      "github_stars": 124434,
       "vendor": "Shubhamsaboo",
       "archived": false,
       "topics": [
@@ -695,6 +707,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -724,7 +737,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/Vibe-Trading",
-      "github_stars": 25220,
+      "github_stars": 25222,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -747,6 +760,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -798,6 +812,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -827,7 +842,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/kangarooking/cangjie-skill",
-      "github_stars": 3808,
+      "github_stars": 3810,
       "vendor": "kangarooking",
       "archived": false,
       "topics": [
@@ -848,6 +863,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -877,7 +893,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Graphify-Labs/graphify",
-      "github_stars": 91454,
+      "github_stars": 91456,
       "vendor": "Graphify-Labs",
       "archived": false,
       "topics": [
@@ -901,6 +917,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -956,6 +973,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -997,6 +1015,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1043,6 +1062,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1084,6 +1104,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1128,6 +1149,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1184,6 +1206,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1213,7 +1236,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/github/spec-kit",
-      "github_stars": 122223,
+      "github_stars": 122225,
       "vendor": "github",
       "archived": false,
       "topics": [
@@ -1233,6 +1256,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -1262,7 +1286,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/agentscope-ai/QwenPaw",
-      "github_stars": 23447,
+      "github_stars": 23448,
       "vendor": "agentscope-ai",
       "archived": false,
       "topics": [
@@ -1284,6 +1308,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}

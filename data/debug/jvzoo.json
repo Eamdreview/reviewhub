@@ -29,6 +29,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -63,6 +64,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -97,6 +99,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -131,6 +134,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -165,6 +169,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -199,6 +204,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -233,6 +239,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -267,6 +274,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -301,6 +309,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -335,6 +344,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -369,6 +379,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -403,6 +414,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -437,6 +449,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -471,6 +484,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
@@ -505,6 +519,7 @@
     "measured": {},
     "total_score": 0.0,
     "passed_floor": false,
+    "first_mover": false,
     "classification": {},
     "prediction": {},
     "brief": {}
