@@ -1,5 +1,61 @@
 [
   {
+    "name": "ai-agent-book",
+    "source": "github_trending",
+    "url": "https://github.com/bojieli/ai-agent-book",
+    "category": "agent, agent-memory",
+    "description": "\u300a\u6df1\u5165\u7406\u89e3 AI Agent\uff1a\u8bbe\u8ba1\u539f\u7406\u4e0e\u5de5\u7a0b\u5b9e\u8df5\u300b\uff08\u674e\u535a\u6770 \u8457\uff09\u5f00\u6e90\u4e3b\u4ed3\u5e93\uff1a\u5168\u4e66\u6b63\u6587\u3001\u7f16\u8bd1\u7248 PDF \u4e0e\u6309\u7ae0\u914d\u5957\u4ee3\u7801",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "https://github.com/bojieli/ai-agent-book#readme",
+    "facts_source": "",
+    "qualified": false,
+    "reject_reason": "library/framework/non-product repo",
+    "affiliate_eligible": false,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": null,
+    "signals": {
+      "github_repo": "https://github.com/bojieli/ai-agent-book",
+      "github_stars": 5347,
+      "vendor": "bojieli",
+      "archived": false,
+      "topics": [
+        "agent",
+        "agent-memory",
+        "ai-agent",
+        "book",
+        "coding-agent",
+        "context-engineering",
+        "large-language-models",
+        "llm",
+        "mcp",
+        "multi-agent",
+        "multimodal",
+        "rag",
+        "reinforcement-learning"
+      ],
+      "has_product_site": false
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "first_mover": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
     "name": "code-review-graph",
     "source": "github_trending",
     "url": "https://code-review-graph.com",
@@ -24,7 +80,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/tirth8205/code-review-graph",
-      "github_stars": 20910,
+      "github_stars": 21122,
       "vendor": "tirth8205",
       "archived": false,
       "topics": [
@@ -79,7 +135,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "github_stars": 39525,
+      "github_stars": 39627,
       "vendor": "rohitg00",
       "archived": false,
       "topics": [
@@ -142,7 +198,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/jamiepine/voicebox",
-      "github_stars": 43173,
+      "github_stars": 43306,
       "vendor": "jamiepine",
       "archived": false,
       "topics": [
@@ -193,7 +249,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/KnockOutEZ/wigolo",
-      "github_stars": 1689,
+      "github_stars": 1785,
       "vendor": "KnockOutEZ",
       "archived": false,
       "topics": [
@@ -256,7 +312,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/github/copilot-sdk",
-      "github_stars": 9915,
+      "github_stars": 9947,
       "vendor": "github",
       "archived": false,
       "topics": [],
@@ -298,7 +354,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/PostHog/posthog",
-      "github_stars": 36860,
+      "github_stars": 36919,
       "vendor": "PostHog",
       "archived": false,
       "topics": [
@@ -356,7 +412,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/AstrBotDevs/AstrBot",
-      "github_stars": 36644,
+      "github_stars": 36684,
       "vendor": "AstrBotDevs",
       "archived": false,
       "topics": [
@@ -416,7 +472,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/1jehuang/jcode",
-      "github_stars": 8769,
+      "github_stars": 8881,
       "vendor": "1jehuang",
       "archived": false,
       "topics": [
@@ -471,7 +527,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/trycua/cua",
-      "github_stars": 20191,
+      "github_stars": 20227,
       "vendor": "trycua",
       "archived": false,
       "topics": [
@@ -532,7 +588,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/MoonshotAI/kimi-cli",
-      "github_stars": 9789,
+      "github_stars": 9864,
       "vendor": "MoonshotAI",
       "archived": false,
       "topics": [],
@@ -574,7 +630,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/lyogavin/airllm",
-      "github_stars": 23569,
+      "github_stars": 23612,
       "vendor": "lyogavin",
       "archived": false,
       "topics": [
@@ -630,7 +686,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Canner/WrenAI",
-      "github_stars": 16121,
+      "github_stars": 16177,
       "vendor": "Canner",
       "archived": false,
       "topics": [
@@ -690,7 +746,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "github_stars": 124439,
+      "github_stars": 124521,
       "vendor": "Shubhamsaboo",
       "archived": false,
       "topics": [
@@ -737,7 +793,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/Vibe-Trading",
-      "github_stars": 25225,
+      "github_stars": 25267,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -790,7 +846,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/DeepTutor",
-      "github_stars": 27882,
+      "github_stars": 27911,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -842,7 +898,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/kangarooking/cangjie-skill",
-      "github_stars": 3810,
+      "github_stars": 3817,
       "vendor": "kangarooking",
       "archived": false,
       "topics": [
@@ -893,7 +949,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Graphify-Labs/graphify",
-      "github_stars": 91463,
+      "github_stars": 91550,
       "vendor": "Graphify-Labs",
       "archived": false,
       "topics": [
@@ -947,7 +1003,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/nanobot",
-      "github_stars": 45887,
+      "github_stars": 45893,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -1003,7 +1059,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/virattt/ai-hedge-fund",
-      "github_stars": 62270,
+      "github_stars": 62273,
       "vendor": "virattt",
       "archived": false,
       "topics": [],
@@ -1045,7 +1101,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/davila7/claude-code-templates",
-      "github_stars": 29728,
+      "github_stars": 29735,
       "vendor": "davila7",
       "archived": false,
       "topics": [
@@ -1092,7 +1148,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/bradautomates/claude-video",
-      "github_stars": 9218,
+      "github_stars": 9229,
       "vendor": "bradautomates",
       "archived": false,
       "topics": [],
@@ -1134,7 +1190,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/apache/ossie",
-      "github_stars": 1372,
+      "github_stars": 1378,
       "vendor": "apache",
       "archived": false,
       "topics": [
@@ -1179,7 +1235,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/PrefectHQ/prefect",
-      "github_stars": 23431,
+      "github_stars": 23430,
       "vendor": "PrefectHQ",
       "archived": false,
       "topics": [
@@ -1236,7 +1292,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/github/spec-kit",
-      "github_stars": 122228,
+      "github_stars": 122314,
       "vendor": "github",
       "archived": false,
       "topics": [
@@ -1286,7 +1342,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/agentscope-ai/QwenPaw",
-      "github_stars": 23450,
+      "github_stars": 23460,
       "vendor": "agentscope-ai",
       "archived": false,
       "topics": [

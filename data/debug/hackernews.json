@@ -1,5 +1,43 @@
 [
   {
+    "name": "A canvas-based note taking and organizer app",
+    "source": "hackernews",
+    "url": "https://www.passinote.app/",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: A canvas-based note taking and organizer app",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 1,
+    "signals": {
+      "hn_points": 23,
+      "hn_comments": 6
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "first_mover": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
     "name": "Shikigami",
     "source": "hackernews",
     "url": "https://shikigami.dev/",
@@ -21,7 +59,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 8,
+    "hours_since_release": 14,
     "signals": {
       "hn_points": 5,
       "hn_comments": 2
@@ -59,7 +97,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 18,
+    "hours_since_release": 24,
     "signals": {
       "hn_points": 6,
       "hn_comments": 2
@@ -97,9 +135,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 29,
+    "hours_since_release": 34,
     "signals": {
-      "hn_points": 5,
+      "hn_points": 6,
       "hn_comments": 1
     },
     "triage": {},
@@ -135,7 +173,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 29,
+    "hours_since_release": 35,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -173,7 +211,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 45,
+    "hours_since_release": 51,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -211,7 +249,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 51,
+    "hours_since_release": 57,
     "signals": {
       "hn_points": 5,
       "hn_comments": 5
@@ -249,7 +287,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 51,
+    "hours_since_release": 57,
     "signals": {
       "hn_points": 15,
       "hn_comments": 20
@@ -287,7 +325,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 65,
+    "hours_since_release": 71,
     "signals": {
       "hn_points": 7,
       "hn_comments": 0
@@ -325,7 +363,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 67,
+    "hours_since_release": null,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -363,7 +401,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 68,
+    "hours_since_release": null,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -988,44 +1026,6 @@
     "brief": {}
   },
   {
-    "name": "LoopGain",
-    "source": "hackernews",
-    "url": "https://github.com/loopgain-ai/loopgain",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: LoopGain \u2013 Stop agent loops with control theory, not max_iterations",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": false,
-    "reject_reason": "GitHub repository only",
-    "affiliate_eligible": false,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 19,
-      "hn_comments": 10
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "first_mover": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
     "name": "A pre-launch scanner for AI-built apps (it scores itself 60/100)",
     "source": "hackernews",
     "url": "https://shippingszn.com/",
@@ -1047,7 +1047,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 23,
+    "hours_since_release": 29,
     "signals": {
       "hn_points": 2,
       "hn_comments": 0
@@ -1085,7 +1085,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 72,
+    "hours_since_release": null,
     "signals": {
       "hn_points": 43,
       "hn_comments": 25
