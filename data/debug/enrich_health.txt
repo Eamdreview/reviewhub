@@ -5,11 +5,11 @@ Samples: ChatGPT, Jasper AI, Systeme.io, ClickFunnels, Notion
 ============================================================================================
 Source         Outcome          Measured  Time   Sample                      Detail
 --------------------------------------------------------------------------------------------
-google_trends  OK (real data)   5/5       2.4s   -0.083                      5/5 candidates measured
-youtube        OK (real data)   5/5       2.1s   10                          5/5 candidates measured
-serper         OK (real data)   5/5       4.58s  10                          5/5 candidates measured
+google_trends  EMPTY (silent)   0/5       2.2s                               ran without error but returned no data
+youtube        OK (real data)   5/5       2.34s  10                          5/5 candidates measured
+serper         OK (real data)   5/5       4.53s  10                          5/5 candidates measured
 --------------------------------------------------------------------------------------------
-3/3 returning real data
+2/3 returning real data · SILENTLY EMPTY: google_trends
 ============================================================================================
 Note: EMPTY (silent) is the dangerous case — the source ran but fed the
 scorer nothing; those criteria fall back to the neutral default.
