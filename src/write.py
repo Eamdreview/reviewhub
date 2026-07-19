@@ -18,6 +18,14 @@ from __future__ import annotations
 from . import llm
 from .models import Candidate
 
+# FTC disclosure scaffold (16 CFR Part 255): a plain-English disclosure at the
+# point of recommendation, prepended to every generated brief/article skeleton
+# BEFORE any link. "Affiliate link" alone is not sufficient wording.
+FTC_DISCLOSURE = (
+    "Disclosure: I earn a commission if you buy through links in this review, "
+    "at no extra cost to you. I only recommend products I've honestly reviewed."
+)
+
 _ANALYST_SYSTEM = (
     "You are a senior affiliate-marketing intelligence analyst. Your reader "
     "reviews AI/SaaS/automation tools for US entrepreneurs and marketers and "
@@ -109,7 +117,8 @@ def write_all(candidates: list[Candidate], dry_run: bool = False) -> list[Candid
             body = _llm_brief(c) if use_llm else _stub_brief(c)
         except llm.LLMError:
             body = _stub_brief(c)
-        c.brief = {"body": body}
+        # FTC disclosure scaffold, prepended before any link in the skeleton.
+        c.brief = {"body": f"> _{FTC_DISCLOSURE}_\n\n{body}"}
     return candidates
 
 
