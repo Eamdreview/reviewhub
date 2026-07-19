@@ -328,6 +328,7 @@ DISPLAY_NAMES: dict[str, str] = {
     "google_trends": "Google Trends",
     "reddit": "Reddit",
     "youtube": "YouTube",
+    "serper": "Serper (SERP)",
     "google_cse": "Google Custom Search",
     "trustpilot": "Trustpilot",
     "fake": "Sample data",
@@ -380,7 +381,10 @@ SOURCES: dict[str, bool] = {
     "google_trends": True,
     "reddit": True,
     "youtube": True,
-    "google_cse": True,
+    "serper": True,              # SERP competition via Serper.dev (replaces CSE)
+    # CSE closed to new customers; endpoint returns 410 on Jan 1, 2027 (Google
+    # notice). Replaced by Serper.
+    "google_cse": False,
     "trustpilot": True,
 }
 

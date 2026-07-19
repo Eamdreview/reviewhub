@@ -54,17 +54,24 @@ def _measured_scores(c: Candidate) -> tuple[dict[str, float], dict[str, bool]]:
     NEUTRAL = float(config.UNMEASURED_NEUTRAL)
     m: dict[str, bool] = {}
 
-    # SEO opportunity: fewer high-authority domains on page 1 = more room.
-    authority = {"forbes.com", "g2.com", "capterra.com", "gartner.com",
-                 "techradar.com", "pcmag.com", "cnet.com"}
-    domains = [d.lower() for d in s.get("cse_top_domains", [])]
-    if not s.get("_measured_cse"):
-        seo = NEUTRAL           # source failed/absent → neutral, not a penalty
-        m["seo_opportunity"] = False
-    else:
+    # SEO opportunity from SERP competition. Primary source is Serper.dev:
+    # fewer organic results competing for '"<name>" review' = more room to rank.
+    # (Retired Google CSE domains are still honoured if present as a fallback.)
+    # Source failed/absent → neutral, never a penalty.
+    if s.get("_measured_serper"):
+        n = int(s.get("serper_review_count", 0))
+        seo = _clamp(100 - n * 9)          # 0 results → 100, 10 → 10
+        m["seo_opportunity"] = True
+    elif s.get("_measured_cse"):
+        authority = {"forbes.com", "g2.com", "capterra.com", "gartner.com",
+                     "techradar.com", "pcmag.com", "cnet.com"}
+        domains = [d.lower() for d in s.get("cse_top_domains", [])]
         big = sum(1 for d in domains if any(a in d for a in authority))
         seo = _clamp(100 - big * 25 - min(s.get("youtube_count", 0), 20) * 1.5)
         m["seo_opportunity"] = True
+    else:
+        seo = NEUTRAL
+        m["seo_opportunity"] = False
 
     # Search demand: Google Trends slope (-1..1) plus a nudge from video views.
     slope = float(s.get("trends_slope", 0.0))
