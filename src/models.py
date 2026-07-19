@@ -68,6 +68,8 @@ class Candidate:
     measured: dict[str, bool] = field(default_factory=dict)
     total_score: float = 0.0
     passed_floor: bool = False
+    # First-Mover: near-zero existing reviews + trust/affiliate gate (Score stage).
+    first_mover: bool = False
 
     # --- classification (Classify stage — Priority Opportunity Engine) ---
     # {tier: int, priority: str, competition_level: str, can_rank: str,
