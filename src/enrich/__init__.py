@@ -17,7 +17,8 @@ from typing import Callable
 from .. import config
 from ..errors import MissingCredentials
 from ..models import Candidate
-from . import google_cse, product_facts, reddit, trends, trustpilot, youtube
+from . import (google_cse, product_facts, reddit, serper, trends, trustpilot,
+               youtube)
 
 # config-source-name -> (enricher, per-candidate "measured" flag it sets)
 _ENRICHERS: dict[str, tuple[Callable[[list[Candidate]], None], str]] = {
@@ -25,7 +26,8 @@ _ENRICHERS: dict[str, tuple[Callable[[list[Candidate]], None], str]] = {
     "google_trends": (trends.enrich, "_measured_trends"),
     "reddit": (reddit.enrich, "_measured_reddit"),
     "youtube": (youtube.enrich, "_measured_youtube"),
-    "google_cse": (google_cse.enrich, "_measured_cse"),
+    "serper": (serper.enrich, "_measured_serper"),           # SERP competition
+    "google_cse": (google_cse.enrich, "_measured_cse"),      # disabled (retired)
     "trustpilot": (trustpilot.enrich, "_measured_trustpilot"),
 }
 

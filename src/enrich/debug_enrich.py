@@ -22,13 +22,13 @@ import time
 from .. import config
 from ..errors import MissingCredentials
 from ..models import Candidate
-from . import google_cse, trends, youtube
+from . import serper, trends, youtube
 
 # (config source name, enricher, measured flag, a signal key to sample)
 _SOURCES = [
     ("google_trends", trends.enrich, "_measured_trends", "trends_slope"),
     ("youtube", youtube.enrich, "_measured_youtube", "youtube_count"),
-    ("google_cse", google_cse.enrich, "_measured_cse", "cse_top_domains"),
+    ("serper", serper.enrich, "_measured_serper", "serper_review_count"),
 ]
 
 # Real, well-known products so live sources (with keys) have something to find.
@@ -69,18 +69,18 @@ def _check(name, enricher, flag, sample_key) -> dict:
             "sample": str(sample)[:26], "detail": detail[:50], "secs": round(time.time() - t0, 2)}
 
 
-def _cse_probe() -> str:
-    """One raw Custom Search call to surface the REAL HTTP status + error body
-    that google_cse.enrich swallows. Diagnostic only; the API key is never
-    printed (only Google's response body, which does not echo it)."""
+def _serper_probe() -> str:
+    """One raw Serper call to surface the REAL HTTP status + body that
+    serper.enrich swallows. Diagnostic only; the API key is never printed
+    (only Serper's response body, which does not echo it)."""
     import requests
-    key, cx = config.env("GOOGLE_CSE_KEY"), config.env("GOOGLE_CSE_ID")
-    if not key or not cx:
-        return "GOOGLE_CSE_KEY / GOOGLE_CSE_ID not set"
+    key = config.env("SERPER_API_KEY")
+    if not key:
+        return "SERPER_API_KEY not set"
     try:
-        r = requests.get("https://www.googleapis.com/customsearch/v1",
-                         params={"key": key, "cx": cx, "q": "ChatGPT review", "num": 10},
-                         timeout=30)
+        r = requests.post("https://google.serper.dev/search",
+                          headers={"X-API-KEY": key, "Content-Type": "application/json"},
+                          json={"q": '"ChatGPT" review', "num": 10}, timeout=30)
         return f"HTTP {r.status_code} — {r.text[:400].replace(chr(10), ' ')}"
     except Exception as exc:  # noqa: BLE001
         return f"probe error: {type(exc).__name__}: {exc}"
@@ -89,12 +89,12 @@ def _cse_probe() -> str:
 def run() -> list[dict]:
     rows = [_check(*s) for s in _SOURCES]
     _print_table(rows)
-    # When google_cse didn't return real data, print the raw HTTP status/body so
-    # the exact cause (403 bad key / 429 quota / 400 bad cx) is visible.
-    cse = next((r for r in rows if r["source"] == "google_cse"), None)
-    if cse and not cse["outcome"].startswith("OK"):
-        print("\ngoogle_cse raw-probe (diagnostic; key redacted):")
-        print("   " + _cse_probe())
+    # When serper didn't return real data, print the raw HTTP status/body so the
+    # exact cause (401/403 bad key, 429 quota) is visible.
+    sp = next((r for r in rows if r["source"] == "serper"), None)
+    if sp and not sp["outcome"].startswith("OK"):
+        print("\nserper raw-probe (diagnostic; key redacted):")
+        print("   " + _serper_probe())
     return rows
 
 
