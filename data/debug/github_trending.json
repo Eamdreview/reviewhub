@@ -24,7 +24,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/tirth8205/code-review-graph",
-      "github_stars": 20887,
+      "github_stars": 20904,
       "vendor": "tirth8205",
       "archived": false,
       "topics": [
@@ -79,7 +79,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "github_stars": 39521,
+      "github_stars": 39523,
       "vendor": "rohitg00",
       "archived": false,
       "topics": [
@@ -142,7 +142,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/jamiepine/voicebox",
-      "github_stars": 43164,
+      "github_stars": 43172,
       "vendor": "jamiepine",
       "archived": false,
       "topics": [
@@ -193,7 +193,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/KnockOutEZ/wigolo",
-      "github_stars": 1680,
+      "github_stars": 1686,
       "vendor": "KnockOutEZ",
       "archived": false,
       "topics": [
@@ -256,7 +256,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/github/copilot-sdk",
-      "github_stars": 9914,
+      "github_stars": 9915,
       "vendor": "github",
       "archived": false,
       "topics": [],
@@ -298,7 +298,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/PostHog/posthog",
-      "github_stars": 36856,
+      "github_stars": 36859,
       "vendor": "PostHog",
       "archived": false,
       "topics": [
@@ -356,7 +356,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/AstrBotDevs/AstrBot",
-      "github_stars": 36641,
+      "github_stars": 36643,
       "vendor": "AstrBotDevs",
       "archived": false,
       "topics": [
@@ -416,7 +416,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/1jehuang/jcode",
-      "github_stars": 8767,
+      "github_stars": 8768,
       "vendor": "1jehuang",
       "archived": false,
       "topics": [
@@ -532,7 +532,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/MoonshotAI/kimi-cli",
-      "github_stars": 9786,
+      "github_stars": 9789,
       "vendor": "MoonshotAI",
       "archived": false,
       "topics": [],
@@ -574,7 +574,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/lyogavin/airllm",
-      "github_stars": 23567,
+      "github_stars": 23568,
       "vendor": "lyogavin",
       "archived": false,
       "topics": [
@@ -630,7 +630,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Canner/WrenAI",
-      "github_stars": 16115,
+      "github_stars": 16119,
       "vendor": "Canner",
       "archived": false,
       "topics": [
@@ -690,7 +690,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "github_stars": 124434,
+      "github_stars": 124437,
       "vendor": "Shubhamsaboo",
       "archived": false,
       "topics": [
@@ -737,7 +737,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/Vibe-Trading",
-      "github_stars": 25222,
+      "github_stars": 25223,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -790,7 +790,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/DeepTutor",
-      "github_stars": 27879,
+      "github_stars": 27880,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -893,7 +893,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Graphify-Labs/graphify",
-      "github_stars": 91456,
+      "github_stars": 91460,
       "vendor": "Graphify-Labs",
       "archived": false,
       "topics": [
@@ -1092,7 +1092,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/bradautomates/claude-video",
-      "github_stars": 9216,
+      "github_stars": 9218,
       "vendor": "bradautomates",
       "archived": false,
       "topics": [],
@@ -1236,7 +1236,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/github/spec-kit",
-      "github_stars": 122225,
+      "github_stars": 122226,
       "vendor": "github",
       "archived": false,
       "topics": [

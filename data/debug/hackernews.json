@@ -211,7 +211,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 50,
+    "hours_since_release": 51,
     "signals": {
       "hn_points": 5,
       "hn_comments": 5
@@ -249,7 +249,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 50,
+    "hours_since_release": 51,
     "signals": {
       "hn_points": 15,
       "hn_comments": 20
@@ -1011,7 +1011,7 @@
     "days_to_launch": null,
     "hours_since_release": null,
     "signals": {
-      "hn_points": 18,
+      "hn_points": 19,
       "hn_comments": 10
     },
     "triage": {},
