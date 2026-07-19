@@ -33,6 +33,30 @@ def _breakdown_line(c: Candidate) -> str:
     return line
 
 
+def _first_mover_section(run: RunReport) -> str:
+    """Products flagged first-mover (near-zero existing reviews, trust/affiliate
+    gated) — the reviews where being first to publish matters most."""
+    flagged = [c for t in (1, 2, 3, 4, 0) for c in run.tiers.get(t, [])
+               if getattr(c, "first_mover", False)]
+    flagged = sorted(flagged, key=lambda c: c.total_score, reverse=True)
+    if not flagged:
+        return ""
+    lines = [
+        "## 🥇 First-Mover Opportunities",
+        "_Near-zero existing reviews — being first to publish matters most "
+        "(trust- and affiliate-gated, so it's not junk nobody reviewed)._",
+        "",
+        "| Product | Score | SERP results | YouTube reviews | Tier |",
+        "|---------|------:|-------------:|----------------:|------|",
+    ]
+    for c in flagged:
+        serp = c.signals.get("serper_review_count", "?")
+        yt = c.signals.get("youtube_count", "?")
+        tier = c.classification.get("tier_label", "").split("—")[0].strip()
+        lines.append(f"| {c.name} | {c.total_score:g} | {serp} | {yt} | {tier} |")
+    return "\n".join(lines)
+
+
 def _sanity_warning(run: RunReport) -> str:
     """If no Tier 1/2 this week, surface the top-3 near-misses + what blocked each."""
     t = run.tiers
@@ -503,6 +527,9 @@ def build_markdown(run: RunReport) -> str:
     warning = _sanity_warning(run)
     if warning:
         parts.append(warning)
+    first_mover = _first_mover_section(run)
+    if first_mover:
+        parts.append(first_mover)
     parts += [
         _executive_dashboard(run),
         _priority_dashboard(run),

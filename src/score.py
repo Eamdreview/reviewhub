@@ -29,9 +29,32 @@ def breakdown_points(scores: dict[str, float]) -> dict[str, float]:
     }
 
 
+def _is_first_mover(c: Candidate) -> bool:
+    """Near-zero existing reviews, but only for a trusted, affiliate-eligible
+    product — the trust/eligibility gate keeps out junk nobody reviewed for good
+    reason. Requires BOTH SERP and YouTube signals to be actually measured."""
+    sig, sc = c.signals, c.scores
+    if not (sig.get("_measured_serper") and sig.get("_measured_youtube")):
+        return False
+    if int(sig.get("serper_review_count", 10 ** 9)) > config.FIRST_MOVER_SERP_MAX:
+        return False
+    if int(sig.get("youtube_count", 10 ** 9)) > config.FIRST_MOVER_YT_MAX:
+        return False
+    if float(sc.get("vendor_trust", 0)) < config.FIRST_MOVER_MIN_TRUST:
+        return False
+    return bool(c.affiliate_eligible)
+
+
 def apply(candidates: list[Candidate]) -> list[Candidate]:
     """Score every candidate, mark floor status, and rank passers first."""
     for c in candidates:
+        # First-Mover: flag + boost SEO opportunity BEFORE the weighted total so
+        # the boost is reflected in the score.
+        if _is_first_mover(c):
+            c.first_mover = True
+            c.scores["seo_opportunity"] = min(
+                100.0, float(c.scores.get("seo_opportunity", 0.0))
+                + config.FIRST_MOVER_SEO_BOOST)
         c.total_score = weighted_total(c.scores)
         intent = float(c.scores.get("buying_intent", 0.0))
         c.passed_floor = intent >= config.BUYING_INTENT_FLOOR

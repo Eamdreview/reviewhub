@@ -56,6 +56,14 @@ UNMEASURED_NEUTRAL: int = 50
 # manually") instead of being silently ignored.
 NEAR_MISS_TOLERANCE: int = 5
 
+# First-Mover alert: products with near-zero existing reviews, where being first
+# to publish matters most. Gated by vendor trust + affiliate-eligibility so a
+# junk product nobody reviewed (for good reason) is never flagged.
+FIRST_MOVER_SERP_MAX: int = 10     # <= this many organic SERP results for '"<name>" review'
+FIRST_MOVER_YT_MAX: int = 3        # <= this many existing YouTube reviews
+FIRST_MOVER_MIN_TRUST: int = 50    # vendor_trust must be at least this
+FIRST_MOVER_SEO_BOOST: int = 25    # points added to the SEO-opportunity criterion when flagged
+
 # ---------------------------------------------------------------------------
 # Freshness Score (0-100) — "is this an active, currently-relevant opportunity
 # to review TODAY?" Computed from MULTIPLE live signals, never launch date
