@@ -248,6 +248,11 @@ def predict(c: Candidate) -> dict:
         "commission_note": cps_note,
         "revenue_range": [rev_low, rev_high],
         "revenue_mid": rev_mid,
+        # Est. commission from ONE review over the window: front-end price ×
+        # commission% (cps) × estimated conversion (sales_mid) × funnel/OTO
+        # uplift (baked into cpb). Same basis as revenue_mid, surfaced for the
+        # report's "Expected $/review" column and secondary sort.
+        "expected_commission_per_review": rev_mid,
         "recurring": bool(c.recurring),
         "confidence": confidence,
         "roi_score": roi_score,

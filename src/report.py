@@ -86,9 +86,12 @@ def _sanity_warning(run: RunReport) -> str:
 
 
 def _all_qualified(run: RunReport) -> list[Candidate]:
-    """Tier 1-3, best first (excludes Watchlist and Ignore)."""
+    """Tier 1-3, best first (excludes Watchlist and Ignore). Primary sort by
+    total score, secondary by Expected $/review."""
     out = run.tiers.get(1, []) + run.tiers.get(2, []) + run.tiers.get(3, [])
-    return sorted(out, key=lambda c: c.total_score, reverse=True)
+    return sorted(out, key=lambda c: (
+        c.total_score, c.prediction.get("expected_commission_per_review", 0)),
+        reverse=True)
 
 
 def _actionable_by_roi(run: RunReport) -> list[Candidate]:
@@ -218,14 +221,16 @@ def _opportunity_block(idx: int, c: Candidate) -> str:
 
 # --- 4. Opportunity Ranking -------------------------------------------------
 def _ranking_table(products: list[Candidate]) -> str:
-    lines = ["| Rank | Product | Tier | Score | Revenue Potential | Action |",
-             "|-----:|---------|------|------:|-------------------|--------|"]
+    lines = ["| Rank | Product | Tier | Score | Expected $/review | Revenue Potential | Action |",
+             "|-----:|---------|------|------:|------------------:|-------------------|--------|"]
     for i, c in enumerate(products, 1):
         cls = c.classification
         rev = cls.get("revenue_potential", {}).get("level", "—")
         tier = cls.get("tier_label", "").split("—")[0].strip()
+        epr = c.prediction.get("expected_commission_per_review")
+        epr_s = f"${epr:g} (est.)" if epr is not None else "—"
         lines.append(f"| {i} | {c.name} | {tier} | {c.total_score:g} | "
-                     f"{rev} (est.) | {cls.get('priority','')} |")
+                     f"{epr_s} | {rev} (est.) | {cls.get('priority','')} |")
     return "\n".join(lines)
 
 

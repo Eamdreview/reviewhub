@@ -106,6 +106,13 @@ def run(dry_run: bool = False) -> Path:
     # [4c] PREDICT — Revenue Prediction Engine (transparent, per qualified product)
     actionable = [c for t in config.TIER_ORDER for c in buckets[t]]
     revenue.predict_all(actionable)
+    # Re-sort each tier now that predictions exist: primary total score, then
+    # Expected $/review (secondary sort within tiers).
+    for tier in buckets:
+        buckets[tier].sort(
+            key=lambda x: (x.total_score,
+                           x.prediction.get("expected_commission_per_review", 0)),
+            reverse=True)
 
     # [5] ANALYZE (quality model — intelligence briefs for Tier 1-3 + Watchlist)
     write.write_all(actionable, dry_run=dry_run)
