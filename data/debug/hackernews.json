@@ -1,5 +1,81 @@
 [
   {
+    "name": "A Pipeline for Making 10-minute AI Movies with Claude Code and Seedance",
+    "source": "hackernews",
+    "url": "https://github.com/dawndrain/movie-gen",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: A Pipeline for Making 10-minute AI Movies with Claude Code and Seedance",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": false,
+    "reject_reason": "GitHub repository only",
+    "affiliate_eligible": false,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 3,
+    "signals": {
+      "hn_points": 6,
+      "hn_comments": 1
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "first_mover": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "A comprehensive",
+    "source": "hackernews",
+    "url": "https://pleasedonotescape.com/",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: A comprehensive, filterable list of AI agent jails",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": false,
+    "reject_reason": "framework/library/dataset",
+    "affiliate_eligible": false,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 6,
+    "signals": {
+      "hn_points": 8,
+      "hn_comments": 3
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "first_mover": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
     "name": "A self-hosted AI that turns Hacker News into a daily briefing",
     "source": "hackernews",
     "url": "https://github.com/RecNes/hn-ai-summarizer",
@@ -21,7 +97,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 12,
+    "hours_since_release": 18,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -59,10 +135,10 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 13,
+    "hours_since_release": 19,
     "signals": {
-      "hn_points": 56,
-      "hn_comments": 26
+      "hn_points": 60,
+      "hn_comments": 32
     },
     "triage": {},
     "freshness": {},
@@ -97,7 +173,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 14,
+    "hours_since_release": 20,
     "signals": {
       "hn_points": 5,
       "hn_comments": 2
@@ -135,7 +211,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 15,
+    "hours_since_release": 21,
     "signals": {
       "hn_points": 6,
       "hn_comments": 1
@@ -173,7 +249,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 26,
+    "hours_since_release": 32,
     "signals": {
       "hn_points": 7,
       "hn_comments": 2
@@ -211,7 +287,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 36,
+    "hours_since_release": 42,
     "signals": {
       "hn_points": 6,
       "hn_comments": 2
@@ -249,7 +325,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 46,
+    "hours_since_release": 52,
     "signals": {
       "hn_points": 6,
       "hn_comments": 1
@@ -287,7 +363,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 46,
+    "hours_since_release": 53,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -325,7 +401,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 63,
+    "hours_since_release": 69,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -363,7 +439,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 68,
+    "hours_since_release": null,
     "signals": {
       "hn_points": 5,
       "hn_comments": 5
@@ -401,7 +477,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 68,
+    "hours_since_release": null,
     "signals": {
       "hn_points": 15,
       "hn_comments": 20
@@ -439,7 +515,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 69,
+    "hours_since_release": null,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -988,11 +1064,11 @@
     "brief": {}
   },
   {
-    "name": "StyleSeed",
+    "name": "Bloomy (YC S26)",
     "source": "hackernews",
-    "url": "https://github.com/bitjaru/styleseed",
+    "url": "https://news.ycombinator.com/item?id=48981136",
     "category": "AI / SaaS tool",
-    "description": "Show HN: StyleSeed \u2013 a design-rules engine so AI agents stop building generic UI",
+    "description": "Launch HN: Bloomy (YC S26) \u2013 AI-powered mastery learning for K-12",
     "price": "",
     "base_commission": "",
     "recurring": null,
@@ -1004,91 +1080,15 @@
     "documentation_url": "",
     "facts_source": "",
     "qualified": false,
-    "reject_reason": "GitHub repository only",
+    "reject_reason": "no official website (discussion link only)",
     "affiliate_eligible": false,
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 24,
-      "hn_comments": 10
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "first_mover": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "OpenMarkdown",
-    "source": "hackernews",
-    "url": "https://openmarkdown.dev/",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: OpenMarkdown \u2013 A Markdown editor you and your agent co-edit",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
+    "hours_since_release": 0,
     "signals": {
       "hn_points": 6,
-      "hn_comments": 0
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "first_mover": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Aict",
-    "source": "hackernews",
-    "url": "https://github.com/synseqack/aict",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: Aict \u2013 Unix coreutils that output XML/JSON, built for AI agents",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": false,
-    "reject_reason": "GitHub repository only",
-    "affiliate_eligible": false,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 17,
-      "hn_comments": 6
+      "hn_comments": 23
     },
     "triage": {},
     "freshness": {},
@@ -1123,7 +1123,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 40,
+    "hours_since_release": 47,
     "signals": {
       "hn_points": 2,
       "hn_comments": 0

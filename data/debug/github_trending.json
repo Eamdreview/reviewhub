@@ -24,7 +24,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/tirth8205/code-review-graph",
-      "github_stars": 22241,
+      "github_stars": 22766,
       "vendor": "tirth8205",
       "archived": false,
       "topics": [
@@ -79,7 +79,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/1jehuang/jcode",
-      "github_stars": 9192,
+      "github_stars": 9430,
       "vendor": "1jehuang",
       "archived": false,
       "topics": [
@@ -134,7 +134,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/diegosouzapw/OmniRoute",
-      "github_stars": 20655,
+      "github_stars": 21259,
       "vendor": "diegosouzapw",
       "archived": false,
       "topics": [
@@ -197,7 +197,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "github_stars": 40142,
+      "github_stars": 40366,
       "vendor": "rohitg00",
       "archived": false,
       "topics": [
@@ -260,7 +260,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/msitarzewski/agency-agents",
-      "github_stars": 134332,
+      "github_stars": 134553,
       "vendor": "msitarzewski",
       "archived": false,
       "topics": [],
@@ -302,7 +302,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/jamiepine/voicebox",
-      "github_stars": 43786,
+      "github_stars": 43994,
       "vendor": "jamiepine",
       "archived": false,
       "topics": [
@@ -353,7 +353,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/topoteretes/cognee",
-      "github_stars": 28567,
+      "github_stars": 28676,
       "vendor": "topoteretes",
       "archived": false,
       "topics": [
@@ -415,7 +415,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/every-app/open-seo",
-      "github_stars": 5362,
+      "github_stars": 5636,
       "vendor": "every-app",
       "archived": false,
       "topics": [
@@ -465,7 +465,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/MoonshotAI/kimi-cli",
-      "github_stars": 10067,
+      "github_stars": 10155,
       "vendor": "MoonshotAI",
       "archived": false,
       "topics": [],
@@ -507,7 +507,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/AstrBotDevs/AstrBot",
-      "github_stars": 36883,
+      "github_stars": 36999,
       "vendor": "AstrBotDevs",
       "archived": false,
       "topics": [
@@ -567,7 +567,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/KnockOutEZ/wigolo",
-      "github_stars": 2194,
+      "github_stars": 2382,
       "vendor": "KnockOutEZ",
       "archived": false,
       "topics": [
@@ -608,7 +608,7 @@
   {
     "name": "openship",
     "source": "github_trending",
-    "url": "https://openship.io",
+    "url": "https://github.com/oblien/openship",
     "category": "agents, ai",
     "description": "Self-hosted deployment platform",
     "price": "",
@@ -621,16 +621,16 @@
     "lifetime_deal": null,
     "documentation_url": "https://github.com/oblien/openship#readme",
     "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
+    "qualified": false,
+    "reject_reason": "no official product website",
+    "affiliate_eligible": false,
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/oblien/openship",
-      "github_stars": 3877,
+      "github_stars": 4416,
       "vendor": "oblien",
       "archived": false,
       "topics": [
@@ -639,7 +639,7 @@
         "deployments",
         "self-hosted"
       ],
-      "has_product_site": true
+      "has_product_site": false
     },
     "triage": {},
     "freshness": {},
@@ -677,7 +677,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/microsoft/Ontology-Playground",
-      "github_stars": 1517,
+      "github_stars": 1634,
       "vendor": "microsoft",
       "archived": false,
       "topics": [],
@@ -719,7 +719,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "github_stars": 124889,
+      "github_stars": 125054,
       "vendor": "Shubhamsaboo",
       "archived": false,
       "topics": [
@@ -766,7 +766,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/DeepTutor",
-      "github_stars": 28216,
+      "github_stars": 28327,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -818,7 +818,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/Vibe-Trading",
-      "github_stars": 25499,
+      "github_stars": 25609,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -871,7 +871,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/kangarooking/cangjie-skill",
-      "github_stars": 4013,
+      "github_stars": 4065,
       "vendor": "kangarooking",
       "archived": false,
       "topics": [
@@ -922,7 +922,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/nanobot",
-      "github_stars": 45924,
+      "github_stars": 45935,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -957,8 +957,8 @@
     "name": "graphify",
     "source": "github_trending",
     "url": "https://www.graphify.com",
-    "category": "antigravity, claude-code",
-    "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+    "category": "ai-agents, antigravity",
+    "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
     "price": "",
     "base_commission": "",
     "recurring": null,
@@ -978,21 +978,90 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Graphify-Labs/graphify",
-      "github_stars": 91919,
+      "github_stars": 92121,
       "vendor": "Graphify-Labs",
       "archived": false,
       "topics": [
+        "ai-agents",
         "antigravity",
+        "ast",
         "claude-code",
+        "code-analysis",
+        "code-search",
         "codex",
+        "cursor",
+        "developer-tools",
         "gemini",
         "graphrag",
         "knowledge-graph",
         "leiden",
+        "llm",
+        "mcp",
         "openclaw",
         "rag",
         "skills",
         "tree-sitter"
+      ],
+      "has_product_site": true
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "first_mover": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "OmniVoice-Studio",
+    "source": "github_trending",
+    "url": "https://palash.dev/omnivoice",
+    "category": "asr, audiobook",
+    "description": "Local voice clone, video dubbing, dictation and audiobook maker. The open-source ElevenLabs alternative.",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "https://github.com/debpalash/OmniVoice-Studio#readme",
+    "facts_source": "",
+    "qualified": false,
+    "reject_reason": "library/framework/non-product repo",
+    "affiliate_eligible": false,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": null,
+    "signals": {
+      "github_repo": "https://github.com/debpalash/OmniVoice-Studio",
+      "github_stars": 8777,
+      "vendor": "debpalash",
+      "archived": false,
+      "topics": [
+        "asr",
+        "audiobook",
+        "dubbing",
+        "dubbing-ai",
+        "elevenlabs",
+        "local-ai",
+        "omnivoice",
+        "omnivoice-studio",
+        "self-hosted",
+        "speech-recognition",
+        "speech-to-text",
+        "text-to-speech",
+        "transcription",
+        "tts",
+        "video-editing",
+        "voice-ai",
+        "voice-cloning",
+        "voice-generation"
       ],
       "has_product_site": true
     },
@@ -1032,7 +1101,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/virattt/ai-hedge-fund",
-      "github_stars": 62287,
+      "github_stars": 62294,
       "vendor": "virattt",
       "archived": false,
       "topics": [],
@@ -1074,7 +1143,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/PostHog/posthog",
-      "github_stars": 37084,
+      "github_stars": 37120,
       "vendor": "PostHog",
       "archived": false,
       "topics": [
@@ -1132,7 +1201,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/apache/ossie",
-      "github_stars": 1421,
+      "github_stars": 1425,
       "vendor": "apache",
       "archived": false,
       "topics": [
@@ -1177,7 +1246,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/cactus-compute/needle",
-      "github_stars": 3221,
+      "github_stars": 3227,
       "vendor": "cactus-compute",
       "archived": false,
       "topics": [
@@ -1225,7 +1294,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/agentscope-ai/QwenPaw",
-      "github_stars": 23569,
+      "github_stars": 23630,
       "vendor": "agentscope-ai",
       "archived": false,
       "topics": [
@@ -1277,7 +1346,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/google/langextract",
-      "github_stars": 37600,
+      "github_stars": 37617,
       "vendor": "google",
       "archived": false,
       "topics": [
@@ -1331,7 +1400,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
-      "github_stars": 6859,
+      "github_stars": 6864,
       "vendor": "XiaoYouChR",
       "archived": false,
       "topics": [
@@ -1393,7 +1462,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/github/spec-kit",
-      "github_stars": 122565,
+      "github_stars": 122684,
       "vendor": "github",
       "archived": false,
       "topics": [
