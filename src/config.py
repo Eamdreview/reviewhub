@@ -105,6 +105,29 @@ FRESHNESS = {
 COMPETITION_LOW_MAX: int = 3      # <= this many existing reviews = "low"
 COMPETITION_MEDIUM_MAX: int = 15  # <= this many = "medium"; above = "high"
 
+
+# Serper SERP-competition bands: organic results for the exact query
+# '"<name>" review'. The SAME number drives BOTH the SEO-opportunity score and
+# the competition grade, so they can never contradict each other.
+def serp_seo_score(n: int) -> float:
+    """0-3 results → very high opportunity, 4-10 high, 11-30 medium, 30+ low."""
+    if n <= 3:
+        return 92.0
+    if n <= 10:
+        return 78.0
+    if n <= 30:
+        return 58.0
+    return 32.0
+
+
+def serp_competition(n: int) -> str:
+    """Competition grade from the same serper count (aligned with serp_seo_score)."""
+    if n <= 10:
+        return "low"        # SEO 78-92 (high opportunity)
+    if n <= 30:
+        return "medium"     # SEO 58
+    return "high"           # SEO 32 (saturated)
+
 # 🚀 Tier 1 — Immediate Review (review TODAY). Must satisfy ALL:
 TIER1 = {
     "launch_window_days": 7,       # launching within N days, OR
