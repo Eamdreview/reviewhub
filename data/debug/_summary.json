@@ -5,15 +5,15 @@
     "status": "OK",
     "encoding": "n/a (API)",
     "decoded": "Yes",
-    "found": 40,
-    "qualified": 28,
-    "rejected": 12,
-    "affiliate": 28,
-    "yield": 70,
-    "secs": 0.68,
+    "found": 42,
+    "qualified": 29,
+    "rejected": 13,
+    "affiliate": 29,
+    "yield": 69,
+    "secs": 0.75,
     "reliability": 100,
     "target": 5,
-    "reason": "GitHub repository only (9)"
+    "reason": "GitHub repository only (10)"
   },
   {
     "source": "GitHub Trending",
@@ -21,15 +21,15 @@
     "status": "OK",
     "encoding": "gzip",
     "decoded": "Yes",
-    "found": 26,
+    "found": 25,
     "qualified": 11,
-    "rejected": 15,
+    "rejected": 14,
     "affiliate": 11,
-    "yield": 42,
-    "secs": 13.84,
+    "yield": 44,
+    "secs": 13.26,
     "reliability": 100,
     "target": 5,
-    "reason": "library/framework/non-product repo (11)"
+    "reason": "library/framework/non-product repo (10)"
   },
   {
     "source": "There's An AI For That",
@@ -58,7 +58,7 @@
     "rejected": 0,
     "affiliate": 40,
     "yield": 100,
-    "secs": 0.35,
+    "secs": 0.28,
     "reliability": 100,
     "target": 0,
     "reason": ""
@@ -74,7 +74,7 @@
     "rejected": 1,
     "affiliate": 36,
     "yield": 97,
-    "secs": 0.81,
+    "secs": 0.88,
     "reliability": 100,
     "target": 10,
     "reason": "news/opinion/funding wording (1)"
@@ -90,7 +90,7 @@
     "rejected": 1,
     "affiliate": 482,
     "yield": 100,
-    "secs": 0.58,
+    "secs": 0.54,
     "reliability": 100,
     "target": 10,
     "reason": "news/opinion/funding wording (1)"
@@ -138,7 +138,7 @@
     "rejected": 0,
     "affiliate": 15,
     "yield": 100,
-    "secs": 30.77,
+    "secs": 26.11,
     "reliability": 100,
     "target": 5,
     "reason": ""

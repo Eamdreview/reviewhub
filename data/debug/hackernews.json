@@ -1,5 +1,43 @@
 [
   {
+    "name": "A self-hosted AI that turns Hacker News into a daily briefing",
+    "source": "hackernews",
+    "url": "https://github.com/RecNes/hn-ai-summarizer",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: A self-hosted AI that turns Hacker News into a daily briefing",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": false,
+    "reject_reason": "GitHub repository only",
+    "affiliate_eligible": false,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 11,
+    "signals": {
+      "hn_points": 5,
+      "hn_comments": 0
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "first_mover": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
     "name": "A canvas-based note taking and organizer app",
     "source": "hackernews",
     "url": "https://www.passinote.app/",
@@ -21,10 +59,48 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 7,
+    "hours_since_release": 12,
     "signals": {
-      "hn_points": 47,
-      "hn_comments": 13
+      "hn_points": 55,
+      "hn_comments": 25
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "first_mover": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "ShipMD.app",
+    "source": "hackernews",
+    "url": "https://shipmd.app",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: ShipMD.app \u2013 Moving things in folders, move things in the real world",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 13,
+    "signals": {
+      "hn_points": 5,
+      "hn_comments": 2
     },
     "triage": {},
     "freshness": {},
@@ -59,9 +135,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 9,
+    "hours_since_release": 14,
     "signals": {
-      "hn_points": 5,
+      "hn_points": 6,
       "hn_comments": 1
     },
     "triage": {},
@@ -97,9 +173,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 20,
+    "hours_since_release": 25,
     "signals": {
-      "hn_points": 6,
+      "hn_points": 7,
       "hn_comments": 2
     },
     "triage": {},
@@ -135,7 +211,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 30,
+    "hours_since_release": 35,
     "signals": {
       "hn_points": 6,
       "hn_comments": 2
@@ -173,7 +249,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 40,
+    "hours_since_release": 45,
     "signals": {
       "hn_points": 6,
       "hn_comments": 1
@@ -211,7 +287,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 40,
+    "hours_since_release": 46,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -249,7 +325,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 56,
+    "hours_since_release": 62,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -287,7 +363,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 62,
+    "hours_since_release": 68,
     "signals": {
       "hn_points": 5,
       "hn_comments": 5
@@ -325,7 +401,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 62,
+    "hours_since_release": 68,
     "signals": {
       "hn_points": 15,
       "hn_comments": 20
@@ -363,7 +439,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 63,
+    "hours_since_release": 68,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -783,7 +859,7 @@
     "days_to_launch": null,
     "hours_since_release": null,
     "signals": {
-      "hn_points": 6,
+      "hn_points": 7,
       "hn_comments": 1
     },
     "triage": {},
@@ -1047,7 +1123,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 34,
+    "hours_since_release": 40,
     "signals": {
       "hn_points": 2,
       "hn_comments": 0
@@ -1088,7 +1164,7 @@
     "hours_since_release": null,
     "signals": {
       "hn_points": 43,
-      "hn_comments": 25
+      "hn_comments": 26
     },
     "triage": {},
     "freshness": {},
