@@ -59,8 +59,8 @@ def _measured_scores(c: Candidate) -> tuple[dict[str, float], dict[str, bool]]:
     # (Retired Google CSE domains are still honoured if present as a fallback.)
     # Source failed/absent → neutral, never a penalty.
     if s.get("_measured_serper"):
-        n = int(s.get("serper_review_count", 0))
-        seo = _clamp(100 - n * 9)          # 0 results → 100, 10 → 10
+        # Banded from the serper count — SAME number the competition grade uses.
+        seo = config.serp_seo_score(int(s.get("serper_review_count", 0)))
         m["seo_opportunity"] = True
     elif s.get("_measured_cse"):
         authority = {"forbes.com", "g2.com", "capterra.com", "gartner.com",
@@ -113,20 +113,33 @@ def _measured_scores(c: Candidate) -> tuple[dict[str, float], dict[str, bool]]:
     trust = _clamp((trust_rating / 5 * 100) if trust_rating else NEUTRAL)
     m["vendor_trust"] = bool(trust_rating)
 
-    # Profitability: base commission + recurring + upsells. This comes from the
-    # marketplace/collector (not an enrichment API), so it is NOT neutralised —
-    # a genuinely low/absent commission is a real signal. We only flag whether
-    # commission facts were available, for the report's confidence annotation.
+    # Profitability degrades gracefully. A known commission% is the base; a
+    # known price and funnel data add on top; each piece is optional so a
+    # product with price + commission% but no funnel still scores proportionally
+    # instead of collapsing. From the marketplace (not an enrichment API), so a
+    # genuinely low/absent commission stays a real signal (not neutralised).
     pct = _parse_commission_pct(c.base_commission)
-    profit = pct  # 0..~70 baseline from the percentage
-    if c.recurring:
-        profit += 20
-    if c.upsells:
-        profit += 10
-    if "recurring" in (c.base_commission or "").lower():
-        profit += 10
-    profit = _clamp(profit)
-    m["profitability"] = bool(c.base_commission or c.upsells or c.recurring)
+    price_known = any(ch.isdigit() for ch in (c.price or ""))
+    has_commercials = bool(c.base_commission or c.upsells or c.recurring)
+    if has_commercials:
+        # 40%→54, 50%→60, 75%→75, 100%→80(cap) before funnel/price add-ons.
+        base = min(80.0, 30 + pct * 0.6) if pct > 0 else 40.0
+        if c.recurring:
+            base += 15
+        if c.upsells:
+            base += 10
+        if "recurring" in (c.base_commission or "").lower():
+            base += 5
+        if price_known:
+            base += 5
+        profit = _clamp(base)
+        m["profitability"] = True
+    elif price_known:
+        profit = 45.0          # priced but no commission data — weak, not zero
+        m["profitability"] = True
+    else:
+        profit = NEUTRAL       # nothing known → neutral, flagged unmeasured
+        m["profitability"] = False
 
     return {
         "seo_opportunity": round(seo, 1),

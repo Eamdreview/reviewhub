@@ -30,9 +30,10 @@ def breakdown_points(scores: dict[str, float]) -> dict[str, float]:
 
 
 def _is_first_mover(c: Candidate) -> bool:
-    """Near-zero existing reviews, but only for a trusted, affiliate-eligible
-    product — the trust/eligibility gate keeps out junk nobody reviewed for good
-    reason. Requires BOTH SERP and YouTube signals to be actually measured."""
+    """Near-zero existing reviews, but only for a trusted product with a real
+    affiliate opportunity — the affiliate-eligible + known-price gate keeps out
+    open-source GitHub/YC dev tools that have no program to monetise. Requires
+    BOTH SERP and YouTube signals to be actually measured."""
     sig, sc = c.signals, c.scores
     if not (sig.get("_measured_serper") and sig.get("_measured_youtube")):
         return False
@@ -42,7 +43,10 @@ def _is_first_mover(c: Candidate) -> bool:
         return False
     if float(sc.get("vendor_trust", 0)) < config.FIRST_MOVER_MIN_TRUST:
         return False
-    return bool(c.affiliate_eligible)
+    if not c.affiliate_eligible:
+        return False
+    # Must have a real price — a monetisable product, not a free/open-source repo.
+    return any(ch.isdigit() for ch in (c.price or ""))
 
 
 def apply(candidates: list[Candidate]) -> list[Candidate]:

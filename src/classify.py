@@ -32,7 +32,10 @@ _AUTHORITY_REVIEW_SITES = {
 # Competition analysis
 # ---------------------------------------------------------------------------
 def _review_count(c: Candidate) -> int:
-    """Approximate how many reviews already exist (YouTube + authority sites)."""
+    """How many reviews already compete. Prefer Serper (organic results for the
+    exact '"<name>" review' query); fall back to YouTube + authority sites."""
+    if c.signals.get("_measured_serper"):
+        return int(c.signals.get("serper_review_count", 0))
     yt = int(c.signals.get("youtube_count", 0))
     domains = [d.lower() for d in c.signals.get("cse_top_domains", [])]
     authority = sum(1 for d in domains if any(a in d for a in _AUTHORITY_REVIEW_SITES))
@@ -40,15 +43,15 @@ def _review_count(c: Candidate) -> int:
 
 
 def _competition_level(c: Candidate) -> str:
-    """Grade review competition.
+    """Grade review competition — from the SAME serper number that drives SEO.
 
-    Crucially, ZERO reviews found does NOT automatically mean "low competition".
-    For a product with no reviews AND no fresh demand signal, we genuinely don't
-    know — it might be a stale product nobody covers anymore. That case is
-    "unknown" (no bonus, no penalty), not a first-mover bonus. Only 0 reviews
-    *with* a corroborating fresh signal (rising trend, recent launch, Reddit/
-    YouTube attention) counts as confirmed low competition.
+    When Serper measured, the count is authoritative: even 0 is a confirmed
+    "we searched and found no competing reviews" → low. Without Serper we fall
+    back to YouTube/CSE, and 0-reviews-with-no-fresh-signal stays "unknown"
+    (we genuinely don't know) rather than a fabricated first-mover bonus.
     """
+    if c.signals.get("_measured_serper"):
+        return config.serp_competition(int(c.signals.get("serper_review_count", 0)))
     n = _review_count(c)
     if n == 0:
         if c.freshness.get("has_demand_signal"):
@@ -79,13 +82,17 @@ def _competitor_alert(c: Candidate) -> dict:
 
     level = _competition_level(c)
     seo = float(c.scores.get("seo_opportunity", 0))
-    if level == "low" and seo >= 70:
-        can_rank = "Yes — strong early-rank window; publish fast."
-    elif level == "medium" and seo >= 60:
-        can_rank = "Possible — needs deeper, faster content than rivals."
+    # Derived from the same competition grade as SEO, so they never contradict:
+    # "Hard — saturated" is reserved for genuinely HIGH competition only.
+    if level == "low":
+        can_rank = ("Yes — strong early-rank window; publish fast." if seo >= 70
+                    else "Likely — low competition; solid, fast content should rank.")
+    elif level == "medium":
+        can_rank = ("Possible — needs deeper, faster content than rivals." if seo >= 60
+                    else "Moderate — mixed competition; differentiate to rank.")
     elif level == "unknown":
         can_rank = "Unknown — no reviews found and no fresh signal; validate demand first."
-    else:
+    else:  # high
         can_rank = "Hard — page 1 is already saturated."
 
     return {
