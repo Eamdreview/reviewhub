@@ -11,6 +11,51 @@ from __future__ import annotations
 from . import config
 from .models import Candidate
 
+# Buying-intent prior by source, used ONLY for pre-enrichment ranking (below).
+# Affiliate marketplaces list products people actively buy → high purchase
+# intent; discovery/aggregator feeds are heavy on free/open-source dev tools →
+# lower intent. Mirrors triage._heuristic_judgment's source_base for the
+# marketplaces and extends it to the discovery sources.
+_SOURCE_INTENT_PRIOR: dict[str, float] = {
+    "jvzoo": 60, "warriorplus": 58, "digistore24": 60, "dealmirror": 55,
+    "appsumo": 62, "muncheye": 55, "producthunt": 50,
+    "futuretools": 45, "theresanaiforthat": 45, "alternativeto": 42,
+    "hackernews": 35, "github_trending": 30,
+}
+
+
+def pre_score(c: Candidate) -> float:
+    """Cheap 0-100 priority score for choosing WHICH candidates to enrich.
+
+    Enrichment API quota (Serper/YouTube) is capped at ``config.MAX_ENRICH``, so
+    we must spend it on the candidates most likely to reach a tier rather than on
+    the first ones collected. This score uses ONLY facts present after
+    Collect/Qualify — source, affiliate eligibility, price, commission, launch
+    timing — none of which cost an API call, so it can rank the full candidate
+    pool before any enrichment runs. It is a pre-filter, never part of the real
+    weighted score.
+
+    Components (all pre-enrichment):
+      * source/buying-intent prior — the marketplace the product came from
+      * has-affiliate — a real, monetisable affiliate opportunity exists
+      * has-price     — a concrete price (a product to actually sell)
+      * commission    — known commission terms (recurring counts extra)
+      * launch timing — upcoming/dated launches (Tier 1's early-launch target)
+    """
+    score = float(_SOURCE_INTENT_PRIOR.get(c.source, 40))
+    aff = (c.affiliate_program or "").strip().lower()
+    if c.affiliate_eligible or (aff and aff not in ("no", "none", "unknown")):
+        score += 20
+    if any(ch.isdigit() for ch in (c.price or "")):
+        score += 12
+    if (c.base_commission or "").strip():
+        score += 8
+    if c.recurring:
+        score += 5
+    if c.launch_status == "upcoming" or (c.days_to_launch or -1) >= 0:
+        score += 8
+    return round(min(100.0, score), 1)
+
 
 def weighted_total(scores: dict[str, float]) -> float:
     """Combine 0-100 sub-scores into a 0-100 total using config.WEIGHTS."""

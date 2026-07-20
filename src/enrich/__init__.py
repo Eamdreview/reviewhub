@@ -39,7 +39,9 @@ def enrich_all(candidates: list[Candidate], dry_run: bool = False,
         return candidates
 
     status = source_status if source_status is not None else {}
-    # Protect quotas: only enrich the highest-priority slice (collector order).
+    # Protect quotas: only enrich the highest-priority slice. The caller
+    # (main.run) pre-ranks the pool by score.pre_score, so this leading slice is
+    # the MAX_ENRICH candidates most likely to reach a tier — not collection order.
     targets = candidates[: config.MAX_ENRICH]
 
     if not targets:
