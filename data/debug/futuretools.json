@@ -70,9 +70,9 @@
     "brief": {}
   },
   {
-    "name": "3ChatGPTChat \u00b7 Generative Code",
+    "name": "3ClaudeChat \u00b7 Generative Code",
     "source": "futuretools",
-    "url": "https://www.futuretools.io/tools/chatgpt-openai",
+    "url": "https://www.futuretools.io/tools/claude",
     "category": "AI tool",
     "description": "Listed on FutureTools",
     "price": "",
@@ -105,9 +105,9 @@
     "brief": {}
   },
   {
-    "name": "4ClaudeChat \u00b7 Generative Code",
+    "name": "4ChatGPTChat \u00b7 Generative Code",
     "source": "futuretools",
-    "url": "https://www.futuretools.io/tools/claude",
+    "url": "https://www.futuretools.io/tools/chatgpt-openai",
     "category": "AI tool",
     "description": "Listed on FutureTools",
     "price": "",

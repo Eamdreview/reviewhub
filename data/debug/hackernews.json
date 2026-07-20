@@ -21,10 +21,48 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 1,
+    "hours_since_release": 7,
     "signals": {
-      "hn_points": 23,
-      "hn_comments": 6
+      "hn_points": 47,
+      "hn_comments": 13
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "first_mover": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Chalie",
+    "source": "hackernews",
+    "url": "https://github.com/chalie-ai/chalie",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: Chalie \u2013 AI peer not employee",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": false,
+    "reject_reason": "GitHub repository only",
+    "affiliate_eligible": false,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 9,
+    "signals": {
+      "hn_points": 5,
+      "hn_comments": 1
     },
     "triage": {},
     "freshness": {},
@@ -59,9 +97,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 14,
+    "hours_since_release": 20,
     "signals": {
-      "hn_points": 5,
+      "hn_points": 6,
       "hn_comments": 2
     },
     "triage": {},
@@ -97,7 +135,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 24,
+    "hours_since_release": 30,
     "signals": {
       "hn_points": 6,
       "hn_comments": 2
@@ -135,7 +173,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 34,
+    "hours_since_release": 40,
     "signals": {
       "hn_points": 6,
       "hn_comments": 1
@@ -173,7 +211,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 35,
+    "hours_since_release": 40,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -211,7 +249,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 51,
+    "hours_since_release": 56,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -249,7 +287,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 57,
+    "hours_since_release": 62,
     "signals": {
       "hn_points": 5,
       "hn_comments": 5
@@ -287,10 +325,48 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 57,
+    "hours_since_release": 62,
     "signals": {
       "hn_points": 15,
       "hn_comments": 20
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "first_mover": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
+    "name": "Wolbarg",
+    "source": "hackernews",
+    "url": "https://wolbarg.com/blog/why-sqlite-is-enough-for-local-ai-agent-memory",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: Wolbarg \u2013 Local-first shared memory for AI agents using SQLite",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": true,
+    "reject_reason": "",
+    "affiliate_eligible": true,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 63,
+    "signals": {
+      "hn_points": 5,
+      "hn_comments": 0
     },
     "triage": {},
     "freshness": {},
@@ -325,7 +401,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 71,
+    "hours_since_release": null,
     "signals": {
       "hn_points": 7,
       "hn_comments": 0
@@ -950,82 +1026,6 @@
     "brief": {}
   },
   {
-    "name": "PortalJS",
-    "source": "hackernews",
-    "url": "https://github.com/datopian/portaljs",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: PortalJS \u2013 AI-native, open-source framework for data portals",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": false,
-    "reject_reason": "GitHub repository only",
-    "affiliate_eligible": false,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 10,
-      "hn_comments": 1
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "first_mover": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Show HN",
-    "source": "hackernews",
-    "url": "https://apps.apple.com/us/app/dally-365/id6772557608",
-    "category": "AI / SaaS tool",
-    "description": "Show HN : Dally \u2013 a privacy focused daily routine app",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 5,
-      "hn_comments": 0
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "first_mover": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
     "name": "A pre-launch scanner for AI-built apps (it scores itself 60/100)",
     "source": "hackernews",
     "url": "https://shippingszn.com/",
@@ -1047,7 +1047,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 29,
+    "hours_since_release": 34,
     "signals": {
       "hn_points": 2,
       "hn_comments": 0
@@ -1164,7 +1164,7 @@
     "hours_since_release": null,
     "signals": {
       "hn_points": 85,
-      "hn_comments": 50
+      "hn_comments": 52
     },
     "triage": {},
     "freshness": {},

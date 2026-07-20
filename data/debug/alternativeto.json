@@ -280,11 +280,11 @@
     "brief": {}
   },
   {
-    "name": "PocketPal",
+    "name": "Gemini Notebook",
     "source": "alternativeto",
-    "url": "https://alternativeto.net/software/pocketpal/about/",
+    "url": "https://alternativeto.net/software/notebook-lm/about/",
     "category": "Software / SaaS",
-    "description": "An app that brings language models directly to your phone.",
+    "description": "AI-first notebook grounded in user-trusted information, limited to U.S. access. Join the waitlist to explore intelligent insights and redefine note-taking.",
     "price": "",
     "base_commission": "",
     "recurring": null,
@@ -315,11 +315,11 @@
     "brief": {}
   },
   {
-    "name": "Gemini Notebook",
+    "name": "PocketPal",
     "source": "alternativeto",
-    "url": "https://alternativeto.net/software/notebook-lm/about/",
+    "url": "https://alternativeto.net/software/pocketpal/about/",
     "category": "Software / SaaS",
-    "description": "AI-first notebook grounded in user-trusted information, limited to U.S. access. Join the waitlist to explore intelligent insights and redefine note-taking.",
+    "description": "An app that brings language models directly to your phone.",
     "price": "",
     "base_commission": "",
     "recurring": null,
