@@ -21,7 +21,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 11,
+    "hours_since_release": 12,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0
@@ -59,10 +59,10 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 12,
+    "hours_since_release": 13,
     "signals": {
-      "hn_points": 55,
-      "hn_comments": 25
+      "hn_points": 56,
+      "hn_comments": 26
     },
     "triage": {},
     "freshness": {},
@@ -97,7 +97,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 13,
+    "hours_since_release": 14,
     "signals": {
       "hn_points": 5,
       "hn_comments": 2
@@ -135,7 +135,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 14,
+    "hours_since_release": 15,
     "signals": {
       "hn_points": 6,
       "hn_comments": 1
@@ -173,7 +173,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 25,
+    "hours_since_release": 26,
     "signals": {
       "hn_points": 7,
       "hn_comments": 2
@@ -211,7 +211,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 35,
+    "hours_since_release": 36,
     "signals": {
       "hn_points": 6,
       "hn_comments": 2
@@ -249,7 +249,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 45,
+    "hours_since_release": 46,
     "signals": {
       "hn_points": 6,
       "hn_comments": 1
@@ -325,7 +325,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 62,
+    "hours_since_release": 63,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -439,7 +439,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 68,
+    "hours_since_release": 69,
     "signals": {
       "hn_points": 5,
       "hn_comments": 0

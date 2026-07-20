@@ -5,14 +5,11 @@ Samples: ChatGPT, Jasper AI, Systeme.io, ClickFunnels, Notion
 ============================================================================================
 Source         Outcome          Measured  Time   Sample                      Detail
 --------------------------------------------------------------------------------------------
-google_trends  EMPTY (silent)   0/5       2.24s                              ran without error but returned no data
-youtube        OK (real data)   5/5       2.14s  10                          5/5 candidates measured
-serper         EMPTY (silent)   0/5       0.36s                              ran without error but returned no data
+google_trends  EMPTY (silent)   0/5       2.27s                              ran without error but returned no data
+youtube        OK (real data)   5/5       1.91s  10                          5/5 candidates measured
+serper         OK (real data)   5/5       4.86s  10                          5/5 candidates measured
 --------------------------------------------------------------------------------------------
-1/3 returning real data · SILENTLY EMPTY: google_trends, serper
+2/3 returning real data · SILENTLY EMPTY: google_trends
 ============================================================================================
 Note: EMPTY (silent) is the dangerous case — the source ran but fed the
 scorer nothing; those criteria fall back to the neutral default.
-
-serper raw-probe (diagnostic; key redacted):
-   HTTP 200 — {"searchParameters":{"q":"\"ChatGPT\" review","type":"search","num":10,"engine":"google"},"organic":[{"title":"Read Customer Service Reviews of chatgpt.com","link":"https://www.trustpilot.com/review/chatgpt.com","snippet":"I've been a paid member for years now and have seen it all. Chatgpt will provide information that is sometimes accurate but whenever you question it, ...","rating":1.6,"ratingCo
