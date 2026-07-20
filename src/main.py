@@ -65,7 +65,30 @@ def run(dry_run: bool = False) -> Path:
         _dump("qualified", candidates)
         _dump("rejected", rejected)
 
-    # [2] ENRICH
+    # [1c] PRE-RANK for enrichment. Enrichment (Serper/YouTube) is capped at
+    # MAX_ENRICH; enrich_all takes the first slice, so we must order the pool by
+    # likely-to-reach-a-tier FIRST. score.pre_score uses only pre-enrichment
+    # facts (source, affiliate, price, commission, launch) — same API quota, but
+    # the measured SEO/competition/demand signals now land on tier-eligible
+    # products instead of an arbitrary collection-order slice.
+    if not dry_run:
+        candidates.sort(key=score.pre_score, reverse=True)
+        top = candidates[: config.MAX_ENRICH]
+        log.info(
+            "Pre-rank → enriching top %d of %d by cheap pre-score:\n%s",
+            len(top), len(candidates),
+            "\n".join(f"  {i:>2}. {score.pre_score(c):5.1f}  {c.name[:50]}  [{c.source}]"
+                      for i, c in enumerate(top, 1)))
+        DATA_DIR.mkdir(exist_ok=True)
+        (DATA_DIR / "pre_rank.json").write_text(
+            json.dumps([{"rank": i, "pre_score": score.pre_score(c),
+                         "name": c.name, "source": c.source,
+                         "affiliate_eligible": c.affiliate_eligible,
+                         "price": c.price, "commission": c.base_commission}
+                        for i, c in enumerate(top, 1)], indent=2, default=str),
+            encoding="utf-8")
+
+    # [2] ENRICH — only the top MAX_ENRICH (now the highest pre-score slice).
     candidates = enrich_all(candidates, dry_run=dry_run, source_status=source_status)
     _dump("enriched", candidates)
 
