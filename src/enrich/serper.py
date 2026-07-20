@@ -32,9 +32,11 @@ def enrich(candidates: list[Candidate]) -> None:
 
     for c in candidates:
         try:
-            # num=30 so the competition bands (11-30, 30+) are actually reachable.
+            # num=10 — the value this Serper account accepts (num=30 returns an
+            # error, silently emptying the source). Exact-phrase '"<name>" review'
+            # queries return few results in this niche, so 0-10 covers the signal.
             r = requests.post(_URL, headers=headers,
-                              json={"q": f'"{c.name}" review', "num": 30}, timeout=30)
+                              json={"q": f'"{c.name}" review', "num": 10}, timeout=30)
             r.raise_for_status()
             data = r.json()
             organic = data.get("organic") or []
