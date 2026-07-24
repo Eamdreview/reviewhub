@@ -65,6 +65,18 @@ FIRST_MOVER_MIN_TRUST: int = 50    # vendor_trust must be at least this
 FIRST_MOVER_SEO_BOOST: int = 25    # points added to the SEO-opportunity criterion when flagged
 
 # ---------------------------------------------------------------------------
+# SEO Rank Tracker — where your published reviews rank in Google, reusing the
+# enrichment SERPER_API_KEY. Default request is top-10 only (no `num`), which is
+# 1 Serper credit; num>10 costs double, so RANK_NUM is clamped to 10 in code.
+# TRACKED_KEYWORDS seeds targets declaratively; `track add` appends more at
+# runtime (the tracked_keywords table). See src/track/rank_tracker.py.
+# ---------------------------------------------------------------------------
+RANK_GL: str = "us"     # Google country (geo-location) for rank checks
+RANK_HL: str = "en"     # Google interface language for rank checks
+RANK_NUM: int = 10      # top-N to scan — KEEP <= 10 (num>10 doubles the credit cost)
+TRACKED_KEYWORDS: list[dict] = []   # [{"review_id": int, "keyword": str, "url": str}, ...]
+
+# ---------------------------------------------------------------------------
 # Freshness Score (0-100) — "is this an active, currently-relevant opportunity
 # to review TODAY?" Computed from MULTIPLE live signals, never launch date
 # alone. Only the signals actually measured contribute; a missing launch date
