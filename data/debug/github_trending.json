@@ -24,7 +24,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/alibaba/open-code-review",
-      "github_stars": 12904,
+      "github_stars": 12933,
       "vendor": "alibaba",
       "archived": false,
       "topics": [
@@ -73,7 +73,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/citrolabs/ego-lite",
-      "github_stars": 3514,
+      "github_stars": 3550,
       "vendor": "citrolabs",
       "archived": false,
       "topics": [
@@ -121,7 +121,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "github_stars": 70544,
+      "github_stars": 70565,
       "vendor": "ComposioHQ",
       "archived": false,
       "topics": [
@@ -181,7 +181,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/obra/superpowers",
-      "github_stars": 261059,
+      "github_stars": 261083,
       "vendor": "obra",
       "archived": false,
       "topics": [
@@ -232,7 +232,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/permissionlesstech/bitchat",
-      "github_stars": 28649,
+      "github_stars": 28680,
       "vendor": "permissionlesstech",
       "archived": false,
       "topics": [],
@@ -274,7 +274,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/palmier-io/palmier-pro",
-      "github_stars": 12185,
+      "github_stars": 12205,
       "vendor": "palmier-io",
       "archived": false,
       "topics": [
@@ -324,7 +324,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/CoreBunch/Instatic",
-      "github_stars": 5019,
+      "github_stars": 5050,
       "vendor": "CoreBunch",
       "archived": false,
       "topics": [
@@ -373,7 +373,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/OtterMind/Chat2DB",
-      "github_stars": 26635,
+      "github_stars": 26654,
       "vendor": "OtterMind",
       "archived": false,
       "topics": [
@@ -435,7 +435,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/andrewyng/aisuite",
-      "github_stars": 15207,
+      "github_stars": 15213,
       "vendor": "andrewyng",
       "archived": false,
       "topics": [],
@@ -477,7 +477,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/affaan-m/ECC",
-      "github_stars": 233274,
+      "github_stars": 233290,
       "vendor": "affaan-m",
       "archived": false,
       "topics": [
@@ -528,7 +528,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/bojieli/ai-agent-book",
-      "github_stars": 19743,
+      "github_stars": 19756,
       "vendor": "bojieli",
       "archived": false,
       "topics": [
@@ -584,7 +584,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/tirth8205/code-review-graph",
-      "github_stars": 26388,
+      "github_stars": 26393,
       "vendor": "tirth8205",
       "archived": false,
       "topics": [
@@ -681,7 +681,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "github_stars": 43461,
+      "github_stars": 43464,
       "vendor": "rohitg00",
       "archived": false,
       "topics": [
@@ -744,7 +744,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/DeepTutor",
-      "github_stars": 29763,
+      "github_stars": 29771,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -916,7 +916,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/apache/ossie",
-      "github_stars": 1631,
+      "github_stars": 1633,
       "vendor": "apache",
       "archived": false,
       "topics": [
@@ -961,7 +961,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Osmantic/ODS",
-      "github_stars": 3670,
+      "github_stars": 3674,
       "vendor": "Osmantic",
       "archived": false,
       "topics": [
@@ -1072,7 +1072,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/kangarooking/cangjie-skill",
-      "github_stars": 4707,
+      "github_stars": 4710,
       "vendor": "kangarooking",
       "archived": false,
       "topics": [
@@ -1181,7 +1181,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/google/langextract",
-      "github_stars": 37829,
+      "github_stars": 37832,
       "vendor": "google",
       "archived": false,
       "topics": [
@@ -1235,7 +1235,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "github_stars": 127644,
+      "github_stars": 127650,
       "vendor": "Shubhamsaboo",
       "archived": false,
       "topics": [

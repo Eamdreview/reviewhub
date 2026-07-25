@@ -5,12 +5,12 @@
     "status": "OK",
     "encoding": "n/a (API)",
     "decoded": "Yes",
-    "found": 34,
-    "qualified": 22,
+    "found": 33,
+    "qualified": 21,
     "rejected": 12,
-    "affiliate": 22,
-    "yield": 65,
-    "secs": 0.82,
+    "affiliate": 21,
+    "yield": 64,
+    "secs": 0.84,
     "reliability": 100,
     "target": 5,
     "reason": "GitHub repository only (8)"
@@ -26,7 +26,7 @@
     "rejected": 13,
     "affiliate": 11,
     "yield": 46,
-    "secs": 12.72,
+    "secs": 16.54,
     "reliability": 100,
     "target": 5,
     "reason": "library/framework/non-product repo (11)"
@@ -58,7 +58,7 @@
     "rejected": 0,
     "affiliate": 40,
     "yield": 100,
-    "secs": 0.33,
+    "secs": 0.8,
     "reliability": 100,
     "target": 0,
     "reason": ""
@@ -74,7 +74,7 @@
     "rejected": 1,
     "affiliate": 36,
     "yield": 97,
-    "secs": 0.99,
+    "secs": 0.91,
     "reliability": 100,
     "target": 10,
     "reason": "news/opinion/funding wording (1)"
@@ -90,7 +90,7 @@
     "rejected": 1,
     "affiliate": 505,
     "yield": 100,
-    "secs": 0.69,
+    "secs": 0.44,
     "reliability": 100,
     "target": 10,
     "reason": "news/opinion/funding wording (1)"
@@ -138,7 +138,7 @@
     "rejected": 0,
     "affiliate": 15,
     "yield": 100,
-    "secs": 30.46,
+    "secs": 31.69,
     "reliability": 100,
     "target": 5,
     "reason": ""
