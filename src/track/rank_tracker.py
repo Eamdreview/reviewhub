@@ -58,29 +58,17 @@ CREATE TABLE IF NOT EXISTS tracked_keywords (
 );
 """
 
-# Extra columns this module adds to the existing reviews table (idempotent).
-_REVIEW_COLUMNS = {
-    "target_keyword": "TEXT",
-    "article_url": "TEXT",
-    "linkedin_reactions": "INTEGER",
-    "linkedin_comments": "INTEGER",
-}
-
-
 def init() -> None:
-    """Create the tracker tables and add the new reviews columns (idempotent).
+    """Create the tracker tables (idempotent).
 
-    Ensures the reviews table exists first (owned by the learning module) so the
-    ALTER TABLE migration below has something to extend on a fresh database.
+    The reviews table and its SEO/engagement columns are owned by the learning
+    module, so we delegate that migration to it and only add the tracker's own
+    rank_snapshots + tracked_keywords tables here.
     """
     from ..learning import init as _init_reviews
     _init_reviews()
     with db.history() as conn:
         conn.executescript(_SNAPSHOT_SCHEMA + _TRACKED_SCHEMA)
-        existing = {r[1] for r in conn.execute("PRAGMA table_info(reviews)")}
-        for col, typ in _REVIEW_COLUMNS.items():
-            if col not in existing:
-                conn.execute(f"ALTER TABLE reviews ADD COLUMN {col} {typ}")
         conn.commit()
 
 
@@ -94,6 +82,7 @@ def _url_needle(url: str) -> str:
             u = u[len(pre):]
     if u.startswith("www."):
         u = u[4:]
+    u = u.split("#", 1)[0].split("?", 1)[0]   # drop fragment + query (utm/share)
     return u.rstrip("/")
 
 
