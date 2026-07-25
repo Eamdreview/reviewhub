@@ -206,11 +206,19 @@ def _llm_judgments_batch(batch: list[Candidate]) -> dict[int, dict]:
 def triage_all(candidates: list[Candidate], dry_run: bool = False) -> list[Candidate]:
     """Produce sub-scores + a junk flag for every candidate.
 
-    Nothing is dropped here: junk/spam still needs to appear on the Ignore list
-    with an explanation. The Classify stage routes junk to Ignore. Triage is
-    batched through the cheap model; any batch failure falls back to the
-    offline heuristic for that batch, so scoring always completes.
+    Junk/spam is NOT dropped here — it still appears on the Ignore list with an
+    explanation (the Classify stage routes it there). But products with no
+    affiliate opportunity (affiliate_eligible=False — e.g. free first-party
+    brands like ChatGPT/Copilot) are dropped before scoring: with no way to
+    monetise them they should never rank or clutter the near-miss analysis.
+    (Skipped in dry-run, where qualify — which sets eligibility — doesn't run.)
+
+    Triage is batched through the cheap model; any batch failure falls back to
+    the offline heuristic for that batch, so scoring always completes.
     """
+    if not dry_run:
+        candidates = [c for c in candidates if c.affiliate_eligible]
+
     use_llm = llm.available() and not dry_run
 
     for c in candidates:

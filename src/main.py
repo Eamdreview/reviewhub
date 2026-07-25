@@ -92,9 +92,11 @@ def run(dry_run: bool = False) -> Path:
     candidates = enrich_all(candidates, dry_run=dry_run, source_status=source_status)
     _dump("enriched", candidates)
 
-    # [3] TRIAGE (drops junk; produces sub-scores)
-    scanned = len(candidates)
+    # [3] TRIAGE (drops non-affiliate products; produces sub-scores). Count
+    # scanned AFTER triage so "Scanned" equals the products that actually reach
+    # tiering (T1+T2+T3+Watch+Ignore), keeping the report header consistent.
     candidates = triage.triage_all(candidates, dry_run=dry_run)
+    scanned = len(candidates)
     log.info("After triage: %d survivors", len(candidates))
     _dump("triaged", candidates)
 

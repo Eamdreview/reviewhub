@@ -69,7 +69,17 @@ def qualify_one(c: Candidate) -> tuple[bool, str, bool]:
         eligible = True
     else:
         eligible = host not in q["non_product_hosts"]
+    # First-party free giants (ChatGPT, Copilot, Gemini…) have a real website but
+    # no affiliate program — the host heuristic wrongly marks them eligible, so
+    # override to False regardless of source. Suffix match covers subdomains.
+    if _is_non_affiliate_host(host, q):
+        eligible = False
     return True, "", eligible
+
+
+def _is_non_affiliate_host(host: str, q: dict) -> bool:
+    return any(host == h or host.endswith("." + h)
+               for h in q.get("non_affiliate_hosts", ()))
 
 
 def _qualify_github(c: Candidate, q: dict, blob: str) -> tuple[bool, str, bool]:
