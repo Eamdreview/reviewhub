@@ -36,7 +36,11 @@ def _breakdown_line(c: Candidate) -> str:
 def _first_mover_section(run: RunReport) -> str:
     """Products flagged first-mover (near-zero existing reviews, trust/affiliate
     gated) — the reviews where being first to publish matters most."""
-    flagged = [c for t in (1, 2, 3, 4, 0) for c in run.tiers.get(t, [])
+    # Only actionable tiers (1-3) + Watchlist (4) — never the Ignore list. A
+    # product flagged first-mover but classified Ignore (failed the intent floor,
+    # profitability, or junk) is not an opportunity; listing it here with an
+    # "Ignore" tier is the contradiction this section must avoid.
+    flagged = [c for t in (1, 2, 3, 4) for c in run.tiers.get(t, [])
                if getattr(c, "first_mover", False)]
     flagged = sorted(flagged, key=lambda c: c.total_score, reverse=True)
     if not flagged:
