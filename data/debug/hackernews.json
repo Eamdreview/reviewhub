@@ -21,7 +21,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 26,
+    "hours_since_release": 27,
     "signals": {
       "hn_points": 17,
       "hn_comments": 9
@@ -59,7 +59,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 31,
+    "hours_since_release": 32,
     "signals": {
       "hn_points": 18,
       "hn_comments": 9
@@ -97,9 +97,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 33,
+    "hours_since_release": 34,
     "signals": {
-      "hn_points": 13,
+      "hn_points": 14,
       "hn_comments": 0
     },
     "triage": {},
@@ -135,7 +135,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 48,
+    "hours_since_release": 49,
     "signals": {
       "hn_points": 11,
       "hn_comments": 0
@@ -211,7 +211,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 54,
+    "hours_since_release": 55,
     "signals": {
       "hn_points": 6,
       "hn_comments": 1
@@ -249,7 +249,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 54,
+    "hours_since_release": 55,
     "signals": {
       "hn_points": 187,
       "hn_comments": 37
@@ -325,7 +325,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 55,
+    "hours_since_release": 56,
     "signals": {
       "hn_points": 24,
       "hn_comments": 11
@@ -363,7 +363,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 55,
+    "hours_since_release": 56,
     "signals": {
       "hn_points": 8,
       "hn_comments": 3
@@ -401,7 +401,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 67,
+    "hours_since_release": 68,
     "signals": {
       "hn_points": 12,
       "hn_comments": 2
@@ -439,7 +439,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 71,
+    "hours_since_release": 72,
     "signals": {
       "hn_points": 8,
       "hn_comments": 11
@@ -479,8 +479,8 @@
     "days_to_launch": null,
     "hours_since_release": null,
     "signals": {
-      "hn_points": 14,
-      "hn_comments": 2
+      "hn_points": 21,
+      "hn_comments": 4
     },
     "triage": {},
     "freshness": {},
@@ -727,82 +727,6 @@
     "url": "https://hypertemplates.net/blog/designing-an-ssg-for-iphone/",
     "category": "AI / SaaS tool",
     "description": "Show HN: Designing a Static Site Generator for iPhone",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 10,
-      "hn_comments": 0
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "first_mover": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Fractal",
-    "source": "hackernews",
-    "url": "https://github.com/plasma-ai/fractal",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: Fractal \u2013 recursive agent loops for complex, multi-step work",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": false,
-    "reject_reason": "GitHub repository only",
-    "affiliate_eligible": false,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 14,
-      "hn_comments": 1
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "first_mover": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "threadfork",
-    "source": "hackernews",
-    "url": "https://www.threadfork.com/",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: threadfork \u2013 AI meeting notes that run on your Mac",
     "price": "",
     "base_commission": "",
     "recurring": null,
