@@ -5,6 +5,13 @@ on:
     # 06:00 UTC every Monday. Checks where each tracked review ranks in Google.
     - cron: "0 6 * * 1"
   workflow_dispatch:        # lets you trigger a rank check manually
+  push:
+    # On-demand run without the Actions UI: commit a marker file under
+    # .github/triggers/rank-* and the tracker runs once for that push. Scoped to
+    # that path so ordinary code pushes never spend Serper credits.
+    branches: [main]
+    paths:
+      - ".github/triggers/rank-*"
 
 permissions:
   contents: write           # needed to commit the updated history.db back to the repo
