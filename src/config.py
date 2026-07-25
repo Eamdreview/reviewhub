@@ -328,14 +328,16 @@ QUALIFICATION = {
                           "reddit.com"),
     # First-party mega-brands with NO affiliate program: reviewable, but not
     # monetisable, so they must never be affiliate-eligible (the plain
-    # host-is-a-website heuristic wrongly marks them eligible). Suffix-matched,
-    # so subdomains (chat.openai.com, gemini.google.com) are covered. Extend as
-    # needed — these are the unambiguous free giants.
+    # host-is-a-website heuristic wrongly marks them eligible) and are dropped
+    # before enrichment so they don't consume Serper/YouTube slots. Suffix-
+    # matched, so subdomains (chat.openai.com, gemini.google.com) are covered.
+    # Extend this list freely.
     "non_affiliate_hosts": (
-        "openai.com", "chatgpt.com", "google.com", "gemini.google.com",
-        "microsoft.com", "copilot.microsoft.com", "bing.com", "anthropic.com",
-        "claude.ai", "meta.com", "meta.ai", "apple.com", "x.ai", "grok.com",
-        "deepmind.com", "mistral.ai", "duckduckgo.com"),
+        "openai.com", "google.com", "microsoft.com", "anthropic.com",
+        "meta.com", "apple.com", "x.ai", "deepseek.com", "mistral.ai",
+        # Standalone product domains for the same brands (aliases of the above,
+        # not covered by suffix match): keep so ChatGPT/Claude don't slip back in.
+        "chatgpt.com", "claude.ai"),
     # News / social domains -> reject as news.
     "news_domains": (
         "reuters.com", "cnbc.com", "forbes.com", "businessinsider.com",
