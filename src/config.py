@@ -326,6 +326,16 @@ QUALIFICATION = {
     # Hosts that mean "no official product website".
     "non_product_hosts": ("news.ycombinator.com", "github.com", "gitlab.com",
                           "reddit.com"),
+    # First-party mega-brands with NO affiliate program: reviewable, but not
+    # monetisable, so they must never be affiliate-eligible (the plain
+    # host-is-a-website heuristic wrongly marks them eligible). Suffix-matched,
+    # so subdomains (chat.openai.com, gemini.google.com) are covered. Extend as
+    # needed — these are the unambiguous free giants.
+    "non_affiliate_hosts": (
+        "openai.com", "chatgpt.com", "google.com", "gemini.google.com",
+        "microsoft.com", "copilot.microsoft.com", "bing.com", "anthropic.com",
+        "claude.ai", "meta.com", "meta.ai", "apple.com", "x.ai", "grok.com",
+        "deepmind.com", "mistral.ai", "duckduckgo.com"),
     # News / social domains -> reject as news.
     "news_domains": (
         "reuters.com", "cnbc.com", "forbes.com", "businessinsider.com",
