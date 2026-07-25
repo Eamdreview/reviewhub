@@ -29,6 +29,8 @@ FIELDS = [
     "medium_reads", "website_visits", "pinterest_clicks", "x_clicks",
     "affiliate_clicks", "sales", "conversion_rate", "commission", "revenue",
     "hours_invested",
+    # SEO / engagement fields (also used by the rank tracker in src/track).
+    "target_keyword", "article_url", "linkedin_reactions", "linkedin_comments",
 ]
 
 _SCHEMA = """
@@ -41,14 +43,28 @@ CREATE TABLE IF NOT EXISTS reviews (
     pinterest_clicks INTEGER, x_clicks INTEGER, affiliate_clicks INTEGER,
     sales INTEGER, conversion_rate REAL, commission REAL, revenue REAL,
     hours_invested REAL,
+    target_keyword TEXT, article_url TEXT,
+    linkedin_reactions INTEGER, linkedin_comments INTEGER,
     created_at TEXT
 );
 """
+
+# Columns added after the original schema shipped; ensured idempotently on old
+# databases so add_review can always write them (the rank tracker reads them).
+_EXTRA_COLUMNS = {
+    "target_keyword": "TEXT", "article_url": "TEXT",
+    "linkedin_reactions": "INTEGER", "linkedin_comments": "INTEGER",
+}
 
 
 def init() -> None:
     with db.history() as conn:
         conn.executescript(_SCHEMA)
+        existing = {r[1] for r in conn.execute("PRAGMA table_info(reviews)")}
+        for col, typ in _EXTRA_COLUMNS.items():
+            if col not in existing:
+                conn.execute(f"ALTER TABLE reviews ADD COLUMN {col} {typ}")
+        conn.commit()
 
 
 def add_review(**data) -> int:
