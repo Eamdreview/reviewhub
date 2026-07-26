@@ -43,6 +43,12 @@ def _parse_commission_pct(text: str) -> float:
     return float(m.group(1)) if m else 0.0
 
 
+def _parse_price(text: str) -> float:
+    """First dollar figure in a price string ('$47', '$27/mo', '1,497') → float."""
+    m = re.search(r"(\d[\d,]*(?:\.\d+)?)", text or "")
+    return float(m.group(1).replace(",", "")) if m else 0.0
+
+
 def _measured_scores(c: Candidate) -> tuple[dict[str, float], dict[str, bool]]:
     """Deterministic sub-scores from enrichment signals.
 
@@ -113,29 +119,24 @@ def _measured_scores(c: Candidate) -> tuple[dict[str, float], dict[str, bool]]:
     trust = _clamp((trust_rating / 5 * 100) if trust_rating else NEUTRAL)
     m["vendor_trust"] = bool(trust_rating)
 
-    # Profitability degrades gracefully. A known commission% is the base; a
-    # known price and funnel data add on top; each piece is optional so a
-    # product with price + commission% but no funnel still scores proportionally
-    # instead of collapsing. From the marketplace (not an enrichment API), so a
-    # genuinely low/absent commission stays a real signal (not neutralised).
+    # Profitability from real unit economics: commission per front-end sale
+    # (price × commission%) scaled by funnel depth. Calibrated for a one-time-
+    # commission launch market — a solid mid-ticket launch clears Tier 2 on its
+    # economics alone; recurring revenue is a BONUS on top, not the entry ticket.
+    # From the marketplace (not an enrichment API), so genuinely absent
+    # commercials stay a real signal (neutral, flagged unmeasured) not a penalty.
     pct = _parse_commission_pct(c.base_commission)
-    price_known = any(ch.isdigit() for ch in (c.price or ""))
+    price_val = _parse_price(c.price)
     has_commercials = bool(c.base_commission or c.upsells or c.recurring)
-    if has_commercials:
-        # 40%→54, 50%→60, 75%→75, 100%→80(cap) before funnel/price add-ons.
-        base = min(80.0, 30 + pct * 0.6) if pct > 0 else 40.0
+    if pct > 0 and price_val > 0:
+        funnel_mult = 1.5 if c.upsells else 1.0     # a funnel adds ~50% expected take
+        eff = price_val * (pct / 100.0) * funnel_mult
+        profit = config.profit_from_economics(eff)
         if c.recurring:
-            base += 15
-        if c.upsells:
-            base += 10
-        if "recurring" in (c.base_commission or "").lower():
-            base += 5
-        if price_known:
-            base += 5
-        profit = _clamp(base)
+            profit = min(100.0, profit + 12)        # recurring bonus
         m["profitability"] = True
-    elif price_known:
-        profit = 45.0          # priced but no commission data — weak, not zero
+    elif has_commercials or price_val > 0:
+        profit = 45.0          # priced or commission known, but can't compute $/sale
         m["profitability"] = True
     else:
         profit = NEUTRAL       # nothing known → neutral, flagged unmeasured
@@ -206,19 +207,12 @@ def _llm_judgments_batch(batch: list[Candidate]) -> dict[int, dict]:
 def triage_all(candidates: list[Candidate], dry_run: bool = False) -> list[Candidate]:
     """Produce sub-scores + a junk flag for every candidate.
 
-    Junk/spam is NOT dropped here — it still appears on the Ignore list with an
-    explanation (the Classify stage routes it there). But products with no
-    affiliate opportunity (affiliate_eligible=False — e.g. free first-party
-    brands like ChatGPT/Copilot) are dropped before scoring: with no way to
-    monetise them they should never rank or clutter the near-miss analysis.
-    (Skipped in dry-run, where qualify — which sets eligibility — doesn't run.)
-
-    Triage is batched through the cheap model; any batch failure falls back to
-    the offline heuristic for that batch, so scoring always completes.
+    Nothing is dropped here: junk/spam still needs to appear on the Ignore list
+    with an explanation. The Classify stage routes junk to Ignore. (Non-affiliate
+    products are already dropped before enrichment, in main.run.) Triage is
+    batched through the cheap model; any batch failure falls back to the offline
+    heuristic for that batch, so scoring always completes.
     """
-    if not dry_run:
-        candidates = [c for c in candidates if c.affiliate_eligible]
-
     use_llm = llm.available() and not dry_run
 
     for c in candidates:
