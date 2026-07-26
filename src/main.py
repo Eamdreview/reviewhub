@@ -65,6 +65,20 @@ def run(dry_run: bool = False) -> Path:
         _dump("qualified", candidates)
         _dump("rejected", rejected)
 
+    # [1b2] AFFILIATE FILTER — drop products with no affiliate program (free
+    # first-party brands like ChatGPT/Copilot) BEFORE pre-rank/enrichment, so
+    # they never consume a Serper/YouTube slot that should go to a real affiliate
+    # product, and never surface in the near-miss analysis. Runs after qualify
+    # (which sets eligibility) and before pre-rank. Skipped in dry-run.
+    if not dry_run:
+        pre_slice = sorted(candidates, key=score.pre_score, reverse=True)[: config.MAX_ENRICH]
+        slots_freed = sum(1 for c in pre_slice if not c.affiliate_eligible)
+        dropped = [c for c in candidates if not c.affiliate_eligible]
+        candidates = [c for c in candidates if c.affiliate_eligible]
+        log.info("Affiliate filter: dropped %d non-affiliate product(s); "
+                 "freed %d of %d enrichment slot(s).",
+                 len(dropped), slots_freed, config.MAX_ENRICH)
+
     # [1c] PRE-RANK for enrichment. Enrichment (Serper/YouTube) is capped at
     # MAX_ENRICH; enrich_all takes the first slice, so we must order the pool by
     # likely-to-reach-a-tier FIRST. score.pre_score uses only pre-enrichment
@@ -92,9 +106,9 @@ def run(dry_run: bool = False) -> Path:
     candidates = enrich_all(candidates, dry_run=dry_run, source_status=source_status)
     _dump("enriched", candidates)
 
-    # [3] TRIAGE (drops non-affiliate products; produces sub-scores). Count
-    # scanned AFTER triage so "Scanned" equals the products that actually reach
-    # tiering (T1+T2+T3+Watch+Ignore), keeping the report header consistent.
+    # [3] TRIAGE (produces sub-scores). Non-affiliate products were already
+    # dropped in [1b2], so len(candidates) here equals the products that reach
+    # tiering (T1+T2+T3+Watch+Ignore) — keep "Scanned" consistent with that.
     candidates = triage.triage_all(candidates, dry_run=dry_run)
     scanned = len(candidates)
     log.info("After triage: %d survivors", len(candidates))

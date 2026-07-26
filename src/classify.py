@@ -207,6 +207,7 @@ def _tier_of(c: Candidate) -> int:
     growing = float(c.signals.get("trends_slope", 0)) > 0
     if (s.get("buying_intent", 0) >= t2["min_buying_intent"]
             and s.get("profitability", 0) >= t2["min_profitability"]
+            and s.get("seo_opportunity", 0) >= t2.get("min_seo_opportunity", 0)
             and (growing or not t2["require_growing_demand"])
             and _LEVEL_RANK[level] <= _LEVEL_RANK[t2["max_competition_level"]]):
         return 2
@@ -250,6 +251,21 @@ def _near_miss(c: Candidate) -> str:
     return ""
 
 
+def _cap_priority_tiers(candidates: list[Candidate]) -> None:
+    """Keep only the top config.MAX_PRIORITY Tier 1+2 products (by total score);
+    demote the overflow to Tier 3 so the weekly 'review now' shortlist stays a
+    tight, curated 3-8 rather than drifting with a strong/weak week. Mutates each
+    demoted candidate's classification in place (its attached intel stays valid —
+    it was computed for a non-Ignore tier)."""
+    priority = [c for c in candidates if c.classification.get("tier") in (1, 2)]
+    priority.sort(key=lambda c: c.total_score, reverse=True)
+    for c in priority[config.MAX_PRIORITY:]:
+        c.classification["tier"] = 3
+        c.classification["tier_label"] = config.TIER_LABEL[3]
+        c.classification["priority"] = config.PRIORITY_LABEL[3]
+        c.classification["demoted_from_priority"] = True
+
+
 def classify_all(candidates: list[Candidate]) -> list[Candidate]:
     for c in candidates:
         tier = _tier_of(c)
@@ -270,6 +286,7 @@ def classify_all(candidates: list[Candidate]) -> list[Candidate]:
             "risks": _risks(c) if tier != 0 else [],
             "revenue_potential": _revenue_potential(c) if tier != 0 else {},
         }
+    _cap_priority_tiers(candidates)      # keep T1+T2 a tight top-N shortlist
     return candidates
 
 

@@ -140,6 +140,27 @@ def serp_competition(n: int) -> str:
         return "medium"     # SEO 58
     return "high"           # SEO 32 (saturated)
 
+
+def profit_from_economics(eff: float) -> float:
+    """Profitability score (0-100) from commission-per-sale in USD — i.e.
+    price × commission% × funnel depth. Calibrated for a one-time-commission
+    launch market: a solid mid-ticket launch clears the Tier-2 bar (>=70) on its
+    real economics alone, so recurring revenue is a BONUS (added in triage), not
+    the entry requirement. Banded (like serp_seo_score) so it's transparent."""
+    if eff >= 50:
+        return 95.0
+    if eff >= 35:
+        return 88.0
+    if eff >= 22:
+        return 80.0
+    if eff >= 14:
+        return 73.0
+    if eff >= 8:
+        return 64.0
+    if eff >= 4:
+        return 55.0
+    return 45.0
+
 # 🚀 Tier 1 — Immediate Review (review TODAY). Must satisfy ALL:
 TIER1 = {
     "launch_window_days": 7,       # launching within N days, OR
@@ -153,8 +174,13 @@ TIER1 = {
 # 🔥 Tier 2 — Strong Opportunity (this week). Must satisfy ALL:
 TIER2 = {
     "min_buying_intent": 70,
-    "min_profitability": 70,       # 7/10
-    "require_growing_demand": True,  # Trends slope > 0
+    "min_profitability": 70,       # 7/10 — now from real unit economics
+    "min_seo_opportunity": 60,     # measured SERP opportunity (unmeasured 50 won't pass)
+    # Trends-slope gate DROPPED: brand-new/pre-launch products have no Google
+    # Trends history, so slope is always 0 — it structurally blocked every launch
+    # in a one-time-commission market. search_demand still contributes to the
+    # weighted score; it just no longer hard-gates Tier 2.
+    "require_growing_demand": False,
     "max_competition_level": "medium",
 }
 
@@ -335,7 +361,7 @@ QUALIFICATION = {
         "openai.com", "chatgpt.com", "google.com", "gemini.google.com",
         "microsoft.com", "copilot.microsoft.com", "bing.com", "anthropic.com",
         "claude.ai", "meta.com", "meta.ai", "apple.com", "x.ai", "grok.com",
-        "deepmind.com", "mistral.ai", "duckduckgo.com"),
+        "deepmind.com", "mistral.ai", "deepseek.com", "duckduckgo.com"),
     # News / social domains -> reject as news.
     "news_domains": (
         "reuters.com", "cnbc.com", "forbes.com", "businessinsider.com",
@@ -390,6 +416,12 @@ DISPLAY_NAMES: dict[str, str] = {
 # We never pad the report. Show only products that clear the floor, up to this
 # many. If fewer qualify, show fewer.
 MAX_PRODUCTS: int = 10
+
+# Cap on the combined Tier 1 + Tier 2 "review now" shortlist. After the tier
+# gates run, only the top N by total score stay in T1/T2; any overflow is
+# demoted to Tier 3. Keeps the weekly priority list a tight, curated 3-8 rather
+# than drifting with a strong or weak week.
+MAX_PRIORITY: int = 8
 
 # Safety buffer: the quality model writes up this many top-scored survivors so
 # there is a cushion above MAX_PRODUCTS before final selection.
