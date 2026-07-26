@@ -24,7 +24,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/alibaba/open-code-review",
-      "github_stars": 12933,
+      "github_stars": 13168,
       "vendor": "alibaba",
       "archived": false,
       "topics": [
@@ -73,7 +73,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/citrolabs/ego-lite",
-      "github_stars": 3550,
+      "github_stars": 3792,
       "vendor": "citrolabs",
       "archived": false,
       "topics": [
@@ -121,7 +121,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "github_stars": 70565,
+      "github_stars": 70724,
       "vendor": "ComposioHQ",
       "archived": false,
       "topics": [
@@ -181,7 +181,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/obra/superpowers",
-      "github_stars": 261083,
+      "github_stars": 261229,
       "vendor": "obra",
       "archived": false,
       "topics": [
@@ -232,7 +232,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/permissionlesstech/bitchat",
-      "github_stars": 28680,
+      "github_stars": 28913,
       "vendor": "permissionlesstech",
       "archived": false,
       "topics": [],
@@ -274,7 +274,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/palmier-io/palmier-pro",
-      "github_stars": 12205,
+      "github_stars": 12313,
       "vendor": "palmier-io",
       "archived": false,
       "topics": [
@@ -324,7 +324,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/CoreBunch/Instatic",
-      "github_stars": 5050,
+      "github_stars": 5220,
       "vendor": "CoreBunch",
       "archived": false,
       "topics": [
@@ -373,7 +373,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/OtterMind/Chat2DB",
-      "github_stars": 26654,
+      "github_stars": 26790,
       "vendor": "OtterMind",
       "archived": false,
       "topics": [
@@ -435,7 +435,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/andrewyng/aisuite",
-      "github_stars": 15213,
+      "github_stars": 15273,
       "vendor": "andrewyng",
       "archived": false,
       "topics": [],
@@ -477,7 +477,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/affaan-m/ECC",
-      "github_stars": 233290,
+      "github_stars": 233415,
       "vendor": "affaan-m",
       "archived": false,
       "topics": [
@@ -528,7 +528,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/bojieli/ai-agent-book",
-      "github_stars": 19756,
+      "github_stars": 20073,
       "vendor": "bojieli",
       "archived": false,
       "topics": [
@@ -584,7 +584,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/tirth8205/code-review-graph",
-      "github_stars": 26393,
+      "github_stars": 26451,
       "vendor": "tirth8205",
       "archived": false,
       "topics": [
@@ -639,7 +639,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/MoonshotAI/kimi-cli",
-      "github_stars": 10831,
+      "github_stars": 10845,
       "vendor": "MoonshotAI",
       "archived": false,
       "topics": [],
@@ -681,7 +681,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "github_stars": 43464,
+      "github_stars": 43546,
       "vendor": "rohitg00",
       "archived": false,
       "topics": [
@@ -744,7 +744,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/HKUDS/DeepTutor",
-      "github_stars": 29771,
+      "github_stars": 29876,
       "vendor": "HKUDS",
       "archived": false,
       "topics": [
@@ -796,7 +796,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Canner/WrenAI",
-      "github_stars": 16634,
+      "github_stars": 16640,
       "vendor": "Canner",
       "archived": false,
       "topics": [
@@ -856,7 +856,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/AstrBotDevs/AstrBot",
-      "github_stars": 38079,
+      "github_stars": 38094,
       "vendor": "AstrBotDevs",
       "archived": false,
       "topics": [
@@ -916,7 +916,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/apache/ossie",
-      "github_stars": 1633,
+      "github_stars": 1635,
       "vendor": "apache",
       "archived": false,
       "topics": [
@@ -961,7 +961,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Osmantic/ODS",
-      "github_stars": 3674,
+      "github_stars": 3686,
       "vendor": "Osmantic",
       "archived": false,
       "topics": [
@@ -1020,7 +1020,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/mrexodia/ida-pro-mcp",
-      "github_stars": 10763,
+      "github_stars": 10772,
       "vendor": "mrexodia",
       "archived": false,
       "topics": [
@@ -1072,7 +1072,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/kangarooking/cangjie-skill",
-      "github_stars": 4710,
+      "github_stars": 4738,
       "vendor": "kangarooking",
       "archived": false,
       "topics": [
@@ -1123,7 +1123,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/PostHog/posthog",
-      "github_stars": 37315,
+      "github_stars": 37317,
       "vendor": "PostHog",
       "archived": false,
       "topics": [
@@ -1181,7 +1181,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/google/langextract",
-      "github_stars": 37832,
+      "github_stars": 37844,
       "vendor": "google",
       "archived": false,
       "topics": [
@@ -1235,7 +1235,7 @@
     "hours_since_release": null,
     "signals": {
       "github_repo": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "github_stars": 127650,
+      "github_stars": 127715,
       "vendor": "Shubhamsaboo",
       "archived": false,
       "topics": [

@@ -1,5 +1,43 @@
 [
   {
+    "name": "SpinWin",
+    "source": "hackernews",
+    "url": "https://github.com/alokdhir/spinwin",
+    "category": "AI / SaaS tool",
+    "description": "Show HN: SpinWin \u2013 A macOS menu bar app to visually rotate or spin any window",
+    "price": "",
+    "base_commission": "",
+    "recurring": null,
+    "upsells": "",
+    "launch_bonuses": "",
+    "affiliate_program": "",
+    "affiliate_network": "",
+    "lifetime_deal": null,
+    "documentation_url": "",
+    "facts_source": "",
+    "qualified": false,
+    "reject_reason": "GitHub repository only",
+    "affiliate_eligible": false,
+    "launch_status": "live",
+    "launch_date": "",
+    "days_to_launch": null,
+    "hours_since_release": 13,
+    "signals": {
+      "hn_points": 35,
+      "hn_comments": 8
+    },
+    "triage": {},
+    "freshness": {},
+    "scores": {},
+    "measured": {},
+    "total_score": 0.0,
+    "passed_floor": false,
+    "first_mover": false,
+    "classification": {},
+    "prediction": {},
+    "brief": {}
+  },
+  {
     "name": "Twigg",
     "source": "hackernews",
     "url": "https://github.com/twigg-vc/monorepo",
@@ -21,7 +59,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 28,
+    "hours_since_release": 35,
     "signals": {
       "hn_points": 17,
       "hn_comments": 9
@@ -59,9 +97,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 33,
+    "hours_since_release": 40,
     "signals": {
-      "hn_points": 18,
+      "hn_points": 19,
       "hn_comments": 9
     },
     "triage": {},
@@ -97,7 +135,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 35,
+    "hours_since_release": 42,
     "signals": {
       "hn_points": 14,
       "hn_comments": 0
@@ -135,7 +173,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 50,
+    "hours_since_release": 57,
     "signals": {
       "hn_points": 11,
       "hn_comments": 0
@@ -173,9 +211,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 56,
+    "hours_since_release": 63,
     "signals": {
-      "hn_points": 105,
+      "hn_points": 106,
       "hn_comments": 32
     },
     "triage": {},
@@ -211,7 +249,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 56,
+    "hours_since_release": 63,
     "signals": {
       "hn_points": 6,
       "hn_comments": 1
@@ -249,9 +287,9 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 56,
+    "hours_since_release": 63,
     "signals": {
-      "hn_points": 187,
+      "hn_points": 188,
       "hn_comments": 37
     },
     "triage": {},
@@ -287,7 +325,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 56,
+    "hours_since_release": 64,
     "signals": {
       "hn_points": 6,
       "hn_comments": 0
@@ -325,7 +363,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 57,
+    "hours_since_release": 64,
     "signals": {
       "hn_points": 24,
       "hn_comments": 11
@@ -363,7 +401,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 57,
+    "hours_since_release": 64,
     "signals": {
       "hn_points": 8,
       "hn_comments": 3
@@ -401,7 +439,7 @@
     "launch_status": "live",
     "launch_date": "",
     "days_to_launch": null,
-    "hours_since_release": 69,
+    "hours_since_release": null,
     "signals": {
       "hn_points": 12,
       "hn_comments": 2
@@ -479,8 +517,8 @@
     "days_to_launch": null,
     "hours_since_release": null,
     "signals": {
-      "hn_points": 29,
-      "hn_comments": 8
+      "hn_points": 41,
+      "hn_comments": 13
     },
     "triage": {},
     "freshness": {},
@@ -670,44 +708,6 @@
     "hours_since_release": null,
     "signals": {
       "hn_points": 8,
-      "hn_comments": 1
-    },
-    "triage": {},
-    "freshness": {},
-    "scores": {},
-    "measured": {},
-    "total_score": 0.0,
-    "passed_floor": false,
-    "first_mover": false,
-    "classification": {},
-    "prediction": {},
-    "brief": {}
-  },
-  {
-    "name": "Chalk",
-    "source": "hackernews",
-    "url": "https://chalk.appkit.studio",
-    "category": "AI / SaaS tool",
-    "description": "Show HN: Chalk: a Mac app for technical diagrams with a built-in MCP for Claude",
-    "price": "",
-    "base_commission": "",
-    "recurring": null,
-    "upsells": "",
-    "launch_bonuses": "",
-    "affiliate_program": "",
-    "affiliate_network": "",
-    "lifetime_deal": null,
-    "documentation_url": "",
-    "facts_source": "",
-    "qualified": true,
-    "reject_reason": "",
-    "affiliate_eligible": true,
-    "launch_status": "live",
-    "launch_date": "",
-    "days_to_launch": null,
-    "hours_since_release": null,
-    "signals": {
-      "hn_points": 9,
       "hn_comments": 1
     },
     "triage": {},
