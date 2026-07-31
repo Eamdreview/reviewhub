@@ -81,17 +81,34 @@ def add_review(**data) -> int:
         return cur.lastrowid
 
 
+def _review_key(row: dict) -> tuple:
+    """Identity of a review for de-duplication: same product, publish date, and
+    traffic source = the same logged review (a product reviewed on a different
+    date or promoted on a different channel is a distinct row)."""
+    return (row.get("product"), row.get("publish_date"), row.get("traffic_source"))
+
+
 def import_csv(path: str | None = None) -> int:
-    """Append rows from a CSV (header must match FIELDS). Returns rows added."""
+    """Import rows from a CSV (header must match FIELDS), skipping any already
+    present. Idempotent: the weekly pipeline calls this every run, so without the
+    skip the backlog would be re-appended each time. Returns rows added."""
     csv_path = Path(path or config.LEARNING_CSV)
     if not csv_path.is_absolute():
         csv_path = Path(__file__).resolve().parent.parent.parent / csv_path
     if not csv_path.exists():
         return 0
+    init()
+    with db.history() as conn:
+        existing = {_review_key(dict(r)) for r in
+                    conn.execute("SELECT product, publish_date, traffic_source FROM reviews")}
     added = 0
     with csv_path.open(newline="", encoding="utf-8") as f:
         for r in csv.DictReader(f):
+            key = _review_key(r)
+            if key in existing:
+                continue                 # already logged — don't duplicate
             add_review(**r)
+            existing.add(key)
             added += 1
     return added
 
